@@ -1,0 +1,49 @@
+U.S. Notes (con.)
+(174) Universal AC/DC motors, each rated at more than 37.5 W but not more than 65 W and valued at less than $20
+(described in statistical reporting number 8501.20.2000)
+(175) Quarter-turn actuator motors, of an output exceeding 746 W, each valued not over $140 (described in statistical
+reporting number 8501.20.6000)
+(176) DC motors, brushless, of an output rated at 48 W or greater but not exceeding 60 W, each valued not over $14
+(described in statistical reporting number 8501.31.2000)
+(177) DC motors, brushless, rated at 32 V, designed to operate in saltwater environment, each valued over $35 (described
+in statistical reporting number 8501.31.2000)
+(178) DC motors, of an output exceeding 37.5 W but not exceeding 74.6 W, each incorporating a thermal switch, the
+foregoing valued not over $22 (described in statistical reporting number 8501.31.2000)
+(179) DC motors, of an output exceeding 37.5 W but not exceeding 74.6 W, valued over $2 but not over $30 each
+(described in statistical reporting number 8501.31.2000)
+(180) AC motors, multiphase, of a kind used with paint sprayers to regulate the flow of paint, of an output exceeding
+74.6 W but not exceeding 735 W, valued not over $200 each (described in statistical reporting number
+8501.51.4040)
+(181) Brushless, variable speed, DC motors, of an output of 750 W (described in statistical reporting number
+8501.31.6000)
+(182) DC motor and gear box assemblies, of an output of 746 W or more but not exceeding 750 W, of a kind used to
+open and close a swing door, the foregoing valued not over $300 each (described in statistical reporting number
+8501.31.6000)
+(183) AC motors, multi-phase, of an output exceeding 37.5 W but not exceeding 74.6 W, other than gear motors, each
+weighing less than 600 grams and valued less than $15 (described in statistical reporting number 8501.51.2040)
+(184) AC motors, 3 phase, fitted with a timing belt and of an output not less than 90 W but not exceeding 135 W
+(described in statistical reporting number 8501.51.4040)
+(185) AC motors, multi-phase, of rolled steel frame construction (described in statistical reporting number 8501.51.4040)
+(186) AC motors, multiphase, of an output exceeding 74 kW but not exceeding 75 kW, other than for use in civil aircraft
+(described in statistical reporting number 8501.52.8040)
+(187) AC motors, multi-phase, of an output exceeding 93 kW but not exceeding 112 kW (described in statistical reporting
+number 8501.53.4080)
+(188) AC motors, multi-phase, of an output of 186.5 kW or more but not exceeding 373 kW, having a cast iron frame
+construction (described in statistical reporting number 8501.53.8040)
+(189) AC generators, each having copper windings and weighing more than 900 kg but not more than 1700 kg (described
+in statistical reporting number 8501.63.0000)
+(190) AC generators, of an output exceeding 750 kVA but not exceeding 10,000 kVA, each having copper windings
+and weighing more than 1650 kg but not more than 4100 kg, other than for wind-powered generating sets classified
+within 8502.31.00 (described in statistical reporting number 8501.64.0025)
+(191) Generator sets each weighing more than 650 kg but not over 830 kg (described in statistical reporting number
+8502.11.0000)
+(192) Armatures, other than for motors of under 18.65 W, other than for generators for civil aircraft, each valued not
+over $5 (described in statistical reporting number 8503.00.6500)
+(193) Motor field cores, other than for motors of under 18.65 W, other than for generators for civil aircraft, of steel
+stamping, each valued not over $5 (described in statistical reporting number 8503.00.6500)
+(194) Stators and rotors designed for use with household laundry washing machines or tabletop household appliances,
+each valued not over $10 (described in statistical reporting number 8503.00.6500)
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+XXII
+99 - III - 150

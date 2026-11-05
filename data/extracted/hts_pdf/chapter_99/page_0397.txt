@@ -1,0 +1,53 @@
+U.S. Notes (con.)
+(114) Single phase AC electric motors (other than gear motors), of an output of 56 W or more but not exceeding 69 W,
+each measuring no more than 9 cm in length and no more than 11.5 cm in diameter, weighing no more than 2
+kg, in a housing of base metals, with a switch (described in statistical reporting number 8501.40.2040)
+(115) Single-phase AC electric motors incorporating permanent split capacitors, each of an output range of 367 W or
+more but not exceeding 565 W, operating at not less than 115 V of alternating current (VAC) but not more than
+230 VAC, capable of operating while submerged in water, each weighing at least 7 kg but not more than 11 kg,
+measuring not more than 10 cm in diameter and at least 22 cm but not exceeding 34 cm in length (described in
+statistical reporting number 8501.40.4040)
+(116) Single-phase AC electric motors, other than gear motors, whether or not incorporating permanent split capacitors,
+each of an output range of 746 W or more but not exceeding 1.13 kW, operating at not less than 115 V of alternating
+current (VAC) but not more than 250 VAC, capable of operating while submerged in water, each weighing at least
+9 kg but not more than 12.5 kg, measuring not more than 10 cm in diameter and at least 25 cm but not exceeding
+36 cm in length (described in statistical reporting number 8501.40.6040)
+(117) Battery chargers designed to charge the batteries in electrically powered golf carts and similar utility vehicles for
+a voltage not exceeding 48 V, measuring no more than 20 cm in width, 30 cm in length, and 15 cm in height
+(described in statistical reporting number 8504.40.9550)
+(118) Static converters, each with output voltage range of 10 V or more but not exceeding 26 V and a power output
+range of at least 5 A but not more than 240 A, weighing not more than 23 kg (described in statistical reporting
+number 8504.40.9550)
+(119) Inductors, each with inductance of 22 microhenrys (µH), a tolerance of no greater than 20 percent, with a DC
+resistance of 198 milliohms (m ) and a DC current of 1.9 A (described in statistical reporting number 8504.50.8000)
+(120) Inductors, each with inductance of 220 microhenrys (µH), a tolerance of no greater than 20 percent, with a DC
+resistance of 550 milliohms (m ) and a DC current of 510 milliamps (mA) (described in statistical reporting number
+8504.50.8000)
+(121) Inductors, each with inductance of 470 microhenrys (µH), a tolerance of no greater than 20 percent, with a DC
+resistance of 700 milliohms (m ) and a DC current of 540 milliamps (mA) (described in statistical reporting number
+8504.50.8000)
+(122) Lead-acid storage batteries, 12 V, of a kind used in starting piston engines, each measuring not more than 167
+cm in height, at least 91 cm but not more than 92 cm in width and weighing at least 4.8 kg but not more than 5.3
+kg (described in statistical reporting number 8507.10.0030)
+(123) Ignition coils for spark-ignition or compression-ignition engines of a kind designed to be mounted in powersports
+vehicles, including off-road vehicles, all-terrain vehicles, snowmobiles and motorcycles (described in statistical
+reporting number 8511.30.0080)
+(124) Lighting equipment designed for illuminating the interior of the vehicles of subheading 8701.20 or heading 8702,
+8703, 8704, 8705 or 8711 incorporating LED lamps, each measuring not more than 128 mm by 75 mm by 36 mm
+(described in statistical reporting number 8512.20.2040)
+(125) Color television cameras of a kind used with vehicle displays (described in statistical reporting number
+8525.80.3010)
+(126) Radiobroadcast receiver kits, each comprising a radiobroadcast receiver not capable of operating without an
+external source of power, the foregoing of a kind used in motor vehicles, not combined with sound recording or
+reproducing apparatus, incorporating an FM only or AM/FM only tuner, two speakers measuring not more than
+135 mm in diameter, a 45 W 4-channel amplifier and an external antenna (described in statistical reporting number
+8527.29.4000)
+(127) Indicator panels incorporating segmented liquid crystal devices (LCDs) suitable for use in motor vehicles and
+designed to display a limited number of characters or icons, each panel measuring not more than 99 mm in width
+and not more than 61 mm in height (described in statistical reporting number 8531.20.0020)
+(128) Indicator panels incorporating LEDs, designed for use in medical infusion equipment (described in statistical
+reporting number 8531.20.0040)
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+XXII
+99 - III - 225

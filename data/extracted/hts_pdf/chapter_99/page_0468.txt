@@ -1,0 +1,47 @@
+U.S. Notes (con.)
+(51) Coupling covers, including center members, flanged hubs, sleeves and shoes (described in statistical reporting
+number 8483.90.8010)
+(52) Electric motors, AC, permanent split capacitor type, not exceeding 16 W (described in statistical reporting number
+8501.10.4020)
+(53) DC electric motors, of an output of less than 18.65 W, other than brushless, measuring less than 38 mm in diameter
+(described in statistical reporting number 8501.10.4060)
+(54) DC motors, of an output exceeding 37.5 W but not exceeding 74.6 W, valued over $2 but not over $30 each
+(described in statistical reporting number 8501.31.2000)
+(55) DC motors, electronically commutated, three-phase, eight-pole of a kind used in HVAC systems, of an output of
+750 W, valued not over $100 each (described in statistical reporting number 8501.31.6000)
+(56) AC motors, multi-phase, of rolled steel frame construction (described in statistical reporting number 8501.51.4040)
+(57) AC motors, multi-phase, of an output of 186.5 kW or more but not exceeding 373 kW, having a cast iron frame
+construction (described in statistical reporting number 8501.53.8040)
+(58) AC multi-phase motors, each of an output exceeding 300 kW but not exceeding 310 kW, fitted with pulleys and
+brakes to raise and lower passenger elevators (described in statistical reporting number 8501.53.8040)
+(59) Regenerative speed drive controllers for controlling speed of electric motors for elevators (described in statistical
+reporting number 8504.40.4000)
+(60) Speed drive controllers for electric motors, each such controller measuring 100 mm or more but not over 130 mm
+in length, 40 mm or more but not over 125 mm in width and 24 mm or more but not over 85 mm in height (described
+in statistical reporting number 8504.40.4000)
+(61) Dual layer printed circuit board assemblies, each valued over $30 but not over $35 (described in statistical reporting
+number 8504.90.7500)
+(62) Structural components for industrial furnaces (described in statistical reporting number 8514.90.8000)
+(63) Aluminum electrolytic capacitors, each valued not over $3.20 (described in statistical reporting number
+8532.22.0085)
+(64) Rotary switches, rated at over 5 A, measuring not more than 5.5 cm by 5.0 cm by 3.4 cm, each with 2 to 8 spade
+terminals and an actuator shaft with D-shaped cross section (described in statistical reporting number 8536.50.9025)
+(65) Rotary switches, single pole, single throw (SPST), rated at over 5 A, each measuring not more than 14.6 cm by
+8.9 cm by 14.1 cm (described in statistical reporting number 8536.50.9025)
+(66) Modular light switches, for a voltage not exceeding 1,000 V, presented in polyethylene terephthalate (PET)
+housings, designed for use with a backplate (described in statistical reporting number 8536.50.9065)
+(67) Switches designed for use in motor vehicles, driver or passenger activated (described in statistical reporting
+number 8536.50.9065)
+(68) Coaxial connectors, for a voltage not exceeding 1,000 V, valued over $0.20 but not over $0.30 each (described
+in statistical reporting number 8536.69.4010)
+(69) Butt splice connectors, for a voltage not exceeding 1,000 V, each valued not over $3 (described in statistical
+reporting number 8536.90.4000)
+(70) Ring terminals, for a voltage not exceeding 1,000 V (described in statistical reporting number 8536.90.4000)
+(71) Twist-on wire connectors, for a voltage not exceeding 1,000 V, each valued not over $0.03 (described in statistical
+reporting number 8536.90.4000)
+(72) Zinc anodes for use with machines and apparatus for electroplating, electrolysis or electrophoresis (described in
+statistical reporting number 8543.30.9080)
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+XXII
+99 - III - 296

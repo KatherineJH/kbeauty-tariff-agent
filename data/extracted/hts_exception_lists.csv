@@ -1,0 +1,16 @@
+regime,subdivision,exempting_heading,kind,pdf_pages,printed_pages,codes,note
+surcharge,2(aa)(ii),9903.03.03,code_list,223-227,99-III-51 to 99-III-55,1098,
+surcharge,2(aa)(iii),9903.03.04,particular_articles,227-227,99-III-55 to 99-III-55,11,
+surcharge,2(aa)(iv),9903.03.05,code_list,228-230,99-III-56 to 99-III-58,546,civil aircraft meeting general note 6 criteria
+surcharge,2(aa)(v),9903.03.06,descriptive,230-231,99-III-58 to 99-III-59,0,goods in section 232 / pharmaceutical / vehicle / wood / semiconductor headings of chapter 99; text modified after expiration by 91 Fed. Reg. 18183 (not in the corpus)
+surcharge,2(aa)(vi),9903.03.07,descriptive,231-231,99-III-59 to 99-III-59,0,products of Canada under USMCA
+surcharge,2(aa)(vii),9903.03.08,descriptive,231-231,99-III-59 to 99-III-59,0,products of Mexico under USMCA
+surcharge,2(aa)(viii),9903.03.09,descriptive,231-231,99-III-59 to 99-III-59,0,CAFTA-DR textile or apparel goods
+s301_korea,52(b),9903.05.86,code_list,566-569,99-III-394 to 99-III-397,863,
+s301_korea,52(c),9903.05.87,particular_articles,569-571,99-III-397 to 99-III-399,16,
+s301_korea,52(d),9903.05.88,code_list,571-574,99-III-399 to 99-III-402,541,civil aircraft meeting general note 6 criteria
+s301_korea,52(e),9903.05.89,code_list,574-577,99-III-402 to 99-III-405,700,articles for use in pharmaceutical applications
+s301_korea,52(f),9903.05.90,descriptive,577-577,99-III-405 to 99-III-405,0,"section 232 metals, vehicles and parts, wood, semiconductors, patented pharmaceuticals (chapter 99 headings)"
+s301_korea,52(g)-(i),9903.05.93-9903.05.95,descriptive,577-577,99-III-405 to 99-III-405,0,"apply only to headings for Canada, Mexico and CAFTA-DR countries, not to 9903.05.70-9903.05.71"
+s232_aluminum_derivative,19(k),9903.85.08,code_list,256-256,99-III-84 to 99-III-84,224,derivative aluminum products of all countries other than the UK; the 232 duty applies only to the declared value of the aluminum content
+s301_korea,52(j),9903.05.96-9903.06.21,descriptive,578-605,99-III-406 to 99-III-433,0,"country-specific lists; each names the heading it limits (9903.05.22, .26, .28, .35, .37, .40, .45, .50, .54, .75-.76, .81) and none names 9903.05.70 or 9903.05.71"

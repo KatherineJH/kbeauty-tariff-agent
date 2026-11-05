@@ -1,0 +1,53 @@
+htsno,subheading_8,description,regime,determination,listed_in,aluminum_232_derivative_19k
+3303.00.10.00,3303.00.10,Floral or flower waters,surcharge,needs_review_232_aluminum_derivative,,True
+3303.00.10.00,3303.00.10,Floral or flower waters,s301_korea,needs_review_232_aluminum_derivative,,True
+3303.00.20.00,3303.00.20,Other,surcharge,needs_review_232_aluminum_derivative,,True
+3303.00.20.00,3303.00.20,Other,s301_korea,needs_review_232_aluminum_derivative,,True
+3303.00.30.00,3303.00.30,Containing alcohol,surcharge,needs_review_232_aluminum_derivative,,True
+3303.00.30.00,3303.00.30,Containing alcohol,s301_korea,needs_review_232_aluminum_derivative,,True
+3304.10.00.00,3304.10.00,Lip make-up preparations,surcharge,not_excepted_rev22,,False
+3304.10.00.00,3304.10.00,Lip make-up preparations,s301_korea,not_excepted_rev22,,False
+3304.20.00.00,3304.20.00,Eye make-up preparations,surcharge,not_excepted_rev22,,False
+3304.20.00.00,3304.20.00,Eye make-up preparations,s301_korea,not_excepted_rev22,,False
+3304.30.00.00,3304.30.00,Manicure or pedicure preparations,surcharge,needs_review_232_aluminum_derivative,,True
+3304.30.00.00,3304.30.00,Manicure or pedicure preparations,s301_korea,needs_review_232_aluminum_derivative,,True
+3304.91.00,3304.91.00,"Powders, whether or not compressed",surcharge,not_excepted_rev22,,False
+3304.91.00,3304.91.00,"Powders, whether or not compressed",s301_korea,not_excepted_rev22,,False
+3304.91.00.10,3304.91.00,Rouges,surcharge,not_excepted_rev22,,False
+3304.91.00.10,3304.91.00,Rouges,s301_korea,not_excepted_rev22,,False
+3304.91.00.50,3304.91.00,Other,surcharge,not_excepted_rev22,,False
+3304.91.00.50,3304.91.00,Other,s301_korea,not_excepted_rev22,,False
+3304.99.10.00,3304.99.10,Petroleum jelly put up for retail sale,surcharge,not_excepted_rev22,,False
+3304.99.10.00,3304.99.10,Petroleum jelly put up for retail sale,s301_korea,not_excepted_rev22,,False
+3304.99.50.00,3304.99.50,Other,surcharge,needs_review_232_aluminum_derivative,,True
+3304.99.50.00,3304.99.50,Other,s301_korea,needs_review_232_aluminum_derivative,,True
+3305.10.00.00,3305.10.00,Shampoos,surcharge,needs_review_232_aluminum_derivative,,True
+3305.10.00.00,3305.10.00,Shampoos,s301_korea,needs_review_232_aluminum_derivative,,True
+3305.20.00.00,3305.20.00,Preparations for permanent waving or straightening,surcharge,not_excepted_rev22,,False
+3305.20.00.00,3305.20.00,Preparations for permanent waving or straightening,s301_korea,not_excepted_rev22,,False
+3305.30.00.00,3305.30.00,Hair lacquers,surcharge,needs_review_232_aluminum_derivative,,True
+3305.30.00.00,3305.30.00,Hair lacquers,s301_korea,needs_review_232_aluminum_derivative,,True
+3305.90.00.00,3305.90.00,Other,surcharge,needs_review_232_aluminum_derivative,,True
+3305.90.00.00,3305.90.00,Other,s301_korea,needs_review_232_aluminum_derivative,,True
+3306.10.00.00,3306.10.00,Dentifrices,surcharge,not_excepted_rev22,,False
+3306.10.00.00,3306.10.00,Dentifrices,s301_korea,not_excepted_rev22,,False
+3306.20.00.00,3306.20.00,Yarn used to clean between the teeth (dental floss),surcharge,not_excepted_rev22,,False
+3306.20.00.00,3306.20.00,Yarn used to clean between the teeth (dental floss),s301_korea,not_excepted_rev22,,False
+3306.90.00.00,3306.90.00,Other,surcharge,needs_review_232_aluminum_derivative,,True
+3306.90.00.00,3306.90.00,Other,s301_korea,needs_review_232_aluminum_derivative,,True
+3307.10.10.00,3307.10.10,Not containing alcohol,surcharge,needs_review_232_aluminum_derivative,,True
+3307.10.10.00,3307.10.10,Not containing alcohol,s301_korea,needs_review_232_aluminum_derivative,,True
+3307.10.20.00,3307.10.20,Containing alcohol,surcharge,needs_review_232_aluminum_derivative,,True
+3307.10.20.00,3307.10.20,Containing alcohol,s301_korea,needs_review_232_aluminum_derivative,,True
+3307.20.00.00,3307.20.00,Personal deodorants and antiperspirants,surcharge,needs_review_232_aluminum_derivative,,True
+3307.20.00.00,3307.20.00,Personal deodorants and antiperspirants,s301_korea,needs_review_232_aluminum_derivative,,True
+3307.30.10.00,3307.30.10,"Bath salts, whether or not perfumed",surcharge,not_excepted_rev22,,False
+3307.30.10.00,3307.30.10,"Bath salts, whether or not perfumed",s301_korea,not_excepted_rev22,,False
+3307.30.50.00,3307.30.50,Other,surcharge,not_excepted_rev22,,False
+3307.30.50.00,3307.30.50,Other,s301_korea,not_excepted_rev22,,False
+3307.41.00.00,3307.41.00,"""Agarbatti"" and other odoriferous preparations which operate by burning",surcharge,not_excepted_rev22,,False
+3307.41.00.00,3307.41.00,"""Agarbatti"" and other odoriferous preparations which operate by burning",s301_korea,not_excepted_rev22,,False
+3307.49.00.00,3307.49.00,Other,surcharge,needs_review_232_aluminum_derivative,,True
+3307.49.00.00,3307.49.00,Other,s301_korea,needs_review_232_aluminum_derivative,,True
+3307.90.00.00,3307.90.00,Other,surcharge,needs_review_232_aluminum_derivative,,True
+3307.90.00.00,3307.90.00,Other,s301_korea,needs_review_232_aluminum_derivative,,True

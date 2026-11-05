@@ -1,0 +1,55 @@
+(d) Whenever a claim is made for special tariff treatment under one of the following programs, the statistical reporting number is, in
+absence of specific instructions to the contrary elsewhere, the 10-digit number prefixed by the appropriate symbol indicated below:
+NProducts covered by general note 3(a)(v) to the tariff schedule.......................................................................
+WProducts of Puerto Rico (advanced in value or improved in condition in a CBERA beneficiary country (see
+19 U.S.C. 2703(a)(5)).....................................................................................................................................
+YProducts of Insular P ossessions......................................................................................................................
+ZArticles from the Freely Associated States.......................................................................................................
+(e) Whenever in the tariff schedule goods are classified as a set in accordance with General Rules of Interpretation 3(b) or 3(c), the
+set is to be identified by placing the prefix "X" in front of the statistical reporting numbers applicable to the set.
+4. Abbreviations.
+(a) An "X" appearing in the column for units of quantity means that no quantity (other than gross weight) is to be reported.
+(b) Whenever two separate units of quantity are shown for the same article, the value of the article is to be reported with the first unit
+of quantity shown, unless there is a "v" following the second unit of quantity in which case the value of the article is to be reported
+with that unit of quantity.
+(c) The unit of measure to be used by Customs and Border Protection (CBP) field offices when reporting imports of textiles to CBP
+Headquarters Quota Branch shall be the first unit of quantity unless the second unit of quantity (if there is one) is underlined, in
+which case the second unit of quantity shall be reported.
+(d) The following symbols and abbreviations are used with the meanings respectively indicated below:
+AmperesA
+Silver content in grams-Ag g
+Gold content in grams-Au g
+Cobalt content in kilograms-Co kg
+Chromium content in kilograms-Cr kg
+Chromic oxide content in tons-Cr2O3 t
+Copper content in kilograms-Cu kg
+Dozen Pieces-Dz Pcs
+gigabecquerels-GBq
+Iridium content in grams-Ir g
+Institute of Scrap Recycling Industries-ISRI
+Number of dutiable jewels-Jwls.
+Anhydrous morphine content in kilograms-kg amc
+Milk solids content in kilograms-kg msc
+Total sugars content in kilograms-kg ttl sug
+megabecquerels-MBq
+Magnesium content in kilograms-Mg kg
+Manganese content in kilograms-Mn kg
+Molybdenum content in kilograms-Mo kg
+Megawatt hours-MWh
+Sodium hydroxide content in kilograms-NaOh kg
+Sodium hydroxide content in tons-NaOH t
+Ammonia content in tons-NH3 t
+Nickel content in kilograms-Ni kg
+ozone depletion equivalent-ode
+Osmium content in grams-Os g
+Lead content in kilograms-Pb kg
+Palladium content in grams-Pd g
+Platinum content in grams-Pt g
+Rhodium content in grams-Rh g
+Ruthemium content in grams-Ru g
+Antimony content in kilograms-Sb kg
+Silicon content in kilograms-Si kg
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+GN p.4
+Gen. Stat. Notes

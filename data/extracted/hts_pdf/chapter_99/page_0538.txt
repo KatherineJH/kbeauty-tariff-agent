@@ -1,0 +1,55 @@
+U.S. Notes (con.)
+(10
+12
+) operations per second for multiply-accumulate computation (D = A × B + C).The 2 in the TPP formula is based
+on the industry convention of counting one multiply-accumulate computation (D = A × B + C) as two operations for
+purpose of product datasheets. Therefore, 2 × “MacTOPS” may correspond to the reported TOPS or FLOPS on a
+product datasheet. The “bit length of the operation” for a multiply-accumulate computation is the largest bit-length
+of the inputs to the multiply operation. The TPP for the imported product is determined by aggregating the TPP for
+each processing unit on the integrated circuit:TPP = TPP1 + TPP2 + … + TPPn (where n is the number of processing
+units on the integrated circuit).The rate of “MacTOPS” is to be calculated at its maximum value theoretically possible.
+The rate of “MacTOPS” is assumed to be the highest value the manufacturer claims in annual or brochure for the
+integrated circuit. For example, a “TPP” threshold of 4800 can be met with 600 tera integer operations (or 2 × 300
+“MacTOPS”) at 8 bits or 300 tera FLOPS (or 2 × 150 “MacTOPS”) at 16 bits. If the integrated circuit is designed for
+MAC computation with multiple bit lengths that achieve different “TPP” values, the highest “TPP” value should be
+used. For integrated circuits that provide processing of both sparse and dense matrices, the “TPP” values are the
+values for processing of dense matrices (e.g., without sparsity).
+For the purposes of this note, “total DRAM bandwidth” refers to the aggregate memory bandwidth in gigabytes per
+second between the integrated circuit (IC) and dynamic random access memory (DRAM) ICs, including copackaged
+DRAM ICs and non-copackaged DRAM ICs. Copackaged DRAM ICs include, for example, high bandwidth memory
+(HBM). Non-copackaged DRAM ICs include, for example, graphics double data rate (GDDR) ICs. “Total DRAM
+bandwidth” does not include bandwidth from DRAM ICs accessed remotely over an interconnect medium.
+(c) Heading 9903.79.02 applies to entries of articles that are classifiable under provisions of the HTSUS enumerated in
+subdivision (b) of this note but that do not meet the technical parameters specified in subdivision (b) of this note.
+(d) Certain semiconductor articles that would otherwise meet the requirements of subdivision (b) of this note are excluded
+from the additional rate of duty pursuant to heading 9903.79.01. Instead, such semiconductor articles are subject to the
+following headings:
+(i) Heading 9903.79.03 applies to semiconductor articles for use in U.S. data centers;
+(ii) Heading 9903.79.04 applies to semiconductor articles for repairs or replacements performed in the United States;
+(iii) Heading 9903.79.05 applies to semiconductor articles for research and development in the United States involving
+these chips;
+(iv) Heading 9903.79.06 applies to semiconductor articles for use by startups in the United States;
+(v) Heading 9903.79.07 applies to semiconductor articles for use in non-data center consumer electronics applications
+in the United States, including gaming, personal computing, professional visualization, workstation applications, and
+automotive applications;
+(vi) Heading 9903.79.08 applies to semiconductor articles for use in non-data center civil industrial applications in the
+United States, including factory robotics and industrial machinery; and
+(vii) Heading 9903.79.09 applies to semiconductor articles for use in United States public sector applications.
+For the purposes of this note, a “U.S. data center” refers to a facility that requires greater than 100 megawatts (MW) of new
+load dedicated to AI inference, training, simulation, or synthetic data generation.
+For the purposes of this note, “research and development” is defined as any activity that is (a) a systematic, intensive study
+directed toward greater knowledge or understanding of the subject studied; (b) a systematic study directed specifically toward
+applying new knowledge to meet a recognized need; or (c) a systematic application of knowledge toward the production of
+useful materials, devices, services or methods, and includes design, development and improvement of prototypes and new
+processes to meet specific requirements.
+For the purposes of this note, a “startup” is an “emerging growth company,” as defined at 15 U.S.C. § 77b(a)(19).
+40.
+(a) Headings 9903.04.60–9903.04.70 provide the customs duty treatment of imported articles classifiable in one of the
+provisions of the HTSUS enumerated in subdivision (c) of this note.
+These headings are mutually exclusive, such that an imported article will be subject to no more than one of these headings.
+Pharmaceutical articles, as defined in subdivisions (c)(i)–(iii) of this note, are subject to heading 9903.04.60 unless another
+of these headings applies.
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+XXII
+99 - III - 366

@@ -1,0 +1,41 @@
+GENERAL STATISTICAL NOTES
+1. Statistical Requirements for Imported Goods.
+(a) Persons making customs entry or withdrawal of goods imported into the customs territory of the United States shall complete the
+entry summary or withdrawal forms, as provided herein and in regulations issued pursuant to law, to provide for statistical purposes
+information as follows:
+(i) the number of the Customs district and of the port where the goods are being entered for consumption or warehouse, as shown
+in Statistical Annex A of the tariff schedule;
+(ii) the name of the vessel or the name of the airline, or in the case of shipment by other than vessel or air, the means of
+transportation by which the goods first arrived in the United States;
+(iii) the foreign port of lading;
+(iv) the U.S. port of unlading for vessel and air shipments;
+(v) the date of importation;
+(vi) the country of origin of the goods expressed in terms of the designation therefor in Statistical Annex B of the tariff schedule;
+(vii) the country of exportation expressed in terms of the designation therefor in Statistical Annex B of the tariff schedule;
+(viii) the date of exportation;
+(ix) a description of the goods in sufficient detail to permit the classification thereof under the proper statistical reporting number
+in the tariff schedule;
+(x) the statistical reporting number under which the goods are classifiable, including the appropriate symbol placed as a prefix to
+the statistical reporting number when claiming special tariff treatment as provided for in general note 3(c)(i) (asterisks, however,
+are not to be reported with or in place of the symbol prefix, e.g. for the Generalized System of Preferences only the "A" and
+not the asterisk shall be reported);
+(xi) gross weight in kilograms for the goods covered by each reporting number for all modes of transportation;
+(xii) the net quantity in the units specified herein for the classification involved and with the units noted;
+(xiii) the U.S. dollar value in accordance with the definition of section 402 of the Tariff Act of 1930, as amended, for all merchandise
+including that free of duty or dutiable at specific rates;
+(xiv) the aggregate cost (not including U.S. import duty, if any), in U.S. dollars, of freight, insurance and all other charges, costs
+and expenses (each of which charges, costs and expenses shall be separately itemized on or attached to the related invoice)
+incurred (except as provided below) in bringing the merchandise from alongside the carrier at the port of exportation in the
+country of exportation and placing it alongside the carrier at the first U.S. port of entry. In the case of overland shipments
+originating in Canada or Mexico, such costs shall include freight, insurance, and all other charges, costs and expenses incurred
+in brining the merchandise from the point of origin (where the merchandise begins its journey to the United States) in Canada
+or Mexico to the first U.S. port of entry; and
+(xv) such other information with respect to the imported goods as is provided for elsewhere in the tariff schedule.
+(b) For the purpose of paragraph (a), the following provisions shall govern:
+(i) the country of exportation shall be the country of origin except when the merchandise while located in a third country is the
+subject of a new purchase in which event the third country shall be regarded and reported as the country of exportation, and
+the date of exportation from the third country shall be regarded and reported as the date of exportation; and
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+GN p.1
+Gen. Stat. Notes

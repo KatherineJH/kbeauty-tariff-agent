@@ -1,0 +1,44 @@
+(K) except as provided in subdivisions (A) through (J) above and subdivision (o) of this note, a nonoriginating material used
+in the production of a good provided for in any of chapters 1 through 24, unless the nonoriginating material is provided
+for in a different subheading than the good for which origin is being determined under this note.
+(iii) For the purposes of this note, the term “adjusted value” means the value determined in accordance with Articles 1 through 8,
+Article 15 and the corresponding interpretive notes of the Agreement on Implementation of Article VII of the General Agreement
+on Tariffs and Trade 1994 referred to in section 101(d)(8) of the Uruguay Round Agreements Act (19 U.S.C. 3511(d)(8)),
+adjusted, if necessary, to exclude any costs, charges or expenses incurred for transportation, insurance and related services
+incident to the international shipment of the merchandise from the country of exportation to the place of importation.
+(f) Accumulation.
+(i) For purposes of this note, originating materials from the territory of Korea or the United States that are used in the production
+of a good in the territory of the other country shall be considered to originate in the territory of such other country.
+(ii) A good that is produced in the territory of Korea or of the United States, or both, by one or more producers, is an originating
+good if the good satisfies all of the applicable requirements of this note.
+(g) Regional value content.
+(i) For purposes of subdivision (b)(ii)(B) of this note, the regional value content for a good referred to in subdivision (o) of this
+note, except for goods to which subdivision (h) applies, shall be calculated by the importer, exporter or producer of the good,
+on the basis of the build-down method described in subdivision (g)(i)(A) or the build-up method described in (g)(i)(B) below.
+(A) For the build-down method, the regional value content of a good may be calculated on the basis of the formula RVC =
+((AV - VNM)/AV) x 100, where RVC is the regional value content, expressed as a percentage; AV is the adjusted value
+of the good; and VNM is the value of nonoriginating materials, other than indirect materials, acquired and used by the
+producer in the production of the good, but does not include the value of a material that is self-produced; or
+(B) For the build-up method, the regional value content may be calculated on the basis of the formula RVC = (VOM /AV) x
+100, where RVC is the regional value content, expressed as a percentage; AV is the adjusted value of the good; and
+VOM is the value of originating materials, other than indirect materials, that are acquired or self-produced, and used by
+the producer in the production of the good.
+(ii) Value of materials.
+(A) For the purpose of calculating the regional value content of a good under subdivision (g)(i) and for purposes of applying
+the de minimis provisions of subdivision (e) of this note, the value of a material is:
+(1) in the case of a material that is imported by the producer of the good, the adjusted value of the material;
+(2) in the case of a material acquired in the territory in which the good is produced, the value, determined in accordance
+with Articles 1 through 8, Article 15 and the corresponding interpretive notes, of the Agreement on Implementation
+of Article VII of the General Agreement on Tariffs and Trade 1994 referred to in section 101(d)(8) of the Uruguay
+Round Agreements Act (19 U.S.C. 3511(d)(8)), as set forth in regulations promulgated by the Secretary of the
+Treasury providing for the application of such Articles in the absence of an importation by the producer; or
+(3) in the case of a material that is self-produced, the sum of–
+(i) all expenses incurred in the production of the material, including general expenses, and
+(ii) an amount for profit equivalent to the profit added in the normal course of trade.
+(B) The value of materials may be further adjusted as follows:
+(1) for originating materials, the following expenses, if not included in the value of an originating material calculated
+under subdivision (A) above, may be added to the value of the originating material:
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+GN p.5
+Korea

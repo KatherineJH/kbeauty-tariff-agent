@@ -1,0 +1,35 @@
+Tin content in tons-Sn t
+Dry weight basis in tons-t dwb
+Air dry weight in tons-t adw
+Vanadium content in kilograms-V kg
+Vanadium pentoxide content in kilograms-V2O5 kg
+Tungsten content in kilograms-W kg
+Zinc content in kilograms-Zn kg
+Thousand cubic meters-1000 m
+3
+5. Reporting of exports.
+Except as noted below, the statistical reporting numbers for articles classified in chapters 1 through 97 of this schedule may be used in
+place of comparable Schedule B numbers on the Shipper's Export Declaration. Statistical reporting numbers for articles covered by
+chapters 98 and 99 of this schedule may only be used on import entries. Schedule B numbers may not be reported on import entries in
+place of HTS numbers. Statistical reporting numbers used on the Shipper's Export Declaration should not include any symbols in the
+form of prefixes used to denote special tariff treatment.
+6. For the purposes of the tariff schedule, the expression "certified organic" refers to a fresh or processed agricultural product that is certified
+to:
+(a) The United States Department of Agriculture National Organic Program Regulation (7 CFR 205),
+(b) The Canadian Food Inspection Agency Act and Safe Food for Canadians Regulations ((SFCR) 2019),
+(c) The European Union (EU) Council Regulation (EC) No. 834/2007 and Commission Regulations (EC) No. 889/2008 and 1235/2008,
+(d) The Japanese Agricultural Standard (JAS) for Organic Plants (Notification No. 1605 of 2005), the JAS for Organic Processed Foods
+(Notification No. 1606 of 2005) and JAS for Organic Livestock (Notification No.1608 of 2005),
+(e) The Republic of Korea Act on Promotion of Environmentally-Friendly Agriculture and Fisheries and Management of and Support
+for Organic Food, and its implementing regulations for processed foods,
+(f) The Swiss Ordinance on Organic Farming and the Labeling of Organically Produced Products and Foodstuffs (910.18) and Federal
+Department of Economic Affairs, Education and Research (EAER) Ordinance on Organic Farming of 22 September 1997 (910.181)
+and its regulations,
+(g) The Taiwan Council of Agriculture, Organic Agriculture Promotion Act and Enforcement Rules for the Organic Agriculture Promotion
+Act of 2019, or
+(h) The United Kingdom of Great Britain and Northern Ireland (“UK”) Council Regulation (EC) No 834/2007 and Commission Regulations
+(EC) No 889/2008 and 1235/2008.
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+GN p.5
+Gen. Stat. Notes

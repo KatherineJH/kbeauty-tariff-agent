@@ -1,0 +1,48 @@
+U.S. Notes (con.)
+(219) Dielectric capacitors of paper or plastics, for AC service, operating at less than 300 V each valued not over $4.50
+(described in statistical reporting number 8532.25.0010)
+(220) Dielectric capacitors of paper or plastics, for AC service, operating at 300 V or more but not exceeding 600 V,
+each valued not over $3 (described in statistical reporting number 8532.25.0020)
+(221) Double-sided capacitor modules, each containing capacitors operating at 165 farad, 48 V, and 53 watt-hours
+(described in statistical reporting number 8532.25.0080)
+(222) Fixed capacitors (the foregoing other than tantalum, aluminum electrolytic, ceramic dielectric, dielectrics of paper
+or plastics or mica dielectric), each valued over $200 but not over $300 (described in statistical reporting number
+8532.29.0040)
+(223) Variable capacitors (other than mica, ceramic or glass dielectric), each valued over $500 but not over $600
+(described in statistical reporting number 8532.30.0090)
+(224) Metal oxide varistors of ceramic metal oxide materials (described in statistical reporting number 8533.40.4000)
+(225) Potentiometers (other than cermet or metal glaze), each valued not over $70 (described in statistical reporting
+number 8533.40.8070)
+(226) Thermistors (other than cermet or metal glaze), each valued not over $1 (described in statistical reporting number
+8533.40.8070)
+(227) Motor overload protectors for a voltage exceeding 60 V but not exceeding 1,000 V, each valued over $5 but not
+over $7 (described in statistical reporting number 8536.30.4000)
+(228) Contactors for a voltage not exceeding 1,000 V, each valued not over $39 (described in statistical reporting number
+8536.49.0065)
+(229) Motor starters for a voltage exceeding 60 V but not exceeding 1,000 V, valued over $9 but not over $10 each
+(described in statistical reporting number 8536.50.4000)
+(230) Rotary switch assemblies, for a voltage not exceeding 1,000 V, rated at not over 5 A, each valued over $2 but
+not over $3 (described in statistical reporting number 8536.50.9020)
+(231) Snap-action switches, for a voltage not exceeding 250 V, rated not over 8 A (described in statistical reporting
+number 8536.50.9040)
+(232) Limit switches, for a voltage not exceeding 1,000 V, each valued over $19 but not over $32 (described in statistical
+reporting number 8536.50.9055)
+(233) Broken belt switches, for a voltage not exceeding 1,000 V, designed for use in clothes dryers (described in
+statistical reporting number 8536.50.9065)
+(234) Modular light switches, for a voltage not exceeding 1,000 V, presented in polyethylene terephthalate (PET)
+housings, designed for use with a backplate (described in statistical reporting number 8536.50.9065)
+(235) Single-pole, double-throw switches, each with a movable contact arm permitting the opening and closing of contact
+points, of a rating not over 1,000 V (described in statistical reporting number 8536.50.9065)
+(236) Switches designed for use in motor vehicles, driver or passenger activated (described in statistical reporting
+number 8536.50.9065)
+(237) Coaxial connectors, for a voltage not exceeding 1,000 V, valued over $0.20 but not over $0.30 each (described
+in statistical reporting number 8536.69.4010)
+(238) Cylindrical multicontact connectors, for a voltage not exceeding 1,000 V, each valued not over $120 (described
+in statistical reporting number 8536.69.4020)
+(239) Printed circuit connectors each valued not over $1 (described in statistical reporting number 8536.69.4040)
+(240) Printed circuit connectors, for a voltage not exceeding 1,000 V, measuring 142 mm long, 20.53 mm high and 6.5
+mm wide (described in statistical reporting number 8536.69.4040)
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+XXII
+99 - III - 152

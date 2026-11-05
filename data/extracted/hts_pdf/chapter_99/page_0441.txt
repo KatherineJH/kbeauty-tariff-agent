@@ -1,0 +1,53 @@
+U.S. Notes (con.)
+(172) Electric motors other than gear motors, single-phase AC, 4-pole permanent split capacitor type, of an output of
+75 W or more but not exceeding 110 W, each with a switch attached by insulated conductors, enclosed in a round
+housing of base metals with outside diameter measuring 85 mm or more but not exceeding 95 mm (described in
+statistical reporting number 8501.40.4040)
+(173) Single-phase AC electric motors incorporating permanent split capacitors, each of an output range of 367 W or
+more but not exceeding 565 W, operating at not less than 115 V of alternating current (VAC) but not more than
+230 VAC, capable of operating while submerged in water, each weighing at least 7 kg but not more than 11 kg,
+measuring not more than 10 cm in diameter and at least 22 cm but not exceeding 34 cm in length (described in
+statistical reporting number 8501.40.4040)
+(174) Single-phase AC electric motors, other than gear motors, whether or not incorporating permanent split capacitors,
+each of an output range of 746 W or more but not exceeding 1.13 kW, operating at not less than 115 V of alternating
+current (VAC) but not more than 250 VAC, capable of operating while submerged in water, each weighing at least
+9 kg but not more than 12.5 kg, measuring not more than 10 cm in diameter and at least 25 cm but not exceeding
+36 cm in length (described in statistical reporting number 8501.40.6040)
+(175) Power supplies suitable for physical incorporation into automatic data processing (ADP) machines or units thereof
+of heading 8471, each with a power output exceeding 500 W, measuring 148mm in length, 43 mm in width and
+335 mm in height (described in statistical reporting number 8504.40.6018)
+(176) Power supplies for cable networks, that convert 120 V/60 Hz AC input to either 63 V AC or 87 V AC output, each
+measuring not more than 200 mm by 425 mm by 270 mm and weighing not more than 27.5 kg, containing printed
+circuit board assemblies, a transformer, and an oil filled capacitor (described in statistical reporting number
+8504.40.8500)
+(177) Static converters designed for wireless (inductive) charging of telecommunication apparatus (described in statistical
+reporting number 8504.40.8500)
+(178) Static converters of a kind used to charge telecommunication apparatus in cars or homes, valued not over $2
+each (described in statistical reporting number 8504.40.8500)
+(179) Power adapters for a weather sensor or weather station display (described in statistical reporting number
+8504.40.9580)
+(180) Inductors, each with inductance of 22 microhenrys (µH), a tolerance of no greater than 20 percent, with a DC
+resistance of 198 milliohms (m ) and a DC current of 1.9 A (described in statistical reporting number 8504.50.8000)
+(181) Inductors, each with inductance of 220 microhenrys (µH), a tolerance of no greater than 20 percent, with a DC
+resistance of 550 milliohms (m ) and a DC current of 510 milliamps (mA) (described in statistical reporting number
+8504.50.8000)
+(182) Inductors, each with inductance of 470 microhenrys (µH), a tolerance of no greater than 20 percent, with a DC
+resistance of 700 milliohms (m ) and a DC current of 540 milliamps (mA) (described in statistical reporting number
+8504.50.8000)
+(183) Robotic vacuum cleaners designed for residential use, each with a self-contained electric motor of a power not
+exceeding 50 W and dust bag/receptacle capacity not exceeding 1 L, whether or not shipped with accessories
+(described in statistical reporting number 8508.11.0000)
+(184) Vacuum cleaners, bagless, upright, each with self-contained electric motor of a power not exceeding 1,500 W
+and having a dust receptacle capacity not exceeding 1 liter (described in statistical reporting number 8508.11.0000)
+(185) Starter motors for internal combustion gasoline engines designed for use in the lawn, automotive, watercraft,
+motorcycle, industrial and garden industries (described in statistical reporting number 8511.40.0000)
+(186) Projectors ("trumpets") of plastics for air horns (described in statistical reporting number 8512.90.2000)
+(187) Fan-forced portable electric heaters, each with a ceramic heating element (described in statistical reporting number
+8516.29.0030)
+(188) Fan-forced, portable electric space heaters, each having a power consumption of not more than 1.5 kW and
+weighing more than 1.5 kg but not more than 17 kg, whether or not incorporating a humidifier or air filter (described
+in statistical reporting number 8516.29.0030)
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+XXII
+99 - III - 269

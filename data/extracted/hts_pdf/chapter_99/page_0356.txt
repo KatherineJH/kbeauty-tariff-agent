@@ -1,0 +1,52 @@
+U.S. Notes (con.)
+(55) Speed drive controllers for electric motors, designed for use in vehicles using electric motors for propulsion,
+including but not limited to material handling equipment, golf carts, sweeper scrubbers and aerial lifts, with a value
+of $50.00 or more but not exceeding $700.00 (described in statistical reporting number 8504.40.4000)
+(56) Plastic cases designed to contain 9V alkaline cells, measuring 6.35 cm by 13.34 cm by 3.18 cm, with button
+connectors (described in statistical reporting number 8506.90.0000)
+(57) Soldering stations, consisting of a benchtop power source, a hand piece, a power cord and work stand, operating
+by the power source providing electric radio frequency current to heat the hand piece (described in statistical
+reporting number 8515.19.0000)
+(58) Radio remote control apparatus of a kind suitable for opening or closing gates (described in statistical reporting
+number 8526.92.5000)
+(59) Printed circuit board assemblies, measuring 27.94 cm in length, 17.78 cm in width and 5.08 cm in height, of a
+kind used in radio remote controller apparatus for radio remote control of machinery, comprising a copper base
+to which are attached two capacitors, sixteen relays, sixteen varistors, two rows of terminal block connectors, two
+fuses in black housings with flat-head screw slots on top and an LED number display (described in statistical
+reporting number 8529.90.1660)
+(60) Aluminum feed horn assemblies measuring 8.4 cm in length and 5.1 cm in diameter, with operating frequencies
+of 17.8 to 20.2 GHz (receive) and 28 to 30 GHz (transmit), valued at $2.75 or more but not exceeding $2.85 each
+(described in statistical reporting number 8529.90.9900)
+(61) Aluminum electrolytic fixed capacitors, exceeding 51 mm in diameter, each valued over $6.50 but not over $8
+(described in statistical reporting number 8532.22.0085)
+(62) Multi-layer ceramic, temperature-stable capacitors (temperature coefficient 5XR), with 47 microfarad capacitance,
+measuring 2 mm by 1.25 mm by 1.25 mm, valued at $0.08 or more but not exceeding $0.12 per piece (described
+in statistical reporting number 8532.24.0020)
+(63) Fixed electrical carbon film resistors, not designed for surface mounting by contact, having two leads, with a power
+handling capacity not over 1 W (described in statistical reporting number 8533.10.0065)
+(64) Wirewound fixed electrical resistors with a power handling capacity not over 20 W, and with a core of glass,
+ceramic or metal oxide file (described in statistical reporting number 8533.21.0080)
+(65) Thermistors of ceramic metal oxide, each with two leads (described in statistical reporting number 8533.21.0090)
+(66) Contact sensors, of a kind used to detect the pressing and releasing of an automotive accelerator pedal, comprising
+a ceramic board and a rotor housed in a molded plastics body, which together create a potentiometer (rheostat)
+controlling the actuation of the engine throttle, valued at $6.70 or more but not exceeding $7.55 per piece (described
+in statistical reporting number 8533.40.8040)
+(67) Motor overload protectors, in 1 pole, 2 pole or 3 pole configurations, with electric current load ratings up to 60 A,
+measuring 19 mm or more but not exceeding 57 mm in height, 102 mm in length, and 76 mm in width, and valued
+at $6.00 or more but not exceeding $8.40 per piece (described in statistical reporting number 8536.30.4000)
+(68) Three-pole contactors, operating at 12 to 60 V, with a plastics housing enclosing three movable, silver cadmium
+oxide contacts (normally open only) rated at 50 A or more but not exceeding 60 A, an electromagnetic coil, a coil
+spring, coil terminals, polyester actuator, stationary terminals supported by a polyester component, a coil dust
+cover and an optional insert for an auxiliary switch, valued at $9.00 or more but not exceeding $10.00 per piece
+(described in statistical reporting number 8536.41.0045)
+(69) Rotary switches for a voltage not exceeding 1,000 V, rated at not over 5 A, containing an aluminum shaft in a
+push-button actuator connected to a nylon housing containing a printed circuit board (described in statistical
+reporting number 8536.50.9020)
+(70) Momentary contact push-button switches rated at 9 V or more but not exceeding 16 V and not over 50mA, with
+no dimension exceeding 70 mm (described in statistical reporting number 8536.50.9031)
+(71) Push-button and proximity switches rated at not over 5 A, designed for automotive gearshift applications, with or
+without connectors (described in statistical reporting number 8536.50.9033)
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+XXII
+99 - III - 184

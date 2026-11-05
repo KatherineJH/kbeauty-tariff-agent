@@ -1,0 +1,71 @@
+Rates of DutyUnit
+of
+Quantity
+Article Description
+Stat.
+Suf-
+fix
+Heading/
+Subheading 21
+SpecialGeneral
+Articles the product of Japan:
+Bovine (including buffalo) and equine leather (provided for
+in heading 4104 or 4107); goat, kid, sheep and lamb
+leather, the foregoingdyed, colored, stamped or embossed
+(provided for in heading 4105, 4106, 4112 or 4113).........
+1/9903.41.05
+40%1/
+Footwear with outer soles of leather and uppers wholly or
+in part of leather, and footwear with outer soles of rubber
+or plastics and uppers having an exterior surface area
+predominantly of leather, the foregoing provided for in
+chapter 64, except (a) slip-on footwear of a type not
+suitable for outdoor use, without backs or backstraps,
+having outer soles with a thickness of less than 5 mm and
+with less than 20 mm difference between the thickness of
+the bottom at the ball of the foot and at the heel, and (b)
+footwear which is designed for a sporting activity and has,
+or has provision for, attached spikes, sprigs, stops, clips,
+bars or the like, and skating boots, ski-boots and
+cross-country ski footwear, wrestling boots, boxing boots
+and cycling shoes...................................................................
+1/9903.41.10
+40%1/
+Automatic data processing machines, of the type of which
+the constituent units are integrated in the same housing,
+whether finished or unfinished, which incorporate a
+microprocessor-basedcalculatingmechanism,are capable
+of handling data words of at least 16-bits off the
+microprocessor, and are designed for use with a
+non-cathode-ray tube (non-CRT) display unit, whether or
+not capable of use without an external power source
+(provided for in subheading 8471.30 or 8471.41)..............
+1/9903.41.15
+100%1/
+Automatic data processing machines, of the type of which
+the constituent units are separately housed, whether
+finished or unfinished, which incorporate a
+microprocessor-basedcalculatingmechanism,are capable
+of handling data words of at least 16-bits off the
+microprocessor,designed for use while affixed to or placed
+on a table, desk, or similar place:
+Having a microprocessor-based calculating
+mechanism capable of directly handling memory of
+over 8 megabits (provided for in subheading
+8471.49.10 or 8471.50)..................................................
+1/9903.41.20
+100%1/
+Having a microprocessor-based calculating
+mechanism capable of directly handling memory of
+not over 8 megabits (provided for in subheading
+8471.49.10 or 8471.50)..................................................
+1/9903.41.25
+100%1/
+1/ See chapter 99 statistical note 1.
+Rates of Duty
+1
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+XXII
+99 - III - 500
+Note:The shaded areas indicate the provision has expired

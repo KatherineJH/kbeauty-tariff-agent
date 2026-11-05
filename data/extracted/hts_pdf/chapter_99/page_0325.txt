@@ -1,0 +1,48 @@
+U.S. Notes (con.)
+(241) Printed circuit connectors, for a voltage not exceeding 1,000 V, measuring 59.08 mm long, 25.91 mm high and
+25.91 mm wide, each valued not over $20 (described in statistical reporting number 8536.69.4040)
+(242) Printed circuit connectors, for a voltage not exceeding 1,000 V, each valued over $1 but not over $5 (described
+in statistical reporting number 8536.69.4040)
+(243) Printed circuit connectors, for a voltage not exceeding 1,000 V, stacked, each valued not over $10 (described in
+statistical reporting number 8536.69.4040)
+(244) Butt splice connectors, for a voltage not exceeding 1,000 V, each valued not over $3 (described in statistical
+reporting number 8536.90.4000)
+(245) Kits each containing 40 assorted terminals comprising 12 butt splices, 10 ring terminals, 8 spade terminals and
+10 female disconnects, for a voltage not exceeding 1,000 V (described in statistical reporting number 8536.90.4000)
+(246) Kits each containing 80 assorted terminals, valued not over $2, for a voltage not exceeding 1,000 V (described
+in statistical reporting number 8536.90.4000)
+(247) Ring terminals, for a voltage not exceeding 1,000 V (described in statistical reporting number 8536.90.4000)
+(248) Twist-on wire connectors, for a voltage not exceeding 1,000 V, each valued not over $0.03 (described in statistical
+reporting number 8536.90.4000)
+(249) Junction boxes, each valued over $1.40 but not over $1.70 (described in statistical reporting number 8536.90.8530)
+(250) Transistors, with a dissipation rate of less than 1 W and an operating frequency of not less than 100 MHz, valued
+over $0.04 but not over $0.05 each (described in statistical reporting number 8541.21.0075)
+(251) Bipolar junction transistors, with a dissipation rate of less than 1 W and with an operating frequency of less than
+100 MHz (described in statistical reporting number 8541.21.0095)
+(252) Metal-oxide transistors on a silicon-carbide substrate, with a dissipation rate of 1 W or more (described in statistical
+reporting number 8541.29.0095)
+(253) Mounted quartz piezoelectric crystals operating at a supply voltage of 1.5 V or greater but not exceeding 3.75 V
+and a frequency range not over 175 MHz (described in statistical reporting number 8541.60.0060)
+(254) S-band and X-band linear accelerators designed for use in radiation surgery or radiation therapy equipment
+(described in statistical reporting number 8543.10.0000)
+(255) Copper panel or pattern electroplating machines of a kind used solely or principally for the manufacture of printed
+circuits (described in statistical reporting number 8543.30.2000)
+(256) Electrolysis copper etchback and desmear machines of a kind used solely or principally for the manufacture of
+printed circuits (described in statistical reporting number 8543.30.2000)
+(257) Coaxial antenna feeder cables designed for use in motor vehicles (described in statistical reporting number
+8544.30.0000)
+(258) Ignition coil and wiring sets designed for use with motor vehicle engines, each valued not over $7 (described in
+statistical reporting number 8544.30.0000)
+(259) Power supply cables designed for use in aircraft (described in statistical reporting number 8544.30.0000)
+(260) Wiring sets designed for use with motor vehicle gear shifters, each valued not over $7 (described in statistical
+reporting number 8544.30.0000)
+(261) Insulated aluminum cables, not fitted with connectors, for a voltage exceeding 80 V but not exceeding 600 V
+(described in statistical reporting number 8544.49.9000)
+(262) Four-wheel off-road vehicles, with only spark-ignition internal combustion reciprocating piston engines, of a cylinder
+capacity not exceeding 1,000 cc, with straddle seat and handlebar control, each with label indicating that vehicle
+is for operation only by persons at least 16 years of age, each valued not over $5000 (described in statistical
+reporting number 8703.21.0110)
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+XXII
+99 - III - 153

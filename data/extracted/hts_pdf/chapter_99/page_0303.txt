@@ -1,0 +1,49 @@
+U.S. Notes (con.)
+(55) Variable frequency drive controllers for electric motors, each weighing more than 1 kg but not more than 11 kg
+(described in statistical reporting number 8504.40.4000)
+(56) Printed circuit assemblies of the goods of subheading 8504.40 or 8504.50 for telecommunication apparatus, each
+measuring 4 cm to 6 cm in width and 10 cm to 12 cm in length, that converts 36 V DC to 90 V AC (described in
+statistical reporting number 8504.90.6500)
+(57) Printed circuit assemblies of the goods of subheading 8504.40 or 8504.50 for telecommunication apparatus, each
+measuring 7 cm to 9 cm in width and 18 cm to 20 cm in length, having 2 switches, for power protection to prevent
+electrical back feeding (described in statistical reporting number 8504.90.6500)
+(58) Printed circuit assemblies of the goods of subheading 8504.40 or 8504.50 for telecommunication apparatus, the
+foregoing serving as controllers for power supplies, each measuring 5 cm to 7 cm in width and 11 cm to 14 cm
+in length, having 50 pin on side header (described in statistical reporting number 8504.90.6500)
+(59) Printed circuit assemblies of the goods of subheading 8504.40 or 8504.50 for telecommunication apparatus, the
+foregoing serving as noise filters, each measuring 18 cm to 20 cm in width and 25 cm to 27 cm in length, populated
+with semiconductor devices and 4 heat sinks (described in statistical reporting number 8504.90.6500)
+(60) Radio transceivers operating on frequencies from 46 MHz to 468 MHz, each designed for installation in motor
+vehicles (described in statistical reporting number 8525.60.1050)
+(61) Antennas, of base metal and fiberglass (described in statistical reporting number 8529.10.4040)
+(62) Projector parts (described in statistical reporting number 8529.90.9900)
+(63) Electromechanical relays, for a voltage not exceeding 24 V, other than automotive flashers, with contacts rated
+at 10 A or more, measuring not over 80 mm in any dimension (described in statistical reporting number
+8536.41.0050)
+(64) Push-button switches, rated at over 5 A, measuring no more than 14.4 cm by 11.6 cm by 6.4 cm (described in
+statistical reporting number 8536.50.9035)
+(65) Push-button switches, rated at over 5 A, measuring no more than 14.6 cm by 8 cm by 14.1 cm (described in
+statistical reporting number 8536.50.9035)
+(66) Push-button switches, rated at over 5 A, measuring no more than 19.1 cm by 8.3 cm by 14.1 cm (described in
+statistical reporting number 8536.50.9035)
+(67) Push-button switches, rated at over 5 A, measuring no more than 19.7 cm by 11.8 cm by 8.3 cm (described in
+statistical reporting number 8536.50.9035)
+(68) Push-button switches, rated at over 5 A, measuring no more than 19.7 cm by 9.8 cm by 16.5 cm (described in
+statistical reporting number 8536.50.9035)
+(69) Push-button switches, rated at over 5 A, measuring no more than 21 cm by 13.3 cm by 9 cm (described in statistical
+reporting number 8536.50.9035)
+(70) Push-button switches, rated at over 5 A, measuring no more than 23.5 cm by 8 cm by 13.1 cm (described in
+statistical reporting number 8536.50.9035)
+(71) Push-button switches, rated at over 5 A, measuring no more than 6 cm by 14.1 cm by 11 cm (described in statistical
+reporting number 8536.50.9035)
+(72) Push-pull switches, for a voltage not exceeding 1,000 V, designed for use in motor vehicles (described in statistical
+reporting number 8536.50.9065)
+(73) Bullet connectors, for a voltage not exceeding 1,000 V (described in statistical reporting number 8536.90.4000)
+(74) Butt connectors, other than closed end, for a voltage not exceeding 1,000 V (described in statistical reporting
+number 8536.90.4000)
+(75) Closed-end butt connectors, for a voltage not exceeding 1,000 V (described in statistical reporting number
+8536.90.4000)
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+XXII
+99 - III - 131

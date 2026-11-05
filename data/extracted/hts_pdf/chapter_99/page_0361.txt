@@ -1,0 +1,49 @@
+U.S. Notes (con.)
+(52) CB radio antennas (described in statistical reporting number 8529.10.9100)
+(53) Ground Fault Circuit Interrupters (GFCIs), Appliance Leakage Current Interrupters (ALCIs), Leakage Current
+Detection Interrupters (LCDIs), and Arc Fault Circuit Interrupters (AFCIs) (described in statistical reporting number
+8536.30.8000)
+(54) Surge protectors of a kind designed to protect a buried-wire pet containment system and its control apparatus,
+having an energy absorption rating at 120 V of less than 500 joules and 15 A (described in statistical reporting
+number 8536.30.8000)
+(55) Electronic AC passive infrared (PIR) motion sensing switches (described in statistical reporting number
+8536.50.7000)
+(56) Fixed set-point pressure switches (described in statistical reporting number 8536.50.7000)
+(57) Humidity triggered switches (described in statistical reporting number 8536.50.7000)
+(58) Occupancy and vacancy sensor switches (described in statistical reporting number 8536.50.7000)
+(59) Retro-reflective infrared beam switches consisting of an infrared LED emitter and detector in a single housing and
+a reflective disk for mounting at a distance; such emitter-detector units operating at no more than 40 V AC/DC
+and containing a relay or other switching component to open or close a separate (secondary) circuit (described
+in statistical reporting number 8536.50.7000)
+(60) Wall-mountable dimmer switches (described in statistical reporting number 8536.50.7000)
+(61) Surface-mount glass passivated rectifier diodes, having a rectified output current over 0.5 A but not exceeding
+1.25 A (described in statistical reporting number 8541.10.0080)
+(62) Application specific integrated circuits (ASICs), not containing memories, designed for use in engine control units
+(ECUs) to interface with linear exhaust gas oxygen sensors (UEGOs) (described in statistical reporting number
+8542.31.0001)
+(63) Electrical control devices which modulate electrical signals, not containing two or more apparatus of 8535 or 8536,
+each valued over $60 but not over $70 (described in statistical reporting number 8543.70.9960)
+(64) Conductors, for a voltage not exceeding 1,000 V, with 4 unfitted wire connectors and 4 waterproof gel wire splice
+capsules (described in statistical reporting number 8544.49.2000)
+(65) Copper wire, twenty (20) gauge, insulated with polyvinylchloride (PVC), not fitted with connectors, for a voltage
+not exceeding 80 V, not designed for use in telecommunications (described in statistical reporting number
+8544.49.2000)
+(66) Sets comprising conductors and markers for electrically powered dog training, controlling, repelling or locating
+apparatus (described in statistical reporting number 8544.49.2000)
+(67) Bottom shelf coupler assemblies designed for use with coupling systems of vehicles of heading 8605 or 8606
+(described in statistical reporting number 8607.30.1000)
+(68) Buffering/cushioning front retainer plates, designed for use with buffering/cushioning systems of vehicles of
+heading 8605 or 8606 (described in statistical reporting number 8607.30.1000)
+(69) Buffering/cushioning intermediate aligning and overtravel protection members, designed for use with
+buffering/cushioning systems of vehicles of heading 8605 or 8606 (described in statistical reporting number
+8607.30.1000)
+(70) Buffering/cushioning rear aligning and overtravel protection members designed for use with buffering/cushioning
+systems of vehicles of heading 8605 or 8606 (described in statistical reporting number 8607.30.1000)
+(71) Buffering/cushioning rear structural units, designed for use with buffering/cushioning systems of vehicles of heading
+8605 or 8606 (described in statistical reporting number 8607.30.1000)
+(72) Buffering/cushioning retention and alignment shafts, designed for use with buffering/cushioning systems of vehicles
+of heading 8605 or 8606 (described in statistical reporting number 8607.30.1000)
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+XXII
+99 - III - 189

@@ -1,0 +1,240 @@
+=== page 1 ===
+GENERAL STATISTICAL NOTES
+1. Statistical Requirements for Imported Goods.
+(a) Persons making customs entry or withdrawal of goods imported into the customs territory of the United States shall complete the
+entry summary or withdrawal forms, as provided herein and in regulations issued pursuant to law, to provide for statistical purposes
+information as follows:
+(i) the number of the Customs district and of the port where the goods are being entered for consumption or warehouse, as shown
+in Statistical Annex A of the tariff schedule;
+(ii) the name of the vessel or the name of the airline, or in the case of shipment by other than vessel or air, the means of
+transportation by which the goods first arrived in the United States;
+(iii) the foreign port of lading;
+(iv) the U.S. port of unlading for vessel and air shipments;
+(v) the date of importation;
+(vi) the country of origin of the goods expressed in terms of the designation therefor in Statistical Annex B of the tariff schedule;
+(vii) the country of exportation expressed in terms of the designation therefor in Statistical Annex B of the tariff schedule;
+(viii) the date of exportation;
+(ix) a description of the goods in sufficient detail to permit the classification thereof under the proper statistical reporting number
+in the tariff schedule;
+(x) the statistical reporting number under which the goods are classifiable, including the appropriate symbol placed as a prefix to
+the statistical reporting number when claiming special tariff treatment as provided for in general note 3(c)(i) (asterisks, however,
+are not to be reported with or in place of the symbol prefix, e.g. for the Generalized System of Preferences only the "A" and
+not the asterisk shall be reported);
+(xi) gross weight in kilograms for the goods covered by each reporting number for all modes of transportation;
+(xii) the net quantity in the units specified herein for the classification involved and with the units noted;
+(xiii) the U.S. dollar value in accordance with the definition of section 402 of the Tariff Act of 1930, as amended, for all merchandise
+including that free of duty or dutiable at specific rates;
+(xiv) the aggregate cost (not including U.S. import duty, if any), in U.S. dollars, of freight, insurance and all other charges, costs
+and expenses (each of which charges, costs and expenses shall be separately itemized on or attached to the related invoice)
+incurred (except as provided below) in bringing the merchandise from alongside the carrier at the port of exportation in the
+country of exportation and placing it alongside the carrier at the first U.S. port of entry. In the case of overland shipments
+originating in Canada or Mexico, such costs shall include freight, insurance, and all other charges, costs and expenses incurred
+in brining the merchandise from the point of origin (where the merchandise begins its journey to the United States) in Canada
+or Mexico to the first U.S. port of entry; and
+(xv) such other information with respect to the imported goods as is provided for elsewhere in the tariff schedule.
+(b) For the purpose of paragraph (a), the following provisions shall govern:
+(i) the country of exportation shall be the country of origin except when the merchandise while located in a third country is the
+subject of a new purchase in which event the third country shall be regarded and reported as the country of exportation, and
+the date of exportation from the third country shall be regarded and reported as the date of exportation; and
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+GN p.1
+Gen. Stat. Notes
+=== page 2 ===
+(ii) if for the purposes of subparagraph (xiv) of subdivision (a) actual amounts cannot be provided, the person making the entry
+or withdrawal shall provide reasonable estimates of such information. The use of an estimate for statistical purposes does not
+relieve the person making the entry or withdrawal from obtaining the necessary information for similar future transactions. For
+Customs purposes, estimates shall not be used in declaring the value of merchandise in accordance with section 402 of the
+Tariff Act of 1930, as amended by the Trade Agreements Act of 1979. Therefore, when the price of goods includes freight,
+insurance and other charges (e.g., the terms of sale are CIF), estimates of those charges reported pursuant to this note may
+not be deducted from the price to arrive at the value declared to the Customs Service. However, when the actual charges are
+known, they must be excluded to arrive at the declared value.
+(c) (i) Goods of a country with which the United States has a free trade agreement, that meet the terms of that agreement, when
+marked or eligible to be marked with their country of origin, and entered with any of the following special program indicators
+(SPIs) prefacing the 10-digit HTS number are exempt from the Merchandise Processing Fee (MPF):
+AUUnited States-Australia Free Trade Agreement................................................................................................
+BHUnited States-Bahrain Free Trade Agreement Implementation Act..................................................................
+CLUnited States-Chile Free Trade Agreement......................................................................................................
+COUnited States-Colombia Free Trade Agreement...............................................................................................
+CANorth American Free Trade Agreement: Goods of Canada..............................................................................
+MXNorth American Free Trade Agreement: Goods of Mexico...............................................................................
+KRUnited States-Korea Free Trade Agreement Implementation Act.....................................................................
+OMUnited States-Oman Free Trade Agreement Implementation Act.....................................................................
+P or
+P+
+Dominican Republic-Central America-United States Free Trade Agreement Implementation Act...................
+PAUnited States-Panama Trade Promotion Agreement Implementation Act........................................................
+PEUnited States-Peru Trade Promotion Agreement Implementation Act..............................................................
+SGUnited States-Singapore Free Trade Agreement..............................................................................................
+(ii) Products of Israel, of U.S. insular possessions, of beneficiary countries under the Caribbean Basin Economic Recovery Act
+and of least-developed beneficiary countries under the Generalized System of Preferences, when the foregoing products are
+marked or eligible to be marked with their country of origin, are exempt from the Merchandise Processing Fee (MPF) when
+entered using any of the following Special Program Indicators (SPIs) as a prefix to the 10-digit HTS number:
+ILUnited States-Israel Free Trade Agreement.....................................................................
+YInsular Possessions of the United States.........................................................................
+E or E*Caribbean Basin Economic Reco very Act.......................................................................
+A, A* or A+Generalized System of Preferences.................................................................................
+(iii) Goods of Canada, when marked or eligible to be marked with their country of origin, that comply with the terms of the Automotive
+Products Trade are exempt from the Merchandise Processing Fee (MPF) when entered with the SPI “B#” prefacing the 10-digit
+HTS number.
+(Iv) Goods that are---
+(1) originating goods of a party to a free trade agreement or trade promotion agreement, or
+(2) products of a country that is eligible for a special tariff program under the applicable general note for such program,
+when any such agreement or program is enumerated in general note 3(c)(i) to the tariff schedule and when such agreement
+or program has been accorded an exemption from the MPF, can be imported without payment of the MPF when such goods
+are entered using any of the SPIs below as a prefix to the 10-digit HTS number, provided that such goods are otherwise
+imported in compliance with the applicable agreement:
+C#Agreement on Trade in Civil Aircraft.................................................................................................................
+K#Insular Possessions of the United States ........................................................................................................
+L#Uruguay Round Concessions on Intermediate Chemicals for Dyes.................................................................
+2. Statistical Annotations.
+(a) The statistical annotations to the Harmonized Tariff Schedule of the United States consist of--
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+GN p.2
+Gen. Stat. Notes
+=== page 3 ===
+(i) the 2-digit statistical suffixes and any article descriptions applicable thereto,
+(ii) the indicated units of quantity, and
+(iii) the statistical notes and annexes.
+(b) The legal text of the Harmonized Tariff Schedule of the Unites States consists of the remaining text as more specifically identified
+in the general rules of interpretation.
+3. Statistical Reporting Number.
+(a) Except as provided in paragraph (b) of this note, and in the absence of specific instructions to the contrary elsewhere, the statistical
+reporting number for an article consists of the 10-digit number formed by combining the 8-digit subheading number with the
+appropriate 2-digit statistical suffix. Thus, the statistical reporting number for live monkeys dutiable under subheading 0106.00.50
+is "0106.00.5010".
+(b) Whenever in the tariff schedule an article is classifiable under a provision which derives its rate of duty from a different provision,
+the statistical reporting number is, in the absence of specific instructions to the contrary elsewhere, the 10-digit number for the basic
+provision followed by the 10-digit subheading number of the provision from which the rate is derived. Thus, the statistical reporting
+number for certain mountings for optical telescopes is "9005.90.8000-9005.80.4040". If multiple statistical reporting numbers are
+shown for the subheading from which the duty rate is derived and the shipment contains articles covered by more than one statistical
+reporting number from the subheading, then report the last applicable statistical reporting number only.
+(c) (i) Goods of a country with which the United States has a free trade agreement, that meet the terms of that agreement, when
+marked or eligible to be marked with their country of origin, and entered with any of the following special program indicators
+(SPIs) prefacing the 10-digit HTS number are exempt from the Merchandise Processing Fee (MPF):
+AUUnited States-Australia Free Trade Agreement................................................................................................
+BHUnited States-Bahrain Free Trade Agreement Implementation Act..................................................................
+CLUnited States-Chile Free Trade Agreement......................................................................................................
+COUnited States-Colombia Free Trade Agreement...............................................................................................
+CANorth American Free Trade Agreement: Goods of Canada..............................................................................
+MXNorth American Free Trade Agreement: Goods of Mexico...............................................................................
+KRUnited States-Korea Free Trade Agreement Implementation Act.....................................................................
+S or
+S+
+United States-Mexico-Canada Agreement
+OMUnited States-Oman Free Trade Agreement Implementation Act.....................................................................
+P or
+P+
+Dominican Republic-Central America-United States Free Trade Agreement Implementation Act...................
+PAUnited States-Panama Trade Promotion Agreement Implementation Act........................................................
+PEUnited States-Peru Trade Promotion Agreement Implementation Act..............................................................
+SGUnited States-Singapore Free Trade Agreement..............................................................................................
+(ii) Goods of Israel, when marked or eligible to be marked with their country of origin, are exempt from the Merchandise Processing
+Fee (MPF) when entered with the Special Program Indicator (SPI) “IL” prefacing the 10-digit HTS number.
+(iii) Goods of Canada, when marked or eligible to be marked with their country of origin, that comply with the terms of the Automotive
+Products Trade Act are exempt from the Merchandise Processing Fee (MPF) when entered with the Special Program Indicator
+(SPI) “B#” prefacing the 10-digit HTS number.
+(iv) Goods of a country with which the United States has a free trade agreement that provides the Merchandise Processing Fee
+(MPF) exemption, when marked or eligible to be marked with their country of origin, are exempt from the MPF when in
+compliance with the following preference programs and entered with any of the following Special Program Indicators (SPIs)
+prefacing the 10-digit HTS number:
+C#Agreement on Trade in Civil Aircraft.................................................................................................................
+K#Agreement on Trade in Pharmaceutical Products............................................................................................
+L#Uruguay Round Concessions on Intermediate Chemicals for Dyes.................................................................
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+GN p.3
+Gen. Stat. Notes
+=== page 4 ===
+(d) Whenever a claim is made for special tariff treatment under one of the following programs, the statistical reporting number is, in
+absence of specific instructions to the contrary elsewhere, the 10-digit number prefixed by the appropriate symbol indicated below:
+NProducts covered by general note 3(a)(v) to the tariff schedule.......................................................................
+WProducts of Puerto Rico (advanced in value or improved in condition in a CBERA beneficiary country (see
+19 U.S.C. 2703(a)(5)).....................................................................................................................................
+YProducts of Insular P ossessions......................................................................................................................
+ZArticles from the Freely Associated States.......................................................................................................
+(e) Whenever in the tariff schedule goods are classified as a set in accordance with General Rules of Interpretation 3(b) or 3(c), the
+set is to be identified by placing the prefix "X" in front of the statistical reporting numbers applicable to the set.
+4. Abbreviations.
+(a) An "X" appearing in the column for units of quantity means that no quantity (other than gross weight) is to be reported.
+(b) Whenever two separate units of quantity are shown for the same article, the value of the article is to be reported with the first unit
+of quantity shown, unless there is a "v" following the second unit of quantity in which case the value of the article is to be reported
+with that unit of quantity.
+(c) The unit of measure to be used by Customs and Border Protection (CBP) field offices when reporting imports of textiles to CBP
+Headquarters Quota Branch shall be the first unit of quantity unless the second unit of quantity (if there is one) is underlined, in
+which case the second unit of quantity shall be reported.
+(d) The following symbols and abbreviations are used with the meanings respectively indicated below:
+AmperesA
+Silver content in grams-Ag g
+Gold content in grams-Au g
+Cobalt content in kilograms-Co kg
+Chromium content in kilograms-Cr kg
+Chromic oxide content in tons-Cr2O3 t
+Copper content in kilograms-Cu kg
+Dozen Pieces-Dz Pcs
+gigabecquerels-GBq
+Iridium content in grams-Ir g
+Institute of Scrap Recycling Industries-ISRI
+Number of dutiable jewels-Jwls.
+Anhydrous morphine content in kilograms-kg amc
+Milk solids content in kilograms-kg msc
+Total sugars content in kilograms-kg ttl sug
+megabecquerels-MBq
+Magnesium content in kilograms-Mg kg
+Manganese content in kilograms-Mn kg
+Molybdenum content in kilograms-Mo kg
+Megawatt hours-MWh
+Sodium hydroxide content in kilograms-NaOh kg
+Sodium hydroxide content in tons-NaOH t
+Ammonia content in tons-NH3 t
+Nickel content in kilograms-Ni kg
+ozone depletion equivalent-ode
+Osmium content in grams-Os g
+Lead content in kilograms-Pb kg
+Palladium content in grams-Pd g
+Platinum content in grams-Pt g
+Rhodium content in grams-Rh g
+Ruthemium content in grams-Ru g
+Antimony content in kilograms-Sb kg
+Silicon content in kilograms-Si kg
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+GN p.4
+Gen. Stat. Notes
+=== page 5 ===
+Tin content in tons-Sn t
+Dry weight basis in tons-t dwb
+Air dry weight in tons-t adw
+Vanadium content in kilograms-V kg
+Vanadium pentoxide content in kilograms-V2O5 kg
+Tungsten content in kilograms-W kg
+Zinc content in kilograms-Zn kg
+Thousand cubic meters-1000 m
+3
+5. Reporting of exports.
+Except as noted below, the statistical reporting numbers for articles classified in chapters 1 through 97 of this schedule may be used in
+place of comparable Schedule B numbers on the Shipper's Export Declaration. Statistical reporting numbers for articles covered by
+chapters 98 and 99 of this schedule may only be used on import entries. Schedule B numbers may not be reported on import entries in
+place of HTS numbers. Statistical reporting numbers used on the Shipper's Export Declaration should not include any symbols in the
+form of prefixes used to denote special tariff treatment.
+6. For the purposes of the tariff schedule, the expression "certified organic" refers to a fresh or processed agricultural product that is certified
+to:
+(a) The United States Department of Agriculture National Organic Program Regulation (7 CFR 205),
+(b) The Canadian Food Inspection Agency Act and Safe Food for Canadians Regulations ((SFCR) 2019),
+(c) The European Union (EU) Council Regulation (EC) No. 834/2007 and Commission Regulations (EC) No. 889/2008 and 1235/2008,
+(d) The Japanese Agricultural Standard (JAS) for Organic Plants (Notification No. 1605 of 2005), the JAS for Organic Processed Foods
+(Notification No. 1606 of 2005) and JAS for Organic Livestock (Notification No.1608 of 2005),
+(e) The Republic of Korea Act on Promotion of Environmentally-Friendly Agriculture and Fisheries and Management of and Support
+for Organic Food, and its implementing regulations for processed foods,
+(f) The Swiss Ordinance on Organic Farming and the Labeling of Organically Produced Products and Foodstuffs (910.18) and Federal
+Department of Economic Affairs, Education and Research (EAER) Ordinance on Organic Farming of 22 September 1997 (910.181)
+and its regulations,
+(g) The Taiwan Council of Agriculture, Organic Agriculture Promotion Act and Enforcement Rules for the Organic Agriculture Promotion
+Act of 2019, or
+(h) The United Kingdom of Great Britain and Northern Ireland (“UK”) Council Regulation (EC) No 834/2007 and Commission Regulations
+(EC) No 889/2008 and 1235/2008.
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+GN p.5
+Gen. Stat. Notes

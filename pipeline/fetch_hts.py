@@ -3,7 +3,7 @@
     uv run python pipeline/fetch_hts.py
 
 - JSON exports (the site's own Export function): chapter 33 and the chapter 99 headings for the reciprocal
-  tariffs (9903.01-9903.02).
+  tariffs (9903.01-9903.02) and the section 122 import surcharge (9903.03).
 - PDFs (the site's own Download links): chapter 33, chapter 99, General Rules of Interpretation, General Note 33
   (United States-Korea FTA), General Statistical Notes, Change Record.
 
@@ -23,6 +23,7 @@ REVISION_SEEN = "2026 HTS Revision 22 (shown on hts.usitc.gov, 2026-11-05)"
 EXPORTS = [  # (file name, from, to)
     ("export_ch33.json", "3301", "3308"),
     ("export_9903_01-02.json", "9903.01.01", "9903.02.99"),
+    ("export_9903_03.json", "9903.03.01", "9903.03.99"),  # added 2026-11-05: sec. 122 surcharge headings
 ]
 PDFS = ["Chapter 33", "Chapter 99", "General Rules of Interpretation", "General Note 33",
         "General Statistical Notes", "Change Record"]

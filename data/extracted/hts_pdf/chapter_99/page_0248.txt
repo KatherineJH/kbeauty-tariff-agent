@@ -1,0 +1,45 @@
+U.S. Notes (con.)
+(11) frameless solar panels in a color other than black or blue with a total power output of 90 watts or less where the
+panels have a uniform surface without visible solar cells or busbars;
+(12) solar cells with a maximum rated power between 3.4 and 6.7 watts, inclusive, having the following characteristics:
+(A) A cell surface area between 154 cm2and 260 cm2, inclusive, (B) no visible busbars or gridlines on the front
+of the cell, and (C) more than 100 interdigitated fingers of tin-coated solid copper adhered to the back of the cell,
+with the copper portion of the metal fingers having a thickness of greater than 0.01 mm;
+(13) solar panels with a maximum rated power between 320 and 500 watts, inclusive, having the following characteristics:
+(A) Length between 1,556 mm and 2,070 mm inclusive, and width between 1,014 mm and 1,075 mm, inclusive,
+(B) where the solar cells comprising the panel have no visible busbars or gridlines on the front of the cells, and
+(C) the solar cells comprising the panel have more than 100 interdigitated fingers of tin-coated solid copper
+adhered to the back of the cells, with the copper portion of the metal fingers having thickness greater than 0.01
+mm;
+(14) modules (as defined in note 18(g) to this subchapter) incorporating only CSPV cells that are products of the United
+States and not incorporating any CSPV cells that are the product of any other country.
+(15) flexible fiberglass solar panels without glass components other than fiberglass, such panels having power outputs
+ranging from 250 to 900 watts;
+(16) solar panels consisting of solar cells arranged in rows that are laminated in the panel and that are separated by
+more than 10 mm, with an optical film spanning the gaps between all rows that is designed to direct sunlight onto
+the solar cells, and not including panels that lack said optical film or only have a white or other backing layer that
+absorbs or scatters sunlight;
+[(17)] [Provision deleted.]
+(d) Any goods covered by this note may also be excluded from the application of relief if they are covered by a determination
+by the United States Trade Representative (“USTR”) published in the Federal Register that such goods should be exempt
+from the application of any rate of duty or tariff-rate quota otherwise imposed on goods described in the provisions of this
+note. Such a determination by the USTR under this subdivision may exempt specific additional CSPV cells or modules
+when entered from all countries or when entered from enumerated countries only, or may modify the product descriptions
+in subdivision (c) of this note. The USTR is authorized to modify or terminate any such determination during the effective
+period of the subheadings specified in the first sentence of subdivision (a) of this note and to specify, subsequent to the
+effective date specified in this note, that such CSPV cells and modules will be considered “goods excluded from the
+application of relief” upon publication by the USTR of a notice in the Federal Register. Such “goods excluded from the
+application of relief” shall not be counted toward any tariff-rate quota quantities specified for any quota period.
+(e) (i) For purposes of subheading 9903.45.21, the aggregate annual quantity of goods eligible to enter during any period
+enumerated herein shall not exceed the volume level set forth in such subheading, where 1 gigawatt equals 1,000
+megawatts.
+(ii) Any importer entering CSPV cells under subheading 9903.45.21 shall report the electricity power output attributable
+to such cells to the satisfaction of U.S. Customs and Border Protection (“Customs”) and shall provide such information
+as Customs may require in order to permit the administration of this subheading. Such an entry shall constitute a
+certification by that importer of the power output attributable to the CSPV cells described therein. Importers are likewise
+directed to report the electricity power output attributable to CSPV cells entered under subheading 9903.45.22 to the
+extent that and in such form as Customs may require.
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+XXII
+99 - III - 76

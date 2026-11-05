@@ -1,0 +1,90 @@
+Effective
+Period
+Rates of DutyUnit
+of
+Quantity
+Article Description
+Stat.
+Suf-
+fix
+Heading/
+Subheading 21
+SpecialGeneral
+True RMS (root mean square) multimeters, without recording
+device, hand-held, each having either 3-1/2, 4 or 4-1/2 digits
+of measurement accuracy and either a liquid crystal display
+(LCD) or organic light emitting diode (OLED) display screen,
+designed to provide one or more of the following
+measurements: DCV, ACV, DCI, ACI, 2 and/or 4 wire
+resistance, frequency, continuity, diode test, capacitance,
+temperature, dB, switch counter, harmonic ratio, pulse width,
+delay cycle and/or 4 to 20 mA percent scale (provided for in
+subheading 9030.31.00)..............................................................
+1/9902.17.32
+On or before
+12/31/2020
+No changeNo changeFree1/
+PXI 6-1/2 digit digital multimeters (DMM), each without
+recording device, not intended to be hand-held, having 6-1/2
+digit of measurement accuracy, designed to provide basic
+measurements that may include DCV, ACV, DCI, ACI, 2 and
+4 wire resistance,frequency,period,capacitance,temperature,
+duty cycle, counter and DC source (provided for in subheading
+9030.31.00) ...................................................................................
+1/9902.17.33
+On or before
+12/31/2020
+No changeNo changeFree1/
+Digital multimeters, each having 8.5 digit resolution and having
+a recording device, certified by the importer as having 3 ppm
+direct current volts (DCV) accuracy (providedfor in subheading
+9030.32.00) ...................................................................................
+1/9902.17.34
+On or before
+12/31/2020
+No changeNo changeFree1/
+Impedance analyzers, having a frequency range of 20 Hz to
+120 MHz and plus or minus 42 V peak maximum output, each
+with 1 to 4 measurement channels, a recording device and a
+color touch screen measuring over 25 cm but not over 28 cm
+(provided for in subheading 9030.84.00)...................................
+1/9902.17.35
+On or before
+12/31/2020
+No changeNo changeFree1/
+Electromagnetic interference (EMI) receivers, each having a
+frequency band range from 3 Hz to 44 GHz, conforming to LXI
+(Local area network eXtension for Instruments) standard, with
+two radio frequency (RF) inputs and with a color display screen
+with a display diagonal exceeding 20 cm but not exceeding 23
+cm (provided for in subheading 9030.84.00).............................
+1/9902.17.36
+On or before
+12/31/2020
+No changeNo changeFree1/
+Multifunction devices for calibrating electrical safety testers,
+each incorporating signal generator and multimeter, with a
+recording device (provided for in subheading 9030.84.00)......
+1/9902.17.37
+On or before
+12/31/2020
+No changeNo changeFree1/
+Local area network (LAN) eXtensions for Instrumentation(LXI)
+data acquisition/switch units, each having both a universal
+serial bus (USB) and LAN terminal using the LXI standard,
+having a 3-slot mainframe in rear for plug-in modules, capable
+of measuring 11 different input signals and having a built-in
+digital multimeter (DMM) with 6-1/2 digits (22 bits) of resolution
+(provided for in subheading 9030.89.01)...................................
+1/9902.17.38
+On or before
+12/31/2020
+No changeNo changeFree1/
+1/ See chapter 99 statistical note 1.
+Rates of Duty
+1
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+XXII
+99 - II - 161
+Note:The shaded areas indicate the provision has expired

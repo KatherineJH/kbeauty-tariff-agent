@@ -1,0 +1,69 @@
+Rates of DutyUnit
+of
+Quantity
+Article Description
+Stat.
+Suf-
+fix
+Heading/
+Subheading 21
+SpecialGeneral
+Pre-shave, shaving or after-shave preparations, personal
+deodorants, bath preparations, depilatories and other
+perfumery, cosmetic or toilet preparations, not elsewhere
+specified or included; prepared room deodorizers, whether or
+not perfumed or having disinfectant properties:
+3307
+Pre-shave, shaving or after-shave preparations:3307.10
+Not containing alcohol....................................................003307.10.10 75%Free (A*, AU, BH,
+CL, CO, D, E, IL,
+JO, KR, MA, OM,
+P, PA, PE, S, SG)
+4.9%kg ..............
+Containing alcohol...........................................................003307.10.20 81.7%Free (A*, AU, BH,
+CL, CO, D, E, IL,
+JO, KR, MA, OM,
+P, PA, PE, S, SG)
+4.9%kg ..............
+Personal deodorants and antiperspirants...........................003307.20.00 75%Free (A*, AU, BH,
+CL, CO, D, E, IL,
+JO, KR, MA, OM,
+P, PA, PE, S, SG)
+4.9%kg ..............
+Perfumed bath salts and other bath preparations:3307.30
+Bath salts, whether or not perfumed.............................003307.30.10 75%Free (A, AU, BH, CL,
+CO, D, E, IL, JO,
+KR, MA, OM, P,
+PA, PE, S, SG)
+5.8%kg ..............
+Other .................................................................................003307.30.50 75%Free (A, AU, BH, CL,
+CO, D, E, IL, JO,
+KR, MA, OM, P,
+PA, PE, S, SG)
+4.9%kg ..............
+Preparationsfor perfuming or deodorizingrooms, including
+odoriferous preparations used during religious rites:
+"Agarbatti" and other odoriferous preparations which
+operate by burning..........................................................
+003307.41.00
+20%Free (A, AU, BH, CL,
+CO, D, E, IL, JO,
+KR, MA, OM, P,
+PA, PE, S, SG)
+2.4%kg ..............
+Other .................................................................................003307.49.00 73.2%Free (A*, AU, BH,
+CL, CO, D, E, IL,
+JO, KR, MA, OM,
+P, PA, PE, S, SG)
+6%kg ..............
+Other........................................................................................003307.90.00 75%Free (A*, AU, BH,
+CL, CO, D, E, IL,
+JO, KR, MA, OM,
+P, PA, PE, S, SG)
+5.4%kg ..............
+Rates of Duty
+1
+Harmonized Tariff Schedule of the United States Revision 22 (2026)
+Annotated for Statistical Reporting Purposes
+VI
+33-6
