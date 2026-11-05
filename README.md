@@ -1,6 +1,6 @@
 # 관세 변화 대응 K-뷰티 수출 의사결정 에이전트
 
-> 상태: **데이터 수집 단계.** 구조와 재현성 정의는 [`docs/architecture.md`](docs/architecture.md), 원천과 이용 조건은 [`docs/data_sources.md`](docs/data_sources.md).
+> 상태: **원천 수집·추출 완료, 규정 효력 표 초안(출처 확인 행 + 명시적 미해결 행).** 구조와 재현성 정의는 [`docs/architecture.md`](docs/architecture.md), 원천과 이용 조건은 [`docs/data_sources.md`](docs/data_sources.md).
 
 2025년 8월 상호관세와 소액면세 중단 이후, 미국에 수출하는 K-뷰티 브랜드 담당자의 질문
 ("우리 제품 세번이 맞나, 언제부터 관세가 얼마인가, 시장은 어떻게 움직였나")에
