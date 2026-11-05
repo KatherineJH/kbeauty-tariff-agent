@@ -1,0 +1,9 @@
+url,retrieved_at,file,bytes,sha256
+https://hts.usitc.gov/reststop/exportList?from=3301&to=3308&format=JSON&styles=false,2026-11-05T09:31:46Z,data/raw/hts/export_ch33.json,33474,890e1a7eaae4c8f6369b642dca4ea6b530c02db91df0682cf90b37bc6866f4de
+https://hts.usitc.gov/reststop/exportList?from=9903.01.01&to=9903.02.99&format=JSON&styles=false,2026-11-05T09:31:49Z,data/raw/hts/export_9903_01-02.json,162961,1d89f38c4d5627621ec7436c7466769e507f18531e0c66750a23e36316f6b3bb
+https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter%2033,2026-11-05T09:31:52Z,data/raw/hts/chapter_33.pdf,837559,cab7d6152b2c14caa12ccdad98674054eaa2ed9331c95569666c2223f72466b6
+https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Chapter%2099,2026-11-05T09:32:05Z,data/raw/hts/chapter_99.pdf,14005269,290eee3d064837a003c8ee7daffebb8f5c44cdd96af4349fed40851f5c317fc2
+https://hts.usitc.gov/reststop/file?release=currentRelease&filename=General%20Rules%20of%20Interpretation,2026-11-05T09:32:07Z,data/raw/hts/general_rules_of_interpretation.pdf,14753,a91c64452b3f1214ec945f62fbc3546dd190cc2f130b525cf1328951ac31062a
+https://hts.usitc.gov/reststop/file?release=currentRelease&filename=General%20Note%2033,2026-11-05T09:32:09Z,data/raw/hts/general_note_33.pdf,189154,7d800b90d96894d3800ad4799fc50343e94db8d96c45e4b66bb97677237839e3
+https://hts.usitc.gov/reststop/file?release=currentRelease&filename=General%20Statistical%20Notes,2026-11-05T09:32:11Z,data/raw/hts/general_statistical_notes.pdf,27489,5d6de5f62b1a848cb22987efa1ab73eda79a35f54b22e5d41805d55e8fa449d1
+https://hts.usitc.gov/reststop/file?release=currentRelease&filename=Change%20Record,2026-11-05T09:32:13Z,data/raw/hts/change_record.pdf,98668,2684027ebb4d14ad6380bd5f561266958e37e07a3693a5be2a6095326684239c

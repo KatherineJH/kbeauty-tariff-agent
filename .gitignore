@@ -1,0 +1,25 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.pytest_tmp/
+.ipynb_checkpoints/
+
+# dbt / DuckDB build artifacts (rebuilt by scripts/run_all.py)
+warehouse/target/
+warehouse/logs/
+warehouse/dbt_packages/
+warehouse/*.duckdb
+warehouse/*.duckdb.wal
+warehouse/.user.yml
+logs/
+
+# Live request logs may contain full prompts; only curated replay records go in data/replay/
+runs/
+
+# Sealed test set before reveal (only its SHA-256 is committed until the final evaluation)
+evals/sealed/
+
+# Private notes (not published)
+docs/private/

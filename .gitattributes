@@ -1,0 +1,7 @@
+# Raw data, replay records and eval sets are hashed byte-for-byte; extracted tables by normalized content. Never convert line endings.
+data/** -text
+evals/** -text
+reports/**/*.csv -text
+*.parquet binary
+*.npy binary
+*.gz binary
