@@ -3,7 +3,7 @@
     uv run python scripts/finalize_qrel_review.py
 
 Reads evals/dev/review/qrel_review_sheet.csv (user_decision relevant / not_relevant / uncertain, user_reason,
-reviewer_type human / second_model_review) and evals/dev/review/query_time_sheet.csv (time_condition dated /
+reviewer_type human / human_assisted / second_model_review) and evals/dev/review/query_time_sheet.csv (time_condition dated /
 time_invariant / underspecified). If evals/dev/review/claude_review.csv exists (Claude's independent reading of the
 same units under the same criterion, sealed before the user's review), it reports agreement against it; likewise
 claude_time_review.csv for the time conditions.
@@ -33,7 +33,11 @@ V2 = DEV / "retrieval_qrels_v2.csv"
 CONDITIONS = DEV / "query_time_conditions.csv"
 VALUES = ("relevant", "not_relevant", "uncertain")
 TIME_VALUES = ("dated", "time_invariant", "underspecified")
-REVIEWER_TYPES = ("human", "second_model_review")
+REVIEWER_TYPES = ("human", "human_assisted", "second_model_review")
+KIND_NOTE = {"human": "",
+             "human_assisted": " (a person decided every row, reading Claude's neutral Korean translations of the "
+                               "queries and chunks; the translation is a possible influence)",
+             "second_model_review": " (a model, not a human review)"}
 
 
 def _read(path):
@@ -71,7 +75,7 @@ def main() -> None:
 
     users = {r["unit_id"]: r["user_decision"].strip() for r in sheet}
     lines = ["# Qrel review agreement", "",
-             f"Reviewer of the sheet: {kind}" + (" (a model, not a human review)" if kind != "human" else "") + ".",
+             f"Reviewer of the sheet: {kind}" + KIND_NOTE[kind] + ".",
              f"Units (query pair x chunk): {len(sheet)}. Decisions: "
              + ", ".join(f"{v} {sum(d == v for d in users.values())}" for v in VALUES) + ".",
              "Query time conditions: "

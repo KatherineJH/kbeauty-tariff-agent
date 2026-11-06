@@ -62,7 +62,10 @@ and used page context outside the chunk. Both are against this criterion, so v1 
    earlier decision, cited location, rule or rule period. `review/query_time_sheet.csv`: one row per answerable
    query, `time_condition` = `dated` / `time_invariant` / `underspecified`.
 2. The reviewer fills `user_decision`, `user_reason` and `reviewer_type`. `human` only when a person judged every
-   row; if a model filled the sheet, `second_model_review`, and it is not called a human review anywhere.
+   row from the sheet itself; `human_assisted` when a person decided every row in chat after Claude translated the
+   query and the chunk into plain Korean, neutrally and without giving a judgement first (the translation can still
+   influence the decision, and the report says so); `second_model_review` if a model filled the sheet, and then it
+   is not called a human review anywhere.
 3. `scripts/finalize_qrel_review.py` writes `retrieval_qrels_v2.csv`, `query_time_conditions.csv`,
    `review/agreement.md` and `review/disagreements.csv`. Agreement is computed against `review/claude_review.csv`
    when it exists: Claude's reading of the same units under the same criterion, whose sha256 is recorded here before
@@ -90,3 +93,5 @@ and used page context outside the chunk. Both are against this criterion, so v1 
 | 2026-11-06 | `retrieval_qrels.csv`, `retrieval_qrel_candidates.csv`, `qrels_meta.json` added | after run_001, first used in run_002 | strict qrels count the same accepted evidence on another page as a miss |
 | 2026-11-06 | v2 relevance criterion fixed; blind sheets for 75 (pair, chunk) units and 24 query time conditions | after run_002, before any v2 decision | v1 used the hidden rule period and context outside the returned chunk |
 | 2026-11-06 | Claude's reading of the 75 units and 24 time conditions sealed (`review/claude_review.csv`, `review/claude_time_review.csv`, sha256 above), committed before the user's review with the empty sheets | before any user decision | the commit time proves the model reading came first; `reports/retrieval/run_001_strict_citation_qrels` and `run_002_reviewed_retrieval_qrels` were not changed (no diff against the previous commit) |
+| 2026-11-06 | `reviewer_type` value `human_assisted` added | after the seal commit, before any user decision | the user reviews in chat from neutral Korean translations of the English chunks; Claude records the answers verbatim |
+| 2026-11-06 | user review recorded: 75 units, 24 time conditions, 12 pair checks (`human_assisted`), with `review/translation_notes.md`; hashes in `review/user_review.sha256` | committed before the sealed Claude files are opened and before finalize | the commit order proves the user decisions were fixed before the agreement was computed |
