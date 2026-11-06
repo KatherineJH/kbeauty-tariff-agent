@@ -55,6 +55,12 @@ def hts_text() -> str:
 
 
 @lru_cache(maxsize=None)
+def csms_text(number: str) -> str:
+    path = REPO / "data" / "extracted" / "cbp_csms" / f"{number}.txt"
+    return norm(path.read_text(encoding="utf-8")) if path.exists() else ""
+
+
+@lru_cache(maxsize=None)
 def archive_text(release: str) -> str:
     """Committed evidence pages and change record of an archived HTS revision cited as '<year> Rev. <n>'.
 
@@ -89,7 +95,8 @@ def quote_problems(row: dict) -> list[str]:
         problems.append(f"cited documents not in the corpus: {sorted(numbers - known)}")
     releases = {f"{y}HTSRev{n}" for y, n in re.findall(r"(20\d{2}) Rev\. (\d+)", ref + " " + row["instrument"])}
     corpus = " ".join(fr_text(n) for n in numbers & known) + " " + hts_text() + " " + " ".join(
-        archive_text(r) for r in sorted(releases) if r != "2026HTSRev22")
+        archive_text(r) for r in sorted(releases) if r != "2026HTSRev22") + " " + " ".join(
+        csms_text(n) for n in re.findall(r"CSMS #? ?(\d{8})", ref))
     for quote in re.findall(r"'([^']{12,})'", ref):
         for fragment in (f.strip(" ,;") for f in norm(quote).split("...")):
             if len(fragment) >= 12 and fragment not in corpus:
@@ -97,7 +104,7 @@ def quote_problems(row: dict) -> list[str]:
     return problems
 
 
-@pytest.mark.parametrize("row", [r for r in ROWS if r["status"] == "quote_checked"], ids=lambda r: r["action_id"])
+@pytest.mark.parametrize("row", [r for r in ROWS if r["evidence_status"] == "quote_checked"], ids=lambda r: r["action_id"])
 def test_quote_checked_rows_cite_existing_sources_and_quotes(row):
     assert not quote_problems(row)
 
@@ -117,9 +124,10 @@ def test_negative_unknown_document_fails():
 
 @pytest.mark.parametrize("row", ROWS, ids=lambda r: r["action_id"])
 def test_status_and_open_issues(row):
-    assert row["status"] in {"quote_checked", "incomplete"}
-    if row["status"] == "incomplete":
-        assert row["open_issues"].strip(), "incomplete row must say what is missing"
+    assert row["evidence_status"] in {"quote_checked", "unverified"}
+    assert row["resolution_status"] in {"resolved", "partial", "unresolved"}
+    if row["evidence_status"] != "quote_checked" or row["resolution_status"] != "resolved":
+        assert row["open_issues"].strip(), "a row that is not checked and resolved must say what is missing"
 
 
 @pytest.mark.parametrize("row", [r for r in ROWS if r["effective_at"] and r["ends_at"]], ids=lambda r: r["action_id"])

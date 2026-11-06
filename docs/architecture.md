@@ -59,10 +59,10 @@ EO 14389 본문은 EO 번호를 직접 표기하지 않고, 2026-02-20자 「Con
 
 `warehouse/seeds/regulatory_actions.csv`(사람이 원문을 읽고 작성, 각 값에 근거 위치 기록):
 
-> **현재 상태(2026-11-06): 초안.** 이 표는 완성된 관세 계산표가 아니다. 출처 문장과 대조한 행(`quote_checked` 16행)과
-> 코퍼스로 확정할 수 없어 명시적으로 미해결인 행(`incomplete` 1행: IEEPA 관세의 실제 징수 종료일, `archive_gap`)을 함께 담는다.
-> 미해결 행은 `open_issues`에 이유를 적고 값을 추정해 채우지 않는다. `quote_checked`도 작성자 대조일 뿐 사용자 검수 전이며,
-> 일부 행은 `open_issues`에 단서(caveat)를 남긴다.
+> **현재 상태(2026-11-06): 초안.** 이 표는 완성된 관세 계산표가 아니다. 17행 모두 출처 문장과 대조했다(`evidence_status = quote_checked`). 해결 상태는 13행 `resolved`, 4행 `partial`이다(`resolution_status`).
+> 다만 작성자 대조일 뿐 사용자 검수 전이며, 일부 행은 `open_issues`에 단서(caveat)를 남긴다. 앞으로 확정할 수 없는 값이
+> 생기면 `incomplete`로 두고 추정해 채우지 않는다. 자료 공백(`archive_gap`)은 평가에서 단일 정답 대신 "공식 자료만으로
+> 확정할 수 있는가"를 묻는 불확실성 처리 질문으로 쓴다.
 
 | 열 | 뜻 |
 |---|---|
@@ -84,7 +84,8 @@ EO 14389 본문은 EO 번호를 직접 표기하지 않고, 2026-02-20자 「Con
 | `stacking_rule` | 다른 추가 관세·232조·MFN과의 중첩 규칙(원문 인용) |
 | `archive_evidence` | 날짜를 뒷받침하는 과거 HTS 판본·쪽·change record 항목, 또는 `archive_gap` |
 | `cosmetics_3303_3307` | 화장품 소호(3303~3307)에 대한 예외 판정과 근거 쪽. 표현은 "검토한 HTS Rev. 22 기준으로 예외로 확인되지 않음"처럼 한정한다 |
-| `status` | `quote_checked`(작성자가 원문 문장과 대조함, 사용자 검수 전) / `incomplete`(옮기지 못한 값이 있음) |
+| `evidence_status` | `quote_checked`(작성자가 채운 값을 모두 원문 문장과 대조함, 사용자 검수 전) / `unverified` |
+| `resolution_status` | `resolved` / `partial`(인용은 확인했지만 적용 모델링·시각이 일부 남음, 예: 철강·알루미늄 동시 함유 수입 건) / `unresolved`(필요한 값이 코퍼스에 없음) |
 | `open_issues` | 원문에서 확정할 수 없는 값과 그 이유. 값을 추정해 채우지 않는다 |
 
 표는 `scripts/_build_regulatory_actions_seed.py`의 행 정의에서 생성한다(값 안의 쉼표를 안전하게 인용하기 위해).

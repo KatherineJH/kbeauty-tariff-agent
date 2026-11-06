@@ -12,6 +12,12 @@ named archived revision (data/raw/hts_archive/<release>/chapter_99.pdf), with th
 archive_evidence: which archived HTS revisions and change-record entries support the dates; 'archive_gap' marks a
 boundary that falls between two revisions without a dated change-record entry.
 
+evidence_status: quote_checked (every filled value compared with the cited source sentence by the author; not yet
+                 reviewed by the user) | unverified.
+resolution_status: resolved | partial (application not fully modelled or dated; see open_issues and PARTIAL) |
+                   unresolved (a needed value is not in the corpus).
+The rows below still carry the transcription field `status` (quote_checked | incomplete), split by finish().
+
 status: quote_checked = the author compared every filled value with the source sentence (not yet reviewed by
         the user, who is the reference for gold labels; open_issues may hold caveats); incomplete = some value could not be transcribed from
         the archived sources. open_issues lists what is unknown and why; values are never guessed.
@@ -23,7 +29,8 @@ from pathlib import Path
 OUT = Path(__file__).resolve().parents[1] / "warehouse" / "seeds" / "regulatory_actions.csv"
 FIELDS = ["action_id", "instrument", "legal_basis", "signed_at", "published_at", "effective_at", "ends_at", "ends_rule",
           "applicability_rule", "scope", "rate_or_effect", "rate_kind", "rate_pct", "stacking_rule", "supersedes", "superseded_by", "amends",
-          "unaffected_actions", "source_quote_ref", "archive_evidence", "cosmetics_3303_3307", "status", "open_issues"]
+          "unaffected_actions", "source_quote_ref", "archive_evidence", "cosmetics_3303_3307", "evidence_status", "resolution_status",
+          "open_issues"]
 
 ENTRY = "goods entered for consumption, or withdrawn from warehouse for consumption, on or after effective_at"
 
@@ -31,7 +38,8 @@ ROWS = [
     dict(action_id="EO14257_baseline10", rate_kind='additional_ad_valorem', rate_pct='10', stacking_rule="'in addition to any other duties, fees, taxes, exactions, or charges' (2025-06063 sec. 3(c)) except as provided in 3(d)-(e); replaced (not stacked) by the country rate for Korea on 2025-04-09 (see EO14257_KR25)",
          instrument="EO 14257 (FR 2025-06063)", legal_basis="IEEPA",
          signed_at="2025-04-02", published_at="2025-04-07", effective_at="2025-04-05T00:01-04:00",
-         ends_rule="IEEPA additional duties ended by EO14389_end_ieepa; for Korea the 10% is replaced by the "
+         ends_at="2026-02-24T00:00-05:00",
+         ends_rule="IEEPA additional duties ended by EO14389_end_ieepa (cut-off per CBP CSMS # 67834313); for Korea the 10% is replaced by the "
                    "country rate EO14326_KR15 from 2025-08-07",
          applicability_rule=ENTRY + "; goods loaded onto a vessel and in transit on the final mode of transit before "
                             "effective_at, and entered after it, are not subject (no entry deadline in this text)",
@@ -124,8 +132,8 @@ ROWS = [
     dict(action_id="KORdeal_15allin", rate_kind='total_with_column1', rate_pct='15', stacking_rule='reciprocal duty = 15% minus column 1 rate (0 when column 1 >= 15%); per HTS Rev. 22 U.S. note 2(v)(ix) (PDF p. 184 = 99-III-12) the duties of 9903.02.79-9903.02.80 do not apply to the declared value of the aluminum content of 9903.85.04/.07/.08/.09 derivative products but apply to the non-aluminum content (current wording)',
          instrument="Notice FR 2025-21940 (ITA and USTR)",
          legal_basis="IEEPA (implements EO 14257 as amended and EO 14346)",
-         published_at="2025-12-04", effective_at="2025-11-14T00:01-05:00",
-         ends_rule="IEEPA duties ended by EO14389_end_ieepa",
+         published_at="2025-12-04", effective_at="2025-11-14T00:01-05:00", ends_at="2026-02-24T00:00-05:00",
+         ends_rule="IEEPA duties ended by EO14389_end_ieepa (cut-off per CBP CSMS # 67834313)",
          applicability_rule=ENTRY + "; effective_at precedes published_at (the notice applies retroactively)",
          scope="goods of Korea subject to the country-specific reciprocal tariff (Part B of the Annex); autos and "
                "parts are Part A from 2025-11-01",
@@ -136,10 +144,15 @@ ROWS = [
          status="quote_checked", open_issues=""),
     dict(action_id="EO14389_end_ieepa", rate_kind='none', rate_pct='', stacking_rule='',
          instrument="EO 14389 (FR 2026-03832)", legal_basis="IEEPA",
-         signed_at="2026-02-20", published_at="2026-02-25",
+         signed_at="2026-02-20", published_at="2026-02-25", effective_at="2026-02-24T00:00-05:00",
          ends_rule="the listed IEEPA duties 'shall no longer be in effect and, as soon as practicable, shall no "
-                   "longer be collected'",
-         applicability_rule="no entry-date rule in this document",
+                   "longer be collected' (EO); CBP set the cut-off in CSMS # 67834313",
+         applicability_rule="goods entered for consumption or withdrawn from warehouse for consumption on or after "
+                            "12:00 a.m. eastern time on February 24, 2026 (CBP CSMS # 67834313); the EO itself has no "
+                            "entry-date rule. Dates kept apart: EO signed 2026-02-20; CSMS sent 2026-02-22 09:57 PM "
+                            "EST; collection ends 2026-02-24 00:00 ET; published 2026-02-25; HTS 2026 Rev. 4 posted "
+                            "2026-02-25 with change-record effective date February 24, 2026. Note: P11012_surcharge "
+                            "starts at 12:01 a.m. EST, one minute after this cut-off",
          scope="additional ad valorem duties under IEEPA in EOs 14193, 14194, 14195, 14245, 14257, 14323, 14329, "
                "14380 and 14382",
          rate_or_effect="ends those IEEPA additional duties",
@@ -147,15 +160,18 @@ ROWS = [
          unaffected_actions="EO14388_continue and P11012_surcharge (named by title and date in sec. 2(c)); duties "
                             "under section 232 and section 301 (sec. 2(d))",
          source_quote_ref="2026-03832 sec. 1, sec. 2(a), 2(c), 2(d); API disposition_notes list EO 14388 and "
-                          "Proc. 11012",
+                          "Proc. 11012; CBP CSMS # 67834313 'will no longer be in effect and will no longer be collected "
+                          "for goods entered for consumption or withdrawn from warehouse for consumption, on or after "
+                          "12:00 a.m. eastern time on February 24, 2026' and 'all Harmonized Tariff Schedule of the "
+                          "United States (HTSUS) numbers applicable to the IEEPA tariffs will be inactive in ACE as of "
+                          "February 24, 2026'",
          archive_evidence="2026 Rev. 4 (posted 2026-02-25) change record: U.S. note 2(a), (c), (j), (l), (m), (u), "
                           "(y) Modified and 2(w) Deleted, effective February 24, 2026, source 'Executive Order'. The "
-                          "record does not say which order or that collection of the listed duties stopped that day: "
-                          "archive_gap for the collection end",
-         status="incomplete",
-         open_issues="The date collection actually stopped is not in this document (CBP guidance outside the corpus). "
-                     "The 2026 Rev. 4 change record dates note 2 changes to February 24, 2026, but does not state the "
-                     "end of collection; treating that date as the end would be an inference"),
+                          "collection cut-off itself comes from CBP CSMS # 67834313 (official implementing guidance), "
+                          "so no archive_gap remains",
+         status="quote_checked",
+         open_issues="Caveat: the CSMS lists EOs 14193, 14194, 14195, 14245, 14257, 14323 and 14329; EO 14389 also "
+                     "names 14380 and 14382, which the CSMS does not list. Neither concerns Korean goods"),
     dict(action_id="P11012_surcharge", rate_kind="additional_ad_valorem", rate_pct="10",
          stacking_rule="'in addition to any other duties' (para. (3)); 'shall not apply in addition to tariffs imposed "
                        "under section 232' and applies only to the non-232 part of an import (para. (4)); in HTS 2026 "
@@ -341,11 +357,32 @@ ROWS = [
 ]
 
 
+# resolution_status for rows whose evidence is checked but whose application is not fully modelled or dated.
+PARTIAL = {
+    "P11012_surcharge": "an entry containing both steel and aluminum content is not modelled",
+    "S301_KR_12_5": "note 52 between Rev. 13 and Rev. 22 is not reconstructed",
+    "S232_AL_derivative_19k": "time of day of the 2025-08-18 inclusion not given; the Notice is not identified",
+    "S232_ST_derivative_16n": "time of day of the 2025-08-18 inclusion not given; the Notice is not identified",
+}
+
+
+def finish(row: dict) -> dict:
+    """Split the transcription status into evidence_status and resolution_status."""
+    status = row.pop("status")
+    row["evidence_status"] = "quote_checked" if status in ("quote_checked", "incomplete") else "unverified"
+    if status == "incomplete":
+        row["resolution_status"] = "unresolved"
+    else:
+        row["resolution_status"] = "partial" if row["action_id"] in PARTIAL else "resolved"
+    return row
+
+
 def main() -> None:
     with OUT.open("w", encoding="utf-8", newline="") as f:
         w = csv.DictWriter(f, fieldnames=FIELDS, lineterminator="\n")
         w.writeheader()
         for row in ROWS:
+            row = finish(dict(row))
             w.writerow({k: row.get(k, "") for k in FIELDS})
     print(f"wrote {OUT.relative_to(OUT.parents[2])} ({len(ROWS)} rows)")
 
