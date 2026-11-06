@@ -1,0 +1,63 @@
+Harmonized Tariff Schedule of the United States (2025 Revision 17)
+August 1, 2025
+Change Record
+The modifications set forth in this change record reflect updates made to the HTS after 2025 Revision
+16, published July 1, 2025. Please note that the Change Record does not include staged rates, endnotes
+or minor nonsubstantive adjustments to the format of any line. The modifications set forth in this
+change record reflect updates made to the HTS since 2025 Revision 16 was posted:
+Chapters 94, 99.
+Notes: For purposes of this record, the terms “added” and “deleted” refer to the insertion or removal of
+8‐digit (legal) tariff rate lines or legal notes; the terms “established” or “discontinued” refer to the
+insertion or removal of 10‐digit (nonlegal) statistical reporting numbers or notes. The term “annotated”
+refers to the creation of new 10‐digit provisions under a previously unsubdivided rate line; the term
+“restored” refers to the deletion of all annotations under an existing rate line. The term “modified” may
+be used with changes in any provision or note.
+
+Item changed Nature of change Effective date Source
+9401.99 Technical correction
+(statistical reporting
+numbers)
+July 1, 2025 484(f)
+9403.20.0075 Modified (conforming
+change)
+July 1, 2025 484(f)
+9403.20.0078 Modified (conforming
+change)
+July 1, 2025 484(f)
+9404.90.1030 Modified (conforming
+change, superior text)
+July 1, 2025 484(f)
+9404.90.2030 Modified (conforming
+change, superior text)
+July 1, 2025 484(f)
+U.S. note 2(j), subch III, ch 99 Modified August 1, 2025 Executive
+Order
+U.S. note 2(m), subch III, ch 99 Added August 1, 2025 Executive
+Order
+U.S. note 2(v), subch III, ch 99 Modified (renumbered
+subdivision (xii) as (xiii) and
+subdivision (xiii) as (xiv))
+August 1, 2025 PP 10962
+U.S. note 2(v)(i), subch III, ch 99 Modified August 1, 2025 PP 10962
+U.S. note 2(v)(iii), subch III, ch 99 Modified August 1, 2025 PP 10962
+U.S. note 2(v)(xii), subch III, ch 99 Added August 1, 2025 PP 10962
+U.S. note 16(c), subch III, ch 99 Technical correction
+(9902.81.78 changed to
+9903.81.78)
+April 1, 2022 PP 10356
+U.S. note 33(f), subch III, ch 99 Modified August 1, 2025 PP 10962
+U.S. note 36, subch III, ch 99 Added  August 1, 2025 PP 10962
+9903.01.10 Modified (rate changed to
+35%)
+August 1, 2025 Executive
+Order
+9903.01.16 Added August 1, 2025 Executive
+Order
+9903.01.33 Modified (article
+description)
+August 1, 2025 PP 10962
+9903.01.34 Modified (article
+description)
+August 1, 2025 PP 10962
+9903.78.01 Added  August 1, 2025 PP 10962
+9903.78.02 Added  August 1, 2025 PP 10962

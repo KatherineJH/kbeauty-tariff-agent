@@ -1,0 +1,74 @@
+1
+
+Harmonized Tariff Schedule of the United States (2026 Revision 4)
+February 25, 2026
+Change Record
+The modifications set forth in this change record reflect updates made to the HTS after 2026 Revision 3,
+published February 12, 2026. Note that the Change Record does not include staged rates, endnotes or
+minor nonsubstantive adjustments to the format of any line. The modifications set forth in this change
+record reflect updates made to the HTS since 2026 Revision 3 was posted:
+Chapters 24, 85, and 99.
+
+Notes: For purposes of this record, the terms “added” and “deleted” refer to the insertion or removal of
+8‐digit (legal) tariff rate lines or legal notes; the terms “established” or “discontinued” refer to the
+insertion or removal of 10‐digit (nonlegal) statistical reporting numbers or notes. The term “annotated”
+refers to the creation of new 10‐digit provisions under a previously unsubdivided rate line; the term
+“restored” refers to the deletion of all annotations under an existing rate line. The term “modified” may
+be used with changes in any provision or note.
+
+Item changed Nature of change Effective date Source
+2404.19.0510 Technical correction
+(article description)
+February 1, 2026 484(f)
+2404.19.1010 Technical correction
+(article description)
+February 1, 2026 484(f)
+8539.52.0010 Technical correction
+(article description)
+February 1, 2026 484(f)
+8539.52.0020 Technical correction
+(article description)
+February 1, 2026 484(f)
+8539.52.0030 Technical correction
+(article description)
+February 1, 2026 484(f)
+8539.52.0040 Technical correction
+(article description)
+February 1, 2026 484(f)
+8541.42.0010 Technical correction
+(article description)
+February 1, 2026 484(f)
+8541.43.0010 Technical correction
+(article description)
+February 1, 2026 484(f)
+8544.42.9010 Technical correction
+(article description)
+February 1, 2026 484(f)
+U.S. note 2(a), subch III, ch 99 Modified February 24, 2026 Executive Order
+U.S. note 2(c), subch III, ch 99 Modified February 24, 2026 Executive Order
+U.S. note 2(j), subch III, ch 99 Modified February 24, 2026 Executive Order
+U.S. note 2(l), subch III, ch 99 Modified February 24, 2026 Executive Order
+U.S. note 2(m), subch III, ch 99 Modified February 24, 2026 Executive Order
+U.S. note 2(u), subch III, ch 99 Modified February 24, 2026 Executive Order
+U.S. note 2(w), subch III, ch 99 Deleted February 24, 2026 Executive Order
+2
+
+Item changed Nature of change Effective date Source
+U.S. note 2(y), subch III, ch 99 Modified February 24, 2026 Executive Order
+U.S. note 2(aa)(i)–(viii), subch III, ch 99 Added February 24, 2026 PP 11012
+9903.03.01 Added February 24, 2026 PP 11012
+9903.03.02 Added February 24, 2026 PP 11012
+9903.03.03 Added February 24, 2026 PP 11012
+9903.03.04 Added February 24, 2026 PP 11012
+9903.03.05 Added February 24, 2026 PP 11012
+9903.03.06 Added February 24, 2026 PP 11012
+9903.03.07 Added February 24, 2026 PP 11012
+9903.03.08 Added February 24, 2026 PP 11012
+9903.03.09 Added February 24, 2026 PP 11012
+9903.03.10 Added February 24, 2026 PP 11012
+9903.03.11 Added February 24, 2026 PP 11012
+9903.45.21 Modified (expired) February 7, 2026 PP 10339
+9903.45.22 Modified (expired February 7, 2026 PP 10339
+9903.45.25 Modified (expired) February 7, 2026 PP 10339
+9903.45.27 Modified (expired) February 7, 2026 PP 10339
+9903.45.29 Modified (expired) February 7, 2026 PP 10339

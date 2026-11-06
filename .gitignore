@@ -23,3 +23,9 @@ evals/sealed/
 
 # Private notes (not published)
 docs/private/
+
+# Archived HTS revisions (D2a): the PDFs (~174MB) and full page texts (~48MB) are not committed.
+# Manifests (URL, time, size, SHA-256), comparison outputs, change records and the evidence snapshot are.
+# Rebuild with: uv run python scripts/rehydrate_hts_archive.py
+data/raw/hts_archive/*/*.pdf
+data/extracted/hts_archive/*/pages/

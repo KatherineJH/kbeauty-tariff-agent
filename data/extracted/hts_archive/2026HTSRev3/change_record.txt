@@ -1,0 +1,32 @@
+1
+
+Harmonized Tariff Schedule of the United States (2026 Revision 3)
+February 12, 2026
+Change Record
+The modifications set forth in this change record reflect updates made to the HTS after 2026 Revision 2,
+published February 1, 2026. Note that the Change Record does not include staged rates, endnotes or
+minor nonsubstantive adjustments to the format of any line. The modifications set forth in this change
+record reflect updates made to the HTS since the 2026 Revision 2 was posted:
+Chapters 02, 76, and 99.
+Notes: For purposes of this record, the terms “added” and “deleted” refer to the insertion or removal of
+8‐digit (legal) tariff rate lines or legal notes; the terms “established” or “discontinued” refer to the
+insertion or removal of 10‐digit (nonlegal) statistical reporting numbers or notes. The term “annotated”
+refers to the creation of new 10‐digit provisions under a previously unsubdivided rate line; the term
+“restored” refers to the deletion of all annotations under an existing rate line. The term “modified” may
+be used with changes in any provision or note.
+
+Item changed Nature of change Effective date Source
+U.S. note 3, ch 2 Modified (renumbered as note 3(a)) February 13, 2026 PP 11010
+U.S. note 3(b), ch 2 Added February 13, 2026 PP 11010
+7602.00.00 Technical correction (statistical
+reporting numbers)
+February 1, 2026 484(f)
+U.S. note 2(z), subch III, ch 99 Modified (terminated) February 7, 2026 Executive Order
+U.S. note 7, subch III, ch 99 Added February 13, 2026 PP 11010
+9903.01.84 Modified (terminated) February 7, 2026 Executive Order
+9903.01.85 Modified (terminated) February 7, 2026 Executive Order
+9903.01.86 Modified (terminated) February 7, 2026 Executive Order
+9903.01.87 Modified (terminated) February 7, 2026 Executive Order
+9903.01.88 Modified (terminated) February 7, 2026 Executive Order
+9903.01.89 Modified (terminated) February 7, 2026 Executive Order
+9903.54.01 Added February 13, 2026 PP 11010

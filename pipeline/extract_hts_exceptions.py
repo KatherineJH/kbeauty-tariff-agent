@@ -60,7 +60,7 @@ SUBDIVISIONS = [
      "civil aircraft meeting general note 6 criteria"),
     ("surcharge", "2(aa)(v)", "9903.03.06", "descriptive", 230, 231, None, None,
      "goods in section 232 / pharmaceutical / vehicle / wood / semiconductor headings of chapter 99; text modified "
-     "after expiration by 91 Fed. Reg. 18183 (not in the corpus)"),
+     "after expiration by 91 Fed. Reg. 18183 (Proclamation 11020, pharmaceuticals; not in the corpus)"),
     ("surcharge", "2(aa)(vi)", "9903.03.07", "descriptive", 231, 231, None, None, "products of Canada under USMCA"),
     ("surcharge", "2(aa)(vii)", "9903.03.08", "descriptive", 231, 231, None, None, "products of Mexico under USMCA"),
     ("surcharge", "2(aa)(viii)", "9903.03.09", "descriptive", 231, 231, None, None,

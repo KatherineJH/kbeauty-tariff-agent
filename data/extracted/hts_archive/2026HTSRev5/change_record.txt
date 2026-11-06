@@ -1,0 +1,397 @@
+1
+
+Harmonized Tariff Schedule of the United States (2026 Revision 5)
+April 8, 2026
+Change Record
+The modifications set forth in this change record reflect updates made to the HTS after 2026 Revision 4,
+published February 25, 2026. Note that the Change Record does not include staged rates, endnotes or
+minor nonsubstantive adjustments to the format of any line. The modifications set forth in this change
+record reflect updates made to the HTS since 2026 Revision 4 was posted:
+Chapter: 99
+Notes: For purposes of this record, the terms “added” and “deleted” refer to the insertion or removal of
+8‐digit (legal) tariff rate lines or legal notes; the terms “established” or “discontinued” refer to the
+insertion or removal of 10‐digit (nonlegal) statistical reporting numbers or notes. The term “annotated”
+refers to the creation of new 10‐digit provisions under a previously unsubdivided rate line; the term
+“restored” refers to the deletion of all annotations under an existing rate line. The term “modified” may
+be used with changes in any provision or note.
+
+Item changed Nature of change Effective date Source
+U.S. note 2(v)(xxii), subch III, ch 99 Modified April 6, 2026 PP 11021
+U.S. note 2(v)(xxiv)(b), subch III, ch 99 Modified April 6, 2026 PP 11021
+U.S. note 2(aa)(v)(a)—(d), (g), subch III,
+ch 99
+Deleted April 6, 2026 PP 11021
+U.S. note 2(aa)(v)(1), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 2(aa)(v)(e)—(f), (h)–(k), subch
+III, ch 99
+Modified (renumbered subdivisions (e)—
+(f) and (h)–(k) as (2)–(7))
+April 6, 2026 PP 11021
+U.S. note 16, subch III, ch 99 Deleted April 6, 2026 PP 11021
+U.S. note 16(a), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 16(b), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 16(c)(i)—(x), subch III, ch 99   Added April 6, 2026 PP 11021
+U.S. note 16(d), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 16(e), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 16(f), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 16(g), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 33(a)(1)–(5), subch III, ch 99 Deleted April 6, 2026 PP 11021
+U.S. note 33(a)(1), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 33(a)(6)–(7), subch III, ch 99 Modified (renumbered subdivisions (6)–
+(7) as (2)–(3))
+April 6, 2026 PP 11021
+U.S. note 33(f)(1)–(5), subch III, ch 99 Deleted April 6, 2026 PP 11021
+U.S. note 33(f)(1), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 33(f)(6)–(8), subch III, ch 99 Modified (renumbered subdivisions (6)–
+(8) as (2)–(4))
+April 6, 2026 PP 11021
+2
+
+Item changed Nature of change Effective date Source
+U.S. note 33(i)(1)–(5), subch III, ch 99 Deleted April 6, 2026 PP 11021
+U.S. note 33(i)(1), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 33(j)(1)–(5), subch III, ch 99 Deleted April 6, 2026 PP 11021
+U.S. note 33(j)(1), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 33(j)(6), subch III, ch 99 Modified (renumbered subdivision (6) as
+(2))
+April 6, 2026 PP 11021
+U.S. note 33(k)(1)–(5), subch III, ch 99 Deleted April 6, 2026 PP 11021
+U.S. note 33(k)(1), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 33(l)(1)–(5), subch III, ch 99 Deleted April 6, 2026 PP 11021
+U.S. note 33(l)(1), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 33(l)(6), subch III, ch 99 Modified (renumbered subdivision (6) as
+(2))
+April 6, 2026 PP 11021
+U.S. note 33(n)(1)–(5), subch III, ch 99 Deleted April 6, 2026 PP 11021
+U.S. note 33(n)(1), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 33(o)(1)–(5), subch III, ch 99 Deleted  April 6, 2026 PP 11021
+U.S. note 33(o)(1), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 33(o)(6), subch III, ch 99 Modified (renumbered subdivision (6) as
+(2))
+April 6, 2026 PP 11021
+U.S. note 33(p)(1)–(5), subch III, ch 99 Deleted  April 6, 2026 PP 11021
+U.S. note 33(p)(1), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 33(p)(6)–(8), subch III, ch 99 Modified (renumbered subdivisions (6)–
+(8) as (2)–(4))
+April 6, 2026 PP 11021
+U.S. note 33(q)(1)–(5), subch III, ch 99 Deleted  April 6, 2026 PP 11021
+U.S. note 33(q)(1), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 33(q)(6), subch III, ch 99 Modified (renumbered subdivision (6) as
+(2))
+April 6, 2026 PP 11021
+U.S. note 33(r)(1)–(5), subch III, ch 99 Deleted  April 6, 2026 PP 11021
+U.S. note 33(r)(1), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 33(r)(6)–(8), subch III, ch 99 Modified (renumbered subdivisions (6)–
+(8) as (2)–(4))
+April 6, 2026 PP 11021
+U.S. note 33(s)(1)–(5), subch III, ch 99 Deleted April 6, 2026 PP 11021
+U.S. note 33(s)(1), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 33(t)(1)–(5), subch III, ch 99 Deleted  April 6, 2026 PP 11021
+U.S. note 33(t)(1), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 33(t)(6), subch III, ch 99 Modified (renumbered subdivision (6) as
+(2))
+April 6, 2026 PP 11021
+U.S. note 35(a), subch III, ch 99 Modified April 6, 2026 PP 11021
+U.S. note 35(b), subch III, ch 99 Modified April 6, 2026 PP 11021
+U.S. note 36, subch III, ch 99 Deleted April 6, 2026 PP 11021
+U.S. note 38(a)(1)–(5), subch III, ch 99 Deleted  April 6, 2026 PP 11021
+U.S. note 38(a)(1), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 38(a)(6)–(7), subch III, ch 99 Modified (renumbered subdivisions (6)–
+(7) as (2)–(3))
+April 6, 2026 PP 11021
+3
+
+Item changed Nature of change Effective date Source
+U.S. note 38(h)(1)–(5), subch III, ch 99 Deleted  April 6, 2026 PP 11021
+U.S. note 38(h)(1), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 38(h)(6)–(8), subch III, ch 99 Modified (renumbered subdivisions (6)–
+(8) as (2)–(4))
+April 6, 2026 PP 11021
+U.S. note 39(a)(5)–(9), subch III, ch 99 Deleted  April 6, 2026 PP 11021
+U.S. note 39(a)(5), subch III, ch 99 Added April 6, 2026 PP 11021
+U.S. note 39(a)(10)–(12), subch III, ch
+99
+Modified (renumbered subdivisions (10)–
+(12) as (6)–(8))
+April 6, 2026 PP 11021
+9903.03.06 Modified (article description) April 6, 2026 PP 11021
+9903.78.01 Deleted April 6, 2026 PP 11021
+9903.78.02 Deleted April 6, 2026 PP 11021
+9903.80.01 Deleted April 6, 2026 PP 11021
+9903.80.03 Deleted April 6, 2026 PP 11021
+9903.80.05 Deleted April 6, 2026 PP 11021
+9903.80.06 Deleted April 6, 2026 PP 11021
+9903.80.07 Deleted April 6, 2026 PP 11021
+9903.80.08 Deleted April 6, 2026 PP 11021
+9903.80.09 Deleted April 6, 2026 PP 11021
+9903.80.10 Deleted April 6, 2026 PP 11021
+9903.80.11 Deleted April 6, 2026 PP 11021
+9903.80.12 Deleted April 6, 2026 PP 11021
+9903.80.13 Deleted April 6, 2026 PP 11021
+9903.80.14 Deleted April 6, 2026 PP 11021
+9903.80.15 Deleted April 6, 2026 PP 11021
+9903.80.16 Deleted April 6, 2026 PP 11021
+9903.80.17 Deleted April 6, 2026 PP 11021
+9903.80.18 Deleted April 6, 2026 PP 11021
+9903.80.19 Deleted April 6, 2026 PP 11021
+9903.80.20 Deleted April 6, 2026 PP 11021
+9903.80.21 Deleted April 6, 2026 PP 11021
+9903.80.22 Deleted April 6, 2026 PP 11021
+9903.80.23 Deleted April 6, 2026 PP 11021
+9903.80.24 Deleted April 6, 2026 PP 11021
+9903.80.25 Deleted April 6, 2026 PP 11021
+9903.80.26 Deleted April 6, 2026 PP 11021
+9903.80.27 Deleted April 6, 2026 PP 11021
+9903.80.28 Deleted April 6, 2026 PP 11021
+9903.80.29 Deleted April 6, 2026 PP 11021
+9903.80.30 Deleted April 6, 2026 PP 11021
+9903.80.31 Deleted April 6, 2026 PP 11021
+9903.80.32 Deleted April 6, 2026 PP 11021
+9903.80.33 Deleted April 6, 2026 PP 11021
+4
+
+Item changed Nature of change Effective date Source
+9903.80.34 Deleted April 6, 2026 PP 11021
+9903.80.35 Deleted April 6, 2026 PP 11021
+9903.80.36 Deleted April 6, 2026 PP 11021
+9903.80.37 Deleted April 6, 2026 PP 11021
+9903.80.38 Deleted April 6, 2026 PP 11021
+9903.80.39 Deleted April 6, 2026 PP 11021
+9903.80.40 Deleted April 6, 2026 PP 11021
+9903.80.41 Deleted April 6, 2026 PP 11021
+9903.80.42 Deleted April 6, 2026 PP 11021
+9903.80.43 Deleted April 6, 2026 PP 11021
+9903.80.44 Deleted April 6, 2026 PP 11021
+9903.80.45 Deleted April 6, 2026 PP 11021
+9903.80.46 Deleted April 6, 2026 PP 11021
+9903.80.47 Deleted April 6, 2026 PP 11021
+9903.80.48 Deleted April 6, 2026 PP 11021
+9903.80.49 Deleted April 6, 2026 PP 11021
+9903.80.50 Deleted April 6, 2026 PP 11021
+9903.80.51 Deleted April 6, 2026 PP 11021
+9903.80.52 Deleted April 6, 2026 PP 11021
+9903.80.53 Deleted April 6, 2026 PP 11021
+9903.80.54 Deleted April 6, 2026 PP 11021
+9903.80.55 Deleted April 6, 2026 PP 11021
+9903.80.56 Deleted April 6, 2026 PP 11021
+9903.80.57 Deleted April 6, 2026 PP 11021
+9903.80.58 Deleted April 6, 2026 PP 11021
+9903.80.60 Deleted April 6, 2026 PP 11021
+9903.80.61 Deleted April 6, 2026 PP 11021
+9903.80.62 Deleted April 6, 2026 PP 11021
+9903.80.65 Deleted April 6, 2026 PP 11021
+9903.80.66 Deleted April 6, 2026 PP 11021
+9903.80.67 Deleted April 6, 2026 PP 11021
+9903.80.68 Deleted April 6, 2026 PP 11021
+9903.80.69 Deleted April 6, 2026 PP 11021
+9903.80.70 Deleted April 6, 2026 PP 11021
+9903.80.71 Deleted April 6, 2026 PP 11021
+9903.80.72 Deleted April 6, 2026 PP 11021
+9903.80.73 Deleted April 6, 2026 PP 11021
+9903.80.74 Deleted April 6, 2026 PP 11021
+9903.80.75 Deleted April 6, 2026 PP 11021
+9903.80.76 Deleted April 6, 2026 PP 11021
+9903.80.77 Deleted April 6, 2026 PP 11021
+9903.80.78 Deleted April 6, 2026 PP 11021
+5
+
+Item changed Nature of change Effective date Source
+9903.80.79 Deleted April 6, 2026 PP 11021
+9903.80.80 Deleted April 6, 2026 PP 11021
+9903.80.81 Deleted April 6, 2026 PP 11021
+9903.80.82 Deleted April 6, 2026 PP 11021
+9903.80.83 Deleted April 6, 2026 PP 11021
+9903.80.84 Deleted April 6, 2026 PP 11021
+9903.80.85 Deleted April 6, 2026 PP 11021
+9903.80.86 Deleted April 6, 2026 PP 11021
+9903.80.87 Deleted April 6, 2026 PP 11021
+9903.80.88 Deleted April 6, 2026 PP 11021
+9903.80.89 Deleted April 6, 2026 PP 11021
+9903.80.90 Deleted April 6, 2026 PP 11021
+9903.80.91 Deleted April 6, 2026 PP 11021
+9903.80.92 Deleted April 6, 2026 PP 11021
+9903.80.93 Deleted April 6, 2026 PP 11021
+9903.80.94 Deleted April 6, 2026 PP 11021
+9903.80.95 Deleted April 6, 2026 PP 11021
+9903.80.96 Deleted April 6, 2026 PP 11021
+9903.80.97 Deleted April 6, 2026 PP 11021
+9903.80.98 Deleted April 6, 2026 PP 11021
+9903.80.99 Deleted April 6, 2026 PP 11021
+9903.81.01 Deleted April 6, 2026 PP 11021
+9903.81.02 Deleted April 6, 2026 PP 11021
+9903.81.03 Deleted April 6, 2026 PP 11021
+9903.81.04 Deleted April 6, 2026 PP 11021
+9903.81.05 Deleted April 6, 2026 PP 11021
+9903.81.06 Deleted April 6, 2026 PP 11021
+9903.81.07 Deleted April 6, 2026 PP 11021
+9903.81.08 Deleted April 6, 2026 PP 11021
+9903.81.09 Deleted April 6, 2026 PP 11021
+9903.81.10 Deleted April 6, 2026 PP 11021
+9903.81.11 Deleted April 6, 2026 PP 11021
+9903.81.12 Deleted April 6, 2026 PP 11021
+9903.81.13 Deleted April 6, 2026 PP 11021
+9903.81.14 Deleted April 6, 2026 PP 11021
+9903.81.15 Deleted April 6, 2026 PP 11021
+9903.81.16 Deleted April 6, 2026 PP 11021
+9903.81.17 Deleted April 6, 2026 PP 11021
+9903.81.18 Deleted April 6, 2026 PP 11021
+9903.81.19 Deleted April 6, 2026 PP 11021
+9903.81.25 Deleted April 6, 2026 PP 11021
+9903.81.26 Deleted April 6, 2026 PP 11021
+6
+
+Item changed Nature of change Effective date Source
+9903.81.27 Deleted April 6, 2026 PP 11021
+9903.81.28 Deleted April 6, 2026 PP 11021
+9903.81.29 Deleted April 6, 2026 PP 11021
+9903.81.30 Deleted April 6, 2026 PP 11021
+9903.81.31 Deleted April 6, 2026 PP 11021
+9903.81.32 Deleted April 6, 2026 PP 11021
+9903.81.33 Deleted April 6, 2026 PP 11021
+9903.81.34 Deleted April 6, 2026 PP 11021
+9903.81.35 Deleted April 6, 2026 PP 11021
+9903.81.36 Deleted April 6, 2026 PP 11021
+9903.81.37 Deleted April 6, 2026 PP 11021
+9903.81.38 Deleted April 6, 2026 PP 11021
+9903.81.39 Deleted April 6, 2026 PP 11021
+9903.81.40 Deleted April 6, 2026 PP 11021
+9903.81.41 Deleted April 6, 2026 PP 11021
+9903.81.42 Deleted April 6, 2026 PP 11021
+9903.81.43 Deleted April 6, 2026 PP 11021
+9903.81.44 Deleted April 6, 2026 PP 11021
+9903.81.45 Deleted April 6, 2026 PP 11021
+9903.81.46 Deleted April 6, 2026 PP 11021
+9903.81.47 Deleted April 6, 2026 PP 11021
+9903.81.48 Deleted April 6, 2026 PP 11021
+9903.81.49 Deleted April 6, 2026 PP 11021
+9903.81.50 Deleted April 6, 2026 PP 11021
+9903.81.51 Deleted April 6, 2026 PP 11021
+9903.81.52 Deleted April 6, 2026 PP 11021
+9903.81.53 Deleted April 6, 2026 PP 11021
+9903.81.54 Deleted April 6, 2026 PP 11021
+9903.81.55 Deleted April 6, 2026 PP 11021
+9903.81.56 Deleted April 6, 2026 PP 11021
+9903.81.57 Deleted April 6, 2026 PP 11021
+9903.81.58 Deleted April 6, 2026 PP 11021
+9903.81.59 Deleted April 6, 2026 PP 11021
+9903.81.60 Deleted April 6, 2026 PP 11021
+9903.81.61 Deleted April 6, 2026 PP 11021
+9903.81.62 Deleted April 6, 2026 PP 11021
+9903.81.63 Deleted April 6, 2026 PP 11021
+9903.81.64 Deleted April 6, 2026 PP 11021
+9903.81.65 Deleted April 6, 2026 PP 11021
+9903.81.66 Deleted April 6, 2026 PP 11021
+9903.81.67 Deleted April 6, 2026 PP 11021
+9903.81.68 Deleted April 6, 2026 PP 11021
+7
+
+Item changed Nature of change Effective date Source
+9903.81.69 Deleted April 6, 2026 PP 11021
+9903.81.70 Deleted April 6, 2026 PP 11021
+9903.81.71 Deleted April 6, 2026 PP 11021
+9903.81.72 Deleted April 6, 2026 PP 11021
+9903.81.73 Deleted April 6, 2026 PP 11021
+9903.81.74 Deleted April 6, 2026 PP 11021
+9903.81.75 Deleted April 6, 2026 PP 11021
+9903.81.76 Deleted April 6, 2026 PP 11021
+9903.81.77 Deleted April 6, 2026 PP 11021
+9903.81.78 Deleted April 6, 2026 PP 11021
+9903.81.80 Deleted April 6, 2026 PP 11021
+9903.81.81 Deleted April 6, 2026 PP 11021
+9903.81.82 Deleted April 6, 2026 PP 11021
+9903.81.83 Deleted April 6, 2026 PP 11021
+9903.81.84 Deleted April 6, 2026 PP 11021
+9903.81.85 Deleted April 6, 2026 PP 11021
+9903.81.86 Deleted April 6, 2026 PP 11021
+9903.81.87 Deleted April 6, 2026 PP 11021
+9903.81.88 Deleted April 6, 2026 PP 11021
+9903.81.89 Deleted April 6, 2026 PP 11021
+9903.81.90 Deleted April 6, 2026 PP 11021
+9903.81.91 Deleted April 6, 2026 PP 11021
+9903.81.92 Deleted April 6, 2026 PP 11021
+9903.81.93 Deleted April 6, 2026 PP 11021
+9903.81.94 Deleted April 6, 2026 PP 11021
+9903.81.95 Deleted April 6, 2026 PP 11021
+9903.81.96 Deleted April 6, 2026 PP 11021
+9903.81.97 Deleted April 6, 2026 PP 11021
+9903.81.98 Deleted April 6, 2026 PP 11021
+9903.81.99 Deleted April 6, 2026 PP 11021
+9903.82.02 Added April 6, 2026 PP 11021
+9903.82.03 Added April 6, 2026 PP 11021
+9903.82.04 Added April 6, 2026 PP 11021
+9903.82.05 Added April 6, 2026 PP 11021
+9903.82.06 Added April 6, 2026 PP 11021
+9903.82.07 Added April 6, 2026 PP 11021
+9903.82.08 Added April 6, 2026 PP 11021
+9903.82.09 Added April 6, 2026 PP 11021
+9903.82.10 Added April 6, 2026 PP 11021
+9903.82.11 Added April 6, 2026 PP 11021
+9903.82.12 Added April 6, 2026 PP 11021
+9903.82.13 Added April 6, 2026 PP 11021
+8
+
+Item changed Nature of change Effective date Source
+9903.82.14 Added April 6, 2026 PP 11021
+9903.82.15 Added April 6, 2026 PP 11021
+9903.82.16 Added April 6, 2026 PP 11021
+9903.82.17 Added April 6, 2026 PP 11021
+9903.85.01 Deleted April 6, 2026 PP 11021
+9903.85.02 Deleted April 6, 2026 PP 11021
+9903.85.03 Deleted April 6, 2026 PP 11021
+9903.85.04 Deleted April 6, 2026 PP 11021
+9903.85.05 Deleted April 6, 2026 PP 11021
+9903.85.06 Deleted April 6, 2026 PP 11021
+9903.85.07 Deleted April 6, 2026 PP 11021
+9903.85.08 Deleted April 6, 2026 PP 11021
+9903.85.09 Deleted April 6, 2026 PP 11021
+9903.85.11 Deleted April 6, 2026 PP 11021
+9903.85.12 Deleted April 6, 2026 PP 11021
+9903.85.13 Deleted April 6, 2026 PP 11021
+9903.85.14 Deleted April 6, 2026 PP 11021
+9903.85.15 Deleted April 6, 2026 PP 11021
+9903.85.21 Deleted April 6, 2026 PP 11021
+9903.85.25 Deleted April 6, 2026 PP 11021
+9903.85.27 Deleted April 6, 2026 PP 11021
+9903.85.29 Deleted April 6, 2026 PP 11021
+9903.85.31 Deleted April 6, 2026 PP 11021
+9903.85.32 Deleted April 6, 2026 PP 11021
+9903.85.33 Deleted April 6, 2026 PP 11021
+9903.85.34 Deleted April 6, 2026 PP 11021
+9903.85.35 Deleted April 6, 2026 PP 11021
+9903.85.36 Deleted April 6, 2026 PP 11021
+9903.85.37 Deleted April 6, 2026 PP 11021
+9903.85.38 Deleted April 6, 2026 PP 11021
+9903.85.39 Deleted April 6, 2026 PP 11021
+9903.85.40 Deleted April 6, 2026 PP 11021
+9903.85.41 Deleted April 6, 2026 PP 11021
+9903.85.42 Deleted April 6, 2026 PP 11021
+9903.85.43 Deleted April 6, 2026 PP 11021
+9903.85.44 Deleted April 6, 2026 PP 11021
+9903.85.50 Deleted April 6, 2026 PP 11021
+9903.85.51 Deleted April 6, 2026 PP 11021
+9903.85.52 Deleted April 6, 2026 PP 11021
+9903.85.53 Deleted April 6, 2026 PP 11021
+9903.85.54 Deleted April 6, 2026 PP 11021
+9903.85.55 Deleted April 6, 2026 PP 11021
+9
+
+Item changed Nature of change Effective date Source
+9903.85.56 Deleted April 6, 2026 PP 11021
+9903.85.57 Deleted April 6, 2026 PP 11021
+9903.85.58 Deleted April 6, 2026 PP 11021
+9903.85.59 Deleted April 6, 2026 PP 11021
+9903.85.60 Deleted April 6, 2026 PP 11021
+9903.85.61 Deleted April 6, 2026 PP 11021
+9903.85.62 Deleted April 6, 2026 PP 11021
+9903.85.63 Deleted April 6, 2026 PP 11021
+9903.85.64 Deleted April 6, 2026 PP 11021
+9903.85.65 Deleted April 6, 2026 PP 11021
+9903.85.66 Deleted April 6, 2026 PP 11021
+9903.85.69 Deleted April 6, 2026 PP 11021
+9903.85.70 Deleted April 6, 2026 PP 11021
+9903.85.71 Deleted April 6, 2026 PP 11021
+9903.85.72 Deleted April 6, 2026 PP 11021
+Statistical Annex A Modified (Burma Schedule C code 546.0
+to 546.1)
+
+Statistical Annex B Modified (Burma ISO Code BU to MM)

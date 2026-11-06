@@ -1,0 +1,3 @@
+url,retrieved_at,file,bytes,sha256
+https://hts.usitc.gov/reststop/file?release=2025HTSRev7&filename=Chapter%2099,2026-11-06T00:46:48Z,data/raw/hts_archive/2025HTSRev7/chapter_99.pdf,16036459,d538442589a10c91073613548ef4205f223be038855942982ec08e0bcb117ff2
+https://hts.usitc.gov/reststop/file?release=2025HTSRev7&filename=Change%20Record,2026-11-06T00:46:50Z,data/raw/hts_archive/2025HTSRev7/change_record.pdf,95018,6ba0e55c9de145278529ac80b850665413c1c82d09a195593711bfed67d6e0cd

@@ -54,6 +54,21 @@ def hts_text() -> str:
     return norm(" ".join(parts))
 
 
+@lru_cache(maxsize=None)
+def archive_text(release: str) -> str:
+    """Committed evidence pages and change record of an archived HTS revision cited as '<year> Rev. <n>'.
+
+    Only the evidence snapshot is read (the full page texts are not committed), so a quote from a page outside the
+    snapshot fails here and must be added to the snapshot rules first."""
+    evidence = REPO / "data" / "extracted" / "hts_archive_evidence" / release
+    record = REPO / "data" / "extracted" / "hts_archive" / release / "change_record.txt"
+    if not record.exists():
+        return ""
+    parts = [p.read_text(encoding="utf-8") for p in sorted(evidence.glob("page_*.txt"))]
+    parts.append(record.read_text(encoding="utf-8"))
+    return norm(" ".join(parts))
+
+
 def parse_time(value: str) -> datetime:
     if "T" in value:
         return datetime.fromisoformat(value)
@@ -72,7 +87,9 @@ def quote_problems(row: dict) -> list[str]:
         problems.append("no Federal Register document or HTS source named")
     if numbers - known:
         problems.append(f"cited documents not in the corpus: {sorted(numbers - known)}")
-    corpus = " ".join(fr_text(n) for n in numbers & known) + " " + hts_text()
+    releases = {f"{y}HTSRev{n}" for y, n in re.findall(r"(20\d{2}) Rev\. (\d+)", ref + " " + row["instrument"])}
+    corpus = " ".join(fr_text(n) for n in numbers & known) + " " + hts_text() + " " + " ".join(
+        archive_text(r) for r in sorted(releases) if r != "2026HTSRev22")
     for quote in re.findall(r"'([^']{12,})'", ref):
         for fragment in (f.strip(" ,;") for f in norm(quote).split("...")):
             if len(fragment) >= 12 and fragment not in corpus:
@@ -130,7 +147,7 @@ def _interval(r):
     return parse_time(r["effective_at"]), end
 
 
-RELATION_COLUMNS = ("supersedes", "superseded_by", "amends", "ends_rule", "open_issues")
+RELATION_COLUMNS = ("supersedes", "superseded_by", "amends", "ends_rule", "stacking_rule", "open_issues")
 CHAIN_COLUMNS = ("supersedes", "superseded_by")
 
 

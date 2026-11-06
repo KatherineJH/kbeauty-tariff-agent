@@ -7,8 +7,10 @@ source_quote_ref. Kept as Python so commas inside values are quoted correctly. R
 
 rate_kind: additional_ad_valorem (added on top of the column 1 rate) | total_with_column1 (column 1 + this duty is
            capped at rate_pct; the added duty is rate_pct minus column 1, or 0) | none (not a rate)
-PDF page numbers in source_quote_ref are physical 1-based indexes of data/raw/hts/chapter_99.pdf, with the printed
-label (e.g. 99-III-486) where it matters.
+PDF page numbers in source_quote_ref are physical 1-based indexes of data/raw/hts/chapter_99.pdf (Rev. 22) or of the
+named archived revision (data/raw/hts_archive/<release>/chapter_99.pdf), with the printed label where it matters.
+archive_evidence: which archived HTS revisions and change-record entries support the dates; 'archive_gap' marks a
+boundary that falls between two revisions without a dated change-record entry.
 
 status: quote_checked = the author compared every filled value with the source sentence (not yet reviewed by
         the user, who is the reference for gold labels; open_issues may hold caveats); incomplete = some value could not be transcribed from
@@ -21,12 +23,12 @@ from pathlib import Path
 OUT = Path(__file__).resolve().parents[1] / "warehouse" / "seeds" / "regulatory_actions.csv"
 FIELDS = ["action_id", "instrument", "legal_basis", "signed_at", "published_at", "effective_at", "ends_at", "ends_rule",
           "applicability_rule", "scope", "rate_or_effect", "rate_kind", "rate_pct", "stacking_rule", "supersedes", "superseded_by", "amends",
-          "unaffected_actions", "source_quote_ref", "cosmetics_3303_3307", "status", "open_issues"]
+          "unaffected_actions", "source_quote_ref", "archive_evidence", "cosmetics_3303_3307", "status", "open_issues"]
 
 ENTRY = "goods entered for consumption, or withdrawn from warehouse for consumption, on or after effective_at"
 
 ROWS = [
-    dict(action_id="EO14257_baseline10", rate_kind='additional_ad_valorem', rate_pct='10', stacking_rule="'in addition to any other duties, fees, taxes, exactions, or charges' (2025-06063 sec. 3(c)) except as provided in 3(d)-(e); whether it stacked with a country rate is not settled here (see EO14257_KR25)",
+    dict(action_id="EO14257_baseline10", rate_kind='additional_ad_valorem', rate_pct='10', stacking_rule="'in addition to any other duties, fees, taxes, exactions, or charges' (2025-06063 sec. 3(c)) except as provided in 3(d)-(e); replaced (not stacked) by the country rate for Korea on 2025-04-09 (see EO14257_KR25)",
          instrument="EO 14257 (FR 2025-06063)", legal_basis="IEEPA",
          signed_at="2025-04-02", published_at="2025-04-07", effective_at="2025-04-05T00:01-04:00",
          ends_rule="IEEPA additional duties ended by EO14389_end_ieepa; for Korea the 10% is replaced by the "
@@ -39,7 +41,14 @@ ROWS = [
                           "except that goods loaded onto a vessel ... before 12:01 a.m. ... April 5, 2025, and "
                           "entered ... after 12:01 a.m. ... April 5, 2025, shall not be subject'",
          status="quote_checked", open_issues=""),
-    dict(action_id="EO14257_KR25", rate_kind='additional_ad_valorem', rate_pct='25', stacking_rule='unknown relative to EO14257_baseline10 (open issue)',
+    dict(action_id="EO14257_KR25", rate_kind='additional_ad_valorem', rate_pct='25',
+         stacking_rule="replaces, does not stack with, EO14257_baseline10: in HTS 2025 Rev. 7 heading 9903.01.25 (10%) "
+                       "excepts articles of countries enumerated in U.S. note 2(v)(xiii) entered after 12:01 a.m. EDT "
+                       "on April 9, 2025; South Korea is item (xlvi) of that list",
+         archive_evidence="2025 Rev. 7 (posted 2025-04-05) PDF p. 470 (99-III-298) heading 9903.01.25 and pp. 185-186 "
+                          "(99-III-13 to 14) note 2(v)(xiii)(xlvi); change record of Rev. 7: 9903.01.54 Added, effective "
+                          "April 9, 2025; Rev. 9 change record: 9903.01.25 Modified, effective April 10, 2025. No "
+                          "archive_gap: the boundary dates are the change-record effective dates",
          instrument="EO 14257 Annex I (FR 2025-06063); HTS 9903.01.54", legal_basis="IEEPA",
          signed_at="2025-04-02", published_at="2025-04-07", effective_at="2025-04-09T00:01-04:00",
          ends_at="2025-04-10T00:01-04:00",
@@ -48,11 +57,11 @@ ROWS = [
          scope="Korea", rate_or_effect="+25% ad valorem (country-specific)",
          superseded_by="EO14266_pause", amends="",
          source_quote_ref="2025-06063 sec. 3(b) '12:01 a.m. eastern daylight time on April 9, 2025'; HTS export "
-                          "9903.01.54 'The duty provided in the applicable subheading + 25%'; 2025-06462 sec. 2",
-         status="incomplete",
-         open_issues="Whether EO14257_baseline10 (10%) also applied on top of the 25% during 2025-04-09T00:01 to "
-                     "2025-04-10T00:01 is not stated in the archived texts. The current HTS 9903.01.25 excludes "
-                     "9903.02.02-9903.02.91 but that wording reflects the later state, not 2025-04-09"),
+                          "9903.01.54 'The duty provided in the applicable subheading + 25%'; 2025-06462 sec. 2; "
+                          "HTS 2025 Rev. 7 heading 9903.01.25 'except for articles the product of a country enumerated "
+                          "in subdivision (v)(xiii) of U.S. note 2' and '(xlvi) South Korea, subject to an additional "
+                          "duty of 25%'",
+         status="quote_checked", open_issues=""),
     dict(action_id="EO14266_pause", rate_kind='none', rate_pct='', stacking_rule='',
          instrument="EO 14266 (FR 2025-06462)", legal_basis="IEEPA",
          signed_at="2025-04-09", published_at="2025-04-15", effective_at="2025-04-10T00:01-04:00",
@@ -70,7 +79,8 @@ ROWS = [
     dict(action_id="EO14316_extend", rate_kind='none', rate_pct='', stacking_rule='',
          instrument="EO 14316 (FR 2025-12962)", legal_basis="IEEPA",
          signed_at="2025-07-07", published_at="2025-07-10", effective_at="2025-07-09T00:01-04:00",
-         ends_at="2025-08-01T00:01-04:00", ends_rule="suspension ends at ends_at",
+         ends_at="2025-08-01T00:01-04:00",
+         ends_rule="suspension continued by EO14326_continue until 2025-08-07T00:01-04:00",
          applicability_rule=ENTRY, scope="all Annex I trading partners except the PRC",
          rate_or_effect="suspension of country-specific rates extended (HTS 9903.01.43-9903.01.62 and "
                         "9903.01.64-9903.01.76 suspended)",
@@ -79,9 +89,25 @@ ROWS = [
                           "eastern daylight time on August 1, 2025'; sec. 2 'on or after 12:01 a.m. eastern daylight "
                           "time on July 9, 2025, by suspending headings 9903.01.43 through 9903.01.62 and 9903.01.64 "
                           "through 9903.01.76'",
-         status="incomplete",
-         open_issues="Which rate applied to Korean goods between 2025-08-01T00:01 and the start of EO14326_KR15 "
-                     "(2025-08-07T00:01) is not stated in the archived texts read so far"),
+         status="quote_checked", open_issues=""),
+    dict(action_id="EO14326_continue", rate_kind="none", rate_pct="", stacking_rule="",
+         instrument="EO 14326 sec. 2(e) (FR 2025-15010)", legal_basis="IEEPA",
+         signed_at="2025-07-31", published_at="2025-08-06", effective_at="2025-08-01T00:01-04:00",
+         ends_at="2025-08-07T00:01-04:00",
+         ends_rule="ends when the Annex modifications take effect (EO14326_KR15); EO14257_baseline10 applies to "
+                   "Korean goods meanwhile",
+         applicability_rule=ENTRY, scope="all Annex I trading partners except the PRC (Korea included)",
+         rate_or_effect="country-specific rates stay suspended (HTS 9903.01.43-9903.01.62 and 9903.01.64-9903.01.76); "
+                        "the 10% rate applies",
+         amends="EO 14316", supersedes="EO14316_extend", superseded_by="EO14326_KR15",
+         source_quote_ref="2025-15010 sec. 2(e): 'continuing to suspend headings 9903.01.43 through 9903.01.62 and "
+                          "9903.01.64 through 9903.01.76' ... 'until the effective date of the modifications provided "
+                          "in A'; HTS 2025 Rev. 17 heading 9903.01.54 'provision suspended'",
+         archive_evidence="2025 Rev. 17 (posted 2025-08-01) PDF p. 484 (99-III-312): 9903.01.54 suspended, 9903.01.25 "
+                          "applies to any country; Rev. 18 change record: 9903.01.54 Modified (terminated) and 9903.02.56 "
+                          "Added, effective August 7, 2025. effective_at is the end of EO14316_extend; the order was "
+                          "signed before that date",
+         cosmetics_3303_3307="", status="quote_checked", open_issues=""),
     dict(action_id="EO14326_KR15", rate_kind='additional_ad_valorem', rate_pct='15', stacking_rule='added on top of column 1; HTS Rev. 22 heading 9903.01.25 (10%) excludes 9903.02.02-9903.02.91, but that is the current wording; per Rev. 22 U.S. note 2(v)(ix) (PDF p. 184) the 9903.02.01-9903.02.73 duties do not apply to the aluminum content of 9903.85.08 derivative products (current wording)',
          instrument="EO 14326 (FR 2025-15010); HTS 9903.02.56", legal_basis="IEEPA",
          signed_at="2025-07-31", published_at="2025-08-06", effective_at="2025-08-07T00:01-04:00",
@@ -122,11 +148,22 @@ ROWS = [
                             "under section 232 and section 301 (sec. 2(d))",
          source_quote_ref="2026-03832 sec. 1, sec. 2(a), 2(c), 2(d); API disposition_notes list EO 14388 and "
                           "Proc. 11012",
+         archive_evidence="2026 Rev. 4 (posted 2026-02-25) change record: U.S. note 2(a), (c), (j), (l), (m), (u), "
+                          "(y) Modified and 2(w) Deleted, effective February 24, 2026, source 'Executive Order'. The "
+                          "record does not say which order or that collection of the listed duties stopped that day: "
+                          "archive_gap for the collection end",
          status="incomplete",
-         open_issues="The date collection actually stopped is not in this document (CBP guidance outside the "
-                     "corpus). The surcharge starting 2026-02-24T00:01-05:00 suggests the switch, but that is an "
-                     "inference, not a source statement"),
-    dict(action_id="P11012_surcharge", rate_kind='additional_ad_valorem', rate_pct='10', stacking_rule="'in addition to any other duties' (para. (3)); 'shall not apply in addition to tariffs imposed under section 232' and applies only to the non-232 part of an import (para. (4)); ends when S301_KR_12_5 starts (2026-07-24T00:01-04:00), so the two do not overlap",
+         open_issues="The date collection actually stopped is not in this document (CBP guidance outside the corpus). "
+                     "The 2026 Rev. 4 change record dates note 2 changes to February 24, 2026, but does not state the "
+                     "end of collection; treating that date as the end would be an inference"),
+    dict(action_id="P11012_surcharge", rate_kind="additional_ad_valorem", rate_pct="10",
+         stacking_rule="'in addition to any other duties' (para. (3)); 'shall not apply in addition to tariffs imposed "
+                       "under section 232' and applies only to the non-232 part of an import (para. (4)); in HTS 2026 "
+                       "Rev. 4 note 2(aa)(v)(b) and (d) it does not apply to the declared value of the steel content of "
+                       "9903.81.89-9903.81.93 / .96-.99 derivatives or of the aluminum content of 9903.85.04/.07/.08/.09 "
+                       "/.13-.15 derivatives but applies to the non-metal content; those subdivisions were deleted "
+                       "effective April 6, 2026 (Rev. 5 change record, PP 11021); ends when S301_KR_12_5 starts "
+                       "(2026-07-24T00:01-04:00), so the two do not overlap",
          instrument="Proclamation 11012 (FR 2026-03824); HTS 9903.03.01-9903.03.11",
          legal_basis="Trade Act of 1974 sec. 122", signed_at="2026-02-20", published_at="2026-02-25",
          effective_at="2026-02-24T00:01-05:00", ends_at="2026-07-24T00:01-04:00",
@@ -138,24 +175,34 @@ ROWS = [
                "section 232 tariffs",
          rate_or_effect="+10% ad valorem temporary import surcharge (HTS 9903.03.01), treated as a regular customs "
                         "duty and in addition to other duties",
-         unaffected_actions="", source_quote_ref="2026-03824 paras. 13, (1)-(5), (7); HTS export 9903.03.01-9903.03.11; "
-                                                "HTS Rev. 22 chapter 99 PDF p. 221 U.S. note 2(aa)(i) 'imposes an "
-                                                "additional ad valorem rate of duty on imports of all products of any "
-                                                "country' and compiler's note 'expired at the close of July 23, 2026'",
-         status="incomplete",
-         cosmetics_3303_3307="Based on the explicit code lists and descriptive exceptions of HTS Rev. 22, the Korean "
-                             "cosmetics subheadings reviewed were not confirmed as excepted from the section 122 "
-                             "surcharge. Not in note 2(aa)(ii)-(iv) code lists (PDF pp. 223-230 = 99-III-51 to 58): "
-                             "all 24 subheadings of 3303-3307. Of these, 10 are not 232 aluminum derivatives "
-                             "(not_excepted_rev22) and 14 are listed in U.S. note 19(k) heading 9903.85.08 (S232_AL_derivative_19k; PDF p. 256 = "
-                             "99-III-84; needs_review_232_aluminum_derivative). See "
-                             "data/extracted/cosmetics_exception_check.csv",
-         open_issues="(1) Rev. 22 is read as of 2026-11-05; the note as in force on 2026-02-24 to 2026-07-24 is not "
-                     "reconstructed (earlier HTS revisions not collected). (2) For the 14 subheadings in note 19(k), "
-                     "para. (4) says the surcharge does not apply to the 232 part, while Rev. 22 note 2(aa)(v) names "
-                     "232 headings 9903.82.xx, not 9903.85.08, and was modified after expiration by 91 Fed. Reg. 18183 "
-                     "(not in the corpus): treatment of the aluminum content under S232_AL_derivative_19k is unresolved"),
-    dict(action_id="S301_KR_12_5", rate_kind='total_with_column1', rate_pct='12.5', stacking_rule='section 301 duty = 12.5% minus MFN (column 1) rate, 0 when MFN >= 12.5%; products also remain subject to any additional duty in subchapters III-IV of chapter 99 except as provided in U.S. note 52(b)-(k) (PDF p. 565, note 52(a))',
+         unaffected_actions="",
+         source_quote_ref="2026-03824 paras. 13, (1)-(5), (7); HTS export 9903.03.01-9903.03.11; HTS Rev. 22 chapter 99 "
+                          "PDF p. 221 U.S. note 2(aa)(i) 'imposes an additional ad valorem rate of duty on imports of "
+                          "all products of any country' and compiler's note 'expired at the close of July 23, 2026'; "
+                          "HTS 2026 Rev. 4 note 2(aa)(v) 'the declared value of the aluminum content of the derivative "
+                          "aluminum products provided for in headings 9903.85.04, 9903.85.07, 9903.85.08'",
+         archive_evidence="2026 Rev. 4 (posted 2026-02-25) change record: note 2(aa)(i)-(viii) and 9903.03.01-.11 "
+                          "Added, effective February 24, 2026, PP 11012; Rev. 4 PDF p. 230 (99-III-58) note 2(aa)(v)(a)-(e). "
+                          "2026 Rev. 5 (posted 2026-04-08) change record: note 2(aa)(v)(a)-(d), (g) Deleted and "
+                          "9903.85.08, 9903.81.91 Deleted, effective April 6, 2026, PP 11021. Rev. 13 change record: note "
+                          "52 Established effective July 24, 2026. No archive_gap for cosmetics: each change is dated in "
+                          "a change record",
+         status="quote_checked",
+         cosmetics_3303_3307="By period, for Korean cosmetics of headings 3303-3307 (none is in the code lists of note "
+                             "2(aa)(ii)-(iv) in Rev. 4 or Rev. 22): "
+                             "(a) 2026-02-24 to 2026-04-06: the 10 subheadings outside the 232 derivative lists bear the "
+                             "surcharge on full value; the 14 subheadings in note 16(n) (S232_ST_derivative_16n) and note "
+                             "19(k) (S232_AL_derivative_19k) bear it on the non-metal content only, per note 2(aa)(v)(b) "
+                             "and (d). (b) 2026-04-06 to 2026-07-24: those 232 derivative headings were deleted and the "
+                             "14 subheadings appear in no 9903.82 list (Rev. 5, 6, 12, 13), so all 24 bear the surcharge "
+                             "on full value. Determinations follow the HTS text and change records; the reviewed "
+                             "subheadings were not confirmed as excepted",
+         open_issues="Caveat: the treatment of a single entry whose steel and aluminum content are both present is "
+                     "not modelled; per-entry metal values are outside this table"),
+    dict(action_id="S301_KR_12_5", rate_kind="total_with_column1", rate_pct="12.5",
+         stacking_rule="section 301 duty = 12.5% minus MFN (column 1) rate, 0 when MFN >= 12.5%; products also remain "
+                       "subject to any additional duty in subchapters III-IV of chapter 99 except as provided in U.S. "
+                       "note 52(b)-(k) (PDF p. 565, note 52(a))",
          instrument="USTR notice FR 2026-15181; presidential memorandum FR 2026-15274",
          legal_basis="Trade Act of 1974 sec. 301", signed_at="2026-07-23", published_at="2026-07-28",
          effective_at="2026-07-24T00:01-04:00",
@@ -168,51 +215,76 @@ ROWS = [
                           "Switzerland ... 12.5 percent'; HTS Rev. 22 chapter 99 PDF p. 658 headings 9903.05.70 "
                           "(MFN >= 12.5%: no change) and 9903.05.71 (12.5%), both 'Except for products described "
                           "in headings 9903.05.85-9903.05.92'; U.S. note 52(a)-(j) pp. 565-605",
-         status="incomplete",
-         cosmetics_3303_3307="Based on the explicit code lists and descriptive exceptions of HTS Rev. 22, the Korean "
-                             "cosmetics subheadings reviewed were not confirmed as excepted from the section 301 action "
-                             "on South Korea (headings 9903.05.70-9903.05.71, PDF p. 658 = 99-III-486). Not in note "
-                             "52(b)-(e) code lists (PDF pp. 566-577): all 24 subheadings of 3303-3307; 10 are "
-                             "not_excepted_rev22 and 14 are note 19(k) aluminum derivatives "
-                             "(needs_review_232_aluminum_derivative). Note 52(f)(1) excepts derivative aluminum articles "
-                             "of headings 9903.82.02 and 9903.82.04-9903.82.26, not 9903.85.08",
-         open_issues="(1) Note 52 is read from HTS Rev. 22 (current at 2026-11-05); the state on 2026-07-24 and any "
-                     "later amendment are not reconstructed. (2) Whether the aluminum content of the 14 note 19(k) "
-                     "cosmetics subheadings falls under the 52(f)(1) exception (9903.82.xx) at a given date is "
-                     "unresolved; the relation between 9903.85.08 (S232_AL_derivative_19k) and 9903.82.xx is not in "
-                     "the corpus"),
+         archive_evidence="2026 Rev. 13 (posted 2026-07-28) change record: note 52(a)-(k), 9903.05.70 and 9903.05.71 "
+                          "Established, effective July 24, 2026 (Notice). Rev. 13 and Rev. 22 show no 3303-3307 "
+                          "subheading in note 52 lists and none in a 232 derivative heading in force (9903.85.08 and "
+                          "9903.81.91 deleted effective 2026-04-06)",
+         status="quote_checked",
+         cosmetics_3303_3307="All 24 subheadings of 3303-3307: not in note 52(b)-(e) code lists (Rev. 13, Rev. 22) and, "
+                             "after 2026-04-06, not in any 232 derivative heading, so the 52(f) exception does not reach "
+                             "them. The reviewed Korean cosmetics subheadings were not confirmed as excepted from the "
+                             "section 301 action",
+         open_issues="Caveat: amendments to note 52 after Rev. 13 are read only as of Rev. 22 (2026-11-05)"),
     dict(action_id="S232_AL_derivative_19k",
-         instrument="HTS Rev. 22 chapter 99 subchapter III U.S. note 19(h) and (k), heading 9903.85.08",
+         instrument="HTS U.S. note 19(k), heading 9903.85.08 (2025 Rev. 19 to 2026 Rev. 4)",
          legal_basis="Trade Expansion Act of 1962 sec. 232",
-         effective_at="", ends_at="",
-         ends_rule="not stated in the corpus; in Rev. 22 the derivative aluminum and steel headings in force for "
-                   "these exceptions are 9903.82.xx (U.S. note 16), and no tariff row for 9903.85.08 was found in the "
-                   "Rev. 22 PDF text (only notes 2, 19 and others refer to it)",
-         applicability_rule="derivative aluminum products classifiable in the subheadings listed in note 19(k), "
-                            "unless processed in another country from aluminum smelted and cast in the United States; "
-                            "the duty applies only to the declared value of the aluminum content",
+         effective_at="2025-08-18", ends_at="2026-04-06",
+         ends_rule="heading 9903.85.08 Deleted effective April 6, 2026 (2026 Rev. 5 change record, PP 11021); note 19 "
+                   "text naming it remains in later revisions but the heading has no tariff row",
+         applicability_rule="derivative aluminum products classifiable in the subheadings listed in note 19(k), unless "
+                            "processed in another country from aluminum smelted and cast in the United States; the duty "
+                            "applies only to the declared value of the aluminum content. effective_at is the date the "
+                            "14 cosmetics subheadings entered the list (change record effective date, no time given)",
          scope="all countries other than the United Kingdom (UK: note 19(s), heading 9903.85.15); the list includes 14 "
                "cosmetics subheadings 3303.00.10, 3303.00.20, 3303.00.30, 3304.30.00, 3304.99.50, 3305.10.00, "
                "3305.30.00, 3305.90.00, 3306.90.00, 3307.10.10, 3307.10.20, 3307.20.00, 3307.49.00, 3307.90.00",
-         rate_or_effect="section 232 additional duty on the aluminum content of derivative aluminum products (rate "
-                        "not transcribed)",
-         rate_kind="additional_ad_valorem", rate_pct="",
-         stacking_rule="note 19(h): any additional duty of subchapters III-IV is imposed in addition; not subject to "
-                       "9903.01.10 (Canada) or 9903.01.01 (Mexico); the reciprocal duties of note 2(v)(ix) apply only "
-                       "to the non-aluminum content (current wording)",
-         source_quote_ref="HTS Rev. 22 chapter 99 PDF p. 255 (99-III-83) note 19(h) 'provide the ordinary customs duty "
-                          "treatment applicable to all entries of derivative aluminum products from all countries'; "
-                          "p. 256 (99-III-84) note 19(k) 'The rates of duty in heading 9903.85.08 apply to all entries "
-                          "of derivative aluminum products' and 'shall only apply to the declared value of the aluminum "
-                          "content'; p. 184 (99-III-12) note 2(v)(ix)",
-         cosmetics_3303_3307="14 of the 24 cosmetics subheadings are listed in note 19(k); the other 10 are not "
-                             "(data/extracted/cosmetics_exception_check.csv, column aluminum_232_derivative_19k)",
-         status="incomplete",
-         open_issues="Rate, effective date and end date are not in the corpus: the proclamations that set and later "
-                     "restructured the 232 aluminum derivative duties (e.g. FR 2025-10524 and FR 2026-06960, found in "
-                     "the search but outside the selection rule) and earlier HTS revisions were not collected. Whether "
-                     "the 14 cosmetics subheadings remain 232 derivatives under the 9903.82.xx structure (U.S. note "
-                     "16) is not checked"),
+         rate_or_effect="+50% upon the value of the aluminum content (HTS 9903.85.08)",
+         rate_kind="additional_ad_valorem", rate_pct="50",
+         stacking_rule="note 19(h): any additional duty of subchapters III-IV is imposed in addition; the reciprocal "
+                       "duties (note 2(v)(ix)) and the surcharge (note 2(aa)(v)(d), until 2026-04-06) apply only to "
+                       "the non-aluminum content",
+         source_quote_ref="HTS 2025 Rev. 19 heading 9903.85.08 'The duty provided in the applicable subheading + a duty "
+                          "of 50% upon the value of the aluminum content'; HTS Rev. 22 chapter 99 PDF p. 256 (99-III-84) "
+                          "note 19(k) 'The rates of duty in heading 9903.85.08 apply to all entries of derivative "
+                          "aluminum products' and 'shall only apply to the declared value of the aluminum content'",
+         archive_evidence="Cosmetics subheadings absent from note 19(k) in 2025 Rev. 18 (posted 2025-08-06) and present "
+                          "in Rev. 19 (posted 2025-08-18, PDF note 19(k)); Rev. 19 change record: note 19(k) Modified, "
+                          "effective August 18, 2025, source 'Notice' (not identified by number); rate +50% in Rev. 19 "
+                          "and 2026 Rev. 3-4; 2026 Rev. 5 change record: 9903.85.08 Deleted, effective April 6, 2026",
+         cosmetics_3303_3307="14 of the 24 cosmetics subheadings are listed in note 19(k) from 2025-08-18 to 2026-04-06; "
+                             "the other 10 are not",
+         status="quote_checked",
+         open_issues="Caveat: the Notice behind the 2025-08-18 change is not named in the change record and was not "
+                     "collected; the effective time of day is not given"),
+    dict(action_id="S232_ST_derivative_16n",
+         instrument="HTS U.S. note 16(n), heading 9903.81.91 (2025 Rev. 19 to 2026 Rev. 4)",
+         legal_basis="Trade Expansion Act of 1962 sec. 232",
+         effective_at="2025-08-18", ends_at="2026-04-06",
+         ends_rule="heading 9903.81.91 Deleted effective April 6, 2026 (2026 Rev. 5 change record, PP 11021)",
+         applicability_rule="derivative iron or steel products classified in the subheadings listed in note 16(n); "
+                            "the duty applies only to the declared value of the steel content. effective_at is the "
+                            "date the 14 cosmetics subheadings entered the list (change record effective date)",
+         scope="all countries other than the United Kingdom (UK: note 16(u), heading 9903.81.98); the list includes the "
+               "same 14 cosmetics subheadings as S232_AL_derivative_19k",
+         rate_or_effect="+50% upon the value of the steel content (HTS 9903.81.91)",
+         rate_kind="additional_ad_valorem", rate_pct="50",
+         stacking_rule="applies together with S232_AL_derivative_19k: note 19(h) says entries of derivative aluminum "
+                       "products under 9903.85.04, 9903.85.07 and 9903.85.08 'shall also be subject to the additional "
+                       "duties imposed on entries of derivative iron and steel products' (9903.81.89-.91, .93) when "
+                       "their conditions are met; the surcharge does not apply to the declared value of the steel "
+                       "content (note 2(aa)(v)(b), until 2026-04-06)",
+         source_quote_ref="HTS Rev. 22 note 19(h) PDF p. 255 'shall also be subject to the additional duties imposed on "
+                          "entries of derivative iron and steel products'; "
+                          "HTS 2025 Rev. 19 heading 9903.81.91 'The duty provided in the applicable subheading + a duty "
+                          "of 50% upon the' and 'derivative iron or steel products provided for in the tariff "
+                          "subheadings enumerated in subdivision (n) of note 16'; HTS 2026 Rev. 4 note 16(n) 'The rates "
+                          "of duty in heading 9903.81.91 apply to'",
+         archive_evidence="Cosmetics subheadings in note 16(n) from 2025 Rev. 19 to 2026 Rev. 4 (Rev. 4 PDF p. 242, "
+                          "99-III-70), absent in Rev. 18; Rev. 19 change record: note 16(n) Modified, effective August "
+                          "18, 2025 (Notice); 2026 Rev. 5 change record: 9903.81.91 Deleted, effective April 6, 2026",
+         cosmetics_3303_3307="the same 14 cosmetics subheadings, 2025-08-18 to 2026-04-06",
+         status="quote_checked",
+         open_issues="Caveat: the Notice behind the 2025-08-18 change is not named and was not collected"),
     dict(action_id="EO14324_deminimis", rate_kind='none', rate_pct='', stacking_rule='',
          instrument="EO 14324 (FR 2025-14897)",
          legal_basis="IEEPA (suspends the administrative exemption of 19 U.S.C. 1321(a)(2)(C))",

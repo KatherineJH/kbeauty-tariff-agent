@@ -1,0 +1,13 @@
+release,posted_date,release_date_param,boundary,source_page
+2025HTSRev7,2025-04-05,2025-04-03,2025-04-05..04-10 before,https://hts.usitc.gov/download/archive
+2025HTSRev8,2025-04-10,2025-04-09,2025-04-05..04-10 after,https://hts.usitc.gov/download/archive
+2025HTSRev9,2025-04-10,2025-04-10,2025-04-05..04-10 after,https://hts.usitc.gov/download/archive
+2025HTSRev17,2025-08-01,2025-07-30,2025-08-01..08-07 before,https://hts.usitc.gov/download/archive
+2025HTSRev18,2025-08-06,2025-08-04,2025-08-01..08-07 after,https://hts.usitc.gov/download/archive
+2025HTSRev19,2025-08-18,2025-08-15,2025-08-01..08-07 after,https://hts.usitc.gov/download/archive
+2026HTSRev3,2026-02-11,2026-02-09,2026-02-24 before,https://hts.usitc.gov/download/archive
+2026HTSRev4,2026-02-25,2026-02-23,2026-02-24 after,https://hts.usitc.gov/download/archive
+2026HTSRev5,2026-04-08,2026-04-03,2026-04-09 before,https://hts.usitc.gov/download/archive
+2026HTSRev6,2026-04-23,2026-04-22,2026-04-09 after,https://hts.usitc.gov/download/archive
+2026HTSRev12,2026-07-21,2026-07-16,2026-07-24 before,https://hts.usitc.gov/download/archive
+2026HTSRev13,2026-07-28,2026-07-22,2026-07-24 after,https://hts.usitc.gov/download/archive
