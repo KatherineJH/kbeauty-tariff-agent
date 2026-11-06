@@ -354,7 +354,9 @@ def evaluate(rs: RuleSet, e: EntryInput) -> Result:
         res.computed_duties.append({"rule_id": r.rule_id, "duty_family": r.duty_family,
                                     "order": len(res.computed_duties) + 1, "value_component": r.value_component,
                                     "base_usd": base, "rate_kind": r.rate_kind, "rate_pct_applied": pct,
-                                    "duty_usd": duty, "evidence_ids": list(r.evidence_ids)})
+                                    "duty_usd": duty, "evidence_ids": list(r.evidence_ids),
+                                    "resolved_by_condition": (s.resolved_when if s.resolution_status != "resolved"
+                                                              else None)})
         res.trace.append(f"{r.rule_id}: {r.rate_kind} {pct}% x {r.value_component} {base} = {duty}")
     if incomplete:
         res.status = "incomplete"

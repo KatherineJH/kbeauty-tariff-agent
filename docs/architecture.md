@@ -164,6 +164,36 @@ dbt 테스트(예): 모든 `instrument`가 수집된 원문에 존재, `signed_a
 - **출력:** `computed_duties[]`(계산 순서, 가액, 적용 세율, 금액, 증거), `modelled_additional_duty`, `unresolved_components[]`(`not_modelled` / `uncertain` / `missing_input` / `partial_rule`, 필요한 입력 포함), `applied_rule_ids[]`, `excluded_rule_ids[]`(상태·사유), `evidence_ids[]`, `trace[]`.
 - **결정성:** 출력 순서는 마트의 행 순서와 무관하다. 관세 종류 순서와 `rule_id`로 정렬한다.
 
+### 4.3 주장 단위 인용 답변 (`src/tariffagent/answer/`, 검색 이전의 기준선)
+
+엔진 결과 → 규칙 ID → 주장(권한·세율·시작·종료·범위·예외·중첩·해결 조건) → 주장 역할별로 검증된 원문 발췌 → 구조화 답변. LLM과 검색은 아직 쓰지 않는다.
+
+- **명시적 인용 seed(`warehouse/seeds/rule_citations.csv`, 74개):**
+  - 사람이 작성한다. 규칙 구간마다 `claim_role`(`authority`, `rate`, `effective_start`, `effective_end`, `scope`, `exclusion`, `stacking`, `resolution_condition`)별로 `evidence_id`, `source_file`, `physical_page`, `printed_page`, 인용 문장을 적는다.
+  - 자동 탐색(`scripts/_draft_rule_citations.py`)은 후보 파일·쪽을 나열하는 초안 도구일 뿐이다. 같은 문장이 여러 쪽에 있으면(예: 2025 Rev. 19의 화장품 목록 문장이 주 16(n)·16(u)·19(k)·19(s)의 네 쪽에 있음) 사람이 쪽을 골라 seed에 고정한다.
+- **검증(`load_verified`):**
+  - 인용 문장이 **지정한 파일에** 있는지, 물리 쪽이 파일명과 맞는지, 인쇄 쪽이 그 쪽의 표기와 맞는지, 파일이 `evidence_id`에 속하는지, 파일 바이트가 잠금 파일(`data/extracted/rule_citations.lock.csv`)과 같은지만 확인한다.
+  - 다른 파일이나 쪽으로 넘어가 찾지 않는다. 하나라도 어긋나면 즉시 `CitationError`.
+  - seed를 고친 뒤에는 `scripts/lock_rule_citations.py`로 검증하고 잠금을 다시 쓴다.
+- **커버리지(`check_coverage`):**
+  - 구간의 필드가 요구하는 역할마다 인용이 있어야 한다.
+    - 항상: 권한, 시작, 범위
+    - 세율이 있으면: 세율
+    - 종료가 있으면: 종료
+    - 예외 목록 범위면: 예외
+    - 금속 함량 가액 구성이나 `total_with_column1`이면: 중첩
+    - 코드별 해결 조건이 있으면: 해결 조건
+  - 구간의 기간을 만든 모든 조치(`rule_segments.period_actions`)에서 시작·종료 인용이 하나 이상 있어야 한다. 예: 한국 10% 구간 B는 EO 14266(중지), EO 14316(연장), EO 14326 2(e)(계속)를 모두 인용해야 한다.
+  - 하나의 문서가 여러 역할을 충족해도 된다.
+- **답변(`compose`):**
+  - 문장(statement)마다 주장 목록(`claims`)을 두고, 각 주장에 같은 역할의 citation ID를 연결한다. 그 역할의 인용이 없으면 조립이 실패한다.
+  - 해결 조건으로 계산한 금액에는 `resolution_condition` 주장이 붙는다. 예: 과징금 구간 A의 금속 파생품 소호에는 주 2(aa)(v)(b)·(d)의 금속 함량 제외 문장과 비금속 부분 부과 문장이 붙는다.
+  - 상태와 금액은 엔진 그대로다. `computed_modelled_only`는 "This is not the total duty."로 쓰고, `incomplete`·`refused_uncertain`은 금액을 쓰지 않는다.
+  - 검색 문맥은 `background`에만 들어간다.
+- **알려진 한계:** 232 파생품의 권한 인용은 실제 적용 조문인 HTS 주의 문장이다. 그 바탕의 포고문은 코퍼스에 없다.
+
+다음 단계: 이 기준선에 BM25·dense·hybrid 검색을 차례로 붙여 비교한다.
+
 ## 5. 재현성 정의
 
 | 대상 | 기준 | 비교 방법 |

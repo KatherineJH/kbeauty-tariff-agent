@@ -5,8 +5,9 @@
 regulatory_actions.csv stays the sourced record (quotes, evidence, status). These seeds restate it for computation:
 
 rule_segments.csv        one row per rule segment: an action applied to one origin, HTS scope, transport scope and
-                         value component over a half-open period [starts_at, ends_at), with its duty family and its
-                         own resolution status (a segment, not the whole action, is the unit of resolution).
+                         value component over a half-open period [starts_at, ends_at), with its duty family, its
+                         own resolution status (a segment, not the whole action, is the unit of resolution) and
+                         period_actions: every action whose text sets the segment's start or end (each must be cited).
 rule_code_resolution.csv code-level overrides of a segment's resolution, whether the code's membership in the
                          segment's exception list was checked for that period (list_membership_verified), and the
                          input condition under which a 'partial' code becomes resolved for one entry
@@ -37,7 +38,8 @@ EXTRACTED = REPO / "data" / "extracted"
 LESS_METAL = "FULL_VALUE_LESS_232_METAL_CONTENT"
 SEG_FIELDS = ["segment_id", "action_id", "duty_family", "origin_country", "hts_scope", "transport_scope",
               "effect_kind", "value_component", "starts_at", "starts_precision", "ends_at", "ends_precision",
-              "rate_kind", "rate_pct", "segment_resolution_status", "segment_resolution_note", "segment_note"]
+              "rate_kind", "rate_pct", "segment_resolution_status", "segment_resolution_note", "period_actions",
+              "segment_note"]
 
 
 def precision(v: str) -> str:
@@ -45,30 +47,32 @@ def precision(v: str) -> str:
 
 
 def seg(segment_id, action_id, family, starts_at, ends_at, *, rate_kind, rate_pct="", hts_scope="ALL",
-        transport="ALL", effect="duty", value=LESS_METAL, origin="KR", status="resolved", status_note="", note=""):
+        transport="ALL", effect="duty", value=LESS_METAL, origin="KR", status="resolved", status_note="", note="",
+        period=None):
     return {"segment_id": segment_id, "action_id": action_id, "duty_family": family, "origin_country": origin,
             "hts_scope": hts_scope, "transport_scope": transport, "effect_kind": effect, "value_component": value,
             "starts_at": starts_at, "starts_precision": precision(starts_at), "ends_at": ends_at,
             "ends_precision": precision(ends_at), "rate_kind": rate_kind, "rate_pct": rate_pct,
-            "segment_resolution_status": status, "segment_resolution_note": status_note, "segment_note": note}
+            "segment_resolution_status": status, "segment_resolution_note": status_note,
+            "period_actions": ";".join(period or [action_id]), "segment_note": note}
 
 
 SEGMENTS = [
     seg("KR_RECIP10_A", "EO14257_baseline10", "ieepa_reciprocal", "2025-04-05T00:01-04:00", "2025-04-09T00:01-04:00",
         rate_kind="additional_ad_valorem", rate_pct="10", value="FULL_VALUE",
-        note="before the Korea 25% rate; in-transit exceptions not modelled"),
+        period=['EO14257_baseline10', 'EO14257_KR25'], note="before the Korea 25% rate; in-transit exceptions not modelled"),
     seg("KR_RECIP25", "EO14257_KR25", "ieepa_reciprocal", "2025-04-09T00:01-04:00", "2025-04-10T00:01-04:00",
         rate_kind="additional_ad_valorem", rate_pct="25", value="FULL_VALUE",
-        note="replaces the 10% for Korea (HTS 2025 Rev. 7 heading 9903.01.25)"),
+        period=['EO14257_KR25', 'EO14266_pause'], note="replaces the 10% for Korea (HTS 2025 Rev. 7 heading 9903.01.25)"),
     seg("KR_RECIP10_B", "EO14257_baseline10", "ieepa_reciprocal", "2025-04-10T00:01-04:00", "2025-08-07T00:01-04:00",
         rate_kind="additional_ad_valorem", rate_pct="10", value="FULL_VALUE",
-        note="country rate suspended (EO14266_pause, EO14316_extend, EO14326_continue); the 10% applies"),
+        period=['EO14266_pause', 'EO14316_extend', 'EO14326_continue'], note="country rate suspended (EO14266_pause, EO14316_extend, EO14326_continue); the 10% applies"),
     seg("KR_RECIP15", "EO14326_KR15", "ieepa_reciprocal", "2025-08-07T00:01-04:00", "2025-11-14T00:01-05:00",
         rate_kind="additional_ad_valorem", rate_pct="15",
-        note="does not apply to the 232 metal content of derivative products (note 2(v)); non-auto goods"),
+        period=['EO14326_KR15', 'KORdeal_15allin'], note="does not apply to the 232 metal content of derivative products (note 2(v)); non-auto goods"),
     seg("KR_DEAL15", "KORdeal_15allin", "ieepa_reciprocal", "2025-11-14T00:01-05:00", "2026-02-24T00:00-05:00",
         rate_kind="total_with_column1", rate_pct="15",
-        note="Part B goods; ends at the CBP cut-off for IEEPA collection (CSMS 67834313)"),
+        period=['KORdeal_15allin', 'EO14389_end_ieepa'], note="Part B goods; ends at the CBP cut-off for IEEPA collection (CSMS 67834313)"),
     seg("KR_S232_AL", "S232_AL_derivative_19k", "s232_derivative", "2025-08-18", "2026-04-06",
         rate_kind="additional_ad_valorem", rate_pct="50", hts_scope="LIST:s232_al_19k", value="ALUMINUM_CONTENT",
         status_note="resolved off the boundary days: the change-record days without a time are modelled as "
@@ -95,7 +99,7 @@ SEGMENTS = [
         status_note="note 52 lists read from HTS Rev. 22 (and Rev. 13 for cosmetics only)",
         note="note 52(f)(1) excepts 232 derivative content of 9903.82 headings"),
     seg("ALL_DEMIN_EO", "EO14324_deminimis", "de_minimis", "2025-08-29T00:01-04:00", "", rate_kind="none",
-        origin="ALL", effect="de_minimis_suspended", value="NA", note="continued by EO14388_continue"),
+        origin="ALL", effect="de_minimis_suspended", value="NA", period=['EO14324_deminimis', 'EO14388_continue'], note="continued by EO14388_continue"),
     seg("ALL_DEMIN_IFR_NP", "CBP_IFR_nonpostal", "de_minimis", "2026-06-24", "", rate_kind="none", origin="ALL",
         transport="NON_POSTAL", effect="de_minimis_suspended", value="NA",
         note="regulatory suspension under 19 U.S.C. 1321(b); entries valued at $800 or less"),

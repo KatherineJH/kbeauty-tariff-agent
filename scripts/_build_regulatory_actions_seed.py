@@ -310,7 +310,9 @@ ROWS = [
          applicability_rule=ENTRY, scope="all countries",
          rate_or_effect="duty-free de minimis treatment suspended",
          supersedes="EO 14256 sec. 2 (for goods entered on or after effective_at)",
-         source_quote_ref="2025-14897 sec. 4(a) and 4(b); 1321(a)(2)(C) named in 2025-16802 and 2026-12670",
+         source_quote_ref="2025-14897 sec. 4(a) 'shall be effective with respect to goods entered for consumption, or "
+                          "withdrawn from warehouse for consumption, on or after 12:01 a.m. eastern daylight time on "
+                          "August 29' and sec. 4(b); 1321(a)(2)(C) named in 2025-16802 and 2026-12670",
          status="quote_checked", open_issues=""),
     dict(action_id="CBP_EO14324_notice", rate_kind='none', rate_pct='', stacking_rule='',
          instrument="CBP notice FR 2025-16802", legal_basis="implements EO 14324",
@@ -319,8 +321,9 @@ ROWS = [
          scope="all countries; separate duty methods for the international postal network (Annex)",
          rate_or_effect="HTSUS modifications and duty collection procedures implementing the suspension",
          amends="HTSUS",
-         source_quote_ref="2025-16802 SUMMARY and DATES (both on or after 12:01 a.m. eastern daylight time on "
-                          "August 29, 2025)",
+         source_quote_ref="2025-16802 SUMMARY and DATES 'the amendments outlined herein are effective for articles "
+                          "that are entered for consumption, or withdrawn from warehouse for consumption, on or after "
+                          "12:01 a.m. eastern daylight time on August 29, 2025'",
          status="quote_checked", open_issues=""),
     dict(action_id="EO14388_continue", rate_kind='none', rate_pct='', stacking_rule='',
          instrument="EO 14388 (FR 2026-03829)",
@@ -352,7 +355,7 @@ ROWS = [
                             "(19 CFR 145.31) effective 2026-06-24; compliance date for 145.12(a)(2)(v)-(vi) 2026-10-22",
          scope="all countries; international postal network",
          rate_or_effect="de minimis exemption for mail indefinitely suspended; new postal informal entry process",
-         source_quote_ref="2026-12669 SUMMARY and DATES",
+         source_quote_ref="2026-12669 SUMMARY and DATES 'This interim final rule is effective on July 24, 2026'",
          status="quote_checked", open_issues=""),
 ]
 
