@@ -1,0 +1,76 @@
+pair_id,chunk_id,citation_ids,decision,reason,reviewer_type
+p01,ccde5b0f577741b4,KR_DEAL15.effective_end.1,not_relevant,실제 징수 중단 시점이 청크에 없음,human_assisted
+p01,42294fe571daddaa,KR_DEAL15.effective_end.1,relevant,2026-02-24 동부시각 오전 12:00 이후라고 명시함,human_assisted
+p02,76189f80273ca484,KR_S122_A.rate.1,relevant,10% 임시 수입 과징금 세율을 명시함,human_assisted
+p02,5a73702aeaa4f6b1,KR_S122_A.rate.1,relevant,10% 과징금 세율과 적용 규칙을 명시함,human_assisted
+p03,729bb8e82b3574ac,KR_S232_AL.rate.1,relevant,알루미늄 함량 가액에 50% 관세를 명시함,human_assisted
+p03,f652b28d38ff39d0,KR_S232_AL.rate.1,relevant,9903.85.08에 알루미늄 함량 가액의 50% 관세를 명시함,human_assisted
+p03,ae1c5ea039a5302e,KR_S232_AL.rate.1,relevant,9903.85.08에 알루미늄 함량 가액의 50% 관세를 명시함,human_assisted
+p03,42cbfbeb2e2559c0,KR_S232_AL.rate.1,relevant,9903.85.08에 알루미늄 함량 가액의 50% 관세를 명시함,human_assisted
+p03,1ce5613eae1b0483,KR_S232_AL.rate.1,relevant,9903.85.08에 알루미늄 함량 가액의 50% 관세를 명시함,human_assisted
+p04,c3a91f7f75bbaad4,KR_DEAL15.rate.1,relevant,한국산 물품의 기본세율과 추가 관세 합계가 15%가 된다고 명시함,human_assisted
+p04,0685427ea6a5b9cb,KR_DEAL15.rate.1,uncertain,"일반 한국산 제품의 합계 15% 규칙은 앞부분이 잘렸고, 완전하게 보이는 합계 문장은 별도 목재 조치에 관한 내용임",human_assisted
+p05,b7d7ecaaf22bc3c2,KR_S301.rate.1,relevant,한국산 제품에 MFN 차감 기준 12.5% 관세를 부과한다고 명시함,human_assisted
+p05,d335798de2ad2873,KR_S301.rate.1,relevant,MFN과 301조 관세의 합이 12.5%가 되는 계산 규칙을 명시함,human_assisted
+p06,09dbe1514fdea259,ALL_DEMIN_EO.effective_start.1,relevant,소액면세 중단이 2025-08-29 00:01 EDT부터 효력이 있다고 명시함,human_assisted
+p07,7f820a7d7d7a200e,ALL_DEMIN_IFR_P.scope.1,not_relevant,문서 게재일과 규칙의 목적만 있고 실제 시행일은 청크에 없음,human_assisted
+p07,0068b59ee9ef3061,ALL_DEMIN_IFR_P.effective_start.1;ALL_DEMIN_IFR_P.scope.1,relevant,잠정 최종 규칙이 2026-07-24부터 시행된다고 명시함,human_assisted
+p08,93e6f9c6f9823e40,KR_RECIP10_B.effective_end.1,not_relevant,연장 결정은 나오지만 새 만료일인 2025-08-01이 청크에 없음,human_assisted
+p08,f0aaa6f4af53ad50,KR_RECIP10_B.effective_end.1,relevant,유예를 2025-08-01 00:01 EDT까지 연장한다고 명시함,human_assisted
+p09,1172aa422ec1d682,KR_S232_ST.authority.1,not_relevant,9903.81.91 목록의 도입부이지만 3304.99.50 코드가 청크에 없어 포함 여부에 답하지 못함,human_assisted
+p09,8b4fbd56f4366838,KR_S232_ST.authority.1,not_relevant,9903.81.91 목록의 도입부이지만 3304.99.50 코드가 청크에 없어 포함 여부에 답하지 못함,human_assisted
+p09,4386b55c6d5c8ccd,KR_S232_ST.authority.1,not_relevant,9903.81.91은 보이지만 이 청크에 3304.99.50이 없고 목록이 끝나지 않아 질문에 답하지 못함,human_assisted
+p09,0f5f90a3a5d7dae0,KR_S232_ST.scope.1,uncertain,3304.99.50은 있지만 이 코드 목록을 9903.81.91에 연결하는 heading이 청크에 없음,human_assisted
+p09,b2c233e9e2f44dd9,KR_S232_ST.scope.1,uncertain,3304.99.50은 있지만 코드만 나열되어 목록의 명칭과 성격을 확인할 수 없음,human_assisted
+p09,0c6aef19f31eff49,KR_S232_ST.scope.1,uncertain,3304.99.50은 있지만 이 코드 목록을 9903.81.91에 연결하는 heading이 청크에 없음,human_assisted
+p09,9b509121c68a4847,KR_S232_ST.scope.1,uncertain,3304.99.50은 있지만 코드만 나열되어 목록의 명칭과 성격을 확인할 수 없음,human_assisted
+p09,0afb6ed1148ba4ae,KR_S232_ST.scope.1,not_relevant,3304.99.50은 있지만 9903.85.08 알루미늄 파생품 목록으로 질문의 9903.81.91 철강 목록이 아님,human_assisted
+p09,bd7a5a219d3ec3c4,KR_S232_ST.scope.1,not_relevant,3304.99.50은 있지만 9903.85.15 영국산 알루미늄 파생품 목록으로 질문과 다름,human_assisted
+p09,02bdab39428165b4,KR_S232_ST.authority.1,not_relevant,9903.81.91 heading은 있지만 해당 코드 목록이 나오기 전에 청크가 끝나 3304.99.50 포함 여부에 답하지 못함,human_assisted
+p09,aec5cf02c020ff8c,KR_S232_ST.authority.1,not_relevant,9903.81.91 heading은 있지만 해당 코드 목록이 나오기 전에 청크가 끝나 질문에 답하지 못함,human_assisted
+p09,6c8f2660f8370b34,KR_S232_ST.authority.1,not_relevant,9903.81.91 heading은 있지만 3304.99.50 포함 여부를 보여주는 목록 부분이 없음,human_assisted
+p09,2e9b420b1124905a,KR_S232_ST.scope.1,not_relevant,3304.99.50은 있지만 9903.85.08 알루미늄 파생품 목록으로 질문의 철강 목록이 아님,human_assisted
+p09,e6a850c061c3524f,KR_S232_ST.scope.1,not_relevant,3304.99.50은 있지만 9903.85.15 영국산 알루미늄 파생품 목록으로 질문과 다름,human_assisted
+p09,02b99bbc5eed3bb1,KR_S232_ST.scope.1,not_relevant,3304.99.50은 있지만 9903.85.08 알루미늄 파생품 목록으로 질문과 다름,human_assisted
+p09,c77abc59856eaf7e,KR_S232_ST.scope.1,not_relevant,3304.99.50은 있지만 9903.85.15 영국산 알루미늄 파생품 목록으로 질문과 다름,human_assisted
+p09,718dd8bcc500752b,KR_S232_ST.authority.1,not_relevant,9903.81.91 heading은 있지만 3304.99.50이 있는지 판단할 목록 부분이 청크에 없음,human_assisted
+p09,59240318f1372b2d,KR_S232_ST.scope.1,uncertain,3304.99.50과 철강 파생품 설명은 있지만 이 목록을 9903.81.91에 연결하는 heading이 청크에 없음,human_assisted
+p09,9315d3a4e3051534,KR_S232_ST.scope.1,uncertain,3304.99.50은 있지만 코드만 있어 9903.81.91 철강 파생품 목록인지 확인할 수 없음,human_assisted
+p09,4f98ea6c80d37f10,KR_S232_ST.scope.1,uncertain,3304.99.50과 철강 파생품 설명은 있지만 9903.81.91 heading이 청크에 없음,human_assisted
+p09,7e57d37028c92e3d,KR_S232_ST.scope.1,uncertain,3304.99.50은 있지만 코드만 있어 목록의 명칭과 성격을 확인할 수 없음,human_assisted
+p09,35dd4b68fe156216,KR_S232_ST.scope.1,not_relevant,3304.99.50은 있지만 9903.85.08 알루미늄 파생품 목록으로 질문과 다름,human_assisted
+p09,bc1ede1a679e9e67,KR_S232_ST.scope.1,not_relevant,3304.99.50은 있지만 9903.85.15 영국산 알루미늄 파생품 목록으로 질문과 다름,human_assisted
+p09,dbb00c76164b2361,KR_S232_ST.authority.1,not_relevant,9903.81.91 heading은 있지만 3304.99.50 포함 여부를 보여주는 목록 부분이 없음,human_assisted
+p09,11acb3c378b17e51,KR_S232_ST.scope.1,uncertain,3304.99.50과 철강 파생품 설명은 있지만 9903.81.91 heading이 청크에 없음,human_assisted
+p09,f676f074f4710105,KR_S232_ST.scope.1,uncertain,3304.99.50은 있지만 코드만 있어 목록의 명칭과 성격을 확인할 수 없음,human_assisted
+p09,8b40ea97e052bf3f,KR_S232_ST.scope.1,uncertain,3304.99.50과 철강 파생품 설명은 있지만 9903.81.91 heading이 청크에 없음,human_assisted
+p09,aed1b19bbe48c321,KR_S232_ST.scope.1,uncertain,3304.99.50은 있지만 코드만 있어 9903.81.91 철강 파생품 목록인지 확인할 수 없음,human_assisted
+p09,a175775d0bb80ced,KR_S232_ST.scope.1,not_relevant,3304.99.50은 있지만 9903.85.08 알루미늄 파생품 목록으로 질문과 다름,human_assisted
+p09,5e26bd07799111d7,KR_S232_ST.scope.1,not_relevant,3304.99.50은 있지만 9903.85.15 영국산 알루미늄 파생품 목록으로 질문과 다름,human_assisted
+p09,4b8db3db10688891,KR_S232_ST.scope.1,not_relevant,3304.99.50은 있지만 9903.85.08 알루미늄 파생품 목록으로 질문과 다름,human_assisted
+p09,de71a2cf4f0979f6,KR_S232_ST.scope.1,not_relevant,3304.99.50은 있지만 9903.85.15 영국산 알루미늄 파생품 목록으로 질문과 다름,human_assisted
+p09,ff2c6242fc407382,KR_S232_ST.scope.1,not_relevant,3304.99.50은 있지만 9903.85.08 알루미늄 파생품 목록으로 질문의 9903.81.91 철강 목록이 아님,human_assisted
+p09,55711bdd899a0296,KR_S232_ST.scope.1,not_relevant,3304.99.50은 있지만 9903.85.15 영국산 알루미늄 파생품 목록으로 질문과 다름,human_assisted
+p09,f6d4751cffdbad42,KR_S232_ST.scope.1,not_relevant,3304.99.50은 있지만 9903.85.08 알루미늄 파생품 목록으로 질문과 다름,human_assisted
+p09,97a76fcb6f9e7859,KR_S232_ST.scope.1,not_relevant,3304.99.50은 있지만 9903.85.15 영국산 알루미늄 파생품 목록으로 질문과 다름,human_assisted
+p10,f4dc53e5297d8a3f,KR_S122_A.stacking.1,not_relevant,알루미늄 함량 제외 문구는 있지만 9903.01·9903.02 계열 추가 관세에 관한 내용이며 질문의 과징금은 청크에 없음,human_assisted
+p10,9d11e2924e38d686,KR_S122_A.stacking.1,not_relevant,알루미늄 함량 제외 문구는 있지만 9903.01·9903.02 계열 추가 관세에 관한 내용이며 질문의 과징금은 청크에 없음,human_assisted
+p10,567520c1b2eb93d3,KR_S122_A.stacking.1,not_relevant,알루미늄 함량 제외 문구는 있지만 제시된 호 묶음의 추가 관세에 관한 내용으로 질문의 과징금을 뒷받침하지 않음,human_assisted
+p10,5bc8a12553570cf8,KR_S122_A.stacking.1,not_relevant,u056과 동일하게 9903.01·9903.02 계열 추가 관세에 관한 내용이며 질문의 과징금이 아님,human_assisted
+p10,04a2f60983a65223,KR_S122_A.stacking.1,not_relevant,u057과 동일하게 제시된 호 묶음의 추가 관세에 관한 내용이며 질문의 과징금이 아님,human_assisted
+p10,d1b5de4b55a17ac5,KR_S122_A.stacking.1,not_relevant,알루미늄 함량 제외 문구는 있지만 9903.01·9903.02 계열 추가 관세에 관한 내용이며 질문의 과징금이 아님,human_assisted
+p10,cc0d4200b3a65d9a,KR_S122_A.stacking.1,not_relevant,알루미늄 함량 제외 문구는 있지만 9903.02 계열 추가 관세에 관한 내용이며 질문의 과징금은 청크에 없음,human_assisted
+p10,86c19233b3dd648c,KR_S122_A.stacking.1,not_relevant,제시된 호 묶음의 추가 관세에 관한 내용으로 질문의 과징금을 뒷받침하지 않음,human_assisted
+p10,5003961ec2c263f4,KR_S122_A.stacking.1,not_relevant,9903.02 계열 추가 관세에 관한 내용이며 질문의 과징금은 청크에 없음,human_assisted
+p10,81c4fc29456e8636,KR_S122_A.stacking.1,uncertain,알루미늄 함량 제외 규칙은 있지만 앞 문맥이 잘려 ‘그러한 추가 관세’가 과징금인지 확인할 수 없음,human_assisted
+p10,844999cbf2b03eba,KR_S122_A.stacking.1,uncertain,알루미늄 함량 제외 문장은 있지만 실제 청크에 관세 명칭과 앞 문맥이 없어 과징금 규칙인지 확정할 수 없음,human_assisted
+p10,1326979d1d067679,KR_S122_A.stacking.1,not_relevant,알루미늄 함량 제외 문구는 있지만 9903.01·9903.02 계열 추가 관세에 관한 내용이며 질문의 과징금은 청크에 없음,human_assisted
+p10,e688914231640566,KR_S122_A.stacking.1,not_relevant,9903.02 계열 추가 관세의 제외 규칙이며 질문의 과징금을 뒷받침하지 않음,human_assisted
+p10,6f6a7e76f5a20db7,KR_S122_A.stacking.1,not_relevant,u066과 동일하게 9903.01·9903.02 계열 추가 관세에 관한 내용이며 질문의 과징금이 아님,human_assisted
+p10,91b5683ed7b03db7,KR_S122_A.stacking.1,not_relevant,u067과 동일하게 9903.02 계열 추가 관세에 관한 내용이며 질문의 과징금이 아님,human_assisted
+p10,3701711b80553e85,KR_S122_A.stacking.1,not_relevant,같은 제외 문구가 있지만 질문의 과징금이 아닌 9903.01·9903.02 계열 추가 관세에 관한 내용임,human_assisted
+p10,436e453d2ca03bfb,KR_S122_A.stacking.1,not_relevant,알루미늄 함량 제외 문구는 있지만 9903.02 계열 추가 관세에 관한 내용이며 질문의 과징금은 청크에 없음,human_assisted
+p11,ccde5b0f577741b4,KR_DEAL15.effective_end.1,relevant,EO 14389가 IEEPA 추가 종가 관세의 징수를 종료한다고 명시함,human_assisted
+p11,42294fe571daddaa,KR_DEAL15.effective_end.1,relevant,IEEPA 관세가 더 이상 효력이 없고 징수되지 않는다고 명시함,human_assisted
+p12,f274fe0909de0cbc,KR_RECIP25.rate.1,relevant,한국이 25% 추가 관세 대상이라고 직접 명시함,human_assisted
+p12,ace8c9e93570dce2,KR_RECIP25.rate.1,relevant,한국이 25% 추가 관세 대상이라고 직접 명시함,human_assisted

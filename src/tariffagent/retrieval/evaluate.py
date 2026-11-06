@@ -107,6 +107,15 @@ def pair_qrels(qrels_csv: Path) -> dict[str, dict[str, set[str]]]:
     return out
 
 
+def matched_pairs(path: Path) -> set[str]:
+    """Pairs whose English and Korean queries ask the same thing (pair_mismatch = false)."""
+    rows = _read(path)
+    bad = [r["pair_id"] for r in rows if r["pair_mismatch"] not in ("true", "false")]
+    if bad:
+        raise ValueError(f"pair_mismatch must be true or false: {bad}")
+    return {r["pair_id"] for r in rows if r["pair_mismatch"] == "false"}
+
+
 def time_conditions(path: Path) -> dict[str, str]:
     """query_id -> dated / time_invariant / underspecified."""
     out = {r["query_id"]: r["time_condition"] for r in _read(path)}
@@ -139,7 +148,8 @@ def evaluate(search, chunks: list[Chunk], qrels: dict[str, set[str]] | None = No
                          "bm25_score": f"{h.score:.6f}", "source_id": h.chunk.source_id,
                          "physical_page": h.chunk.physical_page, "printed_page": h.chunk.printed_page,
                          "relevant": int(any(h.chunk.chunk_id in qrels[c] for c in cites))})
-        row = {"query_id": q["query_id"], "lang": q["lang"], "answerable": int(bool(cites)),
+        row = {"query_id": q["query_id"], "pair_id": q["pair_id"], "lang": q["lang"],
+               "answerable": int(bool(cites)),
                "underspecified": int((conditions or {}).get(q["query_id"]) == "underspecified"),
                "unreachable_citations": sum(1 for c in cites if not qrels[c]),
                "relevant_citations": len(cites), "zero": int(not hits),
@@ -164,13 +174,28 @@ def evaluate(search, chunks: list[Chunk], qrels: dict[str, set[str]] | None = No
     return runs, per_query
 
 
-def summarize(per_query: list[dict], underspecified: bool = False) -> list[dict]:
+METRICS = ("macro_recall@5", "micro_recall@5", "macro_recall@10", "micro_recall@10", "mrr@10", "ndcg@10",
+           "zero_result_rate")
+
+
+def summarize(per_query: list[dict], underspecified: bool = False, matched_pairs: set[str] | None = None) -> list[dict]:
     """Answerable queries: macro and micro recall, MRR, nDCG, zero-result rate; all / en / ko.
-    Underspecified queries are left out, or summarized alone with underspecified=True."""
+    Underspecified queries are left out, or summarized alone with underspecified=True.
+    With matched_pairs (pairs whose English and Korean queries ask the same thing), also en_paired / ko_paired over
+    the pairs whose two queries are both in the set, and gap_en_minus_ko between them. Mismatched pairs stay in
+    all / en / ko and are left out of the paired rows only."""
+    base = [r for r in per_query if r["answerable"] and bool(r.get("underspecified")) == underspecified]
+    groups = [("all", base), ("en", [r for r in base if r["lang"] == "en"]),
+              ("ko", [r for r in base if r["lang"] == "ko"])]
+    if matched_pairs is not None:
+        langs: dict[str, set] = {}
+        for r in base:
+            langs.setdefault(r["pair_id"], set()).add(r["lang"])
+        both = {p for p, ls in langs.items() if p in matched_pairs and ls >= {"en", "ko"}}
+        groups += [(f"{lang}_paired", [r for r in base if r["pair_id"] in both and r["lang"] == lang])
+                   for lang in ("en", "ko")]
     out = []
-    for group in ("all", "en", "ko"):
-        rows = [r for r in per_query if r["answerable"] and (group == "all" or r["lang"] == group)
-                and bool(r.get("underspecified")) == underspecified]
+    for group, rows in groups:
         if not rows:
             continue
         n_rel = sum(r["relevant_citations"] for r in rows)
@@ -183,6 +208,12 @@ def summarize(per_query: list[dict], underspecified: bool = False) -> list[dict]
                     "mrr@10": f"{sum(r['mrr@10'] for r in rows) / len(rows):.4f}",
                     "ndcg@10": f"{sum(r['ndcg@10'] for r in rows) / len(rows):.4f}",
                     "zero_result_rate": f"{sum(r['zero'] for r in rows) / len(rows):.4f}"})
+    paired = {r["group"]: r for r in out if r["group"].endswith("_paired")}
+    if len(paired) == 2:
+        en, ko = paired["en_paired"], paired["ko_paired"]
+        out.append({"group": "gap_en_minus_ko", "queries": en["queries"], "relevant_citations": "",
+                    "unreachable_citations": "",
+                    **{m: f"{float(en[m]) - float(ko[m]):.4f}" for m in METRICS}})
     return out
 
 

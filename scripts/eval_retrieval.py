@@ -5,7 +5,8 @@
 
 The optional second argument is the retrieval-qrels file (default evals/dev/retrieval_qrels.csv, the v1 file).
 A v2 file (judged per query pair and chunk) also needs evals/dev/query_time_conditions.csv; underspecified queries
-are then reported apart from the main set.
+are then reported apart from the main set, and evals/dev/query_pair_checks.csv gives the English/Korean pairs that
+ask the same thing: only those enter en_paired / ko_paired and gap_en_minus_ko (mismatched pairs stay in all/en/ko).
 
 A run folder is never overwritten (the script stops if it exists). It holds:
   bm25_dev_runs.csv          top 10 per query: rank, score, source, pages, relevant_citation, relevant_retrieval
@@ -28,12 +29,14 @@ from tariffagent.answer.citations import CITATIONS
 from tariffagent.retrieval.bm25 import B, K1, BM25Index
 from tariffagent.retrieval.corpus import REPO, build_chunks, corpus_hashes, documents
 from tariffagent.retrieval.evaluate import (QUERIES, RETRIEVAL_QRELS, citation_qrels, evaluate, pair_qrels,
-                                            retrieval_qrels, summarize, summarize_unanswerable, time_conditions)
+                                            matched_pairs, retrieval_qrels, summarize, summarize_unanswerable,
+                                            time_conditions)
 
 OUT = REPO / "reports" / "retrieval"
 MANIFEST = REPO / "data" / "extracted" / "retrieval" / "bm25_manifest.json"
 QRELS_META = REPO / "evals" / "dev" / "qrels_meta.json"
 TIME_CONDITIONS = REPO / "evals" / "dev" / "query_time_conditions.csv"
+PAIR_CHECKS = REPO / "evals" / "dev" / "query_pair_checks.csv"
 
 
 def write(path: Path, rows: list[dict]) -> None:
@@ -64,6 +67,7 @@ def main(run: str, qrels_csv: Path = RETRIEVAL_QRELS) -> None:
     with qrels_csv.open(encoding="utf-8") as f:
         v2 = "pair_id" in f.readline()   # v2: judged per (query pair, chunk), with query time conditions
     conditions = time_conditions(TIME_CONDITIONS) if v2 else None
+    pairs_ok = matched_pairs(PAIR_CHECKS) if v2 else None
     qrel_sets = {"citation": {"qrels": citation_qrels(chunks)},
                  "retrieval": {"by_pair": pair_qrels(qrels_csv)} if v2 else {"qrels": retrieval_qrels(chunks, qrels_csv)}}
     runs, per_query, metrics, unanswerable = None, [], [], []
@@ -77,10 +81,10 @@ def main(run: str, qrels_csv: Path = RETRIEVAL_QRELS) -> None:
                 assert row["chunk_id"] == other["chunk_id"]
                 row["relevant_retrieval"] = other["relevant"]
         per_query += [_fmt({"qrels": name, **row}) for row in pq]
-        metrics += [{"qrels": name, "queries_set": "main", **row} for row in summarize(pq)]
+        metrics += [{"qrels": name, "queries_set": "main", **row} for row in summarize(pq, matched_pairs=pairs_ok)]
         if v2:
             metrics += [{"qrels": name, "queries_set": "underspecified", **row}
-                        for row in summarize(pq, underspecified=True)]
+                        for row in summarize(pq, underspecified=True, matched_pairs=pairs_ok)]
         if name == "citation":
             unanswerable = summarize_unanswerable(pq)
 
@@ -94,7 +98,7 @@ def main(run: str, qrels_csv: Path = RETRIEVAL_QRELS) -> None:
     MANIFEST.parent.mkdir(parents=True, exist_ok=True)
     MANIFEST.write_bytes(body)
     lines = [f"{hashlib.sha256(p.read_bytes()).hexdigest()}  {p.relative_to(REPO).as_posix()}"
-             for p in (QUERIES, CITATIONS, qrels_csv, QRELS_META) + ((TIME_CONDITIONS,) if v2 else ())]
+             for p in (QUERIES, CITATIONS, qrels_csv, QRELS_META) + ((TIME_CONDITIONS, PAIR_CHECKS) if v2 else ())]
     (out / "inputs.sha256").write_text("\n".join(lines) + "\n", encoding="utf-8", newline="\n")
     for m in metrics + unanswerable:
         print(m)

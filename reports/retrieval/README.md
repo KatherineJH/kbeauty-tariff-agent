@@ -78,3 +78,54 @@ Files: `bm25_dev_runs.csv` (top 10 per query with `relevant_citation` and `relev
 
 Not done yet, on purpose: query translation, synonyms, Korean tokenization, parameter tuning, dense retrieval. They
 will be added as separate configurations and compared with this baseline on the same dev set.
+
+## run_003_user_reviewed_qrels (2026-11-06, no tuning) — fixed dev baseline
+
+Same corpus, chunks, index and parameters as run_001 and run_002 (identical manifest hashes); the rankings are the
+same. What changed is the dev qrel set, now fixed for BM25, dense and hybrid comparisons (`evals/dev/README.md`):
+
+- **retrieval qrels v2** (`evals/dev/retrieval_qrels_v2.csv`): 75 (query pair, chunk) units judged by the user
+  (`human_assisted`: decided in chat from Claude's neutral Korean translations; see
+  `evals/dev/review/translation_notes.md`). Criterion: only the query's stated conditions and the returned chunk
+  with its metadata. relevant 18, not_relevant 42, uncertain 15 (uncertain is kept, not counted as relevant).
+- **time conditions** (`evals/dev/query_time_conditions.csv`): dated 2, time_invariant 12, underspecified 10.
+  Underspecified queries are reported apart from the main set.
+- **pair checks** (`evals/dev/query_pair_checks.csv`): 7 of 12 English/Korean pairs ask different things; only the
+  5 matched pairs enter `en_paired` / `ko_paired` / `gap_en_minus_ko`. Every query keeps its individual result.
+- Agreement with Claude's sealed reading (`evals/dev/review/agreement.md`): 71/75 units (0.947), Cohen's kappa
+  0.909; 57/57 where neither said uncertain; time conditions 20/24. One of the four unit disagreements (u065) is
+  the unit whose translation included a phrase not in the chunk. Claude's reading was not naive (it had seen the
+  cited locations and its own v1), so this is consistency between two readers, not independent validation.
+
+Answerable queries, retrieval qrels v2 (the `citation` rows in `bm25_dev_metrics.csv` keep the strict qrels for
+reference):
+
+| Set | Group | Queries | Citations | Unreachable | macro R@5 | macro R@10 | micro R@10 | MRR@10 | Zero-result |
+|---|---|---|---|---|---|---|---|---|---|
+| main | all | 14 | 16 | 0 | 0.3571 | 0.5714 | 0.5625 | 0.2872 | 0.1429 |
+| main | en | 7 | 8 | 0 | 0.5714 | 0.7143 | 0.7500 | 0.4966 | 0.0000 |
+| main | ko | 7 | 8 | 0 | 0.1429 | 0.4286 | 0.3750 | 0.0778 | 0.2857 |
+| main | en_paired | 3 | 4 | 0 | 0.6667 | 0.6667 | 0.7500 | 0.4444 | 0.0000 |
+| main | ko_paired | 3 | 4 | 0 | 0.0000 | 0.6667 | 0.5000 | 0.0704 | 0.3333 |
+| main | gap en − ko | 3 pairs | | | 0.6667 | 0.0000 | 0.2500 | 0.3740 | −0.3333 |
+| underspecified | en | 5 | 6 | 3 | 0.4000 | 0.6000 | 0.5000 | 0.1786 | 0.0000 |
+| underspecified | ko | 5 | 6 | 3 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.2000 |
+
+Unanswerable queries are unchanged from run_002 (English: something returned, top scores 12.4 and 17.8; Korean:
+nothing returned).
+
+Reading (exploratory; 14 + 10 queries, 3 matched pairs in the main set):
+- **Unreachable citations: 3 of 6 in the underspecified set, in each language.** p09 (3304.99.50 on the 9903.81.91
+  steel list: both its citations) and p10 (the surcharge's aluminum-content exclusion) have no chunk judged
+  relevant: the chunks that carry the code list or the exclusion do not carry the heading or the duty they belong
+  to, and the chunks with the heading do not carry the code. This is a retrieval-unit design failure, not a
+  ranking failure: no ranker can score these citations with the current chunks.
+- The paired language gap rests on 3 pairs (p01, p05, p07); Recall@10 is equal, Korean finds the evidence lower in
+  the list (Recall@5 0.00 vs 0.67) and returns nothing more often. Four other pairs were left out as mismatched.
+- In the main set the reviewed qrels change MRR/nDCG only slightly against the strict ones: units judged not
+  relevant (e.g. the CSMS title chunk for p01) no longer count, and no new relevant location was found.
+
+Next, on purpose as separate configurations compared on this fixed set: heading-enriched chunks (the note or heading
+line prefixed to each chunk, or carried as metadata the engine returns), then dense and hybrid retrieval. Changing
+the retrieval unit changes the units to be judged: chunks that did not exist in this review need their own
+judgements, recorded as a new qrel version, never by editing v2.

@@ -1,0 +1,25 @@
+query_id,pair_id,time_condition,reason
+dq01_en,p01,time_invariant,이미 발생한 CBP 징수 중단의 날짜를 묻는 역사적 사실로 답이 변하지 않음
+dq01_ko,p01,time_invariant,이미 발생한 IEEPA 관세 징수 중단 시점을 묻는 역사적 사실임
+dq02_en,p02,time_invariant,특정 Section 122 임시 과징금 조치 자체에 정해진 세율을 묻음
+dq02_ko,p02,time_invariant,특정 임시 수입 과징금 조치 자체의 세율을 묻음
+dq03_en,p03,underspecified,HTS 세율은 개정 시점에 따라 달라질 수 있지만 질문에 날짜나 개정판이 없음
+dq03_ko,p03,underspecified,HTS 세율은 개정 시점에 따라 달라질 수 있지만 날짜나 개정판이 없음
+dq04_en,p04,underspecified,특정 합의나 시행 문서를 밝히지 않은 한국 상호관세율은 시점에 따라 달라질 수 있음
+dq04_ko,p04,time_invariant,특정 한미 합의가 정한 합산 세율을 묻는 것으로 합의 내용은 고정됨
+dq05_en,p05,time_invariant,한국 대상 Section 301 조치의 12.5% MFN 차감 계산 규칙을 특정함
+dq05_ko,p05,time_invariant,특정 Section 301 조치의 12.5% MFN 차감 규칙을 묻음
+dq06_en,p06,dated,질문에 2025-08-29라는 기준 날짜가 직접 명시됨
+dq06_ko,p06,time_invariant,특정 소액면세 중단 조치의 역사적 시행일을 묻는 질문으로 답이 고정됨
+dq07_en,p07,time_invariant,특정 잠정 최종 규칙의 역사적 시행일을 묻는 질문임
+dq07_ko,p07,time_invariant,특정 잠정 최종 규칙의 시행일을 묻는 질문으로 답이 고정됨
+dq08_en,p08,dated,질문에 연장 종료 시점인 2025-08-01이 직접 명시됨
+dq08_ko,p08,underspecified,8월 1일은 있지만 연도가 없어 어느 시점의 유예 연장인지 확정할 수 없음
+dq09_en,p09,underspecified,3304.99.50의 목록 포함 여부는 HTS 개정판에 따라 달라질 수 있지만 날짜나 판본이 없음
+dq09_ko,p09,underspecified,철강 파생품 목록 포함 여부는 개정 시점에 따라 달라지지만 기준 날짜나 판본이 없음
+dq10_en,p10,underspecified,알루미늄 함량 제외 규칙은 시행 중 개정될 수 있지만 질문에 기준 시점이 없음
+dq10_ko,p10,underspecified,어떤 시점과 어떤 과징금의 제외 규칙인지 특정되지 않아 답이 달라질 수 있음
+dq11_en,p11,time_invariant,특정 행정명령 EO 14389의 IEEPA 관세 징수 종료 내용을 묻는 것으로 답이 고정됨
+dq11_ko,p11,time_invariant,EO 14389라는 특정 행정명령의 IEEPA 관세 종료 내용을 묻는 것으로 답이 고정됨
+dq12_en,p12,underspecified,한국의 추가 관세율은 시점과 조치에 따라 달라지지만 기준 날짜나 조치가 없음
+dq12_ko,p12,underspecified,한국 상호관세율은 시점에 따라 달라지지만 기준 날짜나 행정명령이 없음

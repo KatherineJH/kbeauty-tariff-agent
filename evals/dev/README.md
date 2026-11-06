@@ -84,6 +84,24 @@ and used page context outside the chunk. Both are against this criterion, so v1 
 4. `run_003_user_reviewed_qrels` is run with v2. From then on v2 is the fixed dev qrel set for BM25, dense and
    hybrid; a later change is a v3 with its own run, logged below.
 
+## Fixed dev qrel set (v2), 2026-11-06
+
+The user's review is final and is the common dev standard for BM25, dense and hybrid retrieval from run_003 on.
+A test fails if any of these files changes; a change is a new version (v3) with its own run.
+
+| file | sha256 |
+|---|---|
+| `retrieval_qrels_v2.csv` | `76558b2871fc2c58d6e1e423fc54a954c4bc009cc2adb149531fe7c823b84ab0` |
+| `query_time_conditions.csv` | `44f92e654db79edc365f7bf79baf2f2774062a0fafb794936883596355ce53ee` |
+| `query_pair_checks.csv` | `1631c2616adb3d602ff2007be9ecd1f6ee916ffb9b7a75b33fbfbea46ea34310` |
+| `queries.csv` | `cbd50211190789a77e0ffe5201d18638678c5529277505546bbd889de2d7e838` |
+
+- 75 units: relevant 18, not_relevant 42, uncertain 15. Time conditions: dated 2, time_invariant 12,
+  underspecified 10. Pairs: 7 mismatched (p02, p04, p06, p08, p10, p11, p12), 5 matched.
+- Agreement with Claude's sealed reading: `review/agreement.md`, disagreements in `review/disagreements.csv`.
+- Queries are not edited. If a mismatched pair is rewritten (for example dq04_en with "Under the Korea–U.S.
+  agreement"), it is a new query version with its own run; v2 and run_003 stay as they are.
+
 ## Change log
 
 | Date | Change | Relative to runs | Reason |
@@ -95,3 +113,4 @@ and used page context outside the chunk. Both are against this criterion, so v1 
 | 2026-11-06 | Claude's reading of the 75 units and 24 time conditions sealed (`review/claude_review.csv`, `review/claude_time_review.csv`, sha256 above), committed before the user's review with the empty sheets | before any user decision | the commit time proves the model reading came first; `reports/retrieval/run_001_strict_citation_qrels` and `run_002_reviewed_retrieval_qrels` were not changed (no diff against the previous commit) |
 | 2026-11-06 | `reviewer_type` value `human_assisted` added | after the seal commit, before any user decision | the user reviews in chat from neutral Korean translations of the English chunks; Claude records the answers verbatim |
 | 2026-11-06 | user review recorded: 75 units, 24 time conditions, 12 pair checks (`human_assisted`), with `review/translation_notes.md`; hashes in `review/user_review.sha256` | committed before the sealed Claude files are opened and before finalize | the commit order proves the user decisions were fixed before the agreement was computed |
+| 2026-11-06 | sealed Claude files opened; `finalize_qrel_review.py` wrote v2, time conditions, pair checks and the agreement report; run_003 run with v2 | after the user-review commit | v2 fixed as the dev standard; run_001 and run_002 unchanged |

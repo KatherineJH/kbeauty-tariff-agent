@@ -11,6 +11,7 @@ claude_time_review.csv for the time conditions.
 Writes:
   evals/dev/retrieval_qrels_v2.csv        pair_id, chunk_id, citation_ids, decision, reason, reviewer_type
   evals/dev/query_time_conditions.csv     query_id, pair_id, time_condition, reason
+  evals/dev/query_pair_checks.csv         copy of review/pair_checks.csv (pair_mismatch per English/Korean pair)
   evals/dev/review/agreement.md           counts; with claude_review.csv: raw agreement, Cohen's kappa, confusion
   evals/dev/review/disagreements.csv      units where the two readings differ, with both reasons
 The sheet's decisions are final in v2. Stops if anything is undecided or unknown, if reviewer_type is mixed, and
@@ -31,6 +32,9 @@ SECOND = REVIEW / "claude_review.csv"
 SECOND_TIME = REVIEW / "claude_time_review.csv"
 V2 = DEV / "retrieval_qrels_v2.csv"
 CONDITIONS = DEV / "query_time_conditions.csv"
+PAIR_SHEET = REVIEW / "pair_checks.csv"
+PAIRS = DEV / "query_pair_checks.csv"
+NOTES = REVIEW / "translation_notes.md"
 VALUES = ("relevant", "not_relevant", "uncertain")
 TIME_VALUES = ("dated", "time_invariant", "underspecified")
 REVIEWER_TYPES = ("human", "human_assisted", "second_model_review")
@@ -78,6 +82,8 @@ def main() -> None:
              f"Reviewer of the sheet: {kind}" + KIND_NOTE[kind] + ".",
              f"Units (query pair x chunk): {len(sheet)}. Decisions: "
              + ", ".join(f"{v} {sum(d == v for d in users.values())}" for v in VALUES) + ".",
+             *(["Translation assistance and its possible influence: review/translation_notes.md."]
+               if kind == "human_assisted" and NOTES.exists() else []),
              "Query time conditions: "
              + ", ".join(f"{v} {sum(r['time_condition'].strip() == v for r in times)}" for v in TIME_VALUES) + ".", ""]
     if SECOND.exists():
@@ -116,6 +122,8 @@ def main() -> None:
     _write(V2, [{"pair_id": r["pair_id"], "chunk_id": r["chunk_id"], "citation_ids": r["citation_ids"],
                  "decision": r["user_decision"].strip(), "reason": r["user_reason"].strip(), "reviewer_type": kind}
                 for r in sheet])
+    if PAIR_SHEET.exists():
+        _write(PAIRS, _read(PAIR_SHEET))
     _write(CONDITIONS, [{"query_id": r["query_id"], "pair_id": r["pair_id"],
                          "time_condition": r["time_condition"].strip(), "reason": r["reason"].strip()} for r in times])
     print("\n".join(lines))

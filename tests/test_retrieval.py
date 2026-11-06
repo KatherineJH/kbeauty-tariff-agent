@@ -274,7 +274,8 @@ def _fill(tmp_path: Path, decide, kind="human", second=None) -> object:
             w.writerows({"unit_id": r["unit_id"], "decision": second(i), "reason": "x"} for i, r in enumerate(sheet))
     for name, path in (("REVIEW", review), ("SHEET", review / "qrel_review_sheet.csv"),
                        ("TIME_SHEET", review / "query_time_sheet.csv"), ("SECOND", review / "claude_review.csv"),
-                       ("V2", tmp_path / "v2.csv"), ("CONDITIONS", tmp_path / "times.csv")):
+                       ("V2", tmp_path / "v2.csv"), ("CONDITIONS", tmp_path / "times.csv"),
+                       ("PAIRS", tmp_path / "pairs.csv")):
         setattr(mod, name, path)
     return mod
 
@@ -326,3 +327,27 @@ def test_claude_sealed_reading_is_unchanged():
         assert hashlib.sha256((DEV / "review" / name).read_bytes()).hexdigest() == recorded
     units = {r["unit_id"] for r in _csv(DEV / "review" / "qrel_review_sheet.csv")}
     assert {r["unit_id"] for r in _csv(DEV / "review" / "claude_review.csv")} == units
+
+
+def test_paired_language_rows_use_only_matched_pairs():
+    rows = []
+    for pid, recall in (("p1", (1.0, 0.0)), ("p2", (1.0, 1.0)), ("p3", (0.0, 1.0))):
+        for lang, r in zip(("en", "ko"), recall):
+            rows.append({"query_id": f"{pid}_{lang}", "pair_id": pid, "lang": lang, "answerable": 1,
+                         "underspecified": 0, "relevant_citations": 1, "unreachable_citations": 0, "zero": 0,
+                         "found@5": int(r), "found@10": int(r), "recall@5": r, "recall@10": r, "mrr@10": r,
+                         "ndcg@10": r, "top_score": 1.0})
+    rows[5]["underspecified"] = 1          # p3_ko is outside the main set, so p3 cannot be paired there
+    out = {r["group"]: r for r in summarize(rows, matched_pairs={"p1", "p3"})}
+    assert out["en"]["queries"] == 3 and out["ko"]["queries"] == 2        # mismatched p2 stays in en / ko
+    assert out["en_paired"]["queries"] == 1 and out["ko_paired"]["queries"] == 1   # only p1
+    assert out["gap_en_minus_ko"]["macro_recall@10"] == "1.0000"
+    assert "en_paired" not in {r["group"] for r in summarize(rows)}
+
+
+def test_fixed_dev_qrels_v2_are_unchanged():
+    import hashlib
+    readme = (DEV / "README.md").read_text("utf-8")
+    for name in ("retrieval_qrels_v2.csv", "query_time_conditions.csv", "query_pair_checks.csv", "queries.csv"):
+        recorded = re.search(rf"\| `{re.escape(name)}` \| `([0-9a-f]{{64}})`", readme).group(1)
+        assert hashlib.sha256((DEV / name).read_bytes()).hexdigest() == recorded, name
