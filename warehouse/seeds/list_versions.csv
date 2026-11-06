@@ -1,0 +1,5 @@
+list_id,list_role,source_revision,valid_from,valid_to,temporal_status,note
+s232_al_19k,include,2025HTSRev19..2026HTSRev4,2025-08-18,2026-04-06,verified_for_period,cosmetics in note 19(k) in every collected revision of the period; change-record dates
+s232_st_16n,include,2025HTSRev19..2026HTSRev4,2025-08-18,2026-04-06,verified_for_period,cosmetics in note 16(n) in every collected revision of the period; change-record dates
+surcharge,exclude,2026HTSRev22,2026-10-30,,current_revision_only,read from Rev. 22 (posted 2026-10-30); not valid evidence for an earlier instant
+s301_korea,exclude,2026HTSRev22,2026-10-30,,current_revision_only,read from Rev. 22 (posted 2026-10-30); not valid evidence for an earlier instant

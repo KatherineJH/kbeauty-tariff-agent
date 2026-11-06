@@ -1,0 +1,10 @@
+tariff:
+  target: local
+  outputs:
+    local:
+      type: duckdb
+      path: "{{ env_var('TARIFF_DUCKDB', 'warehouse/tariff.duckdb') }}"
+      threads: 1
+      settings:
+        threads: 1
+        TimeZone: "UTC"

@@ -1,0 +1,7 @@
+duty_family,modelled,note
+ieepa_reciprocal,true,reciprocal and Korea rates under IEEPA
+s232_derivative,true,"232 derivative duties, chapter 33 cosmetics only"
+s122_surcharge,true,temporary import surcharge (Proclamation 11012)
+s301,true,section 301 action on South Korea
+de_minimis,true,suspension of duty-free de minimis treatment
+mfn,false,column 1 (MFN / FTA) rates are not modelled here

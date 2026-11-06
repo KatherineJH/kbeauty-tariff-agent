@@ -97,6 +97,42 @@ EO 14389 본문은 EO 번호를 직접 표기하지 않고, 2026-02-20자 「Con
 dbt 테스트(예): 모든 `instrument`가 수집된 원문에 존재, `signed_at ≤ published_at`, 대체 관계에 순환 없음, `effective_at`이 비면 `ends_rule`처럼 서술 근거가 있음.
 에이전트는 효력 판단을 이 표의 조회로 하고, 본문 RAG는 근거 인용에 쓴다. 이 분리 자체를 평가한다(효력 표 없이 RAG만 쓴 구성과 비교).
 
+### 4.1 웨어하우스 계층 (dbt, `warehouse/`)
+
+| 계층 | 모델 | 역할 |
+|---|---|---|
+| seed | `regulatory_actions` | 출처 기록(인용, 증거, 상태). 사람이 원문을 읽고 작성 |
+| seed | `rule_segments`, `rule_code_resolution`, `rule_hts_lists`, `list_versions`, `duty_families`, `action_evidence`, `evidence_catalog` | 계산용 재진술(`scripts/_build_rule_seeds.py`) |
+| seed | `boundary_fixtures`, `family_fixtures` | **사람이 작성한 정적 기대값.** 생성 코드와 분리(`warehouse/seeds/README.md`) |
+| staging | `stg_regulatory_actions`, `stg_rule_segments`, `stg_hts_exception_codes` | 명시적 타입. 시각은 `TIMESTAMPTZ`, 원문 시각 문자열은 `*_source`에 보존 |
+| intermediate | `int_action_relations`, `int_regulatory_action_periods`, `int_fixture_rule_states` | 선언된 관계, 구간과 경계 불확실 구간, fixture 기준 적용 상태 |
+| mart | `mart_tariff_rules`, `mart_rule_code_resolution`, `mart_tariff_rule_lists` | 규칙 엔진 입력 |
+
+- **구간:** 모든 기간은 반개구간 `[effective_at, ends_at)`이다. `ends_at`이 NULL이면 코퍼스에 종료가 없다는 뜻이다. `rate_pct`가 NULL이면 세율이 아니다(`rate_kind = none`).
+- **날짜만 아는 경계:** 원문이 날짜만 주는 경계(`precision = date`)는 효력 시각이 아니다. `effective_at`/`ends_at`의 그날 00:00 America/New_York 값은 정렬용이고, 그날 하루 전체(`effective_at`~`start_uncertain_until`, `ends_at`~`end_uncertain_until`)를 **불확실**로 둔다. 이 구간에서는 자동 계산하지 않는다. 날짜는 `effective_on`/`ends_on`에 따로 둔다.
+- **해결 상태의 단위:** action이 아니라 규칙 구간(`resolution_status`)이 기본 단위다. HTS 코드 단위로 덮어쓸 수 있다(`mart_rule_code_resolution`). 예를 들어 과징금 구간 A는 232 금속이 없는 화장품 10개 소호에는 `resolved`, 232 파생품 14개 소호에는 `partial`이다. 자동 계산은 해당 코드의 해결 상태가 `resolved`이고 시각이 불확실 구간 밖일 때만 한다.
+- **목록의 시점:** 모든 HTS 목록에 `source_revision`, `valid_from`, `valid_to`, `temporal_status`가 있다. Rev. 22에서 읽은 예외 목록(3,775개 코드)은 `current_revision_only`이며 `valid_from` = 2026-10-30(Rev. 22 게시일)이다. 그보다 이른 시점에는 목록 소속을 판정할 수 없어 **불확실**이 된다. 예외적으로 그 기간 판본에서 코드 단위로 확인한 경우(`list_membership_verified`, 화장품 24개 소호)만 판정한다.
+- **관세 종류:** 각 규칙은 `duty_family`(`ieepa_reciprocal`, `s232_derivative`, `s122_surcharge`, `s301`, `de_minimis`)에 속한다. MFN은 `not_modelled`다. "2026-02-24 00:00에 과징금 없음"을 "아무 관세도 없음"으로 읽지 않도록 관세 종류별 fixture를 둔다.
+- **범위:** 원산지는 한국만 모델링한다(소액면세는 `ALL`). HTS 목록 비교는 8단위 소호 또는 10단위 줄의 정확 일치만 쓴다. 232 파생품 목록은 33장 화장품만 담는다.
+- **책임 경계:** dbt는 관세 총액을 계산하지 않는다. 한 시점에 적용·불확실인 규칙 집합을 결정적으로 돌려주는 데까지만 맡는다. 중첩과 가액 구성 계산은 규칙 엔진이 한다.
+- **데이터 테스트(48개):**
+  - 상태 허용값
+  - 관계 ID·증거 ID 참조 무결성
+  - 반개구간
+  - NULL 의미
+  - 비해결 행·구간·코드의 사유 필수
+  - 목록 범위 코드 존재
+  - 미선언 중첩 실패
+  - 현행 목록의 과거 사용 금지
+  - 경계값 fixture 57개(적용·불확실·자동 계산의 세 집합)
+  - 관세 종류별 fixture 31개
+- **negative test(pytest, 5건):** 다음과 같이 seed를 훼손하면 지정한 dbt 테스트가 반드시 실패해야 한다.
+  - 경계 기대값을 틀리게 바꿈
+  - 232 알루미늄·철강 관계를 제거함
+  - 한-미 합의의 대체 관계를 제거함
+  - 현행 목록의 유효 시작일을 과거로 당김
+  - 관세 종류별 기대값을 틀리게 바꿈
+
 ## 5. 재현성 정의
 
 | 대상 | 기준 | 비교 방법 |

@@ -1,0 +1,57 @@
+name: tariff
+version: "0.1.0"
+profile: tariff
+config-version: 2
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+target-path: "target"
+clean-targets: ["target"]
+
+vars:
+  # dbt is run from the repository root (scripts/build_warehouse.py)
+  extracted_dir: "data/extracted"
+  local_tz: "America/New_York"
+
+seeds:
+  tariff:
+    +column_types: {}
+    regulatory_actions:
+      +column_types:
+        rate_pct: varchar
+        signed_at: varchar
+        published_at: varchar
+        effective_at: varchar
+        ends_at: varchar
+    rule_segments:
+      +column_types:
+        starts_at: varchar
+        ends_at: varchar
+        rate_pct: varchar
+    rule_hts_lists:
+      +column_types:
+        hts8: varchar
+    boundary_fixtures:
+      +column_types:
+        at: varchar
+        hts10: varchar
+        expected_applies: varchar
+        expected_uncertain: varchar
+        expected_auto: varchar
+    rule_code_resolution:
+      +column_types:
+        hts8: varchar
+    list_versions:
+      +column_types:
+        valid_from: varchar
+        valid_to: varchar
+
+models:
+  tariff:
+    staging:
+      +materialized: view
+    intermediate:
+      +materialized: view
+    marts:
+      +materialized: table

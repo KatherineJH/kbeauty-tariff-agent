@@ -1,0 +1,120 @@
+version: 2
+
+seeds:
+  - name: regulatory_actions
+    description: Sourced record of each regulatory action (scripts/_build_regulatory_actions_seed.py).
+  - name: rule_segments
+    description: Machine-readable rule segments (scripts/_build_rule_seeds.py).
+  - name: action_evidence
+    columns:
+      - name: action_id
+        data_tests:
+          - relationships: {arguments: {to: ref('regulatory_actions'), field: action_id}}
+      - name: evidence_id
+        data_tests:
+          - not_null
+          - relationships: {arguments: {to: ref('evidence_catalog'), field: evidence_id}}
+  - name: evidence_catalog
+    columns:
+      - name: evidence_id
+        data_tests: [unique, not_null]
+
+models:
+  - name: stg_regulatory_actions
+    columns:
+      - name: action_id
+        data_tests: [unique, not_null]
+      - name: evidence_status
+        data_tests:
+          - accepted_values: {arguments: {values: ['quote_checked', 'unverified']}}
+      - name: resolution_status
+        data_tests:
+          - accepted_values: {arguments: {values: ['resolved', 'partial', 'unresolved']}}
+      - name: rate_kind
+        data_tests:
+          - accepted_values: {arguments: {values: ['additional_ad_valorem', 'total_with_column1', 'none']}}
+      - name: source_quote_ref
+        data_tests: [not_null]
+
+  - name: stg_rule_segments
+    columns:
+      - name: duty_family
+        data_tests:
+          - not_null
+          - relationships: {arguments: {to: ref('duty_families'), field: duty_family}}
+      - name: segment_resolution_status
+        data_tests:
+          - accepted_values: {arguments: {values: ['resolved', 'partial', 'unresolved']}}
+      - name: segment_id
+        data_tests: [unique, not_null]
+      - name: action_id
+        data_tests:
+          - not_null
+          - relationships: {arguments: {to: ref('regulatory_actions'), field: action_id}}
+      - name: origin_country
+        data_tests:
+          - accepted_values: {arguments: {values: ['KR', 'ALL']}}
+      - name: transport_scope
+        data_tests:
+          - accepted_values: {arguments: {values: ['ALL', 'POSTAL', 'NON_POSTAL']}}
+      - name: effect_kind
+        data_tests:
+          - accepted_values: {arguments: {values: ['duty', 'de_minimis_suspended']}}
+      - name: value_component
+        data_tests:
+          - accepted_values:
+              arguments:
+                values: ['FULL_VALUE', 'FULL_VALUE_LESS_232_METAL_CONTENT', 'ALUMINUM_CONTENT', 'STEEL_CONTENT', 'NA']
+      - name: rate_kind
+        data_tests:
+          - accepted_values: {arguments: {values: ['additional_ad_valorem', 'total_with_column1', 'none']}}
+      - name: starts_at
+        data_tests: [not_null]
+      - name: starts_precision
+        data_tests:
+          - accepted_values: {arguments: {values: ['minute', 'date']}}
+
+  - name: int_action_relations
+    columns:
+      - name: from_action
+        data_tests:
+          - relationships: {arguments: {to: ref('regulatory_actions'), field: action_id}}
+      - name: to_action
+        data_tests:
+          - relationships: {arguments: {to: ref('regulatory_actions'), field: action_id}}
+
+  - name: mart_tariff_rules
+    description: Minimal rule-engine input; one row per rule segment, half-open period [effective_at, ends_at).
+    columns:
+      - name: rule_id
+        data_tests: [unique, not_null]
+      - name: effective_at
+        data_tests: [not_null]
+      - name: evidence_ids
+        data_tests: [not_null]
+      - name: resolution_status
+        data_tests:
+          - accepted_values: {arguments: {values: ['resolved', 'partial', 'unresolved']}}
+
+  - name: mart_rule_code_resolution
+    columns:
+      - name: rule_id
+        data_tests:
+          - relationships: {arguments: {to: ref('mart_tariff_rules'), field: rule_id}}
+      - name: resolution_status
+        data_tests:
+          - accepted_values: {arguments: {values: ['resolved', 'partial', 'unresolved']}}
+
+  - name: mart_tariff_rule_lists
+    columns:
+      - name: list_role
+        data_tests:
+          - accepted_values: {arguments: {values: ['include', 'exclude']}}
+      - name: temporal_status
+        data_tests:
+          - not_null
+          - accepted_values: {arguments: {values: ['verified_for_period', 'current_revision_only']}}
+      - name: valid_from
+        data_tests: [not_null]
+      - name: source_revision
+        data_tests: [not_null]
