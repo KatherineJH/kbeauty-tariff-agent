@@ -1,0 +1,4 @@
+group,queries,empty_result_rate,mean_top_score_when_returned
+all,4,0.5000,15.0895
+en,2,0.0000,15.0895
+ko,2,1.0000,

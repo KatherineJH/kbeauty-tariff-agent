@@ -1,0 +1,8 @@
+{
+  "candidate_rule": "a location is a candidate when its normalized page text contains the citation's normalized quote verbatim; every candidate gets a reviewer decision in retrieval_qrels.csv",
+  "chunk_config_sha256": "c765f54d061f40f0199b00970686bb3de1deffac9eb48f51cebbd7a2537dec32",
+  "chunks": 7738,
+  "chunks_sha256": "0fc2e84a71611f3362abde96f94acb8ec9d3933338d56c65506b7bf7742da60f",
+  "documents": 1218,
+  "documents_sha256": "7a8ba600aec8e57a63fc08b59959b09e57efcff4c0409a78b1f014156ba8489b"
+}

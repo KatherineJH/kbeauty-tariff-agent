@@ -1,0 +1,4 @@
+cbd50211190789a77e0ffe5201d18638678c5529277505546bbd889de2d7e838  evals/dev/queries.csv
+1e2b88a1be9987def7cd2758f1044dfd06163ab5b8e1f0d32124229266999731  warehouse/seeds/rule_citations.csv
+43c7fe985a4c71cff83276ecdf8d9e5efe1305a3a919fed336a94ab74d575427  evals/dev/retrieval_qrels.csv
+c7ebe2ad914f2663a5f59eb9d0152689b37075819c1f7cc5032a5bc23629293e  evals/dev/qrels_meta.json

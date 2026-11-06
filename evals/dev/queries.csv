@@ -1,0 +1,29 @@
+query_id,lang,pair_id,text,relevant_citation_ids,author_note
+dq01_en,en,p01,When did CBP stop collecting IEEPA duties?,KR_DEAL15.effective_end.1,
+dq01_ko,ko,p01,IEEPA 관세 징수는 언제 중단됐나?,KR_DEAL15.effective_end.1,
+dq02_en,en,p02,section 122 temporary import surcharge rate on all articles,KR_S122_A.rate.1,same sentence also cited for KR_S122_A.scope.1 and KR_S122_B
+dq02_ko,ko,p02,122조 임시 수입 과징금 세율,KR_S122_A.rate.1,
+dq03_en,en,p03,heading 9903.85.08 duty on the value of the aluminum content,KR_S232_AL.rate.1,
+dq03_ko,ko,p03,9903.85.08 알루미늄 함량 가액에 대한 관세율,KR_S232_AL.rate.1,
+dq04_en,en,p04,sum of the column 1 duty rate and the reciprocal rate for Korea will be 15 percent,KR_DEAL15.rate.1,
+dq04_ko,ko,p04,한미 합의 기본세율과 상호관세 합계 15%,KR_DEAL15.rate.1,
+dq05_en,en,p05,section 301 tariff on products of South Korea 12.5 percent net of MFN,KR_S301.rate.1,
+dq05_ko,ko,p05,한국산 제품 301조 관세 12.5% MFN 차감,KR_S301.rate.1,
+dq06_en,en,p06,de minimis suspension effective August 29 2025,ALL_DEMIN_EO.effective_start.1,
+dq06_ko,ko,p06,소액면세 중단 시행일,ALL_DEMIN_EO.effective_start.1,
+dq07_en,en,p07,interim final rule effective date for de minimis mail shipments through the international postal network,ALL_DEMIN_IFR_P.effective_start.1;ALL_DEMIN_IFR_P.scope.1,
+dq07_ko,ko,p07,국제 우편망 소액면세 잠정 최종 규칙 시행일,ALL_DEMIN_IFR_P.effective_start.1;ALL_DEMIN_IFR_P.scope.1,
+dq08_en,en,p08,extend the suspension of country-specific reciprocal rates until August 1 2025,KR_RECIP10_B.effective_end.1,
+dq08_ko,ko,p08,국가별 상호관세 적용 유예를 8월 1일까지 연장,KR_RECIP10_B.effective_end.1,
+dq09_en,en,p09,3304.99.50 derivative iron or steel products heading 9903.81.91 list,KR_S232_ST.scope.1;KR_S232_ST.authority.1,the same list text is on several pages; only the 16(n) page is relevant
+dq09_ko,ko,p09,3304.99.50 화장품 철강 파생품 목록 9903.81.91,KR_S232_ST.scope.1;KR_S232_ST.authority.1,
+dq10_en,en,p10,surcharge does not apply to the declared value of the aluminum content of derivative aluminum products,KR_S122_A.stacking.1,
+dq10_ko,ko,p10,과징금 알루미늄 함량 가액 제외,KR_S122_A.stacking.1,
+dq11_en,en,p11,EO 14389 ending certain tariff actions collection of IEEPA duties,KR_DEAL15.effective_end.1,
+dq11_ko,ko,p11,EO 14389 IEEPA 관세 종료,KR_DEAL15.effective_end.1,
+dq12_en,en,p12,South Korea subject to an additional duty of 25%,KR_RECIP25.rate.1,
+dq12_ko,ko,p12,한국 상호관세 25%,KR_RECIP25.rate.1,
+dq13_en,en,p13,Japan consumption tax rate on imported Korean cosmetics,,unanswerable: corpus is US tariff law; no page contains "consumption tax"; added after run_001
+dq13_ko,ko,p13,일본의 한국 화장품 수입 소비세율,,unanswerable: corpus is US tariff law; no page contains "consumption tax"; added after run_001
+dq14_en,en,p14,Korean government export voucher subsidy limit for cosmetics exporters,,"unanswerable: no page contains ""export voucher""; added after run_001"
+dq14_ko,ko,p14,화장품 수출기업 정부 수출바우처 지원 한도,,"unanswerable: no page contains ""export voucher""; added after run_001"

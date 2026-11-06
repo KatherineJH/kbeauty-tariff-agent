@@ -1,6 +1,6 @@
 # 관세 변화 대응 K-뷰티 수출 의사결정 에이전트
 
-> 상태: **원천·D1 고정, 규정 효력 dbt 계층, 결정적 규칙 엔진, 구조화 인용 답변(검색 이전 기준선).** 구조와 재현성 정의는 [`docs/architecture.md`](docs/architecture.md), 원천과 이용 조건은 [`docs/data_sources.md`](docs/data_sources.md).
+> 상태: **원천·D1 고정, 규정 효력 dbt 계층, 결정적 규칙 엔진, 주장 단위 인용 답변, BM25 검색 기준선(튜닝 전).** 구조와 재현성 정의는 [`docs/architecture.md`](docs/architecture.md), 원천과 이용 조건은 [`docs/data_sources.md`](docs/data_sources.md).
 
 2025년 8월 상호관세와 소액면세 중단 이후, 미국에 수출하는 K-뷰티 브랜드 담당자의 질문
 ("우리 제품 세번이 맞나, 언제부터 관세가 얼마인가, 시장은 어떻게 움직였나")에
@@ -32,6 +32,7 @@ docs/           설계, 사전 등록, 검수 기록
 uv sync --frozen
 uv run python scripts/build_warehouse.py      # 규칙 seed 재생성 → dbt build(데이터 테스트 48개)
 uv run python scripts/lock_rule_citations.py  # 인용 seed 검증(지정 위치만)·필수 역할 커버리지·파일 해시 잠금
+uv run python scripts/eval_retrieval.py run_003_x   # BM25 코퍼스·색인 재생성(오프라인)과 dev 평가, 새 run 폴더에 기록(덮어쓰지 않음)
 uv run pytest -q -m "not slow"                # 개발용(약 1분): 무결성·재현성·경계값·증거·규칙 엔진
 uv run pytest -q                              # 전체 검증(CI): 위 + negative test(slow, 약 8분)
 uv run python scripts/rehydrate_hts_archive.py --check   # 과거 HTS 증거 스냅샷 오프라인 검사

@@ -1,0 +1,12 @@
+{
+  "b": 0.75,
+  "chunk_words": 120,
+  "chunks": 7738,
+  "chunks_sha256": "0fc2e84a71611f3362abde96f94acb8ec9d3933338d56c65506b7bf7742da60f",
+  "documents": 1218,
+  "documents_sha256": "7a8ba600aec8e57a63fc08b59959b09e57efcff4c0409a78b1f014156ba8489b",
+  "index_sha256": "1e14d90c02671e2aaaca4bcaf247b0f9039a0902a3980087d1d5cfba376931a3",
+  "index_terms": 35479,
+  "k1": 1.2,
+  "overlap_words": 30
+}
