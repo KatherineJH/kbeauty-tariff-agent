@@ -14,10 +14,8 @@ import build_warehouse  # noqa: E402
 
 
 @pytest.fixture(scope="module")
-def built(tmp_path_factory):
-    db = tmp_path_factory.mktemp("wh") / "tariff.duckdb"
-    summary = build_warehouse.build(db)
-    return db, summary
+def built(built_warehouse):
+    return built_warehouse
 
 
 def test_dbt_build_passes_every_node(built):

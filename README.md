@@ -1,6 +1,6 @@
 # 관세 변화 대응 K-뷰티 수출 의사결정 에이전트
 
-> 상태: **원천·D1 고정, 규정 효력 dbt 계층 구축(규칙 엔진 이전).** 구조와 재현성 정의는 [`docs/architecture.md`](docs/architecture.md), 원천과 이용 조건은 [`docs/data_sources.md`](docs/data_sources.md).
+> 상태: **원천·D1 고정, 규정 효력 dbt 계층과 결정적 규칙 엔진(첫 범위) 구현.** 구조와 재현성 정의는 [`docs/architecture.md`](docs/architecture.md), 원천과 이용 조건은 [`docs/data_sources.md`](docs/data_sources.md).
 
 2025년 8월 상호관세와 소액면세 중단 이후, 미국에 수출하는 K-뷰티 브랜드 담당자의 질문
 ("우리 제품 세번이 맞나, 언제부터 관세가 얼마인가, 시장은 어떻게 움직였나")에
@@ -31,6 +31,7 @@ docs/           설계, 사전 등록, 검수 기록
 ```bash
 uv sync --frozen
 uv run python scripts/build_warehouse.py      # 규칙 seed 재생성 → dbt build(데이터 테스트 48개)
-uv run pytest -q                              # 무결성·재현성·경계값·증거 검사, negative test(약 8분)
+uv run pytest -q -m "not slow"                # 개발용(약 1분): 무결성·재현성·경계값·증거·규칙 엔진
+uv run pytest -q                              # 전체 검증(CI): 위 + negative test(slow, 약 8분)
 uv run python scripts/rehydrate_hts_archive.py --check   # 과거 HTS 증거 스냅샷 오프라인 검사
 ```

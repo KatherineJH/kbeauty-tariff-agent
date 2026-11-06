@@ -133,6 +133,37 @@ dbt 테스트(예): 모든 `instrument`가 수집된 원문에 존재, `signed_a
   - 현행 목록의 유효 시작일을 과거로 당김
   - 관세 종류별 기대값을 틀리게 바꿈
 
+### 4.2 규칙 엔진 (`src/tariffagent/rules/engine.py`)
+
+- **두 단계뿐이다.**
+  - `select_rules`: 마트 필드만으로 규칙마다 `applies` / `uncertain` / `not_applicable`과 그 사유를 정한다. 법령 해석을 새로 하지 않으며, dbt 기준 모델(`int_fixture_rule_states`)과 모든 fixture에서 판정이 같아야 한다(테스트).
+  - `evaluate`: 계산을 허용한 적용 규칙의 추가 관세를 `Decimal`로 계산한다. 반올림 규칙은 모델링하지 않았으므로 원시 `Decimal`을 그대로 둔다.
+- **입력(`EntryInput`):**
+  - 필드: `entry_at`(시간대 필수), `origin_country`, `hts_code`(`NNNN.NN.NN` 또는 `NNNN.NN.NNNN`만), `customs_value_usd`, `transport_mode`, `is_postal`, `steel_content_value_usd`, `aluminum_content_value_usd`, `components_are_disjoint`, `column1_rate_pct`(`total_with_column1` 규칙에만 필요)
+  - 다음은 거부한다: `float`, 음수, 금속 함량 합계가 과세가격을 넘는 경우, 지원하지 않는 HTS 형식, 시간대 없는 시각.
+  - 시각은 UTC 순간으로 비교한다. 여름(EDT, UTC−4)과 겨울(EST, UTC−5) 경계를 테스트로 고정했다.
+- **자동 계산 허용:** `resolved`만 계산한다. `partial` 규칙은 계산하지 않고 `incomplete`로 돌려준다. 다만 코드별 해결 조건(`resolved_when`)을 입력이 충족하면 그 수입 건에 한해 `resolved`로 본다.
+  - 예: 과징금 구간 A는 232 파생품 소호의 과세 기준을 "가액 − 232 금속 함량"으로 정한다. 엔진은 철강·알루미늄 가액이 서로 겹치는지 알 수 없다. 그래서 두 가액이 모두 입력되고 `components_are_disjoint = True`가 선언될 때만 계산한다.
+  - 232 파생품 두 구간은 경계일 밖에서 `resolved`다. 경계일의 시각 미상은 불확실 구간으로 처리했고, Notice 미식별은 증거에 대한 단서다.
+- **계산 순서:**
+  1. 232 파생품의 금속 함량
+  2. 상호관세, 122조 과징금, 301조
+  3. 소액면세 중단은 효과만 기록한다.
+- **가액 구성:** 금속 함량이 필요한데 입력이 없으면 전체 가액으로 대신하지 않는다.
+- **세율 종류:**
+  - `additional_ad_valorem`: 가액 × 세율
+  - `total_with_column1`: 가액 × max(세율 − column 1 세율, 0). 0으로 바닥 처리하는 근거는 두 원문이 column 1이 상한 이상이면 추가 세율이 0이라고 명시하기 때문이다(FR 2025-21940, 2026-15181). 근거 문장 자체를 테스트한다.
+- **상태:** `status`와 함께 `coverage = modelled_families_only`, `not_modelled_families = ["mfn"]`을 항상 돌려준다.
+
+  | 상태 | 뜻 |
+  |---|---|
+  | `computed_modelled_only` | 모델링된 관세 종류의 적용 규칙을 모두 계산함. MFN 등 미모델링 관세에 대해서는 아무것도 말하지 않는다 |
+  | `incomplete` | 입력 부족이나 `partial` 규칙 때문에 합계를 내지 않음 |
+  | `refused_uncertain` | 날짜만 아는 경계일이거나 목록 소속을 확인할 수 없어 계산을 거부함. 필요한 정보를 함께 적음 |
+
+- **출력:** `computed_duties[]`(계산 순서, 가액, 적용 세율, 금액, 증거), `modelled_additional_duty`, `unresolved_components[]`(`not_modelled` / `uncertain` / `missing_input` / `partial_rule`, 필요한 입력 포함), `applied_rule_ids[]`, `excluded_rule_ids[]`(상태·사유), `evidence_ids[]`, `trace[]`.
+- **결정성:** 출력 순서는 마트의 행 순서와 무관하다. 관세 종류 순서와 `rule_id`로 정렬한다.
+
 ## 5. 재현성 정의
 
 | 대상 | 기준 | 비교 방법 |

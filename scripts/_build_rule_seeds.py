@@ -7,8 +7,11 @@ regulatory_actions.csv stays the sourced record (quotes, evidence, status). Thes
 rule_segments.csv        one row per rule segment: an action applied to one origin, HTS scope, transport scope and
                          value component over a half-open period [starts_at, ends_at), with its duty family and its
                          own resolution status (a segment, not the whole action, is the unit of resolution).
-rule_code_resolution.csv code-level overrides of a segment's resolution, and whether the code's membership in the
-                         segment's exception list was checked for that period (list_membership_verified).
+rule_code_resolution.csv code-level overrides of a segment's resolution, whether the code's membership in the
+                         segment's exception list was checked for that period (list_membership_verified), and the
+                         input condition under which a 'partial' code becomes resolved for one entry
+                         (resolved_when; 'metal_components_disjoint' = steel and aluminum values declared as
+                         disjoint parts of the customs value).
 rule_hts_lists.csv       HTS 8-digit subheadings of list-scoped rules (only chapter 33 cosmetics are modelled)
 list_versions.csv        for every HTS list: source revision, valid_from, valid_to and temporal status
 duty_families.csv        duty families and whether each is modelled (MFN is not)
@@ -68,11 +71,15 @@ SEGMENTS = [
         note="Part B goods; ends at the CBP cut-off for IEEPA collection (CSMS 67834313)"),
     seg("KR_S232_AL", "S232_AL_derivative_19k", "s232_derivative", "2025-08-18", "2026-04-06",
         rate_kind="additional_ad_valorem", rate_pct="50", hts_scope="LIST:s232_al_19k", value="ALUMINUM_CONTENT",
-        status="partial", status_note="dates are change-record days without a time; the Notice is not identified",
+        status_note="resolved off the boundary days: the change-record days without a time are modelled as "
+                    "uncertain windows; the unidentified Notice is an evidence caveat (rate and list are read from "
+                    "the HTS)",
         note="list modelled for chapter 33 cosmetics only"),
     seg("KR_S232_ST", "S232_ST_derivative_16n", "s232_derivative", "2025-08-18", "2026-04-06",
         rate_kind="additional_ad_valorem", rate_pct="50", hts_scope="LIST:s232_st_16n", value="STEEL_CONTENT",
-        status="partial", status_note="dates are change-record days without a time; the Notice is not identified",
+        status_note="resolved off the boundary days: the change-record days without a time are modelled as "
+                    "uncertain windows; the unidentified Notice is an evidence caveat (rate and list are read from "
+                    "the HTS)",
         note="list modelled for chapter 33 cosmetics only"),
     seg("KR_S122_A", "P11012_surcharge", "s122_surcharge", "2026-02-24T00:01-05:00", "2026-04-06",
         rate_kind="additional_ad_valorem", rate_pct="10", hts_scope="ALL_EXCEPT_LIST:surcharge", status="partial",
@@ -121,14 +128,17 @@ def code_resolution(all8: list[str], metal: set[str]) -> list[dict]:
     for c in all8:
         rows.append({"segment_id": "KR_S122_A", "hts8": c, "list_membership_verified": "true",
                      "resolution_status": "partial" if c in metal else "resolved",
+                     "resolved_when": "metal_components_disjoint" if c in metal else "",
                      "reason": "not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions)"
-                               + ("; 232 metal content and combined-metal entries not modelled" if c in metal else "")})
+                               + ("; the base is the value less the 232 steel and aluminum content, which is only "
+                                  "determined when the declared metal values are disjoint parts of the customs value"
+                                  if c in metal else "")})
         rows.append({"segment_id": "KR_S122_B", "hts8": c, "list_membership_verified": "true",
-                     "resolution_status": "resolved",
+                     "resolution_status": "resolved", "resolved_when": "",
                      "reason": "not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 "
                                "derivative heading in force after 2026-04-06"})
         rows.append({"segment_id": "KR_S301", "hts8": c, "list_membership_verified": "true",
-                     "resolution_status": "resolved",
+                     "resolution_status": "resolved", "resolved_when": "",
                      "reason": "not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)"})
     return rows
 
@@ -186,7 +196,7 @@ def main() -> None:
     all8, metal = cosmetics()
     write("rule_segments.csv", SEGMENTS, SEG_FIELDS)
     write("rule_code_resolution.csv", code_resolution(all8, metal),
-          ["segment_id", "hts8", "list_membership_verified", "resolution_status", "reason"])
+          ["segment_id", "hts8", "list_membership_verified", "resolution_status", "resolved_when", "reason"])
     lists = [{"list_id": lid, "hts8": c, "source": src} for lid, src in
              (("s232_al_19k", "HTS note 19(k)"), ("s232_st_16n", "HTS note 16(n)")) for c in sorted(metal)]
     write("rule_hts_lists.csv", lists, ["list_id", "hts8", "source"])

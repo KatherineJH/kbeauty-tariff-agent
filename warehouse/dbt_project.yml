@@ -42,6 +42,7 @@ seeds:
     rule_code_resolution:
       +column_types:
         hts8: varchar
+        resolved_when: varchar
     list_versions:
       +column_types:
         valid_from: varchar

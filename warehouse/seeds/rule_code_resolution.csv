@@ -1,73 +1,73 @@
-segment_id,hts8,list_membership_verified,resolution_status,reason
-KR_S122_A,3303.00.10,true,partial,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); 232 metal content and combined-metal entries not modelled
-KR_S122_B,3303.00.10,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3303.00.10,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3303.00.20,true,partial,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); 232 metal content and combined-metal entries not modelled
-KR_S122_B,3303.00.20,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3303.00.20,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3303.00.30,true,partial,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); 232 metal content and combined-metal entries not modelled
-KR_S122_B,3303.00.30,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3303.00.30,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3304.10.00,true,resolved,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions)
-KR_S122_B,3304.10.00,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3304.10.00,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3304.20.00,true,resolved,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions)
-KR_S122_B,3304.20.00,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3304.20.00,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3304.30.00,true,partial,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); 232 metal content and combined-metal entries not modelled
-KR_S122_B,3304.30.00,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3304.30.00,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3304.91.00,true,resolved,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions)
-KR_S122_B,3304.91.00,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3304.91.00,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3304.99.10,true,resolved,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions)
-KR_S122_B,3304.99.10,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3304.99.10,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3304.99.50,true,partial,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); 232 metal content and combined-metal entries not modelled
-KR_S122_B,3304.99.50,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3304.99.50,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3305.10.00,true,partial,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); 232 metal content and combined-metal entries not modelled
-KR_S122_B,3305.10.00,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3305.10.00,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3305.20.00,true,resolved,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions)
-KR_S122_B,3305.20.00,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3305.20.00,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3305.30.00,true,partial,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); 232 metal content and combined-metal entries not modelled
-KR_S122_B,3305.30.00,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3305.30.00,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3305.90.00,true,partial,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); 232 metal content and combined-metal entries not modelled
-KR_S122_B,3305.90.00,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3305.90.00,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3306.10.00,true,resolved,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions)
-KR_S122_B,3306.10.00,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3306.10.00,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3306.20.00,true,resolved,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions)
-KR_S122_B,3306.20.00,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3306.20.00,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3306.90.00,true,partial,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); 232 metal content and combined-metal entries not modelled
-KR_S122_B,3306.90.00,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3306.90.00,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3307.10.10,true,partial,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); 232 metal content and combined-metal entries not modelled
-KR_S122_B,3307.10.10,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3307.10.10,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3307.10.20,true,partial,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); 232 metal content and combined-metal entries not modelled
-KR_S122_B,3307.10.20,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3307.10.20,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3307.20.00,true,partial,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); 232 metal content and combined-metal entries not modelled
-KR_S122_B,3307.20.00,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3307.20.00,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3307.30.10,true,resolved,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions)
-KR_S122_B,3307.30.10,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3307.30.10,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3307.30.50,true,resolved,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions)
-KR_S122_B,3307.30.50,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3307.30.50,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3307.41.00,true,resolved,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions)
-KR_S122_B,3307.41.00,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3307.41.00,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3307.49.00,true,partial,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); 232 metal content and combined-metal entries not modelled
-KR_S122_B,3307.49.00,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3307.49.00,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
-KR_S122_A,3307.90.00,true,partial,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); 232 metal content and combined-metal entries not modelled
-KR_S122_B,3307.90.00,true,resolved,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
-KR_S301,3307.90.00,true,resolved,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+segment_id,hts8,list_membership_verified,resolution_status,resolved_when,reason
+KR_S122_A,3303.00.10,true,partial,metal_components_disjoint,"not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); the base is the value less the 232 steel and aluminum content, which is only determined when the declared metal values are disjoint parts of the customs value"
+KR_S122_B,3303.00.10,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3303.00.10,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3303.00.20,true,partial,metal_components_disjoint,"not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); the base is the value less the 232 steel and aluminum content, which is only determined when the declared metal values are disjoint parts of the customs value"
+KR_S122_B,3303.00.20,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3303.00.20,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3303.00.30,true,partial,metal_components_disjoint,"not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); the base is the value less the 232 steel and aluminum content, which is only determined when the declared metal values are disjoint parts of the customs value"
+KR_S122_B,3303.00.30,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3303.00.30,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3304.10.00,true,resolved,,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions)
+KR_S122_B,3304.10.00,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3304.10.00,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3304.20.00,true,resolved,,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions)
+KR_S122_B,3304.20.00,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3304.20.00,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3304.30.00,true,partial,metal_components_disjoint,"not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); the base is the value less the 232 steel and aluminum content, which is only determined when the declared metal values are disjoint parts of the customs value"
+KR_S122_B,3304.30.00,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3304.30.00,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3304.91.00,true,resolved,,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions)
+KR_S122_B,3304.91.00,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3304.91.00,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3304.99.10,true,resolved,,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions)
+KR_S122_B,3304.99.10,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3304.99.10,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3304.99.50,true,partial,metal_components_disjoint,"not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); the base is the value less the 232 steel and aluminum content, which is only determined when the declared metal values are disjoint parts of the customs value"
+KR_S122_B,3304.99.50,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3304.99.50,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3305.10.00,true,partial,metal_components_disjoint,"not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); the base is the value less the 232 steel and aluminum content, which is only determined when the declared metal values are disjoint parts of the customs value"
+KR_S122_B,3305.10.00,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3305.10.00,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3305.20.00,true,resolved,,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions)
+KR_S122_B,3305.20.00,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3305.20.00,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3305.30.00,true,partial,metal_components_disjoint,"not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); the base is the value less the 232 steel and aluminum content, which is only determined when the declared metal values are disjoint parts of the customs value"
+KR_S122_B,3305.30.00,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3305.30.00,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3305.90.00,true,partial,metal_components_disjoint,"not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); the base is the value less the 232 steel and aluminum content, which is only determined when the declared metal values are disjoint parts of the customs value"
+KR_S122_B,3305.90.00,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3305.90.00,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3306.10.00,true,resolved,,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions)
+KR_S122_B,3306.10.00,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3306.10.00,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3306.20.00,true,resolved,,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions)
+KR_S122_B,3306.20.00,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3306.20.00,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3306.90.00,true,partial,metal_components_disjoint,"not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); the base is the value less the 232 steel and aluminum content, which is only determined when the declared metal values are disjoint parts of the customs value"
+KR_S122_B,3306.90.00,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3306.90.00,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3307.10.10,true,partial,metal_components_disjoint,"not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); the base is the value less the 232 steel and aluminum content, which is only determined when the declared metal values are disjoint parts of the customs value"
+KR_S122_B,3307.10.10,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3307.10.10,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3307.10.20,true,partial,metal_components_disjoint,"not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); the base is the value less the 232 steel and aluminum content, which is only determined when the declared metal values are disjoint parts of the customs value"
+KR_S122_B,3307.10.20,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3307.10.20,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3307.20.00,true,partial,metal_components_disjoint,"not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); the base is the value less the 232 steel and aluminum content, which is only determined when the declared metal values are disjoint parts of the customs value"
+KR_S122_B,3307.20.00,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3307.20.00,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3307.30.10,true,resolved,,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions)
+KR_S122_B,3307.30.10,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3307.30.10,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3307.30.50,true,resolved,,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions)
+KR_S122_B,3307.30.50,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3307.30.50,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3307.41.00,true,resolved,,not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions)
+KR_S122_B,3307.41.00,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3307.41.00,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3307.49.00,true,partial,metal_components_disjoint,"not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); the base is the value less the 232 steel and aluminum content, which is only determined when the declared metal values are disjoint parts of the customs value"
+KR_S122_B,3307.49.00,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3307.49.00,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)
+KR_S122_A,3307.90.00,true,partial,metal_components_disjoint,"not in note 2(aa) code lists in 2026 Rev. 4 (cosmetics mentions); the base is the value less the 232 steel and aluminum content, which is only determined when the declared metal values are disjoint parts of the customs value"
+KR_S122_B,3307.90.00,true,resolved,,"not in note 2(aa) code lists in 2026 Rev. 5, 6, 12 (cosmetics mentions); no 232 derivative heading in force after 2026-04-06"
+KR_S301,3307.90.00,true,resolved,,not in note 52 code lists in 2026 Rev. 13 and Rev. 22 (cosmetics mentions)

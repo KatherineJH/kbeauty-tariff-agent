@@ -30,3 +30,5 @@ packages = ["src/tariffagent"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "--basetemp=.pytest_tmp"
+# Development loop: uv run pytest -m "not slow"   Full verification (CI): uv run pytest
+markers = ["slow: rebuilds the dbt warehouse once per case (mutation / negative tests, several minutes)"]

@@ -88,6 +88,7 @@ def wrong_family_expectation(seeds: Path) -> None:
     rewrite(seeds / "family_fixtures.csv", change)
 
 
+@pytest.mark.slow
 @pytest.mark.parametrize("mutate, must_fail", [
     (wrong_boundary_expectation, "assert_boundary_fixtures"),
     (drop_metal_relation, "assert_no_undeclared_overlap"),
