@@ -1,0 +1,25 @@
+query_id,time_condition,reason
+dq01_en,time_invariant,asks a fact of one named action or event; no point in time needed
+dq01_ko,time_invariant,asks a fact of one named action or event; no point in time needed
+dq02_en,time_invariant,asks a fact of one named action or event; no point in time needed
+dq02_ko,time_invariant,asks a fact of one named action or event; no point in time needed
+dq03_en,underspecified,"the answer depends on when (the rate, list or exclusion changed over time) and no date is given"
+dq03_ko,underspecified,"the answer depends on when (the rate, list or exclusion changed over time) and no date is given"
+dq04_en,time_invariant,asks a fact of one named action or event; no point in time needed
+dq04_ko,time_invariant,asks a fact of one named action or event; no point in time needed
+dq05_en,time_invariant,asks a fact of one named action or event; no point in time needed
+dq05_ko,time_invariant,asks a fact of one named action or event; no point in time needed
+dq06_en,time_invariant,asks a fact of one named action or event; no point in time needed
+dq06_ko,time_invariant,asks a fact of one named action or event; no point in time needed
+dq07_en,time_invariant,asks a fact of one named action or event; no point in time needed
+dq07_ko,time_invariant,asks a fact of one named action or event; no point in time needed
+dq08_en,time_invariant,asks a fact of one named action or event; no point in time needed
+dq08_ko,time_invariant,asks a fact of one named action or event; no point in time needed
+dq09_en,underspecified,"the answer depends on when (the rate, list or exclusion changed over time) and no date is given"
+dq09_ko,underspecified,"the answer depends on when (the rate, list or exclusion changed over time) and no date is given"
+dq10_en,underspecified,"the answer depends on when (the rate, list or exclusion changed over time) and no date is given"
+dq10_ko,underspecified,"the answer depends on when (the rate, list or exclusion changed over time) and no date is given"
+dq11_en,time_invariant,asks a fact of one named action or event; no point in time needed
+dq11_ko,time_invariant,asks a fact of one named action or event; no point in time needed
+dq12_en,underspecified,"the answer depends on when (the rate, list or exclusion changed over time) and no date is given"
+dq12_ko,underspecified,"the answer depends on when (the rate, list or exclusion changed over time) and no date is given"

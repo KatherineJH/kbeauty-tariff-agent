@@ -19,8 +19,8 @@ from tariffagent.answer import compose, load_verified
 from tariffagent.retrieval.bm25 import BM25Index, tokenize
 from tariffagent.retrieval.corpus import REPO, Chunk, build_chunks, corpus_hashes, documents
 from tariffagent.retrieval.bm25 import Hit
-from tariffagent.retrieval.evaluate import (citation_qrels, gold_chunks, retrieval_qrels, summarize,
-                                            summarize_unanswerable)
+from tariffagent.retrieval.evaluate import (citation_qrels, gold_chunks, pair_qrels, retrieval_qrels, summarize,
+                                            summarize_unanswerable, time_conditions)
 from tariffagent.retrieval.evaluate import evaluate as evaluate_retrieval
 from tariffagent.rules import EntryInput, evaluate, load_rules
 
@@ -121,7 +121,7 @@ DEV = REPO / "evals" / "dev"
 
 
 def _csv(path: Path) -> list[dict]:
-    with path.open(encoding="utf-8", newline="") as f:
+    with path.open(encoding="utf-8-sig", newline="") as f:
         return list(csv.DictReader(f))
 
 
@@ -227,3 +227,102 @@ def test_dev_queries_are_append_only_after_run_001():
     want = next(line.split()[0] for line in recorded.splitlines() if line.endswith("evals/dev/queries.csv"))
     # the first 25 lines (header + 24 queries, with trailing newline) are byte-identical to run_001's input
     assert hashlib.sha256(b"\n".join(rows[:25]) + b"\n").hexdigest() == want
+
+
+def _load_script(name: str):
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(name, REPO / "scripts" / f"{name}.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
+
+
+def test_review_sheet_is_blind_and_states_the_criterion():
+    mod = _load_script("make_qrel_review_sheet")
+    sheet = _csv(DEV / "review" / "qrel_review_sheet.csv")
+    built, times = mod.build()
+    assert [(r["pair_id"], r["chunk_id"]) for r in sheet] == [(r["pair_id"], r["chunk_id"]) for r in built]
+    assert len({(r["pair_id"], r["chunk_id"]) for r in sheet}) == len(sheet)
+    # every candidate location of every answerable pair is covered, cited locations included and not marked
+    assert {c for r in sheet for c in r["citation_ids"].split(";")} ==         {c for q in _csv(DEV / "queries.csv") for c in q["relevant_citation_ids"].split(";") if c}
+    for col in sheet[0]:
+        assert not any(w in col for w in ("claude", "cited", "rule", "period", "decision_v1", "reason_code"))
+    md = (DEV / "review" / "qrel_review_sheet.md").read_text("utf-8")
+    assert "only from the conditions stated in the query" in md and "underspecified" in md
+    assert {r["query_id"] for r in _csv(DEV / "review" / "query_time_sheet.csv")} ==         {q["query_id"] for q in _csv(DEV / "queries.csv") if q["relevant_citation_ids"]}
+
+
+def _fill(tmp_path: Path, decide, kind="human", second=None) -> object:
+    mod = _load_script("finalize_qrel_review")
+    sheet = _csv(DEV / "review" / "qrel_review_sheet.csv")
+    for i, r in enumerate(sheet):
+        r["user_decision"], r["user_reason"], r["reviewer_type"] = decide(i), "test", kind
+    times = _csv(DEV / "review" / "query_time_sheet.csv")
+    for i, r in enumerate(times):
+        r["time_condition"], r["reason"] = ("underspecified" if i == 0 else "time_invariant"), "test"
+    review = tmp_path / "review"
+    review.mkdir()
+    for name, rows in (("qrel_review_sheet.csv", sheet), ("query_time_sheet.csv", times)):
+        with (review / name).open("w", encoding="utf-8-sig", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=list(rows[0]), lineterminator="\n")
+            w.writeheader()
+            w.writerows(rows)
+    if second:
+        with (review / "claude_review.csv").open("w", encoding="utf-8", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=["unit_id", "decision", "reason"], lineterminator="\n")
+            w.writeheader()
+            w.writerows({"unit_id": r["unit_id"], "decision": second(i), "reason": "x"} for i, r in enumerate(sheet))
+    for name, path in (("REVIEW", review), ("SHEET", review / "qrel_review_sheet.csv"),
+                       ("TIME_SHEET", review / "query_time_sheet.csv"), ("SECOND", review / "claude_review.csv"),
+                       ("V2", tmp_path / "v2.csv"), ("CONDITIONS", tmp_path / "times.csv")):
+        setattr(mod, name, path)
+    return mod
+
+
+def test_finalize_reports_agreement_and_writes_v2(tmp_path):
+    n = len(_csv(DEV / "review" / "qrel_review_sheet.csv"))
+    user = lambda i: "uncertain" if i == 0 else ("relevant" if i % 2 else "not_relevant")
+    claude = lambda i: "relevant" if i in (0, 2) or i % 2 else "not_relevant"
+    mod = _fill(tmp_path, user, second=claude)
+    mod.main()
+    report = (tmp_path / "review" / "agreement.md").read_text("utf-8")
+    assert f"{n - 2}/{n}" in report and f"{n - 2}/{n - 1}" in report and "human" in report
+    assert len(_csv(tmp_path / "review" / "disagreements.csv")) == 2
+    v2 = _csv(tmp_path / "v2.csv")
+    assert len(v2) == n and sum(r["decision"] == "uncertain" for r in v2) == 1
+    with pytest.raises(SystemExit):
+        mod.main()   # never overwrites v2
+
+
+def test_finalize_refuses_blank_and_labels_model_review(tmp_path):
+    mod = _fill(tmp_path, lambda i: "" if i == 3 else "relevant")
+    with pytest.raises(SystemExit):
+        mod.main()
+    (tmp_path / "m").mkdir()
+    mod = _fill(tmp_path / "m", lambda i: "relevant", kind="second_model_review")
+    mod.main()
+    assert "a model, not a human review" in (tmp_path / "m" / "review" / "agreement.md").read_text("utf-8")
+
+
+def test_v2_uncertain_is_kept_but_not_relevant_and_underspecified_is_apart(chunks, tmp_path, index):
+    mod = _fill(tmp_path, lambda i: "uncertain" if i == 0 else "relevant")
+    mod.main()
+    by_pair = pair_qrels(tmp_path / "v2.csv")
+    first = _csv(tmp_path / "v2.csv")[0]
+    assert all(first["chunk_id"] not in by_pair.get(first["pair_id"], {}).get(c, set())
+               for c in first["citation_ids"].split(";"))
+    conditions = time_conditions(tmp_path / "times.csv")
+    _, pq = evaluate_retrieval(index.search, chunks, by_pair=by_pair, conditions=conditions)
+    main_rows = {r["group"]: r for r in summarize(pq)}
+    under = {r["group"]: r for r in summarize(pq, underspecified=True)}
+    assert under["all"]["queries"] == 1 and main_rows["all"]["queries"] == 23
+
+
+def test_claude_sealed_reading_is_unchanged():
+    import hashlib
+    readme = (DEV / "README.md").read_text("utf-8")
+    for name in ("claude_review.csv", "claude_time_review.csv"):
+        recorded = re.search(rf"`review/{re.escape(name)}` \| `([0-9a-f]{{64}})`", readme).group(1)
+        assert hashlib.sha256((DEV / "review" / name).read_bytes()).hexdigest() == recorded
+    units = {r["unit_id"] for r in _csv(DEV / "review" / "qrel_review_sheet.csv")}
+    assert {r["unit_id"] for r in _csv(DEV / "review" / "claude_review.csv")} == units

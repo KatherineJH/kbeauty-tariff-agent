@@ -1,0 +1,76 @@
+unit_id,decision,reason
+u001,not_relevant,CSMS title and purpose; the date collection stops is not in the chunk
+u002,relevant,"states IEEPA duties are no longer collected on or after 12:00 a.m. ET on February 24, 2026"
+u003,relevant,section 122 proclamation text: all articles subject to a 10 percent ad valorem duty rate
+u004,uncertain,"10 percent rate is cut at the start; neither section 122 nor ""all articles imported"" is in the chunk"
+u005,relevant,heading 9903.85.08 row: 50% upon the value of the aluminum content
+u006,relevant,heading 9903.85.08 row: 50% upon the value of the aluminum content
+u007,relevant,heading 9903.85.08 row: 50% upon the value of the aluminum content
+u008,relevant,heading 9903.85.08 row: 50% upon the value of the aluminum content
+u009,relevant,heading 9903.85.08 row: 50% upon the value of the aluminum content
+u010,relevant,ROK goods: sum of column 1 rate and EO 14257 rate will be 15 percent
+u011,uncertain,"""will be 15 percent"" is cut; the sum of the column 1 rate and the reciprocal rate is not stated in the chunk"
+u012,relevant,South Korea section 301: 12.5 percent net of MFN
+u013,relevant,South Korea section 301: 12.5 percent net of MFN
+u014,uncertain,"effective August 29, 2025 for sections 2 and 3 of ""this order""; de minimis is not named in the chunk"
+u015,not_relevant,identifies the postal de minimis interim final rule but has no effective date
+u016,relevant,"postal de minimis interim final rule effective July 24, 2026"
+u017,not_relevant,decision to extend the suspension; the end date August 1 is cut off
+u018,relevant,"extends the EO 14266 suspension until 12:01 a.m. EDT on August 1, 2025"
+u019,not_relevant,note (n) heading 9903.81.91 is present but 3304.99.50 is not in the chunk
+u020,not_relevant,note (n) heading 9903.81.91 is present but 3304.99.50 is not in the chunk
+u021,not_relevant,note (n) heading 9903.81.91 is present but 3304.99.50 is not in the chunk
+u022,uncertain,list containing 3304.99.50 without its heading; the same text sits under 9903.81.91 (Korea) and 9903.81.98 (United Kingdom)
+u023,uncertain,list containing 3304.99.50 without its heading; the same text sits under 9903.81.91 (Korea) and 9903.81.98 (United Kingdom)
+u024,uncertain,list containing 3304.99.50 without its heading; the same text sits under 9903.81.91 (Korea) and 9903.81.98 (United Kingdom)
+u025,uncertain,list containing 3304.99.50 without its heading; the same text sits under 9903.81.91 (Korea) and 9903.81.98 (United Kingdom)
+u026,not_relevant,"aluminum heading 9903.85.08 (note 19(k)), not the steel heading 9903.81.91"
+u027,not_relevant,United Kingdom aluminum heading 9903.85.15 (note 19(s))
+u028,not_relevant,note (n) heading 9903.81.91 is present but 3304.99.50 is not in the chunk
+u029,not_relevant,note (n) heading 9903.81.91 is present but 3304.99.50 is not in the chunk
+u030,not_relevant,note (n) heading 9903.81.91 is present but 3304.99.50 is not in the chunk
+u031,not_relevant,"aluminum heading 9903.85.08 (note 19(k)), not the steel heading 9903.81.91"
+u032,not_relevant,United Kingdom aluminum heading 9903.85.15 (note 19(s))
+u033,not_relevant,"aluminum heading 9903.85.08 (note 19(k)), not the steel heading 9903.81.91"
+u034,not_relevant,United Kingdom aluminum heading 9903.85.15 (note 19(s))
+u035,not_relevant,note (n) heading 9903.81.91 is present but 3304.99.50 is not in the chunk
+u036,uncertain,list containing 3304.99.50 without its heading; the same text sits under 9903.81.91 (Korea) and 9903.81.98 (United Kingdom)
+u037,uncertain,list containing 3304.99.50 without its heading; the same text sits under 9903.81.91 (Korea) and 9903.81.98 (United Kingdom)
+u038,uncertain,list containing 3304.99.50 without its heading; the same text sits under 9903.81.91 (Korea) and 9903.81.98 (United Kingdom)
+u039,uncertain,list containing 3304.99.50 without its heading; the same text sits under 9903.81.91 (Korea) and 9903.81.98 (United Kingdom)
+u040,not_relevant,"aluminum heading 9903.85.08 (note 19(k)), not the steel heading 9903.81.91"
+u041,not_relevant,United Kingdom aluminum heading 9903.85.15 (note 19(s))
+u042,not_relevant,note (n) heading 9903.81.91 is present but 3304.99.50 is not in the chunk
+u043,uncertain,list containing 3304.99.50 without its heading; the same text sits under 9903.81.91 (Korea) and 9903.81.98 (United Kingdom)
+u044,uncertain,list containing 3304.99.50 without its heading; the same text sits under 9903.81.91 (Korea) and 9903.81.98 (United Kingdom)
+u045,uncertain,list containing 3304.99.50 without its heading; the same text sits under 9903.81.91 (Korea) and 9903.81.98 (United Kingdom)
+u046,uncertain,list containing 3304.99.50 without its heading; the same text sits under 9903.81.91 (Korea) and 9903.81.98 (United Kingdom)
+u047,not_relevant,"aluminum heading 9903.85.08 (note 19(k)), not the steel heading 9903.81.91"
+u048,not_relevant,United Kingdom aluminum heading 9903.85.15 (note 19(s))
+u049,not_relevant,"aluminum heading 9903.85.08 (note 19(k)), not the steel heading 9903.81.91"
+u050,not_relevant,United Kingdom aluminum heading 9903.85.15 (note 19(s))
+u051,not_relevant,"aluminum heading 9903.85.08 (note 19(k)), not the steel heading 9903.81.91"
+u052,not_relevant,United Kingdom aluminum heading 9903.85.15 (note 19(s))
+u053,not_relevant,"aluminum heading 9903.85.08 (note 19(k)), not the steel heading 9903.81.91"
+u054,not_relevant,United Kingdom aluminum heading 9903.85.15 (note 19(s))
+u055,not_relevant,exclusion for the duties of headings 9903.01/9903.02; the surcharge is not named in the chunk
+u056,not_relevant,exclusion for the duties of headings 9903.01/9903.02; the surcharge is not named in the chunk
+u057,not_relevant,exclusion for the duties of headings 9903.01/9903.02; the surcharge is not named in the chunk
+u058,not_relevant,exclusion for the duties of headings 9903.01/9903.02; the surcharge is not named in the chunk
+u059,not_relevant,exclusion for the duties of headings 9903.01/9903.02; the surcharge is not named in the chunk
+u060,not_relevant,exclusion for the duties of headings 9903.01/9903.02; the surcharge is not named in the chunk
+u061,not_relevant,exclusion for the duties of headings 9903.01/9903.02; the surcharge is not named in the chunk
+u062,not_relevant,exclusion for the duties of headings 9903.01/9903.02; the surcharge is not named in the chunk
+u063,not_relevant,exclusion for the duties of headings 9903.01/9903.02; the surcharge is not named in the chunk
+u064,uncertain,"aluminum-content exclusion (d) is present, but the lead-in naming the surcharge is outside the chunk"
+u065,not_relevant,tail of (d) and (e); the declared-value exclusion and the surcharge are not in the chunk
+u066,not_relevant,exclusion for the duties of headings 9903.01/9903.02; the surcharge is not named in the chunk
+u067,not_relevant,exclusion for the duties of headings 9903.01/9903.02; the surcharge is not named in the chunk
+u068,not_relevant,exclusion for the duties of headings 9903.01/9903.02; the surcharge is not named in the chunk
+u069,not_relevant,exclusion for the duties of headings 9903.01/9903.02; the surcharge is not named in the chunk
+u070,not_relevant,exclusion for the duties of headings 9903.01/9903.02; the surcharge is not named in the chunk
+u071,not_relevant,exclusion for the duties of headings 9903.01/9903.02; the surcharge is not named in the chunk
+u072,relevant,"February 20, 2026 EO ""Ending Certain Tariff Actions"" terminates IEEPA duty collection (number 14389 not shown)"
+u073,uncertain,collection end date is present but the ending order is not named in the chunk
+u074,relevant,"""South Korea, subject to an additional duty of 25%"""
+u075,relevant,"""South Korea, subject to an additional duty of 25%"""

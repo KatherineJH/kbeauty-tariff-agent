@@ -6,6 +6,7 @@ Relevance is attached here, not in the corpus. Two qrel sets, both mapping citat
   retrieval_qrels  citation_qrels plus the other locations a reviewer accepted in evals/dev/retrieval_qrels.csv
                    (same quote, same legal scope, time and claim role; e.g. a United Kingdom note with the same
                    list is rejected for a Korea question). Rows are judged by hand; nothing is added automatically.
+                   Decisions marked uncertain are kept in the file and left out of the qrels.
 
 The unit of relevance is the citation (one piece of evidence the answer needs), not the chunk: a citation counts as
 found when any of its relevant chunks is ranked. A quote can span two overlapping chunks and can be accepted in
@@ -35,6 +36,10 @@ from tariffagent.retrieval.corpus import REPO, Chunk
 DEV = REPO / "evals" / "dev"
 QUERIES = DEV / "queries.csv"
 RETRIEVAL_QRELS = DEV / "retrieval_qrels.csv"
+# v1 (Claude's first review, run_002) uses accept / reject; from v2 on: relevant / not_relevant / uncertain.
+# uncertain rows stay in the file but are not relevance: they are neither added nor counted.
+INCLUDED = {"accept", "relevant"}
+EXCLUDED = {"reject", "not_relevant", "uncertain"}
 
 
 def _read(path: Path) -> list[dict]:
@@ -78,11 +83,36 @@ def retrieval_qrels(chunks: list[Chunk], qrels_csv: Path = RETRIEVAL_QRELS, cita
     quotes = {r["citation_id"]: normalize(r["quote"]) for r in _read(citations_csv)}
     by_file = _by_file(chunks)
     for r in _read(qrels_csv):
-        if r["decision"] not in ("accept", "reject"):
-            raise ValueError(f"{r['citation_id']} {r['source_file']}: decision must be accept or reject")
-        if r["decision"] == "accept":
+        if r["decision"] not in INCLUDED | EXCLUDED:
+            raise ValueError(f"{r['citation_id']} {r['source_file']}: unknown decision {r['decision']!r}")
+        if r["decision"] in INCLUDED:
             out[r["citation_id"]] |= _overlapping(by_file, r["source_file"], quotes[r["citation_id"]], root,
                                                   r["citation_id"])
+    return out
+
+
+def pair_qrels(qrels_csv: Path) -> dict[str, dict[str, set[str]]]:
+    """v2 qrels, judged per (query pair, chunk): pair_id -> citation_id -> chunks judged relevant.
+
+    A relevant chunk counts for every citation whose quote it overlaps (column citation_ids). not_relevant and
+    uncertain rows are kept in the file and give no relevance.
+    """
+    out: dict[str, dict[str, set[str]]] = {}
+    for r in _read(qrels_csv):
+        if r["decision"] not in ("relevant", "not_relevant", "uncertain"):
+            raise ValueError(f"{r['pair_id']} {r['chunk_id']}: unknown decision {r['decision']!r}")
+        if r["decision"] == "relevant":
+            for c in r["citation_ids"].split(";"):
+                out.setdefault(r["pair_id"], {}).setdefault(c, set()).add(r["chunk_id"])
+    return out
+
+
+def time_conditions(path: Path) -> dict[str, str]:
+    """query_id -> dated / time_invariant / underspecified."""
+    out = {r["query_id"]: r["time_condition"] for r in _read(path)}
+    bad = {q: v for q, v in out.items() if v not in ("dated", "time_invariant", "underspecified")}
+    if bad:
+        raise ValueError(f"unknown time_condition: {bad}")
     return out
 
 
@@ -92,11 +122,17 @@ def query_citations(q: dict) -> list[str]:
 
 
 def evaluate(search, chunks: list[Chunk], qrels: dict[str, set[str]] | None = None, queries_csv: Path = QUERIES,
-             k: int = 10) -> tuple[list[dict], list[dict]]:
-    qrels = citation_qrels(chunks) if qrels is None else qrels
+             k: int = 10, by_pair: dict[str, dict[str, set[str]]] | None = None,
+             conditions: dict[str, str] | None = None) -> tuple[list[dict], list[dict]]:
+    """qrels: citation -> chunks for every query (v1); by_pair: pair -> citation -> chunks (v2) instead.
+    conditions: query time conditions; underspecified queries are flagged and summarized apart."""
+    if by_pair is None:
+        qrels = citation_qrels(chunks) if qrels is None else qrels
     runs, per_query = [], []
     for q in _read(queries_csv):
         cites = query_citations(q)
+        if by_pair is not None:
+            qrels = {c: by_pair.get(q["pair_id"], {}).get(c, set()) for c in cites}
         hits = search(q["text"], k)
         for h in hits:
             runs.append({"query_id": q["query_id"], "chunk_id": h.chunk.chunk_id, "rank": h.rank,
@@ -104,6 +140,8 @@ def evaluate(search, chunks: list[Chunk], qrels: dict[str, set[str]] | None = No
                          "physical_page": h.chunk.physical_page, "printed_page": h.chunk.printed_page,
                          "relevant": int(any(h.chunk.chunk_id in qrels[c] for c in cites))})
         row = {"query_id": q["query_id"], "lang": q["lang"], "answerable": int(bool(cites)),
+               "underspecified": int((conditions or {}).get(q["query_id"]) == "underspecified"),
+               "unreachable_citations": sum(1 for c in cites if not qrels[c]),
                "relevant_citations": len(cites), "zero": int(not hits),
                "top_score": hits[0].score if hits else 0.0}
         if cites:
@@ -126,15 +164,18 @@ def evaluate(search, chunks: list[Chunk], qrels: dict[str, set[str]] | None = No
     return runs, per_query
 
 
-def summarize(per_query: list[dict]) -> list[dict]:
-    """Answerable queries only: macro and micro recall, MRR, nDCG, zero-result rate; all / en / ko."""
+def summarize(per_query: list[dict], underspecified: bool = False) -> list[dict]:
+    """Answerable queries: macro and micro recall, MRR, nDCG, zero-result rate; all / en / ko.
+    Underspecified queries are left out, or summarized alone with underspecified=True."""
     out = []
     for group in ("all", "en", "ko"):
-        rows = [r for r in per_query if r["answerable"] and (group == "all" or r["lang"] == group)]
+        rows = [r for r in per_query if r["answerable"] and (group == "all" or r["lang"] == group)
+                and bool(r.get("underspecified")) == underspecified]
         if not rows:
             continue
         n_rel = sum(r["relevant_citations"] for r in rows)
         out.append({"group": group, "queries": len(rows), "relevant_citations": n_rel,
+                    "unreachable_citations": sum(r["unreachable_citations"] for r in rows),
                     "macro_recall@5": f"{sum(r['recall@5'] for r in rows) / len(rows):.4f}",
                     "micro_recall@5": f"{sum(r['found@5'] for r in rows) / n_rel:.4f}",
                     "macro_recall@10": f"{sum(r['recall@10'] for r in rows) / len(rows):.4f}",
