@@ -1,6 +1,10 @@
 # B2 claim review items
 
-Each item shows what B2 returns: extracted context, raw text and B2 metadata. Decide relevant / not_relevant / uncertain with the v2 criterion (evals/dev/README.md), then for every claim component mark complete / partial / none in the item_claim_judgments sheet (relevant needs at least one complete or partial; not_relevant and uncertain mean none everywhere). A composite claim is complete when the top-k units together cover all its components. One item can serve both queries of a matched pair.
+Each item shows what B2 returns: extracted context, raw text and B2 metadata. Decide relevant / not_relevant / uncertain with the v2 criterion (evals/dev/README.md). Two stages (scripts/record_claim_review.py): stage 1 asks only the decision of new items; stage 2 asks component levels only for relevant items (and for reused relevant items, only their components). not_relevant and uncertain items, and components a relevant item does not name, become none at finalize; a relevant item needs at least one complete or partial. A composite claim is complete when the top-k units together cover all its components. One item can serve both queries of a matched pair. This sheet stays empty; answers go to responses/.
+
+- complete: 이 청크만으로 해당 근거 요소를 명확히 확인할 수 있음
+- partial: 관련 정보는 있지만 해당 근거 요소를 완전히 확정하기에는 부족함
+- none: 해당 근거 요소를 지원하지 않음
 
 ## b2-0001 (new): csms:67834313, page - / -
 

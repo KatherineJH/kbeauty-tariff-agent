@@ -321,6 +321,21 @@ a reused relevant item keeps its decision and reason, and its component levels a
 | of which to fill | 437 | 500 |
 | of which none from a reused not_relevant / uncertain item | 74 | 0 |
 
+**Input procedure (two stages; follow-up to `b8a9d29`, scoring unchanged).** The review sheets above stay empty;
+answers are recorded with `scripts/record_claim_review.py` into `evals/dev/review_claims/responses/` and combined
+by `finalize` (`src/tariffagent/retrieval/claim_review.py`) into `evals/dev/review_claims/final/`.
+- Stage 1: a decision (relevant / not_relevant / uncertain, with a reason) for the 484 new items only (B1 223, B2
+  261). Reused items are not asked again.
+- Stage 2: component levels only for items that are relevant: the new items decided relevant in stage 1, and the 6
+  reused relevant items (their decision is kept; only their components are asked). The number of stage 2 items is
+  known only after stage 1.
+- Finalize: not_relevant and uncertain items get none on every component without asking; a relevant item's unnamed
+  components become none; a relevant item with no complete or partial component, a decision recorded for a reused
+  item, or a stage 2 answer for a non-relevant item is refused.
+- Level explanations shown to the reviewer (fixed): complete = 이 청크만으로 해당 근거 요소를 명확히 확인할 수
+  있음; partial = 관련 정보는 있지만 해당 근거 요소를 완전히 확정하기에는 부족함; none = 해당 근거 요소를 지원하지
+  않음.
+
 Per-query counts: `evals/dev/review_claims/summary.json`; which queries each item serves: `item_queries.csv`. The
 two earlier sheets of this day (`evals/dev/review_b2v2/`, the first `review_claims` sheets on v3) were replaced before
 any decision was recorded.

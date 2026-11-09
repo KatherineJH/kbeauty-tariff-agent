@@ -223,10 +223,15 @@ def write_md(system: str, rows: list[dict], cells: list[dict]) -> str:
     shows = "raw text and B1 metadata" if system == "B1" else "extracted context, raw text and B2 metadata"
     out = [f"# {system} claim review items", "",
            f"Each item shows what {system} returns: {shows}. Decide relevant / not_relevant / uncertain with the v2 "
-           "criterion (evals/dev/README.md), then for every claim component mark complete / partial / none in the "
-           "item_claim_judgments sheet (relevant needs at least one complete or partial; not_relevant and uncertain "
-           "mean none everywhere). A composite claim is complete when the top-k units together cover all its "
-           "components. One item can serve both queries of a matched pair.", ""]
+           "criterion (evals/dev/README.md). Two stages (scripts/record_claim_review.py): stage 1 asks only the "
+           "decision of new items; stage 2 asks component levels only for relevant items (and for reused relevant "
+           "items, only their components). not_relevant and uncertain items, and components a relevant item does "
+           "not name, become none at finalize; a relevant item needs at least one complete or partial. A composite "
+           "claim is complete when the top-k units together cover all its components. One item can serve both "
+           "queries of a matched pair. This sheet stays empty; answers go to responses/.", "",
+           "- complete: 이 청크만으로 해당 근거 요소를 명확히 확인할 수 있음",
+           "- partial: 관련 정보는 있지만 해당 근거 요소를 완전히 확정하기에는 부족함",
+           "- none: 해당 근거 요소를 지원하지 않음", ""]
     for r in rows:
         meta = f"{r['source_id']}, page {r['physical_page'] or '-'} / {r['printed_page'] or '-'}"
         out += [f"## {r['item_id']} ({r['status']}): {meta}", "", f"- queries: {r['queries']}",
