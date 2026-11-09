@@ -1,0 +1,282 @@
+{
+  "items": {
+    "all": {
+      "n": 527,
+      "agree": 499,
+      "rate": 0.9469,
+      "kappa_reference": 0.9011,
+      "matrix_human_rows_claude_cols": {
+        "relevant": {
+          "relevant": 184,
+          "not_relevant": 0,
+          "uncertain": 0
+        },
+        "not_relevant": {
+          "relevant": 23,
+          "not_relevant": 285,
+          "uncertain": 0
+        },
+        "uncertain": {
+          "relevant": 0,
+          "not_relevant": 5,
+          "uncertain": 30
+        }
+      }
+    },
+    "b1": {
+      "n": 266,
+      "agree": 246,
+      "rate": 0.9248,
+      "kappa_reference": 0.863,
+      "matrix_human_rows_claude_cols": {
+        "relevant": {
+          "relevant": 76,
+          "not_relevant": 0,
+          "uncertain": 0
+        },
+        "not_relevant": {
+          "relevant": 15,
+          "not_relevant": 146,
+          "uncertain": 0
+        },
+        "uncertain": {
+          "relevant": 0,
+          "not_relevant": 5,
+          "uncertain": 24
+        }
+      }
+    },
+    "b2": {
+      "n": 261,
+      "agree": 253,
+      "rate": 0.9693,
+      "kappa_reference": 0.9406,
+      "matrix_human_rows_claude_cols": {
+        "relevant": {
+          "relevant": 108,
+          "not_relevant": 0,
+          "uncertain": 0
+        },
+        "not_relevant": {
+          "relevant": 8,
+          "not_relevant": 139,
+          "uncertain": 0
+        },
+        "uncertain": {
+          "relevant": 0,
+          "not_relevant": 0,
+          "uncertain": 6
+        }
+      }
+    },
+    "stage1": {
+      "n": 484,
+      "agree": 465,
+      "rate": 0.9607,
+      "kappa_reference": 0.9247,
+      "matrix_human_rows_claude_cols": {
+        "relevant": {
+          "relevant": 178,
+          "not_relevant": 0,
+          "uncertain": 0
+        },
+        "not_relevant": {
+          "relevant": 14,
+          "not_relevant": 269,
+          "uncertain": 0
+        },
+        "uncertain": {
+          "relevant": 0,
+          "not_relevant": 5,
+          "uncertain": 18
+        }
+      }
+    },
+    "reused": {
+      "n": 43,
+      "agree": 34,
+      "rate": 0.7907,
+      "kappa_reference": 0.6815,
+      "matrix_human_rows_claude_cols": {
+        "relevant": {
+          "relevant": 6,
+          "not_relevant": 0,
+          "uncertain": 0
+        },
+        "not_relevant": {
+          "relevant": 9,
+          "not_relevant": 16,
+          "uncertain": 0
+        },
+        "uncertain": {
+          "relevant": 0,
+          "not_relevant": 0,
+          "uncertain": 12
+        }
+      }
+    }
+  },
+  "components": {
+    "all": {
+      "n": 1011,
+      "agree": 967,
+      "rate": 0.9565,
+      "kappa_reference": 0.8949,
+      "matrix_human_rows_claude_cols": {
+        "complete": {
+          "complete": 106,
+          "partial": 4,
+          "none": 0
+        },
+        "partial": {
+          "complete": 10,
+          "partial": 124,
+          "none": 5
+        },
+        "none": {
+          "complete": 13,
+          "partial": 12,
+          "none": 737
+        }
+      }
+    },
+    "human_stage2_324": {
+      "n": 324,
+      "agree": 303,
+      "rate": 0.9352,
+      "kappa_reference": 0.9004,
+      "matrix_human_rows_claude_cols": {
+        "complete": {
+          "complete": 106,
+          "partial": 4,
+          "none": 0
+        },
+        "partial": {
+          "complete": 10,
+          "partial": 124,
+          "none": 5
+        },
+        "none": {
+          "complete": 0,
+          "partial": 2,
+          "none": 73
+        }
+      }
+    },
+    "finalize_auto_none_687": {
+      "n": 687,
+      "agree": 664,
+      "rate": 0.9665,
+      "kappa_reference": 0.0,
+      "matrix_human_rows_claude_cols": {
+        "complete": {
+          "complete": 0,
+          "partial": 0,
+          "none": 0
+        },
+        "partial": {
+          "complete": 0,
+          "partial": 0,
+          "none": 0
+        },
+        "none": {
+          "complete": 13,
+          "partial": 10,
+          "none": 664
+        }
+      }
+    },
+    "b1_human_stage2": {
+      "n": 130,
+      "agree": 118,
+      "rate": 0.9077,
+      "kappa_reference": 0.85,
+      "matrix_human_rows_claude_cols": {
+        "complete": {
+          "complete": 35,
+          "partial": 2,
+          "none": 0
+        },
+        "partial": {
+          "complete": 7,
+          "partial": 60,
+          "none": 2
+        },
+        "none": {
+          "complete": 0,
+          "partial": 1,
+          "none": 23
+        }
+      }
+    },
+    "b1_auto_none": {
+      "n": 381,
+      "agree": 366,
+      "rate": 0.9606,
+      "kappa_reference": 0.0,
+      "matrix_human_rows_claude_cols": {
+        "complete": {
+          "complete": 0,
+          "partial": 0,
+          "none": 0
+        },
+        "partial": {
+          "complete": 0,
+          "partial": 0,
+          "none": 0
+        },
+        "none": {
+          "complete": 11,
+          "partial": 4,
+          "none": 366
+        }
+      }
+    },
+    "b2_human_stage2": {
+      "n": 194,
+      "agree": 185,
+      "rate": 0.9536,
+      "kappa_reference": 0.9297,
+      "matrix_human_rows_claude_cols": {
+        "complete": {
+          "complete": 71,
+          "partial": 2,
+          "none": 0
+        },
+        "partial": {
+          "complete": 3,
+          "partial": 64,
+          "none": 3
+        },
+        "none": {
+          "complete": 0,
+          "partial": 1,
+          "none": 50
+        }
+      }
+    },
+    "b2_auto_none": {
+      "n": 306,
+      "agree": 298,
+      "rate": 0.9739,
+      "kappa_reference": 0.0,
+      "matrix_human_rows_claude_cols": {
+        "complete": {
+          "complete": 0,
+          "partial": 0,
+          "none": 0
+        },
+        "partial": {
+          "complete": 0,
+          "partial": 0,
+          "none": 0
+        },
+        "none": {
+          "complete": 2,
+          "partial": 6,
+          "none": 298
+        }
+      }
+    }
+  }
+}

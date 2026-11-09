@@ -1,0 +1,105 @@
+{
+  "version": "consistency_v1",
+  "date": "2026-11-09",
+  "base_commit": "a3a482b",
+  "kind": "consistency check between human_assisted final/v1 and sealed Claude judgements; not independent validation",
+  "inputs_sha256": {
+    "final/v1/b1_item_claim_judgments.csv": "1a8d1ff0292b655a48409677e759745253bdac96adeaf27b1c19a28a248e7c35",
+    "final/v1/b1_items.csv": "d3a7f9bfe79e3de5481119f509d2a091d661afbc8db4faecf720af2d60f31e5f",
+    "final/v1/b2_item_claim_judgments.csv": "450d45df4e1fa1604dc3d0b67401b8f4295fe02add127189e2302b7581645d83",
+    "final/v1/b2_items.csv": "45cdf7dcfacc18640d22f42dd96f28b81892f1b9a6bc0fd9f598c69ba7361e06",
+    "final/v1/manifest.json": "ac05273eaf1d61054d5985ff1d2bd40d0c7113ef2ea8c7156d247563fe4cca5c",
+    "claude_sealed/claude_component_supports.csv": "cc27411bac2fcdd19521b445d3b473e1d4cc314a41a9f301f5d4167c2905b158",
+    "claude_sealed/claude_item_decisions.csv": "889860543381709015d638cf843207f9eac68707b7470b16c55af0ab27793a7a",
+    "claude_sealed/manifest.json": "b5e6b756e7073972303de5198d23759c478a357a6fb7c1b20a7f82d476b975f2"
+  },
+  "sealed_manifest_check": "passed",
+  "final_manifest_check": "passed",
+  "items": {
+    "all": {
+      "n": 527,
+      "agree": 499,
+      "rate": 0.9469,
+      "kappa_reference": 0.9011
+    },
+    "b1": {
+      "n": 266,
+      "agree": 246,
+      "rate": 0.9248,
+      "kappa_reference": 0.863
+    },
+    "b2": {
+      "n": 261,
+      "agree": 253,
+      "rate": 0.9693,
+      "kappa_reference": 0.9406
+    },
+    "stage1": {
+      "n": 484,
+      "agree": 465,
+      "rate": 0.9607,
+      "kappa_reference": 0.9247
+    },
+    "reused": {
+      "n": 43,
+      "agree": 34,
+      "rate": 0.7907,
+      "kappa_reference": 0.6815
+    }
+  },
+  "components": {
+    "all": {
+      "n": 1011,
+      "agree": 967,
+      "rate": 0.9565,
+      "kappa_reference": 0.8949
+    },
+    "human_stage2_324": {
+      "n": 324,
+      "agree": 303,
+      "rate": 0.9352,
+      "kappa_reference": 0.9004
+    },
+    "finalize_auto_none_687": {
+      "n": 687,
+      "agree": 664,
+      "rate": 0.9665,
+      "kappa_reference": 0.0
+    },
+    "b1_human_stage2": {
+      "n": 130,
+      "agree": 118,
+      "rate": 0.9077,
+      "kappa_reference": 0.85
+    },
+    "b1_auto_none": {
+      "n": 381,
+      "agree": 366,
+      "rate": 0.9606,
+      "kappa_reference": 0.0
+    },
+    "b2_human_stage2": {
+      "n": 194,
+      "agree": 185,
+      "rate": 0.9536,
+      "kappa_reference": 0.9297
+    },
+    "b2_auto_none": {
+      "n": 306,
+      "agree": 298,
+      "rate": 0.9739,
+      "kappa_reference": 0.0
+    }
+  },
+  "mismatch_rows": {
+    "items": 28,
+    "components": 44
+  },
+  "outputs_sha256": {
+    "component_mismatches.csv": "67924b2edc63fff081dd8ada6e8c0231259ea57c1fe32d6bad025d7aea794aeb",
+    "item_mismatches.csv": "a4cc184802b98a4d5301ebd96831cf8b5e0b2e1dae00745ef3ef5c07802da932",
+    "report.md": "a487d47b0f180bae429c4a1603291b19846818b120d71b18e3512584eb5ad65d",
+    "results.json": "466e0bba38802a13932e17fe06f1e83daf03a2ab1ee0ddce4ee155e13cc156a9"
+  },
+  "note": "kappa values are reference diagnostics only; finalize_auto_none kappa is degenerate. No B1/B2 retrieval metrics computed."
+}
