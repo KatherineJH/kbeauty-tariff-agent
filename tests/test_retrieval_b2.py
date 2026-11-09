@@ -41,6 +41,16 @@ def b2_v1(docs, b1):
     return enrich(docs, b1, config_id="b2_heading_v1")
 
 
+@pytest.fixture(scope="module")
+def b2_v2(docs, b1):
+    return enrich(docs, b1, config_id="b2_heading_v2")
+
+
+@pytest.fixture(scope="module")
+def b2_v3(docs, b1):
+    return enrich(docs, b1, config_id="b2_heading_v3")
+
+
 def test_b2_is_deterministic(docs, b1, b2):
     again = enrich(docs, build_chunks())
     assert b2_hashes(again) == b2_hashes(b2)
@@ -256,9 +266,9 @@ def test_v1_output_is_reproduced_exactly(b2_v1):
     assert (h["config_sha256"], h["b2_chunks_sha256"]) == (m["config_sha256"], m["b2_chunks_sha256"])
 
 
-def test_v2_changes_only_cross_page_inheritance(b2, b2_v1):
+def test_v2_changes_only_cross_page_inheritance(b2_v2, b2_v1):
     v1 = {b.parent_chunk_id: b for b in b2_v1}
-    for b in b2:
+    for b in b2_v2:
         a = v1[b.parent_chunk_id]
         assert b.raw_text == a.raw_text
         if a.context_origin in ("same_page", "document_metadata", "none"):
@@ -296,7 +306,8 @@ def test_v2_any_later_sibling_closes_but_roman_items_do_not():
     assert state_at(ev2, text2.index("(v) forgings")).lead_in.headings == ("9903.80.30",)
 
 
-def test_v2_structure_statistics(b2, b2_v1):
+def test_v2_structure_statistics(b2_v2, b2_v1):
+    b2 = b2_v2
     s1, s2 = structure_stats(b2_v1), structure_stats(b2)
     assert s1["max_distance_pages"] == 136 and s1["inherited_chunks"] == 1100      # the recorded v1 error
     assert s2["max_distance_pages"] <= 6 and s2["inherited_chunks"] == 126
@@ -311,10 +322,126 @@ def test_v2_structure_statistics(b2, b2_v1):
             assert 0 < int(b.physical_page) - b.fields["_lead_in_page"] <= s2["max_distance_pages"]
 
 
-def test_v2_manifest_statistics_match(b2):
+def test_v2_manifest_statistics_match(b2_v2):
+    b2 = b2_v2
     path = REPO / "data" / "extracted" / "retrieval_b2" / "b2_heading_v2_manifest.json"
     if not path.exists():
         pytest.skip("run_005 not written yet")
     m = json.loads(path.read_text("utf-8"))
     assert m["structure_stats"] == json.loads(json.dumps(structure_stats(b2)))
     assert m["b2_chunks_sha256"] == b2_hashes(b2)["b2_chunks_sha256"]
+
+
+# --- v3: boundary fixture written by hand from the page text, independent of the parser ----------------------------
+
+FIXTURE = REPO / "tests" / "fixtures" / "structure_boundaries.csv"
+
+
+def _fixture_failures(docs, config_id):
+    import csv
+    by = {(d.source_id, d.physical_page): d for d in docs if d.physical_page}
+    states = st.page_states(docs, config_id=config_id)
+    bad = []
+    with FIXTURE.open(encoding="utf-8", newline="") as f:
+        for r in csv.DictReader(f):
+            d = by[(r["source_id"], r["page"])]
+            probe = normalize(r["probe"])
+            assert d.text.count(probe) == 1, r["case"]
+            s = state_at(states[d.source_file], d.text.index(probe))
+            got = (f"({s.lead_in.label})" if s.lead_in else "", s.lead_in.headings[0] if s.lead_in else "")
+            if got != (r["expected_subdivision"], r["expected_first_heading"]) or \
+                    (r["expected_note"] and s.note != r["expected_note"]):
+                bad.append(r["case"])
+    return bad
+
+
+def test_v3_matches_every_hand_written_boundary(docs):
+    assert _fixture_failures(docs, "b2_heading_v3") == []
+    assert _fixture_failures(docs, "b2_heading_v4") == []
+
+
+def test_v2_fails_exactly_the_recorded_boundaries(docs):
+    assert _fixture_failures(docs, "b2_heading_v2") == ["L03_close", "L04_close", "N51_start", "L09_close"]
+
+
+def test_v3_bare_lines_and_parent_siblings():
+    raw = ("U.S. Notes (con.)\n(xxiii) As provided in heading 9903.80.77, the additional duties imposed by headings "
+           "9903.80.19 and 9903.80.20 shall not apply to:\n0101.10.00\n(xxiv)\n(a) As provided in headings 9903.80.79, "
+           "for articles of a country.\n(b) As provided in heading 9903.80.81, the additional duties imposed by headings "
+           "9903.80.79 shall not apply to:\n0102.10.00\n(xxv)\n(a) As provided in headings 9903.80.82.\n0103.10.00\n"
+           "52.\n(a) Except as provided in this note.\n(liters)\n")
+    text = normalize(raw)
+    v3, end = notes_events(raw, text, PageState(), "b2_heading_v3")
+    v2, _ = notes_events(raw, text, PageState(), "b2_heading_v2")
+    at = lambda ev, s: state_at(ev, text.index(s))
+    assert at(v3, "0101.10.00").lead_in.label == "xxiii" and at(v3, "(a) As provided in headings 9903.80.79").lead_in is None
+    assert at(v3, "0102.10.00").lead_in.label == "b" and at(v3, "0102.10.00").lead_in.parent == "xxiv"
+    assert at(v3, "0103.10.00").lead_in is None
+    assert at(v3, "(a) Except").note == "52" and end.note == "52"
+    assert at(v2, "0103.10.00").lead_in.label == "b"           # the v2 error
+    assert not st.valid_label("liters") and st.valid_label("xxiv") and st.valid_label("bb")
+
+
+def test_v1_and_v2_outputs_are_still_reproduced(b2_v1, b2_v2):
+    for b, name in ((b2_v1, "b2_heading_v1"), (b2_v2, "b2_heading_v2")):
+        m = json.loads((REPO / "data" / "extracted" / "retrieval_b2" / f"{name}_manifest.json").read_text("utf-8"))
+        assert b2_hashes(b)["b2_chunks_sha256"] == m["b2_chunks_sha256"]
+
+
+def test_v3_changes_only_closing(b2_v3, b2_v2):
+    v2 = {b.parent_chunk_id: b for b in b2_v2}
+    for b in b2_v3:
+        a = v2[b.parent_chunk_id]
+        assert b.raw_text == a.raw_text
+        if a.context_origin == "document_metadata" or not b.physical_page:
+            assert b.context_text == a.context_text
+        if b.fields.get("governing_text"):
+            assert b.fields["governing_text"] in {x.fields.get("governing_text") for x in b2_v2} | {""}
+
+
+# --- v4: the lead-in sentence across printed lines ----------------------------------------------------------------
+
+def _sentence_failures(docs, config_id):
+    import csv
+    by = {(d.source_id, d.physical_page): d for d in docs if d.physical_page}
+    states = st.page_states(docs, config_id=config_id)
+    bad = []
+    with (REPO / "tests" / "fixtures" / "lead_in_sentences.csv").open(encoding="utf-8", newline="") as f:
+        for r in csv.DictReader(f):
+            d = by[(r["source_id"], r["page"])]
+            probe = normalize(r["probe"])
+            assert d.text.count(probe) == 1, r["case"]
+            lead = state_at(states[d.source_file], d.text.index(probe)).lead_in
+            f2 = lead.fields() if lead else {}
+            got = (f2.get("applicable_heading", ""), f2.get("duty_family", ""), f2.get("country_scope", ""))
+            if got != (r["expected_headings"], r["expected_duty_family"], r["expected_country"]):
+                bad.append(r["case"])
+    return bad
+
+
+def test_v4_reads_the_whole_lead_in_sentence(docs):
+    assert _sentence_failures(docs, "b2_heading_v4") == []
+    assert _fixture_failures(docs, "b2_heading_v4") == []
+
+
+def test_v3_cut_the_heading_lists(docs):
+    assert set(_sentence_failures(docs, "b2_heading_v3")) >= {"L01_full", "L02_full", "L04_full", "R4_ix"}
+
+
+def test_v4_only_adds_headings_and_drops_exclusion_fields(b2, docs, b1):
+    v3 = {b.parent_chunk_id: b for b in enrich(docs, b1, config_id="b2_heading_v3")}
+    for b in b2:
+        a = v3[b.parent_chunk_id]
+        assert b.raw_text == a.raw_text and b.config_id == "b2_heading_v4"
+        assert (b.subdivision, b.note, b.context_origin) == (a.subdivision, a.note, a.context_origin)
+        if a.applicable_heading:
+            assert set(a.applicable_heading.split(";")) <= set(b.applicable_heading.split(";"))
+        g = b.fields.get("governing_text", "")
+        if re.search(r"\bnot apply\b", g):
+            assert b.country_scope == "" and (b.duty_family == "unknown" or re.search("section|IEEPA|Emergency",
+                                                                                       b.duty_family, re.I))
+
+
+def test_v3_output_is_still_reproduced(b1, docs):
+    m = json.loads((REPO / "data" / "extracted" / "retrieval_b2" / "b2_heading_v3_manifest.json").read_text("utf-8"))
+    assert b2_hashes(enrich(docs, b1, config_id="b2_heading_v3"))["b2_chunks_sha256"] == m["b2_chunks_sha256"]

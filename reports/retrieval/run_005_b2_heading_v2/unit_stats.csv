@@ -1,0 +1,3 @@
+system,chunks,mean_raw_tokens,mean_index_tokens,index_terms,postings,index_build_seconds,search_ms_per_query_median_of_5
+B1,7738,121.9,121.9,35479,559758,1.43,9.37
+B2,7738,121.9,143.1,35678,667062,0.82,18.32

@@ -1,0 +1,7 @@
+system,group,queries,empty_result_rate,mean_top_score_when_returned
+B1,all,4,0.5000,15.0895
+B1,en,2,0.0000,15.0895
+B1,ko,2,1.0000,
+B2,all,4,0.5000,12.8071
+B2,en,2,0.0000,12.8071
+B2,ko,2,1.0000,

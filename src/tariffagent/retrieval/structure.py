@@ -78,16 +78,46 @@ CONFIG_V2 = {
                      "page; otherwise nothing is inherited",
     "unchanged": "lead-in definition, fields, duty_family and country rules, R2 to R5, index_text, chunk_id",
 }
-CONFIGS = {c["config_id"]: c for c in (CONFIG_V1, CONFIG_V2)}
-RULES = {"b2_heading_v1": {"paren_note": False, "later_sibling": False},
-         "b2_heading_v2": {"paren_note": True, "later_sibling": True}}
-CONFIG = CONFIG_V2
+# v3 again changes only how a lead-in is closed (status of v2: invalid_structural_context after the review of its
+# long contexts, see docs/retrieval_b2.md)
+CONFIG_V3 = {
+    **CONFIG_V2,
+    "config_id": "b2_heading_v3",
+    "notes_pages": CONFIG_V2["notes_pages"] + "; and (iii) a label or a note number printed alone on its line "
+                   "('(xxiv)', '52.') is a marker or a note boundary (a bare label counts only in a valid label form: "
+                   "digits, one letter, a repeated letter, a roman numeral, one capital; '(liters)' does not), "
+                   "(iv) a lead-in is also closed by the next or a later sibling of its parent, the last marker of "
+                   "another form before it",
+}
+# v4 changes only the extent of the lead-in sentence (v3: applicable_heading cut at the end of the printed line)
+CONFIG_V4 = {
+    **CONFIG_V3,
+    "config_id": "b2_heading_v4",
+    "lead_in_sentence": "whether a line is a lead-in is decided on its first printed line as in v3; its sentence "
+                        "(governing_text, applicable_heading, duty_family, country_scope) is then read across line "
+                        "breaks, from the marker to the first ':' or sentence end, at most 600 characters",
+    "exclusion_sentences": "when the lead-in sentence says the duty does 'not apply', duty_family is read only from a "
+                           "named statute and country_scope is left empty (a product class or country there names "
+                           "the excluded goods)",
+}
+CONFIGS = {c["config_id"]: c for c in (CONFIG_V1, CONFIG_V2, CONFIG_V3, CONFIG_V4)}
+RULES = {"b2_heading_v1": {"paren_note": False, "later_sibling": False, "bare": False, "parent": False,
+                           "multiline": False},
+         "b2_heading_v2": {"paren_note": True, "later_sibling": True, "bare": False, "parent": False,
+                           "multiline": False},
+         "b2_heading_v3": {"paren_note": True, "later_sibling": True, "bare": True, "parent": True,
+                           "multiline": False},
+         "b2_heading_v4": {"paren_note": True, "later_sibling": True, "bare": True, "parent": True,
+                           "multiline": True}}
+CONFIG = CONFIG_V4
 CONFIG_ID = CONFIG["config_id"]
 
 HEADING = re.compile(r"\b9903\.\d{2}\.\d{2}\b")
 MARKER = re.compile(r"^\(([a-z]{1,7}|[0-9]{1,2}|[A-Z])\) ")
+BARE_MARKER = re.compile(r"^\(([a-z]{1,7}|[0-9]{1,2}|[A-Z])\)$")
 NOTE_LINE = re.compile(r"^(\d{1,2})\. ")
 NOTE_LINE_PAREN = re.compile(r"^\((\d{1,2})\)(?=\([a-z]\))")
+NOTE_LINE_BARE = re.compile(r"^(\d{1,2})\.$")
 PAGE_HEADER = re.compile(r"^U\.S\. Notes(?: \(con\.\))?$")
 # a heading named as the source of a duty: "rates of duty (set forth) in heading X", "duty imposed by headings X, Y"
 DUTY_SOURCE = re.compile(r"(?:rates? of duty|dut(?:y|ies))[^.:;]{0,40}?\b(?:in|by) headings? (.*?)(?= shall| apply|$)")
@@ -127,6 +157,32 @@ def later_sibling(lead: str, label: str) -> bool:
     return lead in ROMAN and label in ROMAN and ROMAN[label] > ROMAN[lead] and not (len(lead) == len(label) == 1)
 
 
+def _rep(s: str) -> bool:
+    return len(s) >= 2 and s.isalpha() and len(set(s)) == 1
+
+
+def valid_label(label: str) -> bool:
+    """v3: label forms used by the notes (a bare '(liters)' is not one)."""
+    return label.isdigit() or (len(label) == 1 and label.isalpha()) or _rep(label) or label in ROMAN
+
+
+def label_form(label: str) -> str:
+    if label.isdigit():
+        return "digit"
+    if len(label) == 1 and label.isupper():
+        return "capital"
+    if len(label) == 1:
+        return "letter_or_roman" if label in ROMAN else "letter"
+    if label in ROMAN:
+        return "roman"
+    return f"repeated{len(label)}" if _rep(label) else "other"
+
+
+def same_form(a: str, b: str) -> bool:
+    fa, fb = label_form(a), label_form(b)
+    return fa == fb or {fa, fb} <= {"letter", "letter_or_roman"} or {fa, fb} <= {"roman", "letter_or_roman"}
+
+
 def successors(label: str) -> set[str]:
     """Labels that close a lead-in with this label (the next sibling under either reading of the label)."""
     out = set()
@@ -148,11 +204,16 @@ class LeadIn:
     headings: tuple[str, ...]
     page: int = 0               # physical page where the lead-in is printed (bookkeeping, not in the context)
     note: str = ""
+    parent: str = ""            # v3: last marker of another form before the lead-in (bookkeeping)
+    exclusion_guard: bool = False   # v4: product class and country are not read from an exclusion sentence
 
     def fields(self) -> dict:
         statute = STATUTE.search(self.sentence)
-        product = PRODUCT.search(self.sentence)
-        country = COUNTRY.search(self.sentence)
+        # in an exclusion ("shall not apply to ..."), a product class or a country names the excluded goods, not the
+        # duty's own scope
+        excluded = self.exclusion_guard and re.search(r"\bnot apply\b", self.sentence)
+        product = None if excluded else PRODUCT.search(self.sentence)
+        country = None if excluded else COUNTRY.search(self.sentence)
         return {"subdivision": f"({self.label})", "applicable_heading": ";".join(self.headings),
                 "governing_text": self.sentence,
                 "duty_family": statute.group(0) if statute else (product.group(0) if product else "unknown"),
@@ -164,6 +225,7 @@ class PageState:
     """Notes-page state at a point: the open lead-in and the last note number."""
     lead_in: LeadIn | None = None
     note: str = ""
+    recent: tuple[str, ...] = ()    # v3: labels of the markers seen since the last note line, latest last
 
 
 @dataclass(frozen=True)
@@ -194,30 +256,50 @@ def notes_events(raw: str, doc_text: str, start: PageState, config_id: str = CON
     lines = _line_offsets(raw, doc_text)
     if lines is None:
         return None
-    state = PageState(start.lead_in, start.note)
-    events = [Event(0, PageState(state.lead_in, state.note))]
+    state = PageState(start.lead_in, start.note, start.recent)
+    events = [Event(0, PageState(state.lead_in, state.note, state.recent))]
     for off, line in lines:
         changed = False
-        note = NOTE_LINE.match(line) or (NOTE_LINE_PAREN.match(line) if rules["paren_note"] else None)
+        line_full = line
+        note = NOTE_LINE.match(line) or (NOTE_LINE_PAREN.match(line) if rules["paren_note"] else None) \
+            or (NOTE_LINE_BARE.match(line) if rules["bare"] else None)
         if note:
-            state = PageState(None, note.group(1))
+            state = PageState(None, note.group(1), ())
             changed = True
             line = line[note.end():].lstrip()
         m = MARKER.match(line)
+        if not m and rules["bare"]:
+            m = BARE_MARKER.match(line)
+            if m and not valid_label(m.group(1)):
+                m = None
         if m:
             label = m.group(1)
             sentence = re.split(r"(?<=:)|(?<=\.) (?=[A-Z(])", line, maxsplit=1)[0][:300]
             src = DUTY_SOURCE.search(sentence)
             heads = tuple(dict.fromkeys(HEADING.findall(src.group(1)))) if src else ()
+            lead = state.lead_in
+            if heads and rules["multiline"]:
+                start_at = off + (len(line_full) - len(line))     # the marker's offset in the page text
+                window = doc_text[start_at:start_at + 600]
+                sentence = re.split(r"(?<=:)|(?<=\.) (?=[A-Z(])", window, maxsplit=1)[0]
+                src = DUTY_SOURCE.search(sentence)
+                heads = tuple(dict.fromkeys(HEADING.findall(src.group(1)))) if src else heads
             if heads:
-                state = PageState(LeadIn(label, sentence, heads, page, state.note), state.note)
+                parent = next((r for r in reversed(state.recent) if not same_form(r, label)), "") \
+                    if rules["parent"] else ""
+                state = PageState(LeadIn(label, sentence, heads, page, state.note, parent, rules["multiline"]),
+                                  state.note, state.recent)
                 changed = True
-            elif state.lead_in and (label in successors(state.lead_in.label)
-                                    or (rules["later_sibling"] and later_sibling(state.lead_in.label, label))):
-                state = PageState(None, state.note)
+            elif lead and (label in successors(lead.label)
+                           or (rules["later_sibling"] and later_sibling(lead.label, label))
+                           or (rules["parent"] and lead.parent and same_form(label, lead.parent)
+                               and (label in successors(lead.parent) or later_sibling(lead.parent, label)))):
+                state = PageState(None, state.note, state.recent)
                 changed = True
+            if rules["parent"]:
+                state = PageState(state.lead_in, state.note, (state.recent + (label,))[-40:])
         if changed:
-            events.append(Event(off, PageState(state.lead_in, state.note)))
+            events.append(Event(off, PageState(state.lead_in, state.note, state.recent)))
     return events, state
 
 

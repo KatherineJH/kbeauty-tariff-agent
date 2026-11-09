@@ -1,7 +1,9 @@
 """First B2 (heading-enriched BM25) run, compared with B1 on the same queries, offline.
 
     uv run python scripts/eval_retrieval_b2.py run_004_b2_heading_v1 b2_heading_v1   (diagnostic, invalid)
-    uv run python scripts/eval_retrieval_b2.py run_005_b2_heading_v2 b2_heading_v2
+    uv run python scripts/eval_retrieval_b2.py run_005_b2_heading_v2 b2_heading_v2   (diagnostic, invalid)
+    uv run python scripts/eval_retrieval_b2.py run_006_b2_heading_v3 b2_heading_v3   (superseded, heading lists cut)
+    uv run python scripts/eval_retrieval_b2.py run_007_b2_heading_v4 b2_heading_v4
 
 Relevance here is only the strict citation qrels (the cited file and page; mechanical, identical for B1 and B2,
 because B2 keeps B1's windows and offsets). B2 needs its own reviewed qrels (evals/dev/review_b2v2/); until they exist

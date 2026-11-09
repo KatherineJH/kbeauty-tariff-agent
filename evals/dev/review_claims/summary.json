@@ -1,0 +1,360 @@
+{
+  "B1": {
+    "items": 266,
+    "merged_matched_pair_items": 61,
+    "new": 223,
+    "per_query": {
+      "dq01_en": {
+        "items": 12,
+        "new": 12,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq01_ko": {
+        "items": 10,
+        "new": 10,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq02_en": {
+        "items": 11,
+        "new": 11,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq02_ko": {
+        "items": 12,
+        "new": 12,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq03_en": {
+        "items": 10,
+        "new": 5,
+        "reused": 0,
+        "reused_needs_claim_mapping": 5,
+        "same_as_b1": 0
+      },
+      "dq03_ko": {
+        "items": 15,
+        "new": 10,
+        "reused": 0,
+        "reused_needs_claim_mapping": 5,
+        "same_as_b1": 0
+      },
+      "dq04_en": {
+        "items": 10,
+        "new": 10,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq04_ko": {
+        "items": 12,
+        "new": 12,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq05_en": {
+        "items": 10,
+        "new": 10,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq05_ko": {
+        "items": 11,
+        "new": 11,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq06_en": {
+        "items": 11,
+        "new": 11,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq06_ko": {
+        "items": 1,
+        "new": 1,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq07_en": {
+        "items": 10,
+        "new": 8,
+        "reused": 1,
+        "reused_needs_claim_mapping": 1,
+        "same_as_b1": 0
+      },
+      "dq07_ko": {
+        "items": 2,
+        "new": 0,
+        "reused": 1,
+        "reused_needs_claim_mapping": 1,
+        "same_as_b1": 0
+      },
+      "dq08_en": {
+        "items": 11,
+        "new": 11,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq08_ko": {
+        "items": 12,
+        "new": 12,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq09_en": {
+        "items": 43,
+        "new": 7,
+        "reused": 36,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq09_ko": {
+        "items": 46,
+        "new": 10,
+        "reused": 36,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq10_en": {
+        "items": 18,
+        "new": 18,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq10_ko": {
+        "items": 17,
+        "new": 17,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq11_en": {
+        "items": 10,
+        "new": 10,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq11_ko": {
+        "items": 11,
+        "new": 11,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq12_en": {
+        "items": 10,
+        "new": 10,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq12_ko": {
+        "items": 12,
+        "new": 12,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      }
+    },
+    "query_units_before_dedup": 327,
+    "reused": 37,
+    "reused_needs_claim_mapping": 6,
+    "same_as_b1": 0
+  },
+  "B2": {
+    "items": 261,
+    "merged_matched_pair_items": 63,
+    "new": 261,
+    "per_query": {
+      "dq01_en": {
+        "items": 12,
+        "new": 12,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq01_ko": {
+        "items": 10,
+        "new": 10,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq02_en": {
+        "items": 11,
+        "new": 11,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq02_ko": {
+        "items": 12,
+        "new": 12,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq03_en": {
+        "items": 15,
+        "new": 15,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq03_ko": {
+        "items": 15,
+        "new": 15,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq04_en": {
+        "items": 10,
+        "new": 10,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq04_ko": {
+        "items": 12,
+        "new": 12,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq05_en": {
+        "items": 10,
+        "new": 10,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq05_ko": {
+        "items": 11,
+        "new": 11,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq06_en": {
+        "items": 11,
+        "new": 11,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq06_ko": {
+        "items": 1,
+        "new": 1,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq07_en": {
+        "items": 11,
+        "new": 11,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq07_ko": {
+        "items": 2,
+        "new": 2,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq08_en": {
+        "items": 10,
+        "new": 10,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq08_ko": {
+        "items": 12,
+        "new": 12,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq09_en": {
+        "items": 42,
+        "new": 42,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq09_ko": {
+        "items": 40,
+        "new": 40,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq10_en": {
+        "items": 17,
+        "new": 17,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq10_ko": {
+        "items": 17,
+        "new": 17,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq11_en": {
+        "items": 10,
+        "new": 10,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq11_ko": {
+        "items": 11,
+        "new": 11,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq12_en": {
+        "items": 10,
+        "new": 10,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      },
+      "dq12_ko": {
+        "items": 12,
+        "new": 12,
+        "reused": 0,
+        "reused_needs_claim_mapping": 0,
+        "same_as_b1": 0
+      }
+    },
+    "query_units_before_dedup": 324,
+    "reused": 0,
+    "reused_needs_claim_mapping": 0,
+    "same_as_b1": 0
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "b2_chunks": 7738,
+  "b2_chunks_sha256": "07fd7363248a838ae00277a641b70ec24fd422abfefa495500b6ddcab3b0332d",
+  "config_id": "b2_heading_v2",
+  "config_sha256": "ca5f5d91b4e9fa9c65dac5ead19f40d809d42fbb6f619ca0314c9ddd03d27ab7",
+  "context_origin_counts": {
+    "document_metadata": 1542,
+    "none": 5521,
+    "previous_page": 126,
+    "same_page": 549
+  },
+  "index_sha256": "e3b78862f24665a53d19dc3cf2ccfd58dc06794041cc3f3493bde6adb4133916",
+  "index_terms": 35678,
+  "structure_module_sha256": "6fac43cac53656e5025c617b64379ce33311f46e7ec406755ea0bee98d7266af",
+  "structure_stats": {
+    "chapter99_chunks": 5359,
+    "chunks_crossing_a_note_boundary": 0,
+    "contexts": 303,
+    "contexts_over_2_pages": 14,
+    "duty_family_unknown_ratio_of_governed": 0.7244,
+    "governed_chunks": 675,
+    "governed_ratio_of_chapter99": 0.126,
+    "inherited_chunks": 126,
+    "inherited_ratio_of_governed": 0.1867,
+    "max_distance_pages": 6,
+    "top_contexts_by_distance": [
+      {
+        "chunks": 10,
+        "governing_text": "(b) As provided in heading 9903.02.81, the additional duties imposed by headings 9903.02.79, 9903.02.80, 9903.82.02",
+        "inherited_chunks": 8,
+        "lead_in_page": 198,
+        "max_distance_pages": 6,
+        "pages": 7,
+        "source_id": "hts22:chapter_99"
+      },
+      {
+        "chunks": 7,
+        "governing_text": "(a) As provided for in heading 9903.01.32, the additional duties imposed by headings 9903.01.25, 9903.01.35,",
+        "inherited_chunks": 6,
+        "lead_in_page": 177,
+        "max_distance_pages": 6,
+        "pages": 7,
+        "source_id": "hts22:chapter_99"
+      },
+      {
+        "chunks": 7,
+        "governing_text": "(iii) As provided in heading 9903.06.06, the duty imposed by heading 9903.05.40 shall not apply to articles the product",
+        "inherited_chunks": 6,
+        "lead_in_page": 582,
+        "max_distance_pages": 6,
+        "pages": 7,
+        "source_id": "hts22:chapter_99"
+      },
+      {
+        "chunks": 7,
+        "governing_text": "(iii) As provided in heading 9903.06.09, the duty imposed by heading 9903.05.37 shall not apply to articles the product",
+        "inherited_chunks": 6,
+        "lead_in_page": 589,
+        "max_distance_pages": 6,
+        "pages": 7,
+        "source_id": "hts22:chapter_99"
+      },
+      {
+        "chunks": 7,
+        "governing_text": "(i) As provided in heading 9903.06.20, the duty imposed by heading 9903.05.50 shall not apply to articles the product",
+        "inherited_chunks": 6,
+        "lead_in_page": 599,
+        "max_distance_pages": 6,
+        "pages": 7,
+        "source_id": "hts22:chapter_99"
+      },
+      {
+        "chunks": 34,
+        "governing_text": "(gg) For purposes of heading 9903.88.28, the additional duties imposed by heading 9903.88.15 shall not apply to entries",
+        "inherited_chunks": 26,
+        "lead_in_page": 365,
+        "max_distance_pages": 4,
+        "pages": 5,
+        "source_id": "hts22:chapter_99"
+      },
+      {
+        "chunks": 6,
+        "governing_text": "(xxiii) As provided in heading 9903.02.77, the additional duties imposed by headings 9903.02.19 and 9903.02.20 shall not",
+        "inherited_chunks": 5,
+        "lead_in_page": 193,
+        "max_distance_pages": 4,
+        "pages": 5,
+        "source_id": "hts22:chapter_99"
+      },
+      {
+        "chunks": 5,
+        "governing_text": "(ii) As provided in heading 9903.03.03, the additional duty imposed by heading 9903.03.01 shall not apply to articles th",
+        "inherited_chunks": 4,
+        "lead_in_page": 223,
+        "max_distance_pages": 4,
+        "pages": 5,
+        "source_id": "hts22:chapter_99"
+      },
+      {
+        "chunks": 8,
+        "governing_text": "(d) As provided in heading 9903.03.16, the additional duties imposed by headings 9903.03.12-9903.03.14 shall not apply t",
+        "inherited_chunks": 6,
+        "lead_in_page": 562,
+        "max_distance_pages": 3,
+        "pages": 4,
+        "source_id": "hts22:chapter_99"
+      },
+      {
+        "chunks": 5,
+        "governing_text": "(xxii) As provided in heading 9903.02.76, the additional duties imposed by headings 9903.02.19, 9903.02.20, 9903.82.02",
+        "inherited_chunks": 3,
+        "lead_in_page": 189,
+        "max_distance_pages": 3,
+        "pages": 4,
+        "source_id": "hts22:chapter_99"
+      }
+    ],
+    "unknown_context_ratio_of_chapter99": 0.874
+  }
+}

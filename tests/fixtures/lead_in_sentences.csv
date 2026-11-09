@@ -1,0 +1,8 @@
+case,source_id,page,probe,expected_headings,expected_duty_family,expected_country,why
+L01_full,hts22:chapter_99,180,2836.99.502836.99.102836.92.00,9903.01.25;9903.01.35;9903.01.39;9903.01.63;9903.02.01;9903.02.73;9903.02.79;9903.02.80;9903.02.82;9903.02.83;9903.02.87;9903.02.88,unknown,,"the (a) sentence on page 177 continues over three printed lines up to 'shall not apply'; exclusion: no product, no country"
+L02_full,hts22:chapter_99,191,8501.51.608501.51.508501.40.608501.40.50,9903.02.19;9903.02.20;9903.82.02;9903.82.04;9903.82.17,unknown,,"(xxii) continues with 'and 9903.82.04-9903.82.17'; 'articles the product of the European Union' is the excluded goods"
+L04_full,hts22:chapter_99,200,8501.51.508501.40.608501.40.508501.34.61,9903.02.79;9903.02.80;9903.82.02;9903.82.04;9903.82.17,unknown,,(b) continues with 'and 9903.82.04-9903.82.17'; excluded goods of South Korea
+R4_ix,htsarch:2026HTSRev4,184,(ix) The additional duties imposed by headings,9903.01.25;9903.01.35;9903.01.39;9903.01.63;9903.02.01;9903.02.73;9903.02.79;9903.02.80;9903.02.82;9903.02.83;9903.02.87;9903.02.88,unknown,,"(ix) continues on the next printed line; 'derivative aluminum products' are the excluded goods"
+R4_v,htsarch:2026HTSRev4,230,(v) As provided in heading 9903.03.06,9903.03.01,unknown,,the duty source is heading 9903.03.01; 9903.03.06 is the exception heading
+R19_k,htsarch:2025HTSRev19,219,(k) The rates of duty in heading 9903.85.08,9903.85.08,derivative aluminum products,,the duty applies to derivative aluminum products (not an exclusion)
+R19_s,htsarch:2025HTSRev19,222,(s) The rates of duty set forth in heading 9903.85.15,9903.85.15,derivative aluminum products,United Kingdom,derivative aluminum products of the United Kingdom

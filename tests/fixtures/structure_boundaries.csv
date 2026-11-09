@@ -1,0 +1,37 @@
+case,source_id,page,probe,expected_subdivision,expected_first_heading,expected_note,why
+L01_in,hts22:chapter_99,180,2836.99.502836.99.102836.92.00,(a),9903.01.25,,code list under (a) As provided for in heading 9903.01.32 (page 177)
+L01_close,hts22:chapter_99,183,(b) As provided in heading 9903.02.78,(b),9903.01.25,,next lettered lead-in
+L02_in,hts22:chapter_99,191,8501.51.608501.51.508501.40.608501.40.50,(xxii),9903.02.19,,code list under (xxii) (page 189)
+L02_close,hts22:chapter_99,193,(xxiii) As provided in heading 9903.02.77,(xxiii),9903.02.19,,next roman lead-in
+L03_in,hts22:chapter_99,196,2933.69.502933.59.952933.59.852933.59.80,(xxiii),9903.02.19,,code list under (xxiii) (page 193)
+L03_close,hts22:chapter_99,197,(a) As provided in headings 9903.02.79 and 9903.02.80,,,,"after the bare line (xxiv): a new roman subdivision, (xxiii) is closed; (a) names no duty source"
+L04_start,hts22:chapter_99,198,(b) As provided in heading 9903.02.81,(b),9903.02.79,,(b) under (xxiv)
+L04_in,hts22:chapter_99,200,8501.51.508501.40.608501.40.508501.34.61,(b),9903.02.79,,code list under (b) (page 198)
+L04_close,hts22:chapter_99,201,(a) As provided in headings 9903.02.82 and 9903.02.83,,,,"after the bare line (xxv), sibling of the parent (xxiv): (b) is closed"
+L05_in,hts22:chapter_99,225,2716.00.002715.00.002714.90.002714.10.002713.90.00,(ii),9903.03.01,,code list under (ii) (page 223)
+L05_close,hts22:chapter_99,227,(iii) As provided in heading 9903.03.04,(iii),9903.03.01,,next roman lead-in
+L06_start,hts22:chapter_99,365,(gg) For purposes of heading 9903.88.28,(gg),9903.88.15,,note 20 (gg)
+L06_in,hts22:chapter_99,369,(79) Bassinets,(gg),9903.88.15,,product list under (gg)
+L06_close,hts22:chapter_99,369,(mm) The U.S. Trade Representative,,,,"(mm) is a later sibling of (gg); its own first sentence is not a lead-in"
+N20_21_before,hts22:chapter_99,497,(14) Machines designed for lifting,,,,"note 20 (www) list: (www) is not a lead-in, nothing open"
+N20_21_start,hts22:chapter_99,497,(21)(a) Except as provided,,,21,note 21 printed as (21)(a)
+N20_21_after,hts22:chapter_99,498,(b) For purposes of subheading 9903.89.05,,,21,note 21 (b)
+L07_in,hts22:chapter_99,547,2711.11.002710.99.902710.99.452710.99.392710.99.32,(ii),9903.05.01,,code list under (ii) (page 545)
+L07_close,hts22:chapter_99,548,(iii) As provided in heading 9903.05.04,(iii),9903.05.01,,next roman lead-in
+L08_in,hts22:chapter_99,555,2922.49.052922.44.002922.43.502922.43.102922.42.50,(v),9903.05.01,,"(v) is a roman numeral here: (iv), (v), (vi) in sequence"
+L08_close,hts22:chapter_99,556,(vi) As provided in heading 9903.05.07,(vi),9903.05.01,,next roman lead-in
+N51_start,hts22:chapter_99,556,(a) Except as provided for in headings 9903.03.15 and 9903.03.16,,,51,note number 51 printed alone on the line before
+L09_in,hts22:chapter_99,564,8501.51.508501.40.608501.40.508501.34.61,(d),9903.03.12,,code list under (d) (page 562)
+L09_close,hts22:chapter_99,565,(a) Except as provided in headings 9903.05.85,,,52,"note number 52 printed alone on the line before: (d) of note 51 is closed"
+L10_in,hts22:chapter_99,568,2707.10.002706.00.002705.00.002704.00.002703.00.00,(b),9903.05.20,,code list under (b) (page 566)
+L10_close,hts22:chapter_99,569,(c) As provided in heading 9903.05.87,(c),9903.05.20,,next lettered lead-in
+L11_in,hts22:chapter_99,576,2922.49.432922.49.372922.49.302922.49.262922.49.10,(e),9903.05.20,,code list under (e) (page 574)
+L11_close,hts22:chapter_99,577,(f) As provided in heading 9903.05.90,(f),9903.05.20,,next lettered lead-in
+L12_in,hts22:chapter_99,587,6204.39.806204.39.606204.39.306204.39.206204.33.50,(iii),9903.05.40,,code list under (iii) (page 582)
+L12_close,hts22:chapter_99,588,(i) As provided in heading 9903.06.07,(i),9903.05.37,,new lead-in (i) of the next subdivision
+L13_in,hts22:chapter_99,594,6204.39.806204.39.606204.39.306204.39.206204.33.50,(iii),9903.05.37,,code list under (iii) (page 589)
+L13_close,hts22:chapter_99,595,(i) As provided in heading 9903.06.10,(i),9903.05.22,,new lead-in (i) of the next subdivision
+L14_in,hts22:chapter_99,604,6201.40.206201.40.156201.40.106201.30.806201.30.70,(i),9903.05.50,,code list under (i) (page 599)
+L14_close,hts22:chapter_99,605,(ii) As provided in heading 9903.06.21,(ii),9903.05.50,,next roman lead-in
+A19_n,htsarch:2025HTSRev19,202,(n) The rates of duty in heading 9903.81.91,(n),9903.81.91,,steel derivative list (n)
+A19_u,htsarch:2025HTSRev19,205,(u) The rates of duty in heading 9903.81.98,(u),9903.81.98,,United Kingdom steel derivative list (u)
