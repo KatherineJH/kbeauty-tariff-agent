@@ -1,11 +1,15 @@
-# B2: heading-enriched BM25, configuration b2_heading_v1 (diagnostic)
+# B2: heading-enriched BM25
 
-Status of `b2_heading_v1`: **`invalid_structural_context`**: kept as a diagnostic run, not used for evaluation.
-After its first run (run_004) a lead-in was found carried over 1,088 chunks of other subdivisions and notes (below).
-Its code is `src/tariffagent/retrieval/structure.py` at this commit (module sha256 `e8a58235…`, config sha256
-`e013ec0e…`), its first results are `reports/retrieval/run_004_b2_heading_v1/` and
-`data/extracted/retrieval_b2/b2_heading_v1_manifest.json`, its unused review sheet `evals/dev/review_b2_v1/`.
-The fix is a new configuration, `b2_heading_v2`. No qrels were reviewed and no B1/B2 conclusion is drawn here. Strategy and
+| Configuration | Status | Run | Code |
+|---|---|---|---|
+| `b2_heading_v1` | `invalid_structural_context`, diagnostic only | `run_004_b2_heading_v1` | commit `cbfc98b`, module sha256 `e8a58235…`, config sha256 `e013ec0e…` |
+| `b2_heading_v2` | fixed before its first run; under review | `run_005_b2_heading_v2` | see "Configuration b2_heading_v2" |
+
+`b2_heading_v1`: after its first run a lead-in was found carried over 1,088 chunks of other subdivisions and notes
+(below). Its results stay in `reports/retrieval/run_004_b2_heading_v1/` and
+`data/extracted/retrieval_b2/b2_heading_v1_manifest.json`, its unused review sheet in `evals/dev/review_b2_v1/`.
+The current module still produces v1 output exactly with `config_id="b2_heading_v1"` (tested against the v1
+manifest hash). No qrels were reviewed and no B1/B2 conclusion is drawn here. Strategy and
 order: [retrieval_strategy.md](retrieval_strategy.md). B1 and the fixed dev set: [architecture.md](architecture.md)
 4.4, [evals/dev/README.md](../evals/dev/README.md), [reports/retrieval/README.md](../reports/retrieval/README.md).
 
@@ -82,7 +86,52 @@ order: [retrieval_strategy.md](retrieval_strategy.md). B1 and the fixed dev set:
 - Fixing it changes the rules after the first run, so it would be a new configuration (`b2_heading_v2`) and a new
   run; `b2_heading_v1` and run_004 stay as they are. Not started: waiting for the user's decision.
 
-## First run: run_004_b2_heading_v1 (exploratory, strict citation qrels only)
+## Configuration b2_heading_v2 (fixed 2026-11-09, before its first search run)
+
+Only the closing of a lead-in changes; everything else is v1 (lead-in definition, fields, duty_family and country
+rules, rate-table pages, Federal Register and CSMS context, `index_text`, `chunk_id` formula). The p12 country-list
+phrasing stays unrecognized (`unknown`), and `duty_family` stays `unknown` unless the governing sentence names it.
+
+- **Note boundary, second printed form.** Besides a line starting `N. `, a line starting with a parenthesized note
+  number directly followed by the first subdivision, `(N)(a)`, starts a new note and closes the open lead-in. In
+  HTS Rev. 22 note 21 is printed `(21)(a) Except as provided ...`, which v1 did not read.
+- **Later siblings.** A non-lead-in marker closes the open lead-in when it has the same form and comes later in
+  sequence, not only when it is the next label: digits by value; single letters, and repeated letters of the same
+  length, alphabetically, in both cases unless the label is also a roman numeral (`(v)`, `(x)`, `(ii)` may be items
+  inside a lettered subdivision); roman numerals by value. In note 20, `(mm) The U.S. Trade Representative ...` is
+  not a lead-in (its first sentence is longer than 300 characters), so in v1 it did not close `(gg)`.
+- **Page boundary (unchanged, restated).** State is carried only to physical page n + 1 of the same source, and only
+  when page n parsed as a notes page; with a gap, another revision, a rate-table page or a page whose lines do not
+  rebuild its text, nothing is inherited.
+- A first draft of the later-sibling rule closed lettered lead-ins at roman items (12 same-page contexts lost); the
+  roman exception for single letters was added before the hashes below. No v2 search had been run.
+
+Fixed values (module sha256 is over the LF file committed with them):
+
+| Item | Value |
+|---|---|
+| config sha256 (`b2_heading_v2`) | `ca5f5d91b4e9fa9c65dac5ead19f40d809d42fbb6f619ca0314c9ddd03d27ab7` |
+| module sha256 (`structure.py`) | `6fac43cac53656e5025c617b64379ce33311f46e7ec406755ea0bee98d7266af` |
+| B2 v2 chunks sha256 | `07fd7363248a838ae00277a641b70ec24fd422abfefa495500b6ddcab3b0332d` |
+
+Structure statistics, v1 → v2 (also in the run manifest; checked by tests):
+
+| Statistic | v1 | v2 |
+|---|---|---|
+| chapter 99 notes/table chunks | 5,359 | 5,359 |
+| chunks with a governing context | 1,649 | 675 |
+| of which inherited from an earlier page | 1,100 (66.7%) | 126 (18.7%) |
+| same-page contexts | 549 | 549 (identical text) |
+| maximum inheritance distance | 136 pages | 6 pages |
+| contexts reaching over 2 pages | 14 | 14 |
+| chapter 99 chunks without context (unknown) | 69.2% | 87.4% |
+| `duty_family` unknown among governed chunks | 88.7% | 72.4% |
+
+The 14 contexts that still reach 3 to 6 pages are long code lists under one subdivision (spot-checked: e.g. Rev. 22
+pages 198 to 204 under `(b) As provided in heading 9903.02.81 ...`, pages 582 to 588 under `(iii) ... heading
+9903.05.40`); they were not verified one by one. The contexts of the 75 B1 review units are the same in v1 and v2.
+
+## First run of v1: run_004_b2_heading_v1 (exploratory, strict citation qrels only, diagnostic)
 
 Same 24 answerable queries, time conditions and matched pairs as run_003. Strict citation qrels count only the cited
 file and page, so they are not the reviewed comparison; B1 rows reproduce run_003's `citation` rows exactly.

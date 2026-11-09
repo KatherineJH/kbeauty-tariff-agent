@@ -8,9 +8,9 @@ marked relevant. Each B2 unit is new (context added) and is judged again with th
 (evals/dev/README.md), from what B2 returns: context_text, raw_text and metadata.
 
 Writes:
-  evals/dev/b2_qrel_candidates.csv          pair_id, b2_chunk_id, parent_chunk_id, citation_ids, config_id
-  evals/dev/review_b2/qrel_review_sheet.csv one row per unit (b001..): fill user_decision, user_reason, reviewer_type
-  evals/dev/review_b2/qrel_review_sheet.md  the same, readable
+  evals/dev/review_b2_v1/b2_qrel_candidates.csv  pair_id, b2_chunk_id, parent_chunk_id, citation_ids, config_id
+  evals/dev/review_b2_v1/qrel_review_sheet.csv one row per unit (b001..): fill user_decision, user_reason, reviewer_type
+  evals/dev/review_b2_v1/qrel_review_sheet.md  the same, readable
 The sheet shows no B1 decision, no cited location and no rule. It is not overwritten once a decision is filled.
 """
 
@@ -18,13 +18,15 @@ import csv
 import sys
 
 from tariffagent.retrieval.corpus import REPO, build_chunks, documents
-from tariffagent.retrieval.structure import CONFIG_ID, enrich
+from tariffagent.retrieval.structure import CONFIG_V1, enrich
+
+CONFIG_ID = CONFIG_V1["config_id"]   # this script belongs to the unused v1 review (evals/dev/review_b2_v1/README.md)
 
 sys.path.insert(0, str(REPO / "scripts"))
 from make_qrel_review_sheet import pairs, units  # noqa: E402
 
 DEV = REPO / "evals" / "dev"
-OUT = DEV / "review_b2"
+OUT = DEV / "review_b2_v1"
 SHEET = OUT / "qrel_review_sheet.csv"
 
 
@@ -36,7 +38,7 @@ def _write(path, rows, bom=False):
 
 
 def build() -> tuple[list[dict], list[dict]]:
-    b2 = {b.parent_chunk_id: b for b in enrich(documents(), build_chunks())}
+    b2 = {b.parent_chunk_id: b for b in enrich(documents(), build_chunks(), config_id=CONFIG_ID)}
     ps = pairs()
     cands, sheet = [], []
     for i, u in enumerate(units(), 1):
@@ -72,7 +74,7 @@ def main() -> None:
         sys.exit(f"{SHEET} already has decisions; not overwritten")
     cands, sheet = build()
     OUT.mkdir(parents=True, exist_ok=True)
-    _write(DEV / "b2_qrel_candidates.csv", cands)
+    _write(OUT / "b2_qrel_candidates.csv", cands)
     _write(SHEET, sheet, bom=True)
     (OUT / "qrel_review_sheet.md").write_text(write_md(sheet) + "\n", encoding="utf-8", newline="\n")
     print(f"{len(sheet)} units")

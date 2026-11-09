@@ -1,6 +1,7 @@
 """B2 heading-enriched chunks: determinism, lineage, unchanged raw text, no answer leakage, structure rules."""
 
 import ast
+import json
 import builtins
 import hashlib
 import io
@@ -14,7 +15,8 @@ import tariffagent.retrieval.structure as st
 from tariffagent.answer.citations import normalize
 from tariffagent.retrieval.bm25 import BM25Index
 from tariffagent.retrieval.corpus import REPO, Document, build_chunks, chunk_document, documents
-from tariffagent.retrieval.structure import b2_hashes, enrich, notes_events, PageState, state_at, successors
+from tariffagent.retrieval.structure import (PageState, b2_hashes, enrich, later_sibling, notes_events, state_at,
+                                             structure_stats, successors)
 
 MODULE = REPO / "src" / "tariffagent" / "retrieval" / "structure.py"
 
@@ -32,6 +34,11 @@ def b1(docs):
 @pytest.fixture(scope="module")
 def b2(docs, b1):
     return enrich(docs, b1)
+
+
+@pytest.fixture(scope="module")
+def b2_v1(docs, b1):
+    return enrich(docs, b1, config_id="b2_heading_v1")
 
 
 def test_b2_is_deterministic(docs, b1, b2):
@@ -219,7 +226,7 @@ def test_page_header_is_skipped_for_the_page_top_chunk(tmp_path):
     assert next(b for b in b2 if b.physical_page == "11").applicable_heading == "9903.80.08"
 
 
-def test_b2_review_sheet_is_blind_and_maps_every_b1_unit(b2):
+def test_v1_review_sheet_is_blind_and_maps_every_b1_unit(b2_v1):
     import csv
     dev = REPO / "evals" / "dev"
     with (dev / "review_b2_v1" / "qrel_review_sheet.csv").open(encoding="utf-8-sig", newline="") as f:
@@ -228,7 +235,7 @@ def test_b2_review_sheet_is_blind_and_maps_every_b1_unit(b2):
         b1_units = list(csv.DictReader(f))
     with (dev / "review_b2_v1" / "b2_qrel_candidates.csv").open(encoding="utf-8", newline="") as f:
         cands = list(csv.DictReader(f))
-    by_parent = {b.parent_chunk_id: b for b in b2}
+    by_parent = {b.parent_chunk_id: b for b in b2_v1}
     assert len(sheet) == len(b1_units) == len(cands)
     for s, u, c in zip(sheet, b1_units, cands):
         child = by_parent[u["chunk_id"]]
@@ -239,3 +246,75 @@ def test_b2_review_sheet_is_blind_and_maps_every_b1_unit(b2):
         assert not s["user_decision"] and "decision" not in c
     for col in sheet[0]:
         assert not any(w in col for w in ("claude", "cited", "rule", "period", "citation"))
+
+
+# --- v2: v1 kept reproducible, long-range inheritance fixed ------------------------------------------------------
+
+def test_v1_output_is_reproduced_exactly(b2_v1):
+    m = json.loads((REPO / "data" / "extracted" / "retrieval_b2" / "b2_heading_v1_manifest.json").read_text("utf-8"))
+    h = b2_hashes(b2_v1)
+    assert (h["config_sha256"], h["b2_chunks_sha256"]) == (m["config_sha256"], m["b2_chunks_sha256"])
+
+
+def test_v2_changes_only_cross_page_inheritance(b2, b2_v1):
+    v1 = {b.parent_chunk_id: b for b in b2_v1}
+    for b in b2:
+        a = v1[b.parent_chunk_id]
+        assert b.raw_text == a.raw_text
+        if a.context_origin in ("same_page", "document_metadata", "none"):
+            assert b.context_text == a.context_text, (a.source_id, a.physical_page)
+
+
+def test_v2_parenthesized_note_number_closes_the_lead_in():
+    raw = ("U.S. Notes (con.)\n(gg) For purposes of heading 9903.80.28, the additional duties imposed by heading "
+           "9903.80.15 shall not apply to the following products:\n(1) Item one\n"
+           "(21)(a) Except as provided in this note, products of the listed countries are subject to duties.\n"
+           "(2) Item two\n")
+    text = normalize(raw)
+    v1_events, _ = notes_events(raw, text, PageState(), "b2_heading_v1")
+    v2_events, end = notes_events(raw, text, PageState(), "b2_heading_v2")
+    at = text.index("(2) Item two")
+    assert state_at(v1_events, at).lead_in is not None            # the v1 error
+    assert state_at(v2_events, at).lead_in is None and end.note == "21"
+
+
+def test_v2_any_later_sibling_closes_but_roman_items_do_not():
+    assert later_sibling("gg", "mm") and later_sibling("n", "q") and later_sibling("viii", "xi")
+    assert later_sibling("3", "7") and not later_sibling("7", "3")
+    assert not later_sibling("o", "v") and not later_sibling("b", "x")      # roman items inside a lettered lead-in
+    assert not later_sibling("aa", "ii") and not later_sibling("v", "a")
+    raw = ("U.S. Notes (con.)\n(gg) For purposes of heading 9903.80.28, the additional duties imposed by heading "
+           "9903.80.15 shall not apply to:\n(1) Item\n(mm) The U.S. Trade Representative determined to establish "
+           "a process by which particular products classified in heading 9903.80.02 could be excluded.\n(1) Item\n")
+    text = normalize(raw)
+    events, _ = notes_events(raw, text, PageState(), "b2_heading_v2")
+    assert state_at(events, text.index("(1) Item")).lead_in.headings == ("9903.80.15",)
+    assert state_at(events, text.rindex("(1) Item")).lead_in is None
+    raw2 = "U.S. Notes (con.)\n(o) The rates of duty in heading 9903.80.30 apply to:\n(i) castings\n(v) forgings\n"
+    text2 = normalize(raw2)
+    ev2, _ = notes_events(raw2, text2, PageState(), "b2_heading_v2")
+    assert state_at(ev2, text2.index("(v) forgings")).lead_in.headings == ("9903.80.30",)
+
+
+def test_v2_structure_statistics(b2, b2_v1):
+    s1, s2 = structure_stats(b2_v1), structure_stats(b2)
+    assert s1["max_distance_pages"] == 136 and s1["inherited_chunks"] == 1100      # the recorded v1 error
+    assert s2["max_distance_pages"] <= 6 and s2["inherited_chunks"] == 126
+    assert s2["chunks_crossing_a_note_boundary"] == 0
+    for s in (s1, s2):
+        assert s["governed_chunks"] == s["inherited_chunks"] + sum(
+            1 for b in (b2 if s is s2 else b2_v1) if b.context_origin == "same_page")
+        assert 0 <= s["unknown_context_ratio_of_chapter99"] <= 1
+        assert 0 <= s["duty_family_unknown_ratio_of_governed"] <= 1
+    for b in b2:
+        if b.context_origin.startswith("previous_page"):
+            assert 0 < int(b.physical_page) - b.fields["_lead_in_page"] <= s2["max_distance_pages"]
+
+
+def test_v2_manifest_statistics_match(b2):
+    path = REPO / "data" / "extracted" / "retrieval_b2" / "b2_heading_v2_manifest.json"
+    if not path.exists():
+        pytest.skip("run_005 not written yet")
+    m = json.loads(path.read_text("utf-8"))
+    assert m["structure_stats"] == json.loads(json.dumps(structure_stats(b2)))
+    assert m["b2_chunks_sha256"] == b2_hashes(b2)["b2_chunks_sha256"]
