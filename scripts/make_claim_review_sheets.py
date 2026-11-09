@@ -20,11 +20,19 @@ context).
 Reuse of the earlier human_assisted pair judgements (evals/dev/review/qrel_review_sheet.csv) on a B1 item only when
 all hold: the intent is a matched pair and the same pair; the gold links of the required claims' evidence
 (evals/dev/claim_evidence.csv) are exactly the gold citations the earlier judgement used (the pair's
-relevant_citation_ids); the displayed payload and metadata hash is identical. Reused relevant items still need supports_claim_ids and support_level.
+relevant_citation_ids); the displayed payload and metadata hash is identical. A reused not_relevant / uncertain item
+gets support none on every component; a reused relevant item keeps its decision and reason, and its component
+supports are left to fill (the earlier review recorded no claims).
+
+Judgement structure: the item sheet holds the item decision (relevant / not_relevant / uncertain) and reason; the
+item_claim_judgments sheet holds one row per (item, claim component) with support complete / partial / none
+(evals/dev/claim_components.csv; a composite claim has several components and is complete when the top-k union
+supports every component completely, see src/tariffagent/retrieval/claim_scoring.py).
 
 Writes evals/dev/review_claims/:
-  b1_review_sheet.csv / .md, b2_review_sheet.csv / .md   one row per review item; fill decision,
-                                                        supports_claim_ids (';'), support_level, reason, reviewer_type
+  b1_review_sheet.csv / .md, b2_review_sheet.csv / .md   one row per review item; fill decision, reason,
+                                                        reviewer_type
+  b1_item_claim_judgments.csv, b2_...                    one row per (item, claim component); fill support
   item_queries.csv                                      which queries (and their claim ids) each item serves
   pools.csv                                             bookkeeping, not for the reviewer
   summary.json                                          counts: items, reused, new, per query
@@ -86,6 +94,9 @@ def build():
     b1 = {c.chunk_id: c for c in chunks}
     b2 = {b.parent_chunk_id: b for b in enrich(docs, chunks, config_id=CONFIG_ID)}
     queries = [q for q in _read(DEV / "queries.csv") if q["relevant_citation_ids"]]
+    comps = {}
+    for c in _read(DEV / "claim_components.csv"):
+        comps.setdefault(c["claim_id"], []).append(c)
     claims = {}
     for c in _read(DEV / "claims.csv"):
         claims.setdefault(c["query_id"], []).append(c)
@@ -148,7 +159,7 @@ def build():
                                                                  for s in ("candidate", "top10", "cited_location")},
                               "config_id": CONFIG_ID if system == "B2" else "B1"})
 
-    sheets, summary = {}, {}
+    sheets, summary, claim_cells = {}, {}, {}
     b1_ids = {key: f"b1-{i:04d}" for i, key in enumerate(items["B1"], 1)}
     for system, by_key in items.items():
         rows = []
@@ -166,12 +177,26 @@ def build():
                                               f" {c['claim_text']}" for c in it["claims"]),
                          **it["payload"], "claim_set_sha256": it["claim_set_sha256"],
                          "payload_sha256": it["payload_sha256"],
-                         "decision": prev["user_decision"] if prev else "", "supports_claim_ids": "",
-                         "support_level": "", "reason": prev["user_reason"] if prev else "",
+                         "decision": prev["user_decision"] if prev else "",
+                         "reason": prev["user_reason"] if prev else "",
                          "reviewer_type": prev["reviewer_type"] if prev else "",
                          "reused_from": f"evals/dev/review/qrel_review_sheet.csv:{prev['unit_id']}" if prev else "",
                          "status": status})
         sheets[system] = rows
+        cells = []
+        for r, it in zip(rows, by_key.values()):
+            if r["status"].startswith("same_as:"):
+                continue                               # judged on the B1 item it equals
+            for c in it["claims"]:
+                for comp in comps[c["claim_id"]]:
+                    prefilled = r["status"] == "reused" and r["decision"] in ("not_relevant", "uncertain")
+                    cells.append({"item_id": r["item_id"], "claim": c["claim_id"].split(".")[1],
+                                  "component": comp["component_id"].split(".")[-1],
+                                  "required": c["required"], "composite": comp["composite"],
+                                  "component_text": comp["component_text"],
+                                  "support": "none" if prefilled else "",
+                                  "status": "prefilled_none_from_reuse" if prefilled else "to_fill"})
+        claim_cells[system] = cells
         per_q = {}
         for r in rows:
             for qid in r["query_ids"].split(";"):
@@ -184,24 +209,35 @@ def build():
                            "same_as_b1": sum(1 for r in rows if r["status"].startswith("same_as:")),
                            "merged_matched_pair_items": sum(1 for r in rows if ";" in r["query_ids"]),
                            "query_units_before_dedup": sum(1 for l in links if l["system"] == system),
+                           "claim_component_cells": len(claim_cells[system]),
+                           "claim_component_cells_to_fill": sum(1 for c in claim_cells[system]
+                                                                if c["status"] == "to_fill"),
                            "per_query": per_q}
-    return sheets, links, pools, summary
+    return sheets, claim_cells, links, pools, summary
 
 
-def write_md(system: str, rows: list[dict]) -> str:
+def write_md(system: str, rows: list[dict], cells: list[dict]) -> str:
+    by_item = {}
+    for c in cells:
+        by_item.setdefault(c["item_id"], []).append(c)
     shows = "raw text and B1 metadata" if system == "B1" else "extracted context, raw text and B2 metadata"
     out = [f"# {system} claim review items", "",
            f"Each item shows what {system} returns: {shows}. Decide relevant / not_relevant / uncertain with the v2 "
-           "criterion (evals/dev/README.md); for a relevant item name the claims it supports (c1, c2, ...) and "
-           "whether completely or partly. One item can serve both queries of a matched pair.", ""]
+           "criterion (evals/dev/README.md), then for every claim component mark complete / partial / none in the "
+           "item_claim_judgments sheet (relevant needs at least one complete or partial; not_relevant and uncertain "
+           "mean none everywhere). A composite claim is complete when the top-k units together cover all its "
+           "components. One item can serve both queries of a matched pair.", ""]
     for r in rows:
         meta = f"{r['source_id']}, page {r['physical_page'] or '-'} / {r['printed_page'] or '-'}"
         out += [f"## {r['item_id']} ({r['status']}): {meta}", "", f"- queries: {r['queries']}",
                 f"- claims: {r['claims']}", ""]
         if system == "B2":
             out += [f"- context (extracted): {r['context_text']}", ""]
-        out += [f"> {r['raw_text']}", "",
-                f"decision: {r['decision'] or '____'} supports: ____ level: ____ reason: {r['reason'] or '____'}", ""]
+        out += [f"> {r['raw_text']}", "", f"decision: {r['decision'] or '____'} reason: {r['reason'] or '____'}", ""]
+        out += [f"- {c['claim']}.{c['component']}{' (composite part)' if c['composite'] == 'true' else ''}"
+                f"{'' if c['required'] == 'true' else ' (not required)'}: {c['component_text']} -> "
+                f"{c['support'] or '____'}" for c in by_item.get(r["item_id"], [])]
+        out += [""]
     return "\n".join(out)
 
 
@@ -210,14 +246,15 @@ def main() -> None:
         path = OUT / name
         if path.exists() and any(r.get("decision") and r.get("status") == "new" for r in _read(path, bom=True)):
             sys.exit(f"{path} already has new decisions; not overwritten")
-    sheets, links, pools, summary = build()
+    sheets, claim_cells, links, pools, summary = build()
     OUT.mkdir(parents=True, exist_ok=True)
     for old_name in ("b1_review_sheet.md", "b2_review_sheet.md"):
         (OUT / old_name).unlink(missing_ok=True)
     for system, rows in sheets.items():
         _write(OUT / f"{system.lower()}_review_sheet.csv", rows, bom=True)
-        (OUT / f"{system.lower()}_review_sheet.md").write_text(write_md(system, rows) + "\n", encoding="utf-8",
-                                                                newline="\n")
+        _write(OUT / f"{system.lower()}_item_claim_judgments.csv", claim_cells[system], bom=True)
+        (OUT / f"{system.lower()}_review_sheet.md").write_text(write_md(system, rows, claim_cells[system]) + "\n",
+                                                                encoding="utf-8", newline="\n")
     _write(OUT / "item_queries.csv", links)
     _write(OUT / "pools.csv", pools)
     (OUT / "summary.json").write_text(json.dumps(summary, indent=2, sort_keys=True) + "\n", encoding="utf-8",

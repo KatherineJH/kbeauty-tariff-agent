@@ -268,7 +268,26 @@ Per-query claim sets for the mismatched pairs (decision record):
 - p12: different sets. The Korean query names the tariff type (상호관세); the English one asks for the additional
   duty only.
 
-**Scoring** `src/tariffagent/retrieval/claim_scoring.py` (definitions in its docstring; tested on synthetic data).
+**Components and judgement structure** (follow-up to checkpoint `2a0cf84`). `evals/dev/claim_components.csv`: each
+claim has one component per evidence sentence (44 components). Five claims are composite and need two sentences:
+dq10 c1 (the proclamation imposes a surcharge + heading 9903.03.01 was added by PP 11012), dq11 c1 en and ko (the
+order's number and title + its effect), dq12_ko c2 (EO 14266 modifies reciprocal rates + it suspends the (v)(xiii)
+list). The reviewer gives each item a decision (relevant / not_relevant / uncertain) and, per (item, claim
+component), a support level complete / partial / none (`*_item_claim_judgments.csv`). relevant needs at least one
+complete or partial; not_relevant and uncertain mean none everywhere. So one chunk can be complete for c1 and partial
+for c2.
+
+Completion rule: a claim is complete at rank k when every one of its components has a complete support from some
+relevant unit in the top k (the union of the top-k units, not one unit); it is partly supported when at least one
+component has complete or partial support. A single-component claim is complete exactly when one unit supports it
+completely. The `EV.demin.eo` quote now runs to "August 29, 2025", and the p12 claim text no longer names "2025 HTS
+Rev. 7" (provenance, not in the quote); a test checks that every year named in a claim is in its evidence.
+
+**Scoring** `src/tariffagent/retrieval/claim_scoring.py` (definitions in its docstring; tested on synthetic data,
+including one chunk complete for c1 and partial for c2, a composite claim completed by two units, and the refused
+combinations). Every measure reads the per-component levels: claim recall and partial recall, both MRRs (first rank
+at which some / every required claim is complete), unreachable claims (the union of the system's judged pool does
+not complete them) and `claim_novelty_dcg@10` (a rank gains when a claim becomes complete there).
 Claim metrics only; the citation metrics of `evaluate.py` keep their own names and are never in the same table.
 - Primary, the only B1/B2 comparison measures: `claim_recall@k`, `all_claims_covered@k`,
   `mrr_any_complete_claim@10`, `mrr_all_claims_complete@10`, `unreachable_claims`.
@@ -286,7 +305,8 @@ per query. A B2 item whose key equals a B1 item's is marked `same_as:<b1 item>` 
 B2 payload shows a context). Earlier human_assisted judgements are reused on a B1 item only when the intent is the
 same matched pair, the gold links of the required claims' evidence equal the gold citations the earlier judgement
 used, and the displayed payload and metadata hash is identical. So p01 (its claim now rests on the IEEPA-end
-evidence) and p05 (three claims) reuse nothing. Reused relevant items still need their claims and support level.
+evidence) and p05 (three claims) reuse nothing. A reused not_relevant / uncertain item gets none on every component;
+a reused relevant item keeps its decision and reason, and its component levels are still to fill.
 
 | Items | B1 | B2 |
 |---|---|---|
@@ -296,7 +316,10 @@ evidence) and p05 (three claims) reuse nothing. Reused relevant items still need
 | same displayed payload as a B1 item | - | 0 |
 | reused, complete (not_relevant / uncertain) | 37 (dq09 36, dq07 1) | 0 |
 | reused relevant, claims still to fill | 6 (dq03 5, dq07 1) | 0 |
-| new judgements | 223 | 261 |
+| new item decisions | 223 | 261 |
+| claim-component cells | 511 | 500 |
+| of which to fill | 437 | 500 |
+| of which none from a reused not_relevant / uncertain item | 74 | 0 |
 
 Per-query counts: `evals/dev/review_claims/summary.json`; which queries each item serves: `item_queries.csv`. The
 two earlier sheets of this day (`evals/dev/review_b2v2/`, the first `review_claims` sheets on v3) were replaced before

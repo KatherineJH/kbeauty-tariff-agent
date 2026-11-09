@@ -1,5 +1,7 @@
 {
   "B1": {
+    "claim_component_cells": 511,
+    "claim_component_cells_to_fill": 437,
     "items": 266,
     "merged_matched_pair_items": 61,
     "new": 223,
@@ -179,6 +181,8 @@
     "same_as_b1": 0
   },
   "B2": {
+    "claim_component_cells": 500,
+    "claim_component_cells_to_fill": 500,
     "items": 261,
     "merged_matched_pair_items": 63,
     "new": 261,
