@@ -1,0 +1,29 @@
+{
+  "run": "run_008_claims_final_v1",
+  "script": "scripts/eval_claims_final.py",
+  "inputs_sha256": {
+    "reports/retrieval/run_003_user_reviewed_qrels/bm25_dev_runs.csv": "3cd55405107de352607169faecc613fc2817ff8faca133dfc5c7c337ac84b101",
+    "reports/retrieval/run_007_b2_heading_v4/b2_dev_runs.csv": "72191c782919381c3245697a8dba3cbb49e59a0068cd1678552ffff1d94c8f98",
+    "evals/dev/review_claims/pools.csv": "2d914e5ffaf19bfe83cb860874c08545b5504d84f58ed8c215ec7a44a29d1d68",
+    "evals/dev/claims.csv": "300bf9acf8df6776782410dc2d35b604e7c925c24edf2d323914539671974b51",
+    "evals/dev/claim_components.csv": "11f9b643121cc8a5fa6d17464f9f3e07a1dc7547054a805451c3d549eec2a747",
+    "evals/dev/queries.csv": "cbd50211190789a77e0ffe5201d18638678c5529277505546bbd889de2d7e838",
+    "evals/dev/query_time_conditions.csv": "44f92e654db79edc365f7bf79baf2f2774062a0fafb794936883596355ce53ee",
+    "evals/dev/query_pair_checks.csv": "1631c2616adb3d602ff2007be9ecd1f6ee916ffb9b7a75b33fbfbea46ea34310",
+    "evals/dev/review_claims/final/v1/manifest.json": "ac05273eaf1d61054d5985ff1d2bd40d0c7113ef2ea8c7156d247563fe4cca5c",
+    "evals/dev/review_claims/claim_open_issues.md": "2dce9df6ae96322aba33fcb816cf115db1fe1d8d87c8412071b475c14c721d05",
+    "evals/dev/review_claims/final/v1/b1_item_claim_judgments.csv": "1a8d1ff0292b655a48409677e759745253bdac96adeaf27b1c19a28a248e7c35",
+    "evals/dev/review_claims/final/v1/b1_items.csv": "d3a7f9bfe79e3de5481119f509d2a091d661afbc8db4faecf720af2d60f31e5f",
+    "evals/dev/review_claims/final/v1/b2_item_claim_judgments.csv": "450d45df4e1fa1604dc3d0b67401b8f4295fe02add127189e2302b7581645d83",
+    "evals/dev/review_claims/final/v1/b2_items.csv": "45cdf7dcfacc18640d22f42dd96f28b81892f1b9a6bc0fd9f598c69ba7361e06",
+    "evals/dev/review_claims/b1_review_sheet.csv": "b7fb89c1759c266da0cb5fed7110fb1c9461dc9c23d9c34bf8e7b6567fa7c2bb",
+    "evals/dev/review_claims/b2_review_sheet.csv": "a7047b2b078489ae16827cb6f31da0c56feaef92c1da21fee490a335c44844de"
+  },
+  "outputs_sha256": {
+    "claim_metrics.json": "f5223aaf0615421e223bb60e1496aa81ab25bb72950ede944e0ce4d47b148770",
+    "claim_paired_delta.csv": "b7a378ca5c054de64cf65d04f381393822f5ce15e495de2023216d8655bd65d7",
+    "claim_per_query.csv": "bb69d8181dd530cdd00d6a9123853783af6fd49b103d0b48e7120ec66942e365",
+    "report.md": "f3189fd82e80c5ea8c0226746355fa67f0a3171e10f368d07589ecc274202ea8"
+  },
+  "claude_sealed_read": false
+}

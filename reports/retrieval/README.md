@@ -129,3 +129,12 @@ Next, on purpose as separate configurations compared on this fixed set: heading-
 line prefixed to each chunk, or carried as metadata the engine returns), then dense and hybrid retrieval. Changing
 the retrieval unit changes the units to be judged: chunks that did not exist in this review need their own
 judgements, recorded as a new qrel version, never by editing v2.
+
+## run_008_claims_final_v1 (claim-based B1/B2 on run_007, qrels = review_claims/final/v1)
+
+`scripts/eval_claims_final.py`; B1 = run_003 top 10, B2 = run_007 (b2_heading_v4) top 10; judgements only from the
+finalized human_assisted review (`evals/dev/review_claims/final/v1`), claim catalog v1 as sealed. Primary: claim
+recall and all-claims-covered at 1/3/5/10, the two MRRs, unreachable claims; partial claim recall secondary;
+system-relative nDCG and claim-novelty DCG diagnostic only. Official result keeps dq07 (its c1 cannot be completed
+under CI-001); a result without dq07 is a separate sensitivity view. See the run's `report.md` for numbers and limits
+(24 queries; configuration, catalog and scoring fixed after earlier diagnostics; not pre-registered).
