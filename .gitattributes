@@ -5,3 +5,4 @@ reports/**/*.csv -text
 *.parquet binary
 *.npy binary
 *.gz binary
+reports/retrieval/run_008_claims_final_v1/** -text
