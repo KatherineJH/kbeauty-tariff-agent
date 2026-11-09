@@ -336,6 +336,27 @@ by `finalize` (`src/tariffagent/retrieval/claim_review.py`) into `evals/dev/revi
   있음; partial = 관련 정보는 있지만 해당 근거 요소를 완전히 확정하기에는 부족함; none = 해당 근거 요소를 지원하지
   않음.
 
+**Operating rules (follow-up to `9844468`).**
+- A reason is required: a stage 1 decision with an empty or blank reason is refused, and a reused judgement must
+  carry its earlier reason.
+- Finalized results are never overwritten: `finalize <version>` writes `final/<version>/` and stops if it exists;
+  there is no overwrite option. A corrected review is a new version.
+- One sealed queue for both systems (`evals/dev/review_claims/queue/`): the 484 stage 1 items and the 6 stage-2-only
+  items, ordered by sha256 over a fixed seed (`claim-review-queue-2026-11-09`), under numeric review ids (`R-` + 10
+  digits). `queue.csv` (review id, position, stage) is what the session follows; `queue_map.csv` (review id to system
+  and item id) is internal; `queue_manifest.json` holds both hashes, and the queue is not rebuilt once it exists.
+  490 rows: B1 229, B2 261; at most 10 items of one system in a row. Limit: a B2 unit shows an extracted context
+  (and B2 metadata), so a reader can still tell the system apart; only the system name and the item id are hidden.
+  The per-system sheets (`b1_review_sheet.*`, `b2_review_sheet.*`) name the system and are not shown during review.
+- Translation assistance in chat (fixed, `TRANSLATION_RULES_KO` in `claim_review.py`): Claude explains the Korean
+  translation of the chunk, the queries and the claims; adds no subject, heading, year or preceding sentence that the
+  chunk does not contain (cuts are shown as [끊김]); any unavoidable extra explanation is set apart as "청크 밖 설명"
+  and is not used for relevance; when Claude suggests a judgement the user agrees or corrects it, and the user's
+  answer is recorded; reviewer type stays `human_assisted`; review ids only, no system name or item id.
+- Claude's own judgement of all 527 items is written and sealed in a separate commit before the user's review, and is
+  not opened or shown during it. Claude had already seen the runs and the earlier judgements, so any later agreement
+  is a consistency check between the human_assisted judgements and Claude's, not independent human validation.
+
 Per-query counts: `evals/dev/review_claims/summary.json`; which queries each item serves: `item_queries.csv`. The
 two earlier sheets of this day (`evals/dev/review_b2v2/`, the first `review_claims` sheets on v3) were replaced before
 any decision was recorded.
