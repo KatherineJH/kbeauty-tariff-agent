@@ -1,0 +1,16 @@
+{
+  "reviewer_type": "claude",
+  "written_before_user_review": true,
+  "criteria": "DECISION_HELP_KO and LEVEL_HELP_KO in src/tariffagent/retrieval/claim_review.py",
+  "item_rows": 527,
+  "component_rows": 1011,
+  "claude_item_decisions_sha256": "889860543381709015d638cf843207f9eac68707b7470b16c55af0ab27793a7a",
+  "claude_component_supports_sha256": "cc27411bac2fcdd19521b445d3b473e1d4cc314a41a9f301f5d4167c2905b158",
+  "sheets_sha256": {
+    "b1_item_claim_judgments.csv": "82099ffbbc57eae10987b846de19321a37b44dd91945698521e7806f4f055153",
+    "b1_review_sheet.csv": "b7fb89c1759c266da0cb5fed7110fb1c9461dc9c23d9c34bf8e7b6567fa7c2bb",
+    "b2_item_claim_judgments.csv": "783dee5efe0ed419e3030364fc3c4619bb570ba1e636f3952ad8d7a942c6a0cf",
+    "b2_review_sheet.csv": "a7047b2b078489ae16827cb6f31da0c56feaef92c1da21fee490a335c44844de"
+  },
+  "queue_manifest_sha256": "a48da8b971850de2d522bac9fd7e7fc40002c1890b82ac57d214bd2a7d48c98d"
+}

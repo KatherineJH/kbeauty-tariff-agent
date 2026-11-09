@@ -1,0 +1,528 @@
+system,item_id,intent,decision,reason,reviewer_type
+b1,b1-0001,p01,relevant,"CSMS intro: the EO terminates IEEPA collection, but the stop date is cut off",claude
+b1,b1-0002,p01,relevant,"CSMS: IEEPA duties no longer collected on or after 12:00 a.m. ET February 24, 2026",claude
+b1,b1-0003,p01,relevant,E.O. 14389 terminated the IEEPA duties; no collection stop date,claude
+b1,b1-0004,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b1,b1-0005,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b1,b1-0006,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b1,b1-0007,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b1,b1-0008,p01,relevant,E.O. 14389 terminated the IEEPA duties; no collection stop date,claude
+b1,b1-0009,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b1,b1-0010,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b1,b1-0011,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b1,b1-0012,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b1,b1-0013,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b1,b1-0014,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b1,b1-0015,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b1,b1-0016,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b1,b1-0017,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b1,b1-0018,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b1,b1-0019,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b1,b1-0020,dq02_en,relevant,"para. 13: a temporary import surcharge of 10 percent ad valorem on articles imported, under section 122; exceptions only 'as described below'",claude
+b1,b1-0021,dq02_en,not_relevant,"purposes, exception reasoning, section 122 authority up to 15%, section 232 stacking or postal rate by reference; the 10% rate is not stated",claude
+b1,b1-0022,dq02_en,not_relevant,"purposes, exception reasoning, section 122 authority up to 15%, section 232 stacking or postal rate by reference; the 10% rate is not stated",claude
+b1,b1-0023,dq02_en,not_relevant,"purposes, exception reasoning, section 122 authority up to 15%, section 232 stacking or postal rate by reference; the 10% rate is not stated",claude
+b1,b1-0024,dq02_en,relevant,"Proclamation 11012 para. (1): except as provided and set forth in Annexes I and II, all articles imported are subject to 10 percent ad valorem",claude
+b1,b1-0025,dq02_en,relevant,begins mid-sentence: 10 percent ad valorem rate and the surcharge exceptions; who is subject is cut,claude
+b1,b1-0026,dq02_en,not_relevant,"purposes, exception reasoning, section 122 authority up to 15%, section 232 stacking or postal rate by reference; the 10% rate is not stated",claude
+b1,b1-0027,dq02_en,not_relevant,"purposes, exception reasoning, section 122 authority up to 15%, section 232 stacking or postal rate by reference; the 10% rate is not stated",claude
+b1,b1-0028,dq02_en,relevant,Proclamation 11012 under section 122 imposed a 10 percent ad valorem surcharge on certain imports; no exceptions,claude
+b1,b1-0029,dq02_en,not_relevant,"purposes, exception reasoning, section 122 authority up to 15%, section 232 stacking or postal rate by reference; the 10% rate is not stated",claude
+b1,b1-0030,dq02_en,relevant,Proclamation 11012 under section 122 imposed a 10 percent ad valorem surcharge on certain imports; no exceptions,claude
+b1,b1-0031,dq02_ko,not_relevant,"section 122 background, exception reasoning, severability, postal rate by reference or HTS pages numbered 122; the 10% rate is not stated",claude
+b1,b1-0032,dq02_ko,not_relevant,"section 122 background, exception reasoning, severability, postal rate by reference or HTS pages numbered 122; the 10% rate is not stated",claude
+b1,b1-0033,dq02_ko,not_relevant,"section 122 background, exception reasoning, severability, postal rate by reference or HTS pages numbered 122; the 10% rate is not stated",claude
+b1,b1-0034,dq02_ko,not_relevant,"section 122 background, exception reasoning, severability, postal rate by reference or HTS pages numbered 122; the 10% rate is not stated",claude
+b1,b1-0035,dq02_ko,relevant,"Proclamation 11012 para. (1): except as provided and set forth in Annexes I and II, all articles imported are subject to 10 percent ad valorem",claude
+b1,b1-0036,dq02_ko,relevant,begins mid-sentence: 10 percent ad valorem rate and the surcharge exceptions; who is subject is cut,claude
+b1,b1-0037,dq02_ko,not_relevant,"section 122 background, exception reasoning, severability, postal rate by reference or HTS pages numbered 122; the 10% rate is not stated",claude
+b1,b1-0038,dq02_ko,relevant,Proclamation 11012 under section 122 imposed a 10 percent ad valorem surcharge on certain imports; no exceptions,claude
+b1,b1-0039,dq02_ko,relevant,Proclamation 11012 under section 122 imposed a 10 percent ad valorem surcharge on certain imports; no exceptions,claude
+b1,b1-0040,dq02_ko,not_relevant,"section 122 background, exception reasoning, severability, postal rate by reference or HTS pages numbered 122; the 10% rate is not stated",claude
+b1,b1-0041,dq02_ko,not_relevant,"section 122 background, exception reasoning, severability, postal rate by reference or HTS pages numbered 122; the 10% rate is not stated",claude
+b1,b1-0042,dq02_ko,not_relevant,"section 122 background, exception reasoning, severability, postal rate by reference or HTS pages numbered 122; the 10% rate is not stated",claude
+b1,b1-0043,p03,relevant,rate row: 9903.85.08 = applicable duty + 50% upon the value of the aluminum content,claude
+b1,b1-0044,p03,relevant,rate row: 9903.85.08 = applicable duty + 50% upon the value of the aluminum content,claude
+b1,b1-0045,p03,relevant,rate row: 9903.85.08 = applicable duty + 50% upon the value of the aluminum content,claude
+b1,b1-0046,p03,relevant,note 19(k): the duty of heading 9903.85.08 applies only to the declared value of the aluminum content; the 50% rate is not in the chunk,claude
+b1,b1-0047,p03,relevant,note 19(k): the duty of heading 9903.85.08 applies only to the declared value of the aluminum content; the 50% rate is not in the chunk,claude
+b1,b1-0048,p03,relevant,note 19(k): the duty of heading 9903.85.08 applies only to the declared value of the aluminum content; the 50% rate is not in the chunk,claude
+b1,b1-0049,p03,relevant,rate row: 9903.85.08 = applicable duty + 50% upon the value of the aluminum content,claude
+b1,b1-0050,p03,relevant,note 19(k): the duty of heading 9903.85.08 applies only to the declared value of the aluminum content; the 50% rate is not in the chunk,claude
+b1,b1-0051,p03,relevant,rate row: 9903.85.08 = applicable duty + 50% upon the value of the aluminum content,claude
+b1,b1-0052,p03,relevant,note 19(k): the duty of heading 9903.85.08 applies only to the declared value of the aluminum content; the 50% rate is not in the chunk,claude
+b1,b1-0053,p03,relevant,note 19(k): the duty of heading 9903.85.08 applies only to the declared value of the aluminum content; the 50% rate is not in the chunk,claude
+b1,b1-0054,p03,relevant,note 19(k): the duty of heading 9903.85.08 applies only to the declared value of the aluminum content; the 50% rate is not in the chunk,claude
+b1,b1-0055,p03,relevant,note 19(k): the duty of heading 9903.85.08 applies only to the declared value of the aluminum content; the 50% rate is not in the chunk,claude
+b1,b1-0056,p03,relevant,note 19(k): the duty of heading 9903.85.08 applies only to the declared value of the aluminum content; the 50% rate is not in the chunk,claude
+b1,b1-0057,p03,relevant,note 19(k): the duty of heading 9903.85.08 applies only to the declared value of the aluminum content; the 50% rate is not in the chunk,claude
+b1,b1-0058,dq04_en,not_relevant,"EU goods under EO 14326, not Korea",claude
+b1,b1-0059,dq04_en,relevant,"FR notice: ROK goods below 15 percent column 1, sum with EO 14257 rate is 15 percent; the at-least-15 sentence is cut",claude
+b1,b1-0060,dq04_en,relevant,FR notice: ROK goods at least 15 percent get zero EO 14257 rate; the below-15 sentence starts before the chunk,claude
+b1,b1-0061,dq04_en,not_relevant,"ROK autos and parts under Proclamation 10908, a different measure",claude
+b1,b1-0062,dq04_en,relevant,HTS amendment text for South Korea: below 15 percent sum is 15 percent under heading 9903.02.80; EO 14257 not named,claude
+b1,b1-0063,dq04_en,relevant,"HTS amendment for South Korea via headings 9903.02.79/80: sum 15 percent, at least 15 no additional duty; EO 14257 not named",claude
+b1,b1-0064,dq04_en,relevant,HTS note for South Korea (headings 9903.02.79/80): 15 percent sum and no additional duty at 15 or higher; EO 14257 not named,claude
+b1,b1-0065,dq04_en,not_relevant,"Switzerland/Liechtenstein headings, not Korea",claude
+b1,b1-0066,dq04_en,not_relevant,"Switzerland/Liechtenstein headings, not Korea",claude
+b1,b1-0067,dq04_en,not_relevant,"heading 9903.08.24 for a product group across several countries, not the Korea reciprocal rule",claude
+b1,b1-0068,dq04_ko,relevant,"FR notice: ROK goods below 15 percent column 1, sum with EO 14257 rate is 15 percent; the at-least-15 sentence is cut",claude
+b1,b1-0069,dq04_ko,relevant,FR notice: ROK goods at least 15 percent get zero EO 14257 rate; the below-15 sentence starts before the chunk,claude
+b1,b1-0070,dq04_ko,not_relevant,HTS chapter 99 rate rows (+15%) without Korea or the column 1 threshold rule,claude
+b1,b1-0071,dq04_ko,not_relevant,"heading 9903.02.20 rate row (EU), not Korea",claude
+b1,b1-0072,dq04_ko,not_relevant,HTS chapter 99 rate rows (+15%) without Korea or the column 1 threshold rule,claude
+b1,b1-0073,dq04_ko,not_relevant,HTS chapter 99 rate rows (+15%) without Korea or the column 1 threshold rule,claude
+b1,b1-0074,dq04_ko,not_relevant,HTS chapter 99 rate rows (+15%) without Korea or the column 1 threshold rule,claude
+b1,b1-0075,dq04_ko,not_relevant,HTS chapter 99 rate rows (+15%) without Korea or the column 1 threshold rule,claude
+b1,b1-0076,dq04_ko,not_relevant,HTS chapter 99 rate rows (+15%) without Korea or the column 1 threshold rule,claude
+b1,b1-0077,dq04_ko,not_relevant,HTS chapter 99 rate rows (+15%) without Korea or the column 1 threshold rule,claude
+b1,b1-0078,dq04_ko,not_relevant,HTS chapter 99 rate rows (+15%) without Korea or the column 1 threshold rule,claude
+b1,b1-0079,dq04_ko,not_relevant,"section 232 wood products rate rows, not the reciprocal column 1 rule",claude
+b1,b1-0080,p05,not_relevant,general 12.5 percent rate for other economies; Korea not named,claude
+b1,b1-0081,p05,not_relevant,"EU and Taiwan 10 percent net of MFN rule, not Korea",claude
+b1,b1-0082,p05,relevant,"Japan, Korea, Switzerland: MFN below 12.5 sums to 12.5, at or above 12.5 the section 301 tariff is zero; annex exceptions not stated",claude
+b1,b1-0083,p05,relevant,"Japan, Korea, Switzerland below 12.5 percent MFN rule begins but the sum is cut",claude
+b1,b1-0084,p05,not_relevant,"Japan determination, not Korea",claude
+b1,b1-0085,p05,relevant,South Korea determination: 12.5 percent net of MFN except Annex I and Annex II Part A; the MFN rule is cut,claude
+b1,b1-0086,p05,relevant,"South Korea: below 12.5 MFN sums to 12.5, at or above 12.5 zero; the 12.5 rate sentence starts before the chunk",claude
+b1,b1-0087,p05,not_relevant,"Switzerland determination, not Korea",claude
+b1,b1-0088,p05,not_relevant,"EU and Taiwan 10 percent net of MFN rule, not Korea",claude
+b1,b1-0089,p05,relevant,"Japan, Korea, Switzerland: MFN below 12.5 sums to 12.5, at or above 12.5 the section 301 tariff is zero; annex exceptions not stated",claude
+b1,b1-0090,p05,not_relevant,"EU determination, not Korea",claude
+b1,b1-0091,p05,not_relevant,"Japan determination, not Korea",claude
+b1,b1-0092,p05,not_relevant,"Taiwan determination, not Korea",claude
+b1,b1-0093,dq06_en,uncertain,"effective 12:01 a.m. EDT August 29, 2025 for sections 2 and 3 of this order, but the chunk does not say which order or that it is the de minimis suspension",claude
+b1,b1-0094,dq06_en,relevant,"de minimis exemption suspended since at least August 29, 2025; no time or entry condition",claude
+b1,b1-0095,dq06_en,relevant,"footnote: EO 14324 suspending de minimis since August 29, 2025; no time or entry condition",claude
+b1,b1-0096,dq06_en,relevant,"EO 14324 in effect since August 29, 2025; no time or entry condition",claude
+b1,b1-0097,dq06_en,relevant,"suspension under the Executive Order from August 29, 2025; no time or entry condition",claude
+b1,b1-0098,dq06_en,relevant,"de minimis suspended for most products effective August 29, 2025; no time or entry condition",claude
+b1,b1-0099,dq06_en,relevant,"EO 14324 in effect since August 29, 2025; no time or entry condition",claude
+b1,b1-0100,dq06_en,relevant,"suspension under the Executive Order from August 29, 2025; no time or entry condition",claude
+b1,b1-0101,dq06_en,relevant,"de minimis exemption suspended since at least August 29, 2025; no time or entry condition",claude
+b1,b1-0102,dq06_en,relevant,"footnote: EO 14324 suspending de minimis since August 29, 2025; no time or entry condition",claude
+b1,b1-0103,dq06_en,relevant,"de minimis suspended for most products effective August 29, 2025; no time or entry condition",claude
+b1,b1-0104,dq06_ko,uncertain,"effective 12:01 a.m. EDT August 29, 2025 for sections 2 and 3 of this order, but the chunk does not say which order or that it is the de minimis suspension",claude
+b1,b1-0105,p07,not_relevant,"Executive Order on postal shipment duty rates, not the interim final rule",claude
+b1,b1-0106,p07,relevant,IFR heading and summary: indefinite suspension of de minimis for imports valued at 800 dollars or less through the international postal network; no effective date,claude
+b1,b1-0107,p07,relevant,"IFR DATES: effective July 24, 2026 (amendatory instruction 4 June 24); covers 800 dollars or less via the international postal network",claude
+b1,b1-0108,p07,not_relevant,"background on EO 14324 interim postal process, not the interim final rule's date or scope",claude
+b1,b1-0109,p07,relevant,"suspension for merchandise valued at 800 dollars or less via the international postal network, but the sentence that names the rule is cut",claude
+b1,b1-0110,p07,not_relevant,"background on EO 14324 interim postal process, not the interim final rule's date or scope",claude
+b1,b1-0111,p07,relevant,this IFR implements the regulatory suspension for the international postal network; no value threshold or date,claude
+b1,b1-0112,p07,not_relevant,"background on EO 14324 interim postal process, not the interim final rule's date or scope",claude
+b1,b1-0113,p07,relevant,other-modes rule mentions the concurrent rulemaking for 800 dollars or less; the postal part is cut,claude
+b1,b1-0114,p07,relevant,"extension notice: remainder of the postal IFR effective July 24, 2026 (suspension from June 24); no 800 dollar threshold",claude
+b1,b1-0115,dq08_en,not_relevant,"EO 14257 country-specific rates and their start, not the suspension extension",claude
+b1,b1-0116,dq08_en,not_relevant,"EO 14257 country-specific rates and their start, not the suspension extension",claude
+b1,b1-0117,dq08_en,not_relevant,"EO 14266 original suspension effective April 10, 2025, not its extension",claude
+b1,b1-0118,dq08_en,relevant,"EO 14266 90-day suspension expires July 9, 2025 and an extension is being determined; the new date is cut",claude
+b1,b1-0119,dq08_en,relevant,"EO: extend the suspension effectuated by EO 14266 until 12:01 a.m. EDT August 1, 2025",claude
+b1,b1-0120,dq08_en,not_relevant,EO 14326 Federal Register header,claude
+b1,b1-0121,dq08_en,not_relevant,"Korea deal notice dates, not the EO 14266 suspension",claude
+b1,b1-0122,dq08_en,not_relevant,"Korea deal notice dates, not the EO 14266 suspension",claude
+b1,b1-0123,dq08_en,not_relevant,"de minimis suspension rule text, different measure",claude
+b1,b1-0124,dq08_en,not_relevant,"de minimis suspension rule text, different measure",claude
+b1,b1-0125,dq08_en,not_relevant,"de minimis suspension rule text, different measure",claude
+b1,b1-0126,dq08_ko,relevant,"EO 14266 90-day suspension expires July 9, 2025 and an extension is being determined; the new date is cut",claude
+b1,b1-0127,dq08_ko,relevant,"EO: extend the suspension effectuated by EO 14266 until 12:01 a.m. EDT August 1, 2025",claude
+b1,b1-0128,dq08_ko,not_relevant,"HTS chapter 99 temporary duty suspension rows for chemicals (9902), unrelated",claude
+b1,b1-0129,dq08_ko,not_relevant,"HTS chapter 99 temporary duty suspension rows for chemicals (9902), unrelated",claude
+b1,b1-0130,dq08_ko,not_relevant,"HTS chapter 99 temporary duty suspension rows for chemicals (9902), unrelated",claude
+b1,b1-0131,dq08_ko,not_relevant,"HTS chapter 99 temporary duty suspension rows for chemicals (9902), unrelated",claude
+b1,b1-0132,dq08_ko,not_relevant,"HTS chapter 99 temporary duty suspension rows for chemicals (9902), unrelated",claude
+b1,b1-0133,dq08_ko,not_relevant,"HTS chapter 99 temporary duty suspension rows for chemicals (9902), unrelated",claude
+b1,b1-0134,dq08_ko,not_relevant,"HTS chapter 99 temporary duty suspension rows for chemicals (9902), unrelated",claude
+b1,b1-0135,dq08_ko,not_relevant,"HTS chapter 99 temporary duty suspension rows for chemicals (9902), unrelated",claude
+b1,b1-0136,dq08_ko,not_relevant,"HTS chapter 99 temporary duty suspension rows for chemicals (9902), unrelated",claude
+b1,b1-0137,dq08_ko,not_relevant,"HTS chapter 99 temporary duty suspension rows for chemicals (9902), unrelated",claude
+b1,b1-0138,p09,not_relevant,Korea deal notice lists headings incl. 9903.81.91 among excluded derivative duties; no note 16(n) list or 3304.99.50,claude
+b1,b1-0139,p09,not_relevant,Korea deal notice lists headings incl. 9903.81.91 among excluded derivative duties; no note 16(n) list or 3304.99.50,claude
+b1,b1-0140,p09,relevant,subdivision (n): the rates of duty in heading 9903.81.91 apply to derivative iron or steel products in the following subheadings; the list with 3304.99.50 is not in the chunk,claude
+b1,b1-0141,p09,not_relevant,"steel content valuation and reporting for heading 9903.81.91, not the product list or the heading-list link",claude
+b1,b1-0142,p09,relevant,subdivision (n): the rates of duty in heading 9903.81.91 apply to derivative iron or steel products in the following subheadings; the list with 3304.99.50 is not in the chunk,claude
+b1,b1-0143,p09,not_relevant,"steel content valuation and reporting for heading 9903.81.91, not the product list or the heading-list link",claude
+b1,b1-0144,p09,relevant,subdivision (n): the rates of duty in heading 9903.81.91 apply to derivative iron or steel products in the following subheadings; the list with 3304.99.50 is not in the chunk,claude
+b1,b1-0145,p09,uncertain,"3304.99.50 appears in a code list, but the chunk does not show which note subdivision or heading the list belongs to",claude
+b1,b1-0146,p09,uncertain,"3304.99.50 appears in a code list, but the chunk does not show which note subdivision or heading the list belongs to",claude
+b1,b1-0147,p09,uncertain,"3304.99.50 appears in a code list, but the chunk does not show which note subdivision or heading the list belongs to",claude
+b1,b1-0148,p09,uncertain,"3304.99.50 appears in a code list, but the chunk does not show which note subdivision or heading the list belongs to",claude
+b1,b1-0149,p09,not_relevant,"3304.99.50 appears in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b1,b1-0150,p09,not_relevant,"3304.99.50 appears in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b1,b1-0151,p09,relevant,subdivision (n): the rates of duty in heading 9903.81.91 apply to derivative iron or steel products in the following subheadings; the list with 3304.99.50 is not in the chunk,claude
+b1,b1-0152,p09,not_relevant,"steel content valuation and reporting for heading 9903.81.91, not the product list or the heading-list link",claude
+b1,b1-0153,p09,relevant,subdivision (n): the rates of duty in heading 9903.81.91 apply to derivative iron or steel products in the following subheadings; the list with 3304.99.50 is not in the chunk,claude
+b1,b1-0154,p09,not_relevant,"steel content valuation and reporting for heading 9903.81.91, not the product list or the heading-list link",claude
+b1,b1-0155,p09,relevant,subdivision (n): the rates of duty in heading 9903.81.91 apply to derivative iron or steel products in the following subheadings; the list with 3304.99.50 is not in the chunk,claude
+b1,b1-0156,p09,not_relevant,"steel content valuation and reporting for heading 9903.81.91, not the product list or the heading-list link",claude
+b1,b1-0157,p09,not_relevant,"3304.99.50 appears in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b1,b1-0158,p09,not_relevant,"3304.99.50 appears in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b1,b1-0159,p09,not_relevant,"3304.99.50 appears in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b1,b1-0160,p09,not_relevant,"3304.99.50 appears in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b1,b1-0161,p09,relevant,subdivision (n): the rates of duty in heading 9903.81.91 apply to derivative iron or steel products in the following subheadings; the list with 3304.99.50 is not in the chunk,claude
+b1,b1-0162,p09,uncertain,"3304.99.50 appears in a code list, but the chunk does not show which note subdivision or heading the list belongs to",claude
+b1,b1-0163,p09,uncertain,"3304.99.50 appears in a code list, but the chunk does not show which note subdivision or heading the list belongs to",claude
+b1,b1-0164,p09,uncertain,"3304.99.50 appears in a code list, but the chunk does not show which note subdivision or heading the list belongs to",claude
+b1,b1-0165,p09,uncertain,"3304.99.50 appears in a code list, but the chunk does not show which note subdivision or heading the list belongs to",claude
+b1,b1-0166,p09,not_relevant,"3304.99.50 appears in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b1,b1-0167,p09,not_relevant,"3304.99.50 appears in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b1,b1-0168,p09,relevant,subdivision (n): the rates of duty in heading 9903.81.91 apply to derivative iron or steel products in the following subheadings; the list with 3304.99.50 is not in the chunk,claude
+b1,b1-0169,p09,uncertain,"3304.99.50 appears in a code list, but the chunk does not show which note subdivision or heading the list belongs to",claude
+b1,b1-0170,p09,uncertain,"3304.99.50 appears in a code list, but the chunk does not show which note subdivision or heading the list belongs to",claude
+b1,b1-0171,p09,uncertain,"3304.99.50 appears in a code list, but the chunk does not show which note subdivision or heading the list belongs to",claude
+b1,b1-0172,p09,uncertain,"3304.99.50 appears in a code list, but the chunk does not show which note subdivision or heading the list belongs to",claude
+b1,b1-0173,p09,not_relevant,"3304.99.50 appears in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b1,b1-0174,p09,not_relevant,"3304.99.50 appears in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b1,b1-0175,p09,not_relevant,"3304.99.50 appears in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b1,b1-0176,p09,not_relevant,"3304.99.50 appears in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b1,b1-0177,p09,not_relevant,"3304.99.50 appears in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b1,b1-0178,p09,not_relevant,"3304.99.50 appears in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b1,b1-0179,p09,not_relevant,"3304.99.50 appears in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b1,b1-0180,p09,not_relevant,"3304.99.50 appears in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b1,b1-0181,p09,not_relevant,"steel content valuation and reporting for heading 9903.81.91, not the product list or the heading-list link",claude
+b1,b1-0182,p09,not_relevant,"steel content valuation and reporting for heading 9903.81.91, not the product list or the heading-list link",claude
+b1,b1-0183,p09,not_relevant,"steel content valuation and reporting for heading 9903.81.91, not the product list or the heading-list link",claude
+b1,b1-0184,p09,not_relevant,"steel content valuation and reporting for heading 9903.81.91, not the product list or the heading-list link",claude
+b1,b1-0185,p09,not_relevant,"steel content valuation and reporting for heading 9903.81.91, not the product list or the heading-list link",claude
+b1,b1-0186,p09,not_relevant,"steel content valuation and reporting for heading 9903.81.91, not the product list or the heading-list link",claude
+b1,b1-0187,p09,not_relevant,"steel content valuation and reporting for heading 9903.81.91, not the product list or the heading-list link",claude
+b1,b1-0188,p09,not_relevant,"steel content valuation and reporting for heading 9903.81.91, not the product list or the heading-list link",claude
+b1,b1-0189,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0190,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0191,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0192,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0193,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0194,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0195,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0196,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0197,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0198,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0199,dq10_en,uncertain,"(d) aluminum content of 9903.85.04, .07, .08 is excluded from 'such additional duty', but the chunk does not say which duty or heading",claude
+b1,b1-0200,dq10_en,uncertain,tail of an exclusion for derivative aluminum headings; the duty and heading it belongs to are not in the chunk,claude
+b1,b1-0201,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0202,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0203,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0204,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0205,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0206,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0207,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0208,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0209,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0210,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0211,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0212,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0213,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0214,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0215,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0216,dq10_ko,uncertain,"(d) aluminum content of 9903.85.04, .07, .08 is excluded from 'such additional duty', but the chunk does not say which duty or heading",claude
+b1,b1-0217,dq10_ko,uncertain,tail of an exclusion for derivative aluminum headings; the duty and heading it belongs to are not in the chunk,claude
+b1,b1-0218,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0219,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0220,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0221,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0222,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0223,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b1,b1-0224,dq11_en,relevant,"CSMS: the February 20, 2026 EO Ending Certain Tariff Actions terminates IEEPA collection; number 14389 not shown",claude
+b1,b1-0225,dq11_en,relevant,"CSMS: IEEPA duties no longer collected from February 24, 2026; the order is not named in this chunk",claude
+b1,b1-0226,dq11_en,relevant,"FR contents line: Executive Order 14389--Ending Certain Tariff Actions; no signing date, no effect",claude
+b1,b1-0227,dq11_en,relevant,"EO 14389 of February 20, 2026 Ending Certain Tariff Actions (title page); effect not in chunk",claude
+b1,b1-0228,dq11_en,not_relevant,"sec. 1 cut before its operative words; no order named, no effect stated",claude
+b1,b1-0229,dq11_en,relevant,"E.O. 14389 of February 20, 2026 (Ending Certain Tariff Actions) terminated the IEEPA duties; collection not stated",claude
+b1,b1-0230,dq11_en,relevant,"E.O. 14389 of February 20, 2026 (Ending Certain Tariff Actions) terminated the IEEPA duties; collection not stated",claude
+b1,b1-0231,dq11_en,relevant,"E.O. 14389 of February 20, 2026 (Ending Certain Tariff Actions) terminated the IEEPA duties; collection not stated",claude
+b1,b1-0232,dq11_en,relevant,"President signed EO 14389 (Ending Certain Tariff Actions) on February 20, 2026, ending IEEPA duties; collection not stated",claude
+b1,b1-0233,dq11_en,relevant,"President signed EO 14389 (Ending Certain Tariff Actions) on February 20, 2026, ending IEEPA duties; collection not stated",claude
+b1,b1-0234,dq11_ko,relevant,"CSMS: the February 20, 2026 EO Ending Certain Tariff Actions terminates IEEPA collection; number not shown, effect only collection",claude
+b1,b1-0235,dq11_ko,relevant,"CSMS: IEEPA duties no longer in effect and no longer collected from February 24, 2026; order not named",claude
+b1,b1-0236,dq11_ko,relevant,"CSMS: IEEPA HTS numbers inactive in ACE as of February 24, 2026 (date only, partly)",claude
+b1,b1-0237,dq11_ko,relevant,"CSMS: IEEPA HTS numbers inactive in ACE as of February 24, 2026 (date only, partly)",claude
+b1,b1-0238,dq11_ko,relevant,"EO 14389 of February 20, 2026 Ending Certain Tariff Actions (title page); effect not in chunk",claude
+b1,b1-0239,dq11_ko,relevant,"names EO 14389 (91 FR 9437, Feb. 20, 2026) and that the emergencies remain; title and effect not in chunk",claude
+b1,b1-0240,dq11_ko,relevant,"E.O. 14389 of February 20, 2026 (Ending Certain Tariff Actions) terminated the IEEPA duties; collection not stated",claude
+b1,b1-0241,dq11_ko,relevant,"E.O. 14389 of February 20, 2026 (Ending Certain Tariff Actions) terminated the IEEPA duties; collection not stated",claude
+b1,b1-0242,dq11_ko,relevant,"E.O. 14389 of February 20, 2026 (Ending Certain Tariff Actions) terminated the IEEPA duties; collection not stated",claude
+b1,b1-0243,dq11_ko,relevant,"President signed EO 14389 (Ending Certain Tariff Actions) on February 20, 2026, ending IEEPA duties; collection not stated",claude
+b1,b1-0244,dq11_ko,relevant,"President signed EO 14389 (Ending Certain Tariff Actions) on February 20, 2026, ending IEEPA duties; collection not stated",claude
+b1,b1-0245,dq12_en,not_relevant,"Korea 15 percent column 1 rule under headings 9903.02.79/80, not the 25% country list rate",claude
+b1,b1-0246,dq12_en,uncertain,"a country list entry: South Korea, subject to an additional duty of 25%, but the chunk does not show which note subdivision or duty the list belongs to",claude
+b1,b1-0247,dq12_en,uncertain,"a country list entry: South Korea, subject to an additional duty of 25%, but the chunk does not show which note subdivision or duty the list belongs to",claude
+b1,b1-0248,dq12_en,relevant,"heading row: articles the product of South Korea, as provided in subdivision (v) of U.S. note 2, duty plus 25%",claude
+b1,b1-0249,dq12_en,relevant,"heading row: articles the product of South Korea, as provided in subdivision (v) of U.S. note 2, duty plus 25%",claude
+b1,b1-0250,dq12_en,relevant,"heading row for South Korea under subdivision (v) of U.S. note 2 at 25%, marked provision suspended",claude
+b1,b1-0251,dq12_en,uncertain,country list entry for South Korea with the rate cut off; the list's note subdivision is not in the chunk,claude
+b1,b1-0252,dq12_en,uncertain,"a country list entry: South Korea, subject to an additional duty of 25%, but the chunk does not show which note subdivision or duty the list belongs to",claude
+b1,b1-0253,dq12_en,not_relevant,"ad valorem equivalent rule for specific or compound rates for several partners, not the 25% rate",claude
+b1,b1-0254,dq12_en,not_relevant,"Korea 15 percent column 1 rule (xxiv), not the 25% country list rate",claude
+b1,b1-0255,dq12_ko,uncertain,"a country list entry: South Korea, subject to an additional duty of 25%, but the chunk does not show which note subdivision or duty the list belongs to",claude
+b1,b1-0256,dq12_ko,uncertain,"a country list entry: South Korea, subject to an additional duty of 25%, but the chunk does not show which note subdivision or duty the list belongs to",claude
+b1,b1-0257,dq12_ko,not_relevant,"section 232 derivative steel rate rows (+25%), not the reciprocal country list",claude
+b1,b1-0258,dq12_ko,not_relevant,"section 232 derivative steel rate rows (+25%), not the reciprocal country list",claude
+b1,b1-0259,dq12_ko,not_relevant,"section 232 derivative steel rate rows (+25%), not the reciprocal country list",claude
+b1,b1-0260,dq12_ko,not_relevant,"section 232 derivative steel rate rows (+25%), not the reciprocal country list",claude
+b1,b1-0261,dq12_ko,not_relevant,"section 232 derivative steel rate rows (+25%), not the reciprocal country list",claude
+b1,b1-0262,dq12_ko,not_relevant,"section 232 derivative steel rate rows (+25%), not the reciprocal country list",claude
+b1,b1-0263,dq12_ko,not_relevant,"section 232 derivative aluminum rate rows (+25%), not the reciprocal country list",claude
+b1,b1-0264,dq12_ko,not_relevant,"section 232 vehicle parts, furniture and steel rate rows (+25%), not the reciprocal country list",claude
+b1,b1-0265,dq12_ko,not_relevant,"section 232 vehicle parts, furniture and steel rate rows (+25%), not the reciprocal country list",claude
+b1,b1-0266,dq12_ko,not_relevant,"section 232 vehicle parts, furniture and steel rate rows (+25%), not the reciprocal country list",claude
+b2,b2-0001,p01,relevant,"CSMS intro: the EO terminates IEEPA collection, but the stop date is cut off",claude
+b2,b2-0002,p01,relevant,"CSMS: IEEPA duties no longer collected on or after 12:00 a.m. ET February 24, 2026",claude
+b2,b2-0003,p01,relevant,E.O. 14389 terminated the IEEPA duties; no collection stop date,claude
+b2,b2-0004,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b2,b2-0005,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b2,b2-0006,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b2,b2-0007,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b2,b2-0008,p01,relevant,E.O. 14389 terminated the IEEPA duties; no collection stop date,claude
+b2,b2-0009,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b2,b2-0010,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b2,b2-0011,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b2,b2-0012,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b2,b2-0013,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b2,b2-0014,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b2,b2-0015,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b2,b2-0016,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b2,b2-0017,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b2,b2-0018,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b2,b2-0019,p01,not_relevant,"de minimis cost, IEEPA rate definitions, refunds or HTS text; no end of IEEPA collection",claude
+b2,b2-0020,dq02_en,not_relevant,"purposes, exception reasoning, section 122 authority up to 15%, section 232 stacking or postal rate by reference; the 10% rate is not stated",claude
+b2,b2-0021,dq02_en,not_relevant,"purposes, exception reasoning, section 122 authority up to 15%, section 232 stacking or postal rate by reference; the 10% rate is not stated",claude
+b2,b2-0022,dq02_en,relevant,"para. 13: a temporary import surcharge of 10 percent ad valorem on articles imported, under section 122; exceptions only 'as described below'",claude
+b2,b2-0023,dq02_en,not_relevant,"purposes, exception reasoning, section 122 authority up to 15%, section 232 stacking or postal rate by reference; the 10% rate is not stated",claude
+b2,b2-0024,dq02_en,not_relevant,"purposes, exception reasoning, section 122 authority up to 15%, section 232 stacking or postal rate by reference; the 10% rate is not stated",claude
+b2,b2-0025,dq02_en,not_relevant,"purposes, exception reasoning, section 122 authority up to 15%, section 232 stacking or postal rate by reference; the 10% rate is not stated",claude
+b2,b2-0026,dq02_en,relevant,"Proclamation 11012 para. (1): except as provided and set forth in Annexes I and II, all articles imported are subject to 10 percent ad valorem",claude
+b2,b2-0027,dq02_en,relevant,begins mid-sentence: 10 percent ad valorem rate and the surcharge exceptions; who is subject is cut,claude
+b2,b2-0028,dq02_en,not_relevant,"purposes, exception reasoning, section 122 authority up to 15%, section 232 stacking or postal rate by reference; the 10% rate is not stated",claude
+b2,b2-0029,dq02_en,relevant,Proclamation 11012 under section 122 imposed a 10 percent ad valorem surcharge on certain imports; no exceptions,claude
+b2,b2-0030,dq02_en,relevant,Proclamation 11012 under section 122 imposed a 10 percent ad valorem surcharge on certain imports; no exceptions,claude
+b2,b2-0031,dq02_ko,not_relevant,"section 122 background, exception reasoning, severability, postal rate by reference or HTS pages numbered 122; the 10% rate is not stated",claude
+b2,b2-0032,dq02_ko,not_relevant,"section 122 background, exception reasoning, severability, postal rate by reference or HTS pages numbered 122; the 10% rate is not stated",claude
+b2,b2-0033,dq02_ko,not_relevant,"section 122 background, exception reasoning, severability, postal rate by reference or HTS pages numbered 122; the 10% rate is not stated",claude
+b2,b2-0034,dq02_ko,relevant,"Proclamation 11012 para. (1): except as provided and set forth in Annexes I and II, all articles imported are subject to 10 percent ad valorem",claude
+b2,b2-0035,dq02_ko,relevant,begins mid-sentence: 10 percent ad valorem rate and the surcharge exceptions; who is subject is cut,claude
+b2,b2-0036,dq02_ko,not_relevant,"section 122 background, exception reasoning, severability, postal rate by reference or HTS pages numbered 122; the 10% rate is not stated",claude
+b2,b2-0037,dq02_ko,not_relevant,"section 122 background, exception reasoning, severability, postal rate by reference or HTS pages numbered 122; the 10% rate is not stated",claude
+b2,b2-0038,dq02_ko,relevant,the order imposed a 10% ad valorem rate on postal shipments under section 122 (postal only),claude
+b2,b2-0039,dq02_ko,not_relevant,"section 122 background, exception reasoning, severability, postal rate by reference or HTS pages numbered 122; the 10% rate is not stated",claude
+b2,b2-0040,dq02_ko,not_relevant,"section 122 background, exception reasoning, severability, postal rate by reference or HTS pages numbered 122; the 10% rate is not stated",claude
+b2,b2-0041,dq02_ko,not_relevant,"section 122 background, exception reasoning, severability, postal rate by reference or HTS pages numbered 122; the 10% rate is not stated",claude
+b2,b2-0042,dq02_ko,not_relevant,"section 122 background, exception reasoning, severability, postal rate by reference or HTS pages numbered 122; the 10% rate is not stated",claude
+b2,b2-0043,p03,relevant,rate row: 9903.85.08 = applicable duty + 50% upon the value of the aluminum content,claude
+b2,b2-0044,p03,relevant,rate row: 9903.85.08 = applicable duty + 50% upon the value of the aluminum content,claude
+b2,b2-0045,p03,relevant,note 19(k): the duty of heading 9903.85.08 applies only to the declared value of the aluminum content; the 50% rate is not in the chunk,claude
+b2,b2-0046,p03,relevant,rate row: 9903.85.08 = applicable duty + 50% upon the value of the aluminum content,claude
+b2,b2-0047,p03,relevant,note 19(k): the duty of heading 9903.85.08 applies only to the declared value of the aluminum content; the 50% rate is not in the chunk,claude
+b2,b2-0048,p03,relevant,note 19(k): the duty of heading 9903.85.08 applies only to the declared value of the aluminum content; the 50% rate is not in the chunk,claude
+b2,b2-0049,p03,relevant,note 19(k): the duty of heading 9903.85.08 applies only to the declared value of the aluminum content; the 50% rate is not in the chunk,claude
+b2,b2-0050,p03,relevant,note 19(k): the duty of heading 9903.85.08 applies only to the declared value of the aluminum content; the 50% rate is not in the chunk,claude
+b2,b2-0051,p03,relevant,note 19(k): the duty of heading 9903.85.08 applies only to the declared value of the aluminum content; the 50% rate is not in the chunk,claude
+b2,b2-0052,p03,relevant,note 19(k): the duty of heading 9903.85.08 applies only to the declared value of the aluminum content; the 50% rate is not in the chunk,claude
+b2,b2-0053,p03,relevant,rate row: 9903.85.08 = applicable duty + 50% upon the value of the aluminum content,claude
+b2,b2-0054,p03,relevant,note 19(k): the duty of heading 9903.85.08 applies only to the declared value of the aluminum content; the 50% rate is not in the chunk,claude
+b2,b2-0055,p03,relevant,rate row: 9903.85.08 = applicable duty + 50% upon the value of the aluminum content,claude
+b2,b2-0056,p03,relevant,note 19(k): the duty of heading 9903.85.08 applies only to the declared value of the aluminum content; the 50% rate is not in the chunk,claude
+b2,b2-0057,p03,relevant,note 19(k): the duty of heading 9903.85.08 applies only to the declared value of the aluminum content; the 50% rate is not in the chunk,claude
+b2,b2-0058,p03,relevant,note 19(k): the duty of heading 9903.85.08 applies only to the declared value of the aluminum content; the 50% rate is not in the chunk,claude
+b2,b2-0059,dq04_en,not_relevant,"EU goods under EO 14326, not Korea",claude
+b2,b2-0060,dq04_en,relevant,"FR notice: ROK goods below 15 percent column 1, sum with EO 14257 rate is 15 percent; the at-least-15 sentence is cut",claude
+b2,b2-0061,dq04_en,relevant,FR notice: ROK goods at least 15 percent get zero EO 14257 rate; the below-15 sentence starts before the chunk,claude
+b2,b2-0062,dq04_en,not_relevant,"ROK autos and parts under Proclamation 10908, a different measure",claude
+b2,b2-0063,dq04_en,not_relevant,"zero percent under Proclamation 10908 (autos), not EO 14257",claude
+b2,b2-0064,dq04_en,relevant,HTS amendment text for South Korea: below 15 percent sum is 15 percent under heading 9903.02.80; EO 14257 not named,claude
+b2,b2-0065,dq04_en,relevant,"HTS amendment for South Korea via headings 9903.02.79/80: sum 15 percent, at least 15 no additional duty; EO 14257 not named",claude
+b2,b2-0066,dq04_en,relevant,HTS note for South Korea (headings 9903.02.79/80): 15 percent sum and no additional duty at 15 or higher; EO 14257 not named,claude
+b2,b2-0067,dq04_en,not_relevant,"Switzerland/Liechtenstein headings, not Korea",claude
+b2,b2-0068,dq04_en,not_relevant,"heading 9903.08.24 for a product group across several countries, not the Korea reciprocal rule",claude
+b2,b2-0069,dq04_ko,relevant,"FR notice: ROK goods below 15 percent column 1, sum with EO 14257 rate is 15 percent; the at-least-15 sentence is cut",claude
+b2,b2-0070,dq04_ko,relevant,FR notice: ROK goods at least 15 percent get zero EO 14257 rate; the below-15 sentence starts before the chunk,claude
+b2,b2-0071,dq04_ko,not_relevant,HTS chapter 99 rate rows (+15%) without Korea or the column 1 threshold rule,claude
+b2,b2-0072,dq04_ko,not_relevant,"heading 9903.02.20 rate row (EU), not Korea",claude
+b2,b2-0073,dq04_ko,not_relevant,HTS chapter 99 rate rows (+15%) without Korea or the column 1 threshold rule,claude
+b2,b2-0074,dq04_ko,not_relevant,HTS chapter 99 rate rows (+15%) without Korea or the column 1 threshold rule,claude
+b2,b2-0075,dq04_ko,not_relevant,HTS chapter 99 rate rows (+15%) without Korea or the column 1 threshold rule,claude
+b2,b2-0076,dq04_ko,not_relevant,HTS chapter 99 rate rows (+15%) without Korea or the column 1 threshold rule,claude
+b2,b2-0077,dq04_ko,not_relevant,HTS chapter 99 rate rows (+15%) without Korea or the column 1 threshold rule,claude
+b2,b2-0078,dq04_ko,not_relevant,HTS chapter 99 rate rows (+15%) without Korea or the column 1 threshold rule,claude
+b2,b2-0079,dq04_ko,not_relevant,HTS chapter 99 rate rows (+15%) without Korea or the column 1 threshold rule,claude
+b2,b2-0080,dq04_ko,not_relevant,"section 232 wood products rate rows, not the reciprocal column 1 rule",claude
+b2,b2-0081,p05,not_relevant,general 12.5 percent rate for other economies; Korea not named,claude
+b2,b2-0082,p05,not_relevant,"EU and Taiwan 10 percent net of MFN rule, not Korea",claude
+b2,b2-0083,p05,relevant,"Japan, Korea, Switzerland: MFN below 12.5 sums to 12.5, at or above 12.5 the section 301 tariff is zero; annex exceptions not stated",claude
+b2,b2-0084,p05,relevant,"Japan, Korea, Switzerland below 12.5 percent MFN rule begins but the sum is cut",claude
+b2,b2-0085,p05,not_relevant,"Japan determination, not Korea",claude
+b2,b2-0086,p05,relevant,South Korea determination: 12.5 percent net of MFN except Annex I and Annex II Part A; the MFN rule is cut,claude
+b2,b2-0087,p05,relevant,"South Korea: below 12.5 MFN sums to 12.5, at or above 12.5 zero; the 12.5 rate sentence starts before the chunk",claude
+b2,b2-0088,p05,not_relevant,"Switzerland determination, not Korea",claude
+b2,b2-0089,p05,not_relevant,"EU and Taiwan 10 percent net of MFN rule, not Korea",claude
+b2,b2-0090,p05,relevant,"Japan, Korea, Switzerland: MFN below 12.5 sums to 12.5, at or above 12.5 the section 301 tariff is zero; annex exceptions not stated",claude
+b2,b2-0091,p05,not_relevant,"EU determination, not Korea",claude
+b2,b2-0092,p05,not_relevant,"Japan determination, not Korea",claude
+b2,b2-0093,p05,not_relevant,"Taiwan determination, not Korea",claude
+b2,b2-0094,dq06_en,relevant,"EO 14324 (de minimis suspension, from context) effective for goods entered on or after 12:01 a.m. EDT August 29, 2025",claude
+b2,b2-0095,dq06_en,relevant,"de minimis exemption suspended since at least August 29, 2025; no time or entry condition",claude
+b2,b2-0096,dq06_en,relevant,"footnote: EO 14324 suspending de minimis since August 29, 2025; no time or entry condition",claude
+b2,b2-0097,dq06_en,relevant,"EO 14324 in effect since August 29, 2025; no time or entry condition",claude
+b2,b2-0098,dq06_en,relevant,"suspension under the Executive Order from August 29, 2025; no time or entry condition",claude
+b2,b2-0099,dq06_en,relevant,"de minimis suspended for most products effective August 29, 2025; no time or entry condition",claude
+b2,b2-0100,dq06_en,relevant,"de minimis exemption suspended since at least August 29, 2025; no time or entry condition",claude
+b2,b2-0101,dq06_en,relevant,"EO 14324 in effect since August 29, 2025; no time or entry condition",claude
+b2,b2-0102,dq06_en,relevant,"suspension under the Executive Order from August 29, 2025; no time or entry condition",claude
+b2,b2-0103,dq06_en,relevant,"footnote: EO 14324 suspending de minimis since August 29, 2025; no time or entry condition",claude
+b2,b2-0104,dq06_en,relevant,"de minimis suspended for most products effective August 29, 2025; no time or entry condition",claude
+b2,b2-0105,dq06_ko,relevant,"EO 14324 (de minimis suspension, from context) effective for goods entered on or after 12:01 a.m. EDT August 29, 2025",claude
+b2,b2-0106,p07,relevant,IFR heading and summary: indefinite suspension of de minimis for imports valued at 800 dollars or less through the international postal network; no effective date,claude
+b2,b2-0107,p07,relevant,"IFR DATES: effective July 24, 2026 (amendatory instruction 4 June 24); covers 800 dollars or less via the international postal network",claude
+b2,b2-0108,p07,not_relevant,"background on EO 14324 interim postal process, not the interim final rule's date or scope",claude
+b2,b2-0109,p07,not_relevant,EO duty rate assessed until the Proclamation 11012 surcharge expires; not the IFR,claude
+b2,b2-0110,p07,relevant,"suspension for merchandise valued at 800 dollars or less via the international postal network, but the sentence that names the rule is cut",claude
+b2,b2-0111,p07,not_relevant,"background on EO 14324 interim postal process, not the interim final rule's date or scope",claude
+b2,b2-0112,p07,relevant,this IFR implements the regulatory suspension for the international postal network; no value threshold or date,claude
+b2,b2-0113,p07,not_relevant,"background on EO 14324 interim postal process, not the interim final rule's date or scope",claude
+b2,b2-0114,p07,relevant,other-modes rule mentions the concurrent rulemaking for 800 dollars or less; the postal part is cut,claude
+b2,b2-0115,p07,relevant,"extension notice background: June 24, 2026 IFR suspends de minimis for the international postal network; no threshold or July 24 date",claude
+b2,b2-0116,p07,relevant,"extension notice: remainder of the postal IFR effective July 24, 2026 (suspension from June 24); no 800 dollar threshold",claude
+b2,b2-0117,dq08_en,not_relevant,"EO 14257 country-specific rates and their start, not the suspension extension",claude
+b2,b2-0118,dq08_en,not_relevant,"EO 14257 country-specific rates and their start, not the suspension extension",claude
+b2,b2-0119,dq08_en,not_relevant,"EO 14257 country-specific rates and their start, not the suspension extension",claude
+b2,b2-0120,dq08_en,not_relevant,"EO 14266 original suspension effective April 10, 2025, not its extension",claude
+b2,b2-0121,dq08_en,relevant,"EO 14266 90-day suspension expires July 9, 2025 and an extension is being determined; the new date is cut",claude
+b2,b2-0122,dq08_en,relevant,"EO: extend the suspension effectuated by EO 14266 until 12:01 a.m. EDT August 1, 2025",claude
+b2,b2-0123,dq08_en,relevant,"EO 14316 (from context) keeps the country list suspended until 12:01 a.m. EDT August 1, 2025; EO 14266 not named in the chunk",claude
+b2,b2-0124,dq08_en,not_relevant,EO 14326 Federal Register header,claude
+b2,b2-0125,dq08_en,not_relevant,"de minimis suspension rule text, different measure",claude
+b2,b2-0126,dq08_en,not_relevant,"de minimis suspension rule text, different measure",claude
+b2,b2-0127,dq08_ko,relevant,"EO 14266 90-day suspension expires July 9, 2025 and an extension is being determined; the new date is cut",claude
+b2,b2-0128,dq08_ko,relevant,"EO: extend the suspension effectuated by EO 14266 until 12:01 a.m. EDT August 1, 2025",claude
+b2,b2-0129,dq08_ko,not_relevant,"HTS chapter 99 temporary duty suspension rows for chemicals (9902), unrelated",claude
+b2,b2-0130,dq08_ko,not_relevant,"HTS chapter 99 temporary duty suspension rows for chemicals (9902), unrelated",claude
+b2,b2-0131,dq08_ko,not_relevant,"HTS chapter 99 temporary duty suspension rows for chemicals (9902), unrelated",claude
+b2,b2-0132,dq08_ko,not_relevant,"HTS chapter 99 temporary duty suspension rows for chemicals (9902), unrelated",claude
+b2,b2-0133,dq08_ko,not_relevant,"HTS chapter 99 temporary duty suspension rows for chemicals (9902), unrelated",claude
+b2,b2-0134,dq08_ko,not_relevant,"HTS chapter 99 temporary duty suspension rows for chemicals (9902), unrelated",claude
+b2,b2-0135,dq08_ko,not_relevant,"HTS chapter 99 temporary duty suspension rows for chemicals (9902), unrelated",claude
+b2,b2-0136,dq08_ko,not_relevant,"HTS chapter 99 quota and trade program rows, unrelated",claude
+b2,b2-0137,dq08_ko,not_relevant,"HTS chapter 99 quota and trade program rows, unrelated",claude
+b2,b2-0138,dq08_ko,not_relevant,"HTS chapter 99 quota and trade program rows, unrelated",claude
+b2,b2-0139,p09,relevant,"chunk text: subdivision (n), rates of heading 9903.81.91 apply to the listed derivative steel products (context points to (m), the text itself states (n)); list not shown",claude
+b2,b2-0140,p09,relevant,"chunk text: subdivision (n), rates of heading 9903.81.91 apply to the listed derivative steel products (context points to (m), the text itself states (n)); list not shown",claude
+b2,b2-0141,p09,relevant,subdivision (n) heading 9903.81.91 lead-in; the list with 3304.99.50 is not in the chunk,claude
+b2,b2-0142,p09,relevant,"3304.99.50 in the code list; context identifies it as subdivision (n), heading 9903.81.91",claude
+b2,b2-0143,p09,relevant,"3304.99.50 in the code list; context identifies it as subdivision (n), heading 9903.81.91",claude
+b2,b2-0144,p09,not_relevant,"3304.99.50 in the subdivision (u) list for heading 9903.81.98, not 9903.81.91",claude
+b2,b2-0145,p09,not_relevant,"3304.99.50 in the subdivision (u) list for heading 9903.81.98, not 9903.81.91",claude
+b2,b2-0146,p09,not_relevant,"3304.99.50 in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b2,b2-0147,p09,not_relevant,"3304.99.50 in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b2,b2-0148,p09,relevant,"chunk text: subdivision (n), rates of heading 9903.81.91 apply to the listed derivative steel products (context points to (m), the text itself states (n)); list not shown",claude
+b2,b2-0149,p09,relevant,chunk is about steel content valuation; context gives the (n) lead-in that heading 9903.81.91 rates apply to the listed products,claude
+b2,b2-0150,p09,relevant,chunk is about steel content valuation; context gives the (n) lead-in that heading 9903.81.91 rates apply to the listed products,claude
+b2,b2-0151,p09,relevant,"chunk text: subdivision (n), rates of heading 9903.81.91 apply to the listed derivative steel products (context points to (m), the text itself states (n)); list not shown",claude
+b2,b2-0152,p09,relevant,chunk is about steel content valuation; context gives the (n) lead-in that heading 9903.81.91 rates apply to the listed products,claude
+b2,b2-0153,p09,relevant,chunk is about steel content valuation; context gives the (n) lead-in that heading 9903.81.91 rates apply to the listed products,claude
+b2,b2-0154,p09,relevant,"chunk text: subdivision (n), rates of heading 9903.81.91 apply to the listed derivative steel products (context points to (m), the text itself states (n)); list not shown",claude
+b2,b2-0155,p09,relevant,chunk is about steel content valuation; context gives the (n) lead-in that heading 9903.81.91 rates apply to the listed products,claude
+b2,b2-0156,p09,relevant,chunk is about steel content valuation; context gives the (n) lead-in that heading 9903.81.91 rates apply to the listed products,claude
+b2,b2-0157,p09,not_relevant,"3304.99.50 in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b2,b2-0158,p09,not_relevant,"3304.99.50 in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b2,b2-0159,p09,not_relevant,"3304.99.50 in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b2,b2-0160,p09,not_relevant,"3304.99.50 in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b2,b2-0161,p09,relevant,subdivision (n) heading 9903.81.91 lead-in; the list with 3304.99.50 is not in the chunk,claude
+b2,b2-0162,p09,relevant,"3304.99.50 in the code list; context identifies it as subdivision (n), heading 9903.81.91",claude
+b2,b2-0163,p09,relevant,"3304.99.50 in the code list; context identifies it as subdivision (n), heading 9903.81.91",claude
+b2,b2-0164,p09,not_relevant,"3304.99.50 in the subdivision (u) list for heading 9903.81.98, not 9903.81.91",claude
+b2,b2-0165,p09,not_relevant,"3304.99.50 in the subdivision (u) list for heading 9903.81.98, not 9903.81.91",claude
+b2,b2-0166,p09,not_relevant,"3304.99.50 in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b2,b2-0167,p09,not_relevant,"3304.99.50 in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b2,b2-0168,p09,relevant,subdivision (n) heading 9903.81.91 lead-in; the list with 3304.99.50 is not in the chunk,claude
+b2,b2-0169,p09,relevant,"3304.99.50 in the code list; context identifies it as subdivision (n), heading 9903.81.91",claude
+b2,b2-0170,p09,relevant,"3304.99.50 in the code list; context identifies it as subdivision (n), heading 9903.81.91",claude
+b2,b2-0171,p09,not_relevant,"3304.99.50 in the subdivision (u) list for heading 9903.81.98, not 9903.81.91",claude
+b2,b2-0172,p09,not_relevant,"3304.99.50 in the subdivision (u) list for heading 9903.81.98, not 9903.81.91",claude
+b2,b2-0173,p09,not_relevant,"3304.99.50 in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b2,b2-0174,p09,not_relevant,"3304.99.50 in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b2,b2-0175,p09,not_relevant,"3304.99.50 in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b2,b2-0176,p09,not_relevant,"3304.99.50 in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b2,b2-0177,p09,not_relevant,"3304.99.50 in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b2,b2-0178,p09,not_relevant,"3304.99.50 in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b2,b2-0179,p09,not_relevant,"3304.99.50 in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b2,b2-0180,p09,not_relevant,"3304.99.50 in a 9903.85 derivative aluminum list, not the 9903.81.91 steel list",claude
+b2,b2-0181,p09,relevant,chunk is about steel content valuation; context gives the (n) lead-in that heading 9903.81.91 rates apply to the listed products,claude
+b2,b2-0182,p09,relevant,chunk is about steel content valuation; context gives the (n) lead-in that heading 9903.81.91 rates apply to the listed products,claude
+b2,b2-0183,p09,relevant,chunk is about steel content valuation; context gives the (n) lead-in that heading 9903.81.91 rates apply to the listed products,claude
+b2,b2-0184,p09,relevant,chunk is about steel content valuation; context gives the (n) lead-in that heading 9903.81.91 rates apply to the listed products,claude
+b2,b2-0185,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0186,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0187,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0188,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0189,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0190,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0191,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0192,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0193,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0194,dq10_en,relevant,"context: heading 9903.03.01 duty shall not apply to (v); chunk (d): aluminum content of 9903.85.04, .07, .08 excluded",claude
+b2,b2-0195,dq10_en,relevant,context: heading 9903.03.01 duty shall not apply to (v); chunk has only the tail of (d) from 9903.85.08 on,claude
+b2,b2-0196,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0197,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0198,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0199,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0200,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0201,dq10_en,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0202,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0203,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0204,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0205,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0206,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0207,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0208,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0209,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0210,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0211,dq10_ko,relevant,"context: heading 9903.03.01 duty shall not apply to (v); chunk (d): aluminum content of 9903.85.04, .07, .08 excluded",claude
+b2,b2-0212,dq10_ko,relevant,context: heading 9903.03.01 duty shall not apply to (v); chunk has only the tail of (d) from 9903.85.08 on,claude
+b2,b2-0213,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0214,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0215,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0216,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0217,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0218,dq10_ko,not_relevant,"note 2 exclusions for the reciprocal headings (9903.01.25, 9903.02.xx), not the 9903.03.01 surcharge",claude
+b2,b2-0219,dq11_en,relevant,"CSMS: the February 20, 2026 EO Ending Certain Tariff Actions terminates IEEPA collection; number 14389 not shown",claude
+b2,b2-0220,dq11_en,relevant,"CSMS: IEEPA duties no longer collected from February 24, 2026; the order is not named in this chunk",claude
+b2,b2-0221,dq11_en,relevant,"CSMS: IEEPA HTS numbers inactive in ACE as of February 24, 2026 (date only, partly)",claude
+b2,b2-0222,dq11_en,relevant,"EO 14389 of February 20, 2026 Ending Certain Tariff Actions (title page); effect not in chunk",claude
+b2,b2-0223,dq11_en,relevant,context names EO 14389 Ending Certain Tariff Actions (no signing date); text cut before the effect,claude
+b2,b2-0224,dq11_en,relevant,EO 14389 sec. 1: IEEPA duties no longer in effect and no longer collected; context names the order,claude
+b2,b2-0225,dq11_en,relevant,only the context names EO 14389; text is about unaffected actions,claude
+b2,b2-0226,dq11_en,relevant,"E.O. 14389 of February 20, 2026 (Ending Certain Tariff Actions) terminated the IEEPA duties; collection not stated",claude
+b2,b2-0227,dq11_en,relevant,"E.O. 14389 of February 20, 2026 (Ending Certain Tariff Actions) terminated the IEEPA duties; collection not stated",claude
+b2,b2-0228,dq11_en,relevant,"President signed EO 14389 (Ending Certain Tariff Actions) on February 20, 2026, ending IEEPA duties; collection not stated",claude
+b2,b2-0229,dq11_ko,relevant,"CSMS: the February 20, 2026 EO Ending Certain Tariff Actions terminates IEEPA collection; number not shown, effect only collection",claude
+b2,b2-0230,dq11_ko,relevant,"CSMS: IEEPA duties no longer in effect and no longer collected from February 24, 2026; order not named",claude
+b2,b2-0231,dq11_ko,relevant,"CSMS: IEEPA HTS numbers inactive in ACE as of February 24, 2026 (date only, partly)",claude
+b2,b2-0232,dq11_ko,relevant,"CSMS: IEEPA HTS numbers inactive in ACE as of February 24, 2026 (date only, partly)",claude
+b2,b2-0233,dq11_ko,relevant,"EO 14389 of February 20, 2026 Ending Certain Tariff Actions (title page); effect not in chunk",claude
+b2,b2-0234,dq11_ko,relevant,context names EO 14389 Ending Certain Tariff Actions (no signing date); text cut before the effect,claude
+b2,b2-0235,dq11_ko,relevant,EO 14389 sec. 1: IEEPA duties no longer in effect and no longer collected; context names the order,claude
+b2,b2-0236,dq11_ko,relevant,only the context names EO 14389; text is about unaffected actions,claude
+b2,b2-0237,dq11_ko,relevant,EO 14389 sec. 2(a): steps to end the IEEPA duties (cut); context names the order,claude
+b2,b2-0238,dq11_ko,relevant,"E.O. 14389 of February 20, 2026 (Ending Certain Tariff Actions) terminated the IEEPA duties; collection not stated",claude
+b2,b2-0239,dq11_ko,relevant,"E.O. 14389 of February 20, 2026 (Ending Certain Tariff Actions) terminated the IEEPA duties; collection not stated",claude
+b2,b2-0240,dq12_en,not_relevant,"Korea autos and parts under note 33, not the reciprocal country list",claude
+b2,b2-0241,dq12_en,not_relevant,"Korea 15 percent column 1 rule under headings 9903.02.79/80, not the 25% country list rate",claude
+b2,b2-0242,dq12_en,relevant,"heading row for South Korea under subdivision (v) of U.S. note 2 at 25%, marked provision suspended",claude
+b2,b2-0243,dq12_en,uncertain,"a country list entry: South Korea, subject to an additional duty of 25%, but the chunk does not show which note subdivision or duty the list belongs to",claude
+b2,b2-0244,dq12_en,uncertain,"a country list entry: South Korea, subject to an additional duty of 25%, but the chunk does not show which note subdivision or duty the list belongs to",claude
+b2,b2-0245,dq12_en,relevant,"heading row: articles the product of South Korea, as provided in subdivision (v) of U.S. note 2, duty plus 25%",claude
+b2,b2-0246,dq12_en,relevant,"heading row: articles the product of South Korea, as provided in subdivision (v) of U.S. note 2, duty plus 25%",claude
+b2,b2-0247,dq12_en,uncertain,country list entry for South Korea with the rate cut off; the list's note subdivision is not in the chunk,claude
+b2,b2-0248,dq12_en,uncertain,"a country list entry: South Korea, subject to an additional duty of 25%, but the chunk does not show which note subdivision or duty the list belongs to",claude
+b2,b2-0249,dq12_en,not_relevant,"ad valorem equivalent rule for specific or compound rates for several partners, not the 25% rate",claude
+b2,b2-0250,dq12_ko,uncertain,"a country list entry: South Korea, subject to an additional duty of 25%, but the chunk does not show which note subdivision or duty the list belongs to",claude
+b2,b2-0251,dq12_ko,uncertain,"a country list entry: South Korea, subject to an additional duty of 25%, but the chunk does not show which note subdivision or duty the list belongs to",claude
+b2,b2-0252,dq12_ko,not_relevant,"section 232 derivative steel rate rows (+25%), not the reciprocal country list",claude
+b2,b2-0253,dq12_ko,not_relevant,"section 232 derivative steel rate rows (+25%), not the reciprocal country list",claude
+b2,b2-0254,dq12_ko,not_relevant,"section 232 derivative aluminum rate rows (+25%), not the reciprocal country list",claude
+b2,b2-0255,dq12_ko,not_relevant,"section 232 derivative steel rate rows (+25%), not the reciprocal country list",claude
+b2,b2-0256,dq12_ko,not_relevant,"section 232 derivative steel rate rows (+25%), not the reciprocal country list",claude
+b2,b2-0257,dq12_ko,not_relevant,"section 232 derivative steel rate rows (+25%), not the reciprocal country list",claude
+b2,b2-0258,dq12_ko,not_relevant,"section 232 derivative steel rate rows (+25%), not the reciprocal country list",claude
+b2,b2-0259,dq12_ko,not_relevant,"section 232 vehicle parts, furniture and steel rate rows (+25%), not the reciprocal country list",claude
+b2,b2-0260,dq12_ko,not_relevant,"section 232 vehicle parts, furniture and steel rate rows (+25%), not the reciprocal country list",claude
+b2,b2-0261,dq12_ko,not_relevant,"section 232 vehicle parts, furniture and steel rate rows (+25%), not the reciprocal country list",claude

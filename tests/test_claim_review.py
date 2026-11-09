@@ -185,3 +185,40 @@ def test_finalize_never_overwrites_a_version(tmp_path, monkeypatch):
             rec.finalize_all(bad)
     src = (REPO / "scripts" / "record_claim_review.py").read_text("utf-8")
     assert "--force" not in src and "overwrite=True" not in src
+
+
+SEALED_ITEMS_SHA256 = "889860543381709015d638cf843207f9eac68707b7470b16c55af0ab27793a7a"
+SEALED_CELLS_SHA256 = "cc27411bac2fcdd19521b445d3b473e1d4cc314a41a9f301f5d4167c2905b158"
+
+
+def test_claude_sealed_judgments_are_unchanged_and_complete():
+    """Claude's own judgments, written and committed before the user review; never read by the review tool."""
+    import csv
+    import json
+    import sys
+    sys.path.insert(0, str(REPO / "scripts"))
+    import record_claim_review as rec
+    sealed = rec.OUT / "claude_sealed"
+    m = json.loads((sealed / "manifest.json").read_text("utf-8"))
+    assert rec._sha(sealed / "claude_item_decisions.csv") == m["claude_item_decisions_sha256"] == SEALED_ITEMS_SHA256
+    assert rec._sha(sealed / "claude_component_supports.csv") == m["claude_component_supports_sha256"] \
+        == SEALED_CELLS_SHA256
+    with (sealed / "claude_item_decisions.csv").open(encoding="utf-8", newline="") as f:
+        items = list(csv.DictReader(f))
+    with (sealed / "claude_component_supports.csv").open(encoding="utf-8", newline="") as f:
+        cells = list(csv.DictReader(f))
+    assert (len(items), len(cells)) == (m["item_rows"], m["component_rows"]) == (527, 1011)
+    assert all(r["reason"].strip() and r["reviewer_type"] == "claude" for r in items)
+    for s in rec.SYSTEMS:                                      # same rules as the user's finalize
+        _, sheet_items, comps, _ = rec.load_sheet(s)
+        assert {r["item_id"] for r in items if r["system"] == s} == {it.item_id for it in sheet_items}
+        decisions = {r["item_id"]: (r["decision"], r["reason"]) for r in items if r["system"] == s}
+        supports = {}
+        for c in cells:
+            if c["system"] == s and c["filled_by"] == "stage2":
+                supports.setdefault(c["item_id"], {})[f"{c['claim']}.{c['component']}"] = c["support"]
+        _, again = finalize([Item(i, "new") for i in decisions], comps, decisions, supports)
+        assert [(c["item_id"], c["claim"], c["component"], c["support"]) for c in again] == \
+            [(c["item_id"], c["claim"], c["component"], c["support"]) for c in cells if c["system"] == s]
+    src = (REPO / "scripts" / "record_claim_review.py").read_text("utf-8")
+    assert "claude_sealed" not in src                          # the review session never opens them

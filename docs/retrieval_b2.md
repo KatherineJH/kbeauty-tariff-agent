@@ -356,6 +356,13 @@ by `finalize` (`src/tariffagent/retrieval/claim_review.py`) into `evals/dev/revi
 - Claude's own judgement of all 527 items is written and sealed in a separate commit before the user's review, and is
   not opened or shown during it. Claude had already seen the runs and the earlier judgements, so any later agreement
   is a consistency check between the human_assisted judgements and Claude's, not independent human validation.
+  Sealed in `evals/dev/review_claims/claude_sealed/` (reviewer type `claude`, same decision and level criteria; B2
+  context counts as part of the returned unit; an answer whose identifying heading or list is missing is
+  `uncertain`): `claude_item_decisions.csv` 527 rows (system, item id, decision, reason; reused items judged afresh),
+  sha256 `889860543381709015d638cf843207f9eac68707b7470b16c55af0ab27793a7a`; `claude_component_supports.csv` 1,011
+  rows (every component of every item; levels given only for relevant items, the rest none), sha256
+  `cc27411bac2fcdd19521b445d3b473e1d4cc314a41a9f301f5d4167c2905b158`. `manifest.json` also records the sheet and
+  queue manifest hashes they were written against. The review tool does not read this folder.
 
 Per-query counts: `evals/dev/review_claims/summary.json`; which queries each item serves: `item_queries.csv`. The
 two earlier sheets of this day (`evals/dev/review_b2v2/`, the first `review_claims` sheets on v3) were replaced before
