@@ -1,0 +1,67 @@
+{
+  "version": "v1",
+  "date": "2026-11-09",
+  "base_commit": "60c26e3",
+  "reviewer_type": {
+    "human_assisted": 527
+  },
+  "items": {
+    "b1": 266,
+    "b2": 261,
+    "total": 527
+  },
+  "component_rows": {
+    "b1": 511,
+    "b2": 500,
+    "total": 1011
+  },
+  "decisions": {
+    "not_relevant": 308,
+    "relevant": 184,
+    "uncertain": 35
+  },
+  "source": {
+    "reused": 43,
+    "stage1": 484
+  },
+  "levels": {
+    "complete": 110,
+    "none": 762,
+    "partial": 139
+  },
+  "filled_by": {
+    "auto_none": 687,
+    "stage2": 324
+  },
+  "ci_001": {
+    "claim_version": "v1 catalog (dq07 c1 single date)",
+    "c1.e1": {
+      "R-0035268753": "partial",
+      "R-1503327472": "partial",
+      "R-7392678204": "partial",
+      "R-9057504996": "partial"
+    }
+  },
+  "inputs_sha256": {
+    "item_decisions.csv": "69645dac8180d2b5aa03cc2fe78ea529c65b45b11dbf561c201dbcd00ed77d98",
+    "component_supports.csv": "228938d1ee48bd34afed52ff8ea66c35732bb4cc7b36386d519a27394d78cc1c",
+    "stage1_checkpoint.json": "ca3bbf5dc80323cfd64db75595dae28496c6e21589ae5dbc6d6069556c34c4a6",
+    "stage2_checkpoint.json": "de400df2ca889baccc6d34206e61f57b103f3bc5743292c80d49ffb9343cbf81",
+    "queue_manifest.json": "a48da8b971850de2d522bac9fd7e7fc40002c1890b82ac57d214bd2a7d48c98d",
+    "claim_open_issues.md": "2dce9df6ae96322aba33fcb816cf115db1fe1d8d87c8412071b475c14c721d05",
+    "b1_item_claim_judgments.csv": "82099ffbbc57eae10987b846de19321a37b44dd91945698521e7806f4f055153",
+    "b1_review_sheet.csv": "b7fb89c1759c266da0cb5fed7110fb1c9461dc9c23d9c34bf8e7b6567fa7c2bb",
+    "b2_item_claim_judgments.csv": "783dee5efe0ed419e3030364fc3c4619bb570ba1e636f3952ad8d7a942c6a0cf",
+    "b2_review_sheet.csv": "a7047b2b078489ae16827cb6f31da0c56feaef92c1da21fee490a335c44844de"
+  },
+  "outputs_sha256": {
+    "b1_item_claim_judgments.csv": "1a8d1ff0292b655a48409677e759745253bdac96adeaf27b1c19a28a248e7c35",
+    "b1_items.csv": "d3a7f9bfe79e3de5481119f509d2a091d661afbc8db4faecf720af2d60f31e5f",
+    "b2_item_claim_judgments.csv": "450d45df4e1fa1604dc3d0b67401b8f4295fe02add127189e2302b7581645d83",
+    "b2_items.csv": "45cdf7dcfacc18640d22f42dd96f28b81892f1b9a6bc0fd9f598c69ba7361e06"
+  },
+  "checks": {
+    "errors": 0
+  },
+  "note": "human_assisted judgements finalized; claude_sealed/ not opened; no agreement or B1/B2 metrics."
+}
