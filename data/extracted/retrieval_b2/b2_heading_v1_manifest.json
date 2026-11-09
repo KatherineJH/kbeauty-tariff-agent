@@ -1,0 +1,15 @@
+{
+  "b2_chunks": 7738,
+  "b2_chunks_sha256": "a949067ca705da137f5e9e5fa7bd97eb4513c184a3e663dac039ade146cad815",
+  "config_id": "b2_heading_v1",
+  "config_sha256": "e013ec0e175cd8c1b7af15540deb4db5a01526daaf407c799f9ece96d383bc73",
+  "context_origin_counts": {
+    "document_metadata": 1542,
+    "none": 4547,
+    "previous_page": 1100,
+    "same_page": 549
+  },
+  "index_sha256": "81203de9bd97d502a7209605740941225f57a98f301d62f68f62316efadce0bf",
+  "index_terms": 35678,
+  "structure_module_sha256": "e8a582358c199711cf918dc9810accfc7dd5bc622b5f81a426eba0d7c6b8099b"
+}
