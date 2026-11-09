@@ -1,0 +1,38 @@
+{
+  "checkpoint": "stage2_complete",
+  "date": "2026-11-09",
+  "base_commit": "7f5e540",
+  "reviewer_type": "human_assisted",
+  "stage2_items": 184,
+  "component_rows": 324,
+  "levels": {
+    "complete": 110,
+    "partial": 139,
+    "none": 75
+  },
+  "component_supports_sha256": "228938d1ee48bd34afed52ff8ea66c35732bb4cc7b36386d519a27394d78cc1c",
+  "checks": {
+    "missing_targets": 0,
+    "non_relevant_items_recorded": 0,
+    "duplicate_item_components": 0,
+    "invalid_levels": 0,
+    "items_with_incomplete_component_set": 0,
+    "relevant_items_without_complete_or_partial": 0,
+    "in_memory_finalize_rule_check": "passed (no files written)"
+  },
+  "ci_001": {
+    "rule": "dq07 c1.e1 is partial when the unit shows both the 2026-06-24 suspension date and the 2026-07-24 remainder date",
+    "items": [
+      "R-0035268753",
+      "R-1503327472",
+      "R-7392678204",
+      "R-9057504996"
+    ],
+    "c1.e1": "partial for all four"
+  },
+  "queue_manifest_sha256": "a48da8b971850de2d522bac9fd7e7fc40002c1890b82ac57d214bd2a7d48c98d",
+  "item_decisions_sha256": "69645dac8180d2b5aa03cc2fe78ea529c65b45b11dbf561c201dbcd00ed77d98",
+  "stage1_checkpoint_sha256": "ca3bbf5dc80323cfd64db75595dae28496c6e21589ae5dbc6d6069556c34c4a6",
+  "claim_open_issues_sha256": "2dce9df6ae96322aba33fcb816cf115db1fe1d8d87c8412071b475c14c721d05",
+  "note": "Not finalized; no agreement or B1/B2 metrics; claude_sealed/ not opened."
+}
