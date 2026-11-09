@@ -1,0 +1,485 @@
+review_id,decision,reason,reviewer_type
+R-6775979172,relevant,"IEEPA 관세용 HTSUS 번호가 2026년 2월 24일부로 비활성화된다고 적혀 있어 c2를 부분적으로 뒷받침하나, '이 EO'가 몇 번인지와 정확한 시각은 청크에 없음",human_assisted
+R-1354716281,not_relevant,염료 혼합물의 9902 임시 세율 행으로 상호관세 유예·연장과 관계없음,human_assisted
+R-1775107003,not_relevant,과징금 부과 배경(국제수지 적자)과 예외를 두는 이유만 있고 세율 10%나 적용 대상은 청크에 없음,human_assisted
+R-6498684008,not_relevant,대만의 10% 규칙과 태국 항목 시작 부분으로 국가가 다르고 한국·12.5%가 나오지 않음,human_assisted
+R-8393960947,not_relevant,국가별 세율의 최초 적용 시점(4월 9일)에 관한 내용으로 행정명령 14266의 유예나 8월 1일 연장을 다루지 않음,human_assisted
+R-6308029436,relevant,"합계 15% 규칙과 15% 이상이면 추가 관세 없음 규칙이 있어 c1·c2를 부분적으로 뒷받침하나, 15% 미만 조건 앞부분이 잘렸고 근거가 행정명령 14257이 아닌 heading 9903.02.80으로만 적힘",human_assisted
+R-3004214342,relevant,행정명령 14389(맥락)가 기관들에 IEEPA 추가 관세를 끝내도록 지시해 c1을 뒷받침하나 징수 중단 시점은 청크에 없음,human_assisted
+R-9744040170,relevant,행정명령 14389가 IEEPA에 따른 일부 종가 관세를 종료했다고 적혀 c1을 뒷받침하나 징수 종료와 날짜는 명시되지 않음,human_assisted
+R-4882020300,not_relevant,신발에 대한 9902 임시 세율 행으로 122조 과징금과 관계없음,human_assisted
+R-6914419965,relevant,2026년 2월 20일 행정명령 'Ending Certain Tariff Actions'가 IEEPA 추가 관세 징수를 종료한다고 직접 적어 c1을 뒷받침하나 번호 14389와 징수 종료 시점은 청크에 없음,human_assisted
+R-8611263814,relevant,3304.99.50은 청크에 없지만 맥락이 '(n) heading 9903.81.91 세율은 다음에 적용된다'를 보여 c2를 뒷받침함,human_assisted
+R-2058523210,relevant,(n) 도입 문장이 heading 9903.81.91 세율을 열거된 파생 제품에 적용한다고 해 c2를 뒷받침하나 3304.99.50은 청크에 없음,human_assisted
+R-9633442346,not_relevant,염료에 대한 9902 임시 세율 행으로 상호관세 유예와 관계없음,human_assisted
+R-9448823654,not_relevant,2026년 2월 20일 행정명령이 IEEPA 관세를 종료했다는 내용뿐이고 CBP 징수 중단 시점(통관 기준 일시)은 청크에 없음,human_assisted
+R-0006194591,not_relevant,알루미늄 함량 제외 대상이 9903.01.25·9903.02.xx 계열 추가 관세로 heading 9903.03.01 과징금이 아니어서 관세 종류가 다름,human_assisted
+R-4126295125,not_relevant,3304.99.50이 목록에 있으나 맥락상 heading 9903.81.98의 subdivision (u) 목록으로 질문의 9903.81.91 (n) 목록이 아님,human_assisted
+R-6606683747,not_relevant,3304.99.50이 있으나 영국산 알루미늄 파생품(9903.85.15) 목록으로 철강 파생품 9903.81.91 목록이 아님,human_assisted
+R-6516873324,not_relevant,철강 함량 보고 방식과 수입자 정보 제공 의무에 관한 내용으로 3304.99.50 포함 여부나 (n) 세율 적용이 없음,human_assisted
+R-8785554832,relevant,de minimis 면제가 2025년 8월 29일부로 유예되었다고 적혀 c1을 부분적으로 뒷받침하나 시각(오전 12:01)과 통관 기준은 없음,human_assisted
+R-4491064041,not_relevant,heading 9903.02.52 세율 행(+15%)만 있고 한국이나 column 1 세율 15% 기준 규칙이 없음,human_assisted
+R-2994051347,not_relevant,알루미늄 함량 제외가 9903.01.25·9903.02.xx 계열 추가 관세에 대한 것으로 heading 9903.03.01 과징금이 아니어서 관세 종류가 다름,human_assisted
+R-6312724486,not_relevant,note 38 차량 부품 세율 행으로 한국이나 상호관세 국가 목록과 관계없음,human_assisted
+R-5984929445,relevant,포고문 11012가 122조에 따라 150일간 10% 종가 과징금을 부과했다고 적혀 c1을 부분적으로 뒷받침하나 부과 대상(모든 물품)과 예외는 잘림,human_assisted
+R-1675396990,not_relevant,de minimis 면제의 역사 설명으로 IEEPA 관세 징수 중단과 관계없음,human_assisted
+R-0369103113,relevant,de minimis 면제가 적어도 2025년 8월 29일부터 유예되어 왔다고 적혀 c1을 부분적으로 뒷받침하나 시각과 통관 기준은 없음,human_assisted
+R-2455587004,not_relevant,제외 규정 대상이 9903.01.25·9903.02.xx 계열 추가 관세로 heading 9903.03.01 과징금과 관세 종류가 다름,human_assisted
+R-6701943853,not_relevant,염료에 대한 9902 임시 세율 행으로 상호관세 유예와 관계없음,human_assisted
+R-3360697661,uncertain,한국 25% 추가 관세라는 답 요소는 있으나 이 국가 목록이 어느 주·subdivision의 어떤 관세인지 청크에 없음,human_assisted
+R-1911005458,relevant,포고문 11012가 122조에 따라 10% 종가 과징금을 부과했다고 해 c1 세율을 뒷받침하나 대상이 '일부 수입품'으로만 적히고 부속서 예외는 없어 부분적,human_assisted
+R-8939240189,uncertain,'이 subdivision' 열거 소호에 9903.81.91 관세가 적용된다는 내용은 있으나 subdivision이 (n)인지 표시되지 않았고 3304.99.50도 없음,human_assisted
+R-8552521252,not_relevant,한국이 나오지만 종량세·복합세의 종가 환산 방법에 관한 내용으로 한국 25% 추가 관세가 없음,human_assisted
+R-1550427409,not_relevant,제외 규정 대상이 9903.01.25·9903.02.xx 계열 추가 관세로 heading 9903.03.01 과징금과 관세 종류가 다름,human_assisted
+R-5849348861,uncertain,"시각·통관 기준까지 claim과 같은 시행 문장이 있으나 '이 명령'이 무엇인지, de minimis 유예 명령인지가 청크에 없음",human_assisted
+R-7843853176,relevant,행정명령에 따른 de minimis 유예가 2025년 8월 29일부터라고 적혀 c1을 부분적으로 뒷받침하나 시각과 통관 기준은 없음,human_assisted
+R-3814383318,not_relevant,heading 번호 없는 +15% 세율 칸만 있어 한국이나 column 1 15% 기준 규칙이 없음,human_assisted
+R-2493023256,not_relevant,한국 합계 15% 규칙으로 질문의 25% 추가 관세(국가 목록)와 다름,human_assisted
+R-5345989747,not_relevant,제외 규정 대상이 9903.01.25·9903.02.xx 계열 추가 관세로 heading 9903.03.01 과징금과 관세 종류가 다름,human_assisted
+R-0307201106,relevant,한국산 제품에 MFN 차감 12.5% 관세를 부과하고 부속서 I·II Part A를 예외로 둔다는 문장이 있어 c1을 뒷받침하나 c2·c3 문장은 잘림,human_assisted
+R-2748005507,not_relevant,예외와 과징금이 122조 목적에 맞는다는 판단만 있고 세율 10%나 '모든 물품' 부과 대상이 없음,human_assisted
+R-5069779173,relevant,9903.85.08 추가 관세가 알루미늄 함량 신고가액에만 적용된다고 해 c1의 함량 가액 부분을 뒷받침하나 세율 50%는 청크에 없어 부분적,human_assisted
+R-1096553967,not_relevant,"'이 명령'이 정한 우편 화물 과세 방식으로 임시 최종 규칙이나 시행일, 800달러 기준이 없음",human_assisted
+R-7052640396,relevant,이 임시 최종 규칙이 국제우편망 물품의 de minimis 면제 유예를 시행한다고 해 c2를 부분적으로 뒷받침하나 800달러 기준과 시행일은 없음,human_assisted
+R-6238401068,not_relevant,행정명령이 정한 우편 화물 임시 세율과 부과 기한에 관한 내용으로 임시 최종 규칙의 시행일이나 800달러 대상 범위가 없음,human_assisted
+R-9011130869,not_relevant,행정명령 14324에 따른 우편 화물 임시 처리 방식으로 임시 최종 규칙의 시행일이나 800달러 대상 범위가 없음,human_assisted
+R-8840848596,not_relevant,제외 규정 대상이 9903.01.25·9903.02.xx 계열 추가 관세로 heading 9903.03.01 과징금과 관세 종류가 다름,human_assisted
+R-9288981875,not_relevant,"122조가 허용하는 상한(최대 15%, 150일)에 관한 내용으로 포고문 11012가 정한 10% 세율과 부과 대상이 없음",human_assisted
+R-8029981133,not_relevant,3304.99.50이 있으나 알루미늄 파생품 9903.85.08 (k) 목록으로 철강 파생품 9903.81.91 목록이 아님,human_assisted
+R-6963863639,not_relevant,철강 함량 보고 방식과 수입자 정보 제공 의무에 관한 내용으로 3304.99.50 포함 여부나 (n) 세율 적용이 없음,human_assisted
+R-0808694612,not_relevant,de minimis 유예에 관한 내용으로 행정명령 14266 상호관세 유예와 그 연장과 관계없음,human_assisted
+R-6509598167,not_relevant,화학품에 대한 9902 임시 세율 행으로 상호관세 유예와 관계없음,human_assisted
+R-5336138780,relevant,행정명령 14324가 2025년 8월 29일부터 시행 중이라고 적혀 c1을 부분적으로 뒷받침하나 시각과 통관 기준은 없음,human_assisted
+R-5462209288,relevant,맥락이 heading 9903.03.01 추가 관세 미적용 목록 (v)를 보여 주고 청크에 알루미늄 함량 항목 끝부분(9903.85.08 이후)이 있어 c2를 부분적으로 뒷받침하나 9903.85.04·.07과 함량 신고가액 문구는 잘림,human_assisted
+R-7194024720,relevant,청크 본문에 '(n) heading 9903.81.91 세율은 다음 소호의 철강 파생 제품에 적용된다'가 있어 c2를 뒷받침하나 맥락은 (m)을 가리키고 3304.99.50은 없음,human_assisted
+R-8733471783,relevant,행정명령 14324(de minimis 유예)가 2025년 8월 29일부터 시행 중이라고 적혀 c1을 부분적으로 뒷받침하나 시각과 통관 기준은 없음,human_assisted
+R-6335593468,relevant,column 1 세율 15% 미만 한국 물품의 합계 15% 규칙이 행정명령 14257과 함께 있어 c1을 뒷받침하나 15% 이상(c2) 문장은 잘림,human_assisted
+R-0198918466,not_relevant,heading 번호 없는 +15% 세율 칸만 있어 한국이나 column 1 15% 기준 규칙이 없음,human_assisted
+R-8614211632,not_relevant,9903.81.91 관세가 철강 함량에만 적용된다는 문장 조각뿐이라 3304.99.50이나 (n) 목록과 heading 연결이 없음,human_assisted
+R-6708488702,not_relevant,de minimis 면제의 역사로 IEEPA 관세 징수 중단과 관계없음,human_assisted
+R-0305653850,not_relevant,과징금과 232조 관세의 관계·자유무역지대 처리 세부 규정으로 세율 10%나 '모든 물품' 부과 대상이 없음,human_assisted
+R-0334463684,not_relevant,가구·주방 캐비닛(note 37) 세율 행으로 한국 상호관세 국가 목록과 관계없음,human_assisted
+R-1706127625,uncertain,한국 25% 추가 관세는 있으나 이 국가 목록이 속한 주·subdivision과 관세 종류가 반환 단위에 없음,human_assisted
+R-4026892049,relevant,IEEPA 관세가 2026년 2월 24일 동부시간 오전 12:00 이후 통관 물품부터 징수되지 않는다는 문장이 있어 c2와 c1의 징수 종료를 뒷받침하나 근거가 행정명령 14389라는 점은 청크에 없음,human_assisted
+R-9240315434,uncertain,한국 25% 추가 관세는 있으나 이 국가 목록이 속한 주·subdivision과 관세 종류가 반환 단위에 없음,human_assisted
+R-8068034446,uncertain,한국 25% 추가 관세는 있으나 이 국가 목록이 속한 주·subdivision과 관세 종류가 반환 단위에 없음,human_assisted
+R-7766613448,not_relevant,heading 번호 없는 +15% 세율 칸만 있어 한국이나 column 1 15% 기준 규칙이 없음,human_assisted
+R-7089210134,not_relevant,IEEPA 관세 납부 통관 건의 정산·재정산에 관한 법원 명령으로 CBP 징수 중단 시점이 없음,human_assisted
+R-0288554690,not_relevant,EU 10% 규칙과 과테말라 항목으로 국가가 다르고 한국·12.5%가 없음,human_assisted
+R-0589478687,not_relevant,다른 공지의 시행일(2025년 11~12월)에 관한 내용으로 행정명령 14266 유예의 8월 1일 연장과 관계없음,human_assisted
+R-0093073364,relevant,동시 게재 규칙이 국제우편망 가액 800달러 이하 물품의 de minimis 유예를 다룬다고 해 c2를 뒷받침하나 시행일(c1)은 없음,human_assisted
+R-2159704652,not_relevant,행정명령에 따른 우편 화물 유예 지속과 임시 세율 배경으로 임시 최종 규칙의 시행일이나 800달러 대상 범위가 없음,human_assisted
+R-1588417377,not_relevant,3304.99.50이 있으나 맥락상 heading 9903.81.98의 (u) 목록으로 9903.81.91 (n) 목록이 아님,human_assisted
+R-5317243010,relevant,de minimis 면제가 2025년 8월 29일부로 유예되었다고 적혀 c1을 부분적으로 뒷받침하나 시각과 통관 기준은 없음,human_assisted
+R-3164036406,not_relevant,heading 9903.02.68 +15% 세율 행만 있어 한국이나 column 1 15% 기준 규칙이 없음,human_assisted
+R-7423638837,not_relevant,3304.99.50이 있으나 알루미늄 파생품 9903.85.08 (k) 목록으로 철강 파생품 9903.81.91 목록이 아님,human_assisted
+R-9355240207,relevant,행정명령 14389가 IEEPA에 따라 부과된 추가 관세를 종료했다고 적혀 c1을 뒷받침하나 징수 종료와 날짜는 없음,human_assisted
+R-6316224192,not_relevant,한국 합계 15% 규칙과 항공기 예외에 관한 내용으로 25% 추가 관세(국가 목록)가 없음,human_assisted
+R-4213363177,not_relevant,알루미늄 파생 제품(9903.85.08) 25% 세율 행으로 한국 상호관세 국가 목록과 관계없음,human_assisted
+R-7335121587,not_relevant,국가별 세율 최초 적용 시점(4월 9일)과 운송 중 물품 예외로 행정명령 14266 유예 연장이 없음,human_assisted
+R-9627136665,relevant,한국산 제품의 MFN 12.5% 미만·이상 규칙이 있어 c2·c3를 뒷받침하나 c1의 12.5% 부과 문장은 앞부분이 잘리고 부속서 예외만 남음,human_assisted
+R-4937199581,not_relevant,제외 규정 대상이 9903.01.25·9903.02.xx 계열 추가 관세로 heading 9903.03.01 과징금과 관세 종류가 다름,human_assisted
+R-6392543454,not_relevant,스위스에 대한 12.5% 결정으로 국가가 다르고 한국이 없음,human_assisted
+R-0149194879,not_relevant,IEEPA 관세율에 따른 품목당 종량세와 그 종료일(2026년 2월 28일)에 관한 내용으로 IEEPA 관세 징수 자체의 중단 시점이 아님,human_assisted
+R-7100825634,not_relevant,과징금이 122조 목적에 부합한다는 판단과 122조 권한 설명뿐으로 10% 세율과 부과 대상이 없음,human_assisted
+R-6447618849,relevant,행정명령 14389가 IEEPA에 따른 추가 관세를 종료했다고 적혀 c1을 뒷받침하나 징수 중단 시점은 없음,human_assisted
+R-8284192529,relevant,"청크에 10% 종가세율, 포고문이 부과한 과징금, 부속서 I·II 예외가 함께 있어 c1을 부분적으로 뒷받침함. 포고문 번호와 적용 대상 주어는 잘려 있음",human_assisted
+R-1692240237,not_relevant,철강 파생 제품(9903.81.91) 25% 세율 행으로 한국 상호관세 국가 목록과 관계없음,human_assisted
+R-9776159955,not_relevant,de minimis 면제가 필요 없어진 이유(징수 비용 감소)에 관한 내용으로 IEEPA 관세 징수 중단 시점이 없음,human_assisted
+R-1727442555,not_relevant,우편물에 IEEPA 관세율을 근거로 매기는 세액 산정 방식으로 징수 중단 시점이 없음,human_assisted
+R-7832186991,not_relevant,연방관보 목차에 행정명령 14389 제목만 있고 IEEPA 관세 징수 종료 내용이 없음,human_assisted
+R-1129713244,not_relevant,제외 규정 대상이 9903.01.25·9903.02.xx 계열 추가 관세로 heading 9903.03.01 과징금과 관세 종류가 다름,human_assisted
+R-3356286236,relevant,행정명령 14324가 2025년 8월 29일부터 de minimis 대우를 유예했다는 각주가 있어 c1을 부분적으로 뒷받침하나 시각과 통관 기준은 없음,human_assisted
+R-2444649049,not_relevant,제외 규정 대상이 9903.01.25·9903.02.xx 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-4199832140,not_relevant,행정명령 14324의 de minimis 유예와 우편 임시 절차 배경으로 IFR 시행일이나 800달러 범위가 없음,human_assisted
+R-6680407902,relevant,"10% 종가세율, 포고문의 과징금, 부속서 I·II 예외가 함께 있고 맥락이 포고문 11012를 보여 c1을 부분적으로 뒷받침함. 적용 대상 주어는 잘림",human_assisted
+R-8698440564,not_relevant,우편물 IEEPA 실효세율 세액 산정 방식으로 징수 중단 시점이 없음,human_assisted
+R-4297995168,not_relevant,스위스 12.5% 결정으로 국가가 다름,human_assisted
+R-2697500753,relevant,청크 본문은 철강 함량 보고 방식이나 맥락이 '(n) heading 9903.81.91 세율은 다음에 적용된다'를 보여 c2를 뒷받침함. 3304.99.50은 없음,human_assisted
+R-4187763911,not_relevant,제안 규칙의 세수 추정으로 IEEPA 징수 중단 시점이 없음,human_assisted
+R-8223990663,relevant,heading 9903.85.08 행에 '해당 소호 관세 + 알루미늄 함량 가액에 대한 50%'가 있어 c1을 뒷받침함,human_assisted
+R-8642622248,relevant,행정명령 14389가 IEEPA 추가 관세를 종료했다고 적혀 c1을 뒷받침하나 징수 중단 시점은 없음,human_assisted
+R-9333642775,not_relevant,9903.02.68 +15% 세율 행만 있어 한국·column 1 규칙이 없음,human_assisted
+R-0891402648,not_relevant,국제수지 적자 배경과 예외 이유만 있어 세율과 적용 대상이 없음,human_assisted
+R-4885949651,relevant,note 2 subdivision (v)에 따른 한국산 물품 heading(9903.01.54) 행에 +25%가 있어 c1을 뒷받침하나 규정 유예 표시가 있고 (xiii) 세부 번호는 없음,human_assisted
+R-0073502308,relevant,(n) heading 9903.81.91 세율이 다음 소호에 적용된다는 도입부가 있어 c2를 뒷받침하나 3304.99.50은 없음,human_assisted
+R-2843153374,not_relevant,제외 규정 대상이 9903.01.25·9903.02.xx 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-0894280062,not_relevant,특정 물품군 heading 9903.08.24(note 43) 규칙으로 행정명령 14257 상호관세의 한국 규칙이 아님,human_assisted
+R-7836581087,not_relevant,232조 목재 제품(note 37) 국가별 15% 행으로 상호관세 column 1 규칙이 아님,human_assisted
+R-1668274561,not_relevant,농약 화학품 9902 임시 세율 행으로 상호관세 유예와 관계없음,human_assisted
+R-9226199024,not_relevant,행정명령 14389가 관세를 종료한다는 내용 전에 청크가 끝나 국가비상사태 유지와 판결 시작만 있음,human_assisted
+R-1574257745,not_relevant,제외 규정 대상이 9903.01.25·9903.02.xx 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-6290932205,not_relevant,제외 대상이 9903.01.25·9903.02.01–.71 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-3385187919,not_relevant,9903.81.91 관세가 철강 함량에만 적용된다는 문장 조각뿐으로 3304.99.50과 (n) 연결이 없음,human_assisted
+R-7429788597,relevant,CSMS가 IEEPA 관세는 2026년 2월 24일 동부시간 오전 12:00 이후 통관 물품에 대해 효력이 없고 징수되지 않는다고 해 c1의 시점과 징수 중단을 직접 뒷받침함,human_assisted
+R-9871794260,relevant,de minimis 면제가 적어도 2025년 8월 29일부터 유예되었다고 적혀 c1의 날짜를 뒷받침하나 시각과 통관 기준은 없음,human_assisted
+R-3430629424,not_relevant,9903.81.91 철강 함량 25% 세율 행으로 한국 상호관세 국가 목록이 아님,human_assisted
+R-0263281053,uncertain,(d)에 9903.85.04·.07·.08 알루미늄 함량 신고가액 제외 문구는 있으나 '그러한 추가 관세'가 9903.03.01인지 식별할 수 없음,human_assisted
+R-9874560334,relevant,행정명령 14389가 IEEPA로 부과된 일부 종가 관세를 종료했다고 적혀 c1을 뒷받침하나 징수 시점은 없음,human_assisted
+R-8942497487,relevant,heading 9903.85.08 추가 관세가 알루미늄 함량 신고가액에만 적용된다고 해 함량 가액 요소를 부분적으로 뒷받침하나 50%는 없음,human_assisted
+R-0840700484,not_relevant,heading 번호 없는 +15% 세율 칸만 있어 한국·column 1 규칙이 없음,human_assisted
+R-9586564927,not_relevant,법원 명령에 따른 IEEPA 관세 정산·재정산으로 징수 중단 시점이 없음,human_assisted
+R-2572238433,relevant,한국·15% 미만·합계 15% 규칙을 직접 제시해 c1을 부분적으로 뒷받침하나 근거가 heading 9903.02.80으로만 적히고 c2 문장은 잘림,human_assisted
+R-1966436503,relevant,CSMS가 IEEPA 관세는 2026년 2월 24일 동부시간 오전 12:00 이후 통관 물품에 대해 징수되지 않는다고 해 c1의 시점과 징수 중단을 직접 뒷받침함,human_assisted
+R-0574178163,relevant,정확한 중단 시점은 잘렸으나 CBP의 IEEPA 관세 징수 종료 공지임을 명시해 c1을 부분적으로 뒷받침함,human_assisted
+R-8535886559,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-6509971640,not_relevant,영국산 알루미늄 파생품 (s) 9903.85.15 목록으로 철강 9903.81.91 목록이 아님,human_assisted
+R-6643432758,relevant,행정명령 14389가 IEEPA 추가 관세를 종료했다고 직접 설명해 c1을 뒷받침하나 징수 시점은 없음,human_assisted
+R-4263484735,relevant,행정명령 14389가 IEEPA로 부과된 일부 종가 관세를 종료했다고 직접 설명해 c1을 뒷받침하나 징수 시점은 없음,human_assisted
+R-8579539551,relevant,"122조, 모든 수입 물품, 10% 종가세율, 부속서 I·II 예외를 직접 제시해 c1을 뒷받침하나 포고문 번호는 없음",human_assisted
+R-6622622618,not_relevant,제외 대상이 9903.01.25·9903.02.xx 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-1271785984,relevant,heading 9903.85.08 추가 관세가 알루미늄 함량 신고가액에만 적용된다고 해 함량 가액 요소를 부분적으로 뒷받침하나 50%는 없음,human_assisted
+R-6715482752,relevant,행정명령 14389가 IEEPA 추가 관세를 종료했다고 적혀 c1을 뒷받침하나 징수 시점은 없음,human_assisted
+R-7627135820,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-7268746523,not_relevant,예외가 122조 목적에 부합한다는 판단뿐으로 세율과 적용 대상이 없음,human_assisted
+R-8541723200,not_relevant,3304.99.50 포함 목록이나 맥락상 (u) 9903.81.98 목록으로 9903.81.91 (n) 목록이 아님,human_assisted
+R-6925052285,relevant,CSMS가 2026년 2월 24일 오전 12:00 이후 통관 물품에 IEEPA 관세가 효력이 없고 징수되지 않는다고 해 c1의 종료·징수 중단과 c2 시점을 뒷받침함,human_assisted
+R-2197259285,not_relevant,화학품 9902 임시 세율 행으로 상호관세 유예와 관계없음,human_assisted
+R-4722515152,not_relevant,가구·주방 캐비닛(note 37) 25% 행으로 국가 목록이 아님,human_assisted
+R-8915624882,not_relevant,철강 파생품 9903.81.89·.90 +25% 행으로 국가 목록이 아님,human_assisted
+R-4162047827,relevant,본문은 철강 함량 보고와 정보 제공 의무이나 맥락이 (n) 9903.81.91 세율 적용 문장을 보여 c2를 부분적으로 뒷받침함. 3304.99.50은 없음,human_assisted
+R-3683913234,not_relevant,9903.81.91 관세가 철강 함량에만 적용된다는 조각으로 3304.99.50과 (n) 연결이 없음,human_assisted
+R-1344872601,relevant,한국이 포함된 MFN 12.5% 미만 분기 문장이 시작되어 c2를 부분적으로 뒷받침하나 합계 12.5% 결론은 잘림,human_assisted
+R-0825899572,relevant,CSMS가 2026년 2월 20일 행정명령 'Ending Certain Tariff Actions'의 IEEPA 관세 징수 종료를 안내해 c1을 뒷받침하나 번호 14389와 시점은 없음,human_assisted
+R-6931275017,relevant,한국산 물품의 15% 미만 합계 15%와 15% 이상 추가 관세 없음 분기를 모두 직접 설명해 c1·c2를 뒷받침하나 근거는 heading 9903.02.80으로 적힘,human_assisted
+R-4496378438,relevant,9903.85.08 관세가 알루미늄 함량 신고가액에만 적용되고 맥락이 (k) 9903.85.08을 보여 함량 가액 요소를 부분적으로 뒷받침하나 50%는 없음,human_assisted
+R-7091122021,relevant,반환 단위의 추출 맥락이 subdivision (n)·9903.81.91을 명시하고 본문에 3304.99.50이 있어 c1·c2를 뒷받침함,human_assisted
+R-1068649103,not_relevant,232조 목재 제품(note 37) 국가별 15% 행으로 상호관세 규칙이 아님,human_assisted
+R-7714223953,not_relevant,10% 국가 목록과 EU·대만 10% 규칙 뒤 한국 규칙 전에 청크가 끝남,human_assisted
+R-7601137848,not_relevant,9903.81.91 철강 함량 25% 행으로 국가 목록이 아님,human_assisted
+R-9511539725,not_relevant,한미 합의 공지의 한국산 예외 대상 headings 나열로 3304.99.50이나 (n) 목록이 없음,human_assisted
+R-7275696975,relevant,note 2(v)의 한국산 물품과 heading 9903.01.54의 +25%를 함께 제시해 c1을 뒷받침하나 (xiii) 세부 번호는 없음,human_assisted
+R-8566733381,relevant,본문에 3304.99.50이 있고 추출 맥락이 그 목록을 subdivision (n)·heading 9903.81.91로 보여 c1·c2를 뒷받침함,human_assisted
+R-4782190310,relevant,CBP의 IEEPA 관세 징수 종료 공지로 c1을 부분적으로 뒷받침하나 중단 일시는 잘림,human_assisted
+R-8003600355,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-7714993585,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-5022320855,not_relevant,행정명령 14388 유예 지속과 행정명령 14324 우편 임시 세율 배경으로 IFR 시행일·800달러 범위가 없음,human_assisted
+R-8688681496,not_relevant,de minimis 면제 역사로 IEEPA 징수 중단 시점이 없음,human_assisted
+R-2680688653,relevant,행정명령 14266 유예를 연장하는 것이 필요하다고 판단했다는 문장이 있어 c1을 부분적으로 뒷받침하나 연장 기한은 잘림,human_assisted
+R-2481994659,uncertain,'이 subdivision' 열거 소호에 9903.81.91 관세가 적용된다는 내용은 있으나 subdivision이 (n)인지 표시되지 않았고 3304.99.50도 없음,human_assisted
+R-2242488948,relevant,9903.85.08 행에 '해당 소호 관세 + 알루미늄 함량 가액에 대한 50%'가 있어 c1을 직접 뒷받침함,human_assisted
+R-8810025766,not_relevant,철강 함량 kg 보고와 정보 제공 의무만 있고 맥락이 없어 (n) 연결이 없음,human_assisted
+R-2731309606,relevant,한미 합의상 column 1 15% 미만 한국 물품은 행정명령 14257 추가 세율과 합해 15%라고 해 c1을 직접 뒷받침하나 c2는 잘림,human_assisted
+R-5014337420,not_relevant,행정명령 14326의 EU 물품 15% 규칙으로 국가가 다름,human_assisted
+R-7071148132,not_relevant,IEEPA 실효세율별 품목당 종량세와 그 종료일로 징수 중단 시점이 아님,human_assisted
+R-2052164506,relevant,맥락이 subdivision (n)·heading 9903.81.91을 보여 c2를 뒷받침하나 3304.99.50은 없음,human_assisted
+R-1477498080,relevant,9903.85.08 관세가 알루미늄 함량 신고가액에만 적용되고 맥락이 (k) 9903.85.08을 보여 함량 가액 요소를 부분적으로 뒷받침하나 50%는 없음,human_assisted
+R-0423726284,not_relevant,알루미늄 파생품 (k) 9903.85.08 목록으로 철강 9903.81.91 목록이 아님,human_assisted
+R-0750235321,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-4394447535,relevant,맥락이 subdivision (n)·heading 9903.81.91을 보여 c2를 뒷받침하나 3304.99.50은 없음,human_assisted
+R-4671982001,relevant,"일본·한국·스위스 제품의 MFN 12.5% 미만 합계 12.5%, 이상이면 0 규칙이 있어 c2·c3를 직접 뒷받침하나 c1의 부속서 예외는 없음",human_assisted
+R-8235387672,relevant,본문에 '(n) heading 9903.81.91 세율은 다음 소호에 적용'이 있어 c2를 뒷받침하나 3304.99.50은 없음,human_assisted
+R-3105641193,not_relevant,영국산 알루미늄 파생품 (s) 9903.85.15 목록으로 철강 9903.81.91 목록이 아님,human_assisted
+R-8814003686,relevant,"10% 종가세율, 과징금, 부속서 I·II 예외가 있고 맥락이 포고문 11012를 보여 c1을 부분적으로 뒷받침함. 적용 대상 주어는 잘림",human_assisted
+R-0535222472,not_relevant,de minimis 유예 효과의 귀속에 관한 내용으로 상호관세 유예와 관계없음,human_assisted
+R-3767565111,uncertain,한국 25% 추가 관세는 있으나 이 국가 목록이 속한 주·subdivision과 관세 종류가 반환 단위에 없음,human_assisted
+R-2355655251,relevant,9903.85.08 관세가 알루미늄 함량 신고가액에만 적용되고 맥락이 (k) 9903.85.08을 보여 함량 가액 요소를 부분적으로 뒷받침하나 50%는 없음,human_assisted
+R-7463657535,not_relevant,heading 번호 없는 +15% 세율 칸만 있어 한국·column 1 규칙이 없음,human_assisted
+R-4822150193,not_relevant,note 16 관련 9903.82.09 +25% 행으로 국가 목록이 아님,human_assisted
+R-7251270659,relevant,본문은 철강 함량 보고이나 맥락이 (n) 9903.81.91 세율 적용 문장을 보여 c2를 부분적으로 뒷받침함,human_assisted
+R-8309747014,relevant,포고문 11012가 122조에 따라 150일간 10% 종가 과징금을 부과했다고 해 c1을 부분적으로 뒷받침하나 대상은 잘림,human_assisted
+R-6089994062,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-9056632956,not_relevant,9903.02.52 +15% 행만 있어 한국·column 1 규칙이 없음,human_assisted
+R-1367053877,not_relevant,행정명령 14389에서 영향을 받지 않는 조치와 국가비상사태 유지를 정한 부분으로 IEEPA 관세 종료 문장이 없음,human_assisted
+R-2951845271,relevant,본문에 '(n) heading 9903.81.91 세율은 다음 소호에 적용'이 있어 c2를 뒷받침하나 3304.99.50은 없음,human_assisted
+R-2929612843,not_relevant,de minimis 업무 부담과 징수 비용 감소에 관한 내용으로 징수 중단 시점이 없음,human_assisted
+R-8808588340,relevant,2026년 2월 24일부로 ACE 비활성화와 이 EO가 IEEPA 관세에만 영향을 미친다는 내용으로 c2를 부분적으로 뒷받침하나 비활성화 대상과 EO 번호는 잘림,human_assisted
+R-1711395188,not_relevant,행정명령 14326 EU 물품 15% 규칙으로 국가가 다름,human_assisted
+R-2918408459,not_relevant,국가별 세율 4월 9일 적용과 운송 중 물품 예외로 유예 연장이 없음,human_assisted
+R-6779197194,not_relevant,행정명령 14324 de minimis 유예·우편 임시 절차 배경으로 IFR 시행일·800달러가 없음,human_assisted
+R-9362197379,not_relevant,염료 9902 임시 세율 행으로 관계없음,human_assisted
+R-9473853514,not_relevant,스위스 (xxv)(a) 15% 규칙으로 국가가 다름,human_assisted
+R-1862279624,uncertain,국가별 추가 관세 목록에 한국 항목이 시작되나 세율 25%가 잘렸고 목록이 속한 주·subdivision과 관세 종류가 없음,human_assisted
+R-6556073943,uncertain,'이 subdivision' 열거 소호에 9903.81.91 관세가 적용된다는 내용은 있으나 subdivision이 (n)인지 표시되지 않음,human_assisted
+R-7788497416,not_relevant,철강 파생품 9903.81.89·.90 +25% 행으로 국가 목록이 아님,human_assisted
+R-9502129500,not_relevant,영국산 알루미늄 (s) 9903.85.15 목록으로 철강 9903.81.91 목록이 아님,human_assisted
+R-5678640912,not_relevant,de minimis 역사로 징수 중단 시점이 없음,human_assisted
+R-5290485290,not_relevant,화학품 9902 임시 세율 행으로 관계없음,human_assisted
+R-1823338831,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-4025212865,relevant,한미 합의상 15% 미만 한국 물품은 행정명령 14257 추가 세율과 합해 15%라고 해 c1을 직접 뒷받침하나 c2는 잘림,human_assisted
+R-5531198873,not_relevant,화학품 9902 임시 세율 행으로 관계없음,human_assisted
+R-2548545338,relevant,행정명령 14389가 IEEPA 추가 관세를 종료했다고 적혀 c1을 뒷받침하나 징수 시점은 없음,human_assisted
+R-1029698449,relevant,행정명령 14389가 IEEPA 추가 관세를 종료했다고 적혀 c1을 뒷받침하나 징수 시점은 없음,human_assisted
+R-8818252586,not_relevant,자문관 권고와 122조 국제 지급 문제 존재 판단뿐으로 세율과 적용 대상이 없음,human_assisted
+R-1482461572,not_relevant,행정명령 14389의 머리말·제목·근거 법률만 있고 IEEPA 관세 종료 본문 전에 끊김,human_assisted
+R-5863981392,not_relevant,포고문 10908 기준 0% 규칙과 정의·각주로 행정명령 14257의 한국 규칙이 아님,human_assisted
+R-6657214597,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-0383032385,uncertain,'이 subdivision' 열거 소호에 9903.81.91 관세가 적용된다는 내용은 있으나 subdivision이 (n)인지 표시되지 않음,human_assisted
+R-7669236498,relevant,note 2(v)의 한국산 물품 heading 9903.01.54 +25% 행이 있어 c1을 뒷받침하나 규정 유예 표시가 있고 (xiii) 세부 번호는 없음,human_assisted
+R-9074785984,relevant,IEEPA 관세용 HTSUS 번호가 2026년 2월 24일부로 ACE에서 비활성화된다고 해 c2를 부분적으로 뒷받침함,human_assisted
+R-8842106030,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-0749589082,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-4186342269,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-8386600103,not_relevant,heading 번호 없는 +15% 세율 칸만 있어 한국·column 1 규칙이 없음,human_assisted
+R-6353365731,not_relevant,화학품 9902 임시 세율 행으로 관계없음,human_assisted
+R-1129606432,not_relevant,note 8 송풍기·팬 부품 목록으로 122조 과징금과 관계없음,human_assisted
+R-6274401955,not_relevant,영국산 알루미늄 (s) 9903.85.15 목록으로 철강 9903.81.91 목록이 아님,human_assisted
+R-3529382398,not_relevant,행정명령 14389의 IEEPA 관세 종료 서술뿐으로 CBP 징수 중단 시점이 없음,human_assisted
+R-9065858147,not_relevant,제외 대상이 9903.01.25·9903.02.01–.71 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-4362562344,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-1523771024,relevant,행정명령 14266으로 시행된 유예를 2025년 8월 1일 동부일광절약시간 오전 12:01까지 연장한다는 문장이 있어 c1을 완전히 뒷받침함,human_assisted
+R-8444427205,not_relevant,화학품 9902.01.99 행과 쪽 하단으로 관계없음,human_assisted
+R-4269130046,relevant,행정명령 14389가 IEEPA로 부과된 일부 종가 관세를 종료했다고 적혀 c1을 뒷받침함,human_assisted
+R-4015288838,not_relevant,알루미늄 (k) 9903.85.08 목록으로 철강 목록이 아님,human_assisted
+R-6500591156,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-2678513996,not_relevant,차량 부품(note 38) 25% 행으로 국가 목록이 아님,human_assisted
+R-9977882624,not_relevant,한국 합계 15% 규칙과 항공기 예외로 25% 국가 목록이 아님,human_assisted
+R-9168280093,not_relevant,알루미늄 (k) 9903.85.08 목록으로 철강 목록이 아님,human_assisted
+R-8154429035,uncertain,한국 25% 추가 관세는 있으나 이 국가 목록이 속한 주·subdivision과 관세 종류가 반환 단위에 없음,human_assisted
+R-1735970737,relevant,2026년 2월 24일부로 ACE 비활성화와 이 EO가 IEEPA 관세에만 영향을 미친다는 내용으로 c2를 부분적으로 뒷받침함,human_assisted
+R-9942200075,relevant,행정명령 14266으로 시행된 유예를 2025년 8월 1일 동부일광절약시간 오전 12:01까지 연장한다는 문장이 있어 c1을 완전히 뒷받침함,human_assisted
+R-5891347413,relevant,heading 9903.85.08 관세가 알루미늄 함량 신고가액에만 적용된다고 해 함량 가액 요소를 부분적으로 뒷받침하나 50%는 없음,human_assisted
+R-7461482574,relevant,맥락이 heading 9903.03.01 추가 관세 미적용 목록 (v)를 보여 주고 청크에 알루미늄 함량 항목 끝부분이 있어 c2를 부분적으로 뒷받침함,human_assisted
+R-6748684039,not_relevant,note 2(v)에 따른 heading 9903.02.20의 15% 행이나 국가가 잘려 있고 한국이나 column 1 기준 규칙이 없음,human_assisted
+R-1714887663,relevant,행정명령 14266 유예를 연장하는 것이 필요하다고 판단했다는 문장이 있어 c1을 부분적으로 뒷받침하나 기한은 잘림,human_assisted
+R-7561439588,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-8064402686,relevant,행정명령 14389가 IEEPA 추가 관세를 종료했다고 적혀 c1을 뒷받침함,human_assisted
+R-5805804024,not_relevant,행정명령 14389의 영향을 받지 않는 조치와 국가비상사태 유지 부분으로 종료 문장이 없음,human_assisted
+R-7544993612,not_relevant,영국산 알루미늄 (s) 9903.85.15 목록으로 철강 목록이 아님,human_assisted
+R-5221133817,not_relevant,일본 12.5% 결정으로 국가가 다름,human_assisted
+R-2565647204,relevant,"일본·한국·스위스 MFN 12.5% 미만 합 12.5%, 이상이면 0 규칙이 있어 c2·c3를 뒷받침함",human_assisted
+R-5146003775,not_relevant,한국산 승용차·경트럭 부품(note 33) heading으로 25% 국가 목록이 아님,human_assisted
+R-9999984296,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-4337241427,not_relevant,note 11 공작기계 부품 설명과 쪽 하단으로 관계없음,human_assisted
+R-8499896723,relevant,122조에 근거해 미국에 수입되는 물품에 10% 종가 임시 과징금을 부과하고 일부 제품을 예외로 둔다는 문장이 있어 c1을 뒷받침하나 포고문 번호와 부속서 명칭은 없음,human_assisted
+R-0835759575,relevant,9903.85.08 관세가 알루미늄 함량 신고가액에만 적용되고 맥락이 (k) 9903.85.08을 보여 함량 가액 요소를 부분적으로 뒷받침하나 50%는 없음,human_assisted
+R-7480202614,relevant,CSMS가 2026년 2월 20일 행정명령의 IEEPA 관세 징수 종료를 안내해 c1을 뒷받침함,human_assisted
+R-3566633825,not_relevant,과징금이 122조 목적에 부합한다는 판단뿐으로 세율과 대상이 없음,human_assisted
+R-2310410201,not_relevant,양말 9919 무관세 행으로 관계없음,human_assisted
+R-1352355015,relevant,de minimis 면제가 2025년 8월 29일부로 유예되었다고 적혀 c1의 날짜를 뒷받침하나 시각·통관 기준은 없음,human_assisted
+R-0017579775,relevant,IEEPA 관세용 HTSUS 번호가 2026년 2월 24일부로 ACE에서 비활성화된다고 해 c2를 부분적으로 뒷받침함,human_assisted
+R-0927163917,not_relevant,행정명령 14389 머리말·제목·근거 법률만 있고 종료 본문 전에 끊김,human_assisted
+R-9692647301,relevant,목록에 3304.99.50이 있고 추출 맥락이 subdivision (n)·heading 9903.81.91을 보여 c1·c2를 뒷받침함,human_assisted
+R-3291775561,not_relevant,heading 번호 없는 +15% 칸만 있어 한국·column 1 규칙이 없음,human_assisted
+R-3251463757,not_relevant,우편물 IEEPA 실효세율 세액 산정으로 징수 중단 시점이 없음,human_assisted
+R-0804551876,relevant,note 2(v) 한국산 물품 heading 9903.01.54 +25% 행이 있어 c1을 뒷받침하나 (xiii) 세부 번호는 없음,human_assisted
+R-8638329791,uncertain,한국 25% 추가 관세는 있으나 이 국가 목록이 속한 주·subdivision과 관세 종류가 반환 단위에 없음,human_assisted
+R-8792146034,not_relevant,행정명령 14324의 우편물 IEEPA 실효세율 관세 부과 방법으로 징수 중단 시점이 없음,human_assisted
+R-8256901418,relevant,2026년 6월 24일 IFR이 국제우편망 물품의 de minimis 면제 유예를 시행한다고 해 c2를 부분적으로 뒷받침하나 800달러와 7월 24일은 없음,human_assisted
+R-3696121797,relevant,9903.85.08 행에 '해당 소호 관세 + 알루미늄 함량 가액에 대한 50%'가 있어 c1을 직접 뒷받침함,human_assisted
+R-3201482755,not_relevant,행정명령 14324 제2조(b) 우편 화물 처리로 IFR 시행일·800달러가 없음,human_assisted
+R-9088744522,not_relevant,note 11 공작기계 부품 설명으로 관계없음,human_assisted
+R-2994395211,not_relevant,일본 12.5% 결정으로 국가가 다름,human_assisted
+R-9681975877,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-1220023283,relevant,목록에 3304.99.50이 있고 추출 맥락이 subdivision (n)·heading 9903.81.91을 보여 c1·c2를 뒷받침함,human_assisted
+R-0066706319,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-6953050332,uncertain,알루미늄 파생 제품 제외 항목 끝부분은 있으나 '그러한 추가 관세'가 9903.03.01인지 식별할 수 없고 9903.85.04·.07과 함량 신고가액 문구도 잘림,human_assisted
+R-0322274176,not_relevant,행정명령 14389의 IEEPA 관세 종료 서술뿐으로 CBP 징수 중단 시점이 없음,human_assisted
+R-1195054877,relevant,동시 규칙 제정이 국제우편망 가액 800달러 이하 물품의 de minimis 유예를 다룬다고 해 c2를 뒷받침하나 시행일은 없음,human_assisted
+R-1203236914,relevant,국가별 세율 headings와 note 2(v)(xiii)를 2025년 8월 1일 동부일광절약시간 오전 12:01까지 유예한다고 해 c1의 기한을 뒷받침하나 행정명령 14266 유예 연장 문구는 없음,human_assisted
+R-6480333013,relevant,행정명령 14324가 2025년 8월 29일부터 de minimis 대우를 유예했다는 각주로 c1의 날짜를 뒷받침하나 시각·통관 기준은 없음,human_assisted
+R-4899886772,not_relevant,영국산 알루미늄 (s) 9903.85.15 목록으로 철강 목록이 아님,human_assisted
+R-9101905824,relevant,"일본·한국·스위스 MFN 12.5% 미만 합 12.5%, 이상이면 0 규칙이 있어 c2·c3를 뒷받침하나 c1의 부속서 예외는 없음",human_assisted
+R-9869663508,not_relevant,9904 식품 쿼터 세율 행으로 관계없음,human_assisted
+R-5182986745,not_relevant,과징금이 122조 목적에 부합한다는 판단뿐으로 세율과 대상이 없음,human_assisted
+R-6924267905,relevant,행정명령 14389가 IEEPA 추가 관세를 종료했다고 적혀 c1을 뒷받침함,human_assisted
+R-1180236773,not_relevant,국가 목록 끝과 종가 환산 방법으로 한국 25%가 없음,human_assisted
+R-6952016837,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-1229084720,relevant,행정명령 14324가 2025년 8월 29일부터 de minimis를 유예했다는 각주로 c1의 날짜를 뒷받침하나 시각·통관 기준은 없음,human_assisted
+R-7842149665,relevant,9903.85.08 관세가 알루미늄 함량 신고가액에만 적용된다고 해 함량 가액 요소를 부분적으로 뒷받침하나 50%는 없음,human_assisted
+R-7588094628,not_relevant,heading 번호 없는 +15% 칸만 있어 한국·column 1 규칙이 없음,human_assisted
+R-6619042260,not_relevant,담배 9918 콜롬비아 FTA 행으로 관계없음,human_assisted
+R-7111257948,relevant,행정명령 14324가 2025년 8월 29일부터 de minimis를 유예했다는 각주로 c1의 날짜를 뒷받침하나 시각·통관 기준은 없음,human_assisted
+R-6268702620,not_relevant,note 2(v) 9903.02.20 15% 행이나 국가가 잘려 있고 한국·column 1 규칙이 없음,human_assisted
+R-6899874494,relevant,"본문 (xxiv)(a)에 한국산 15% 미만 합계 15%, 15% 이상 추가 관세 없음이 있어 c1·c2를 뒷받침하나 근거는 heading 9903.02.80으로 적힘",human_assisted
+R-0491367669,not_relevant,우편물 IEEPA 실효세율별 품목당 종량세로 징수 중단 시점이 없음,human_assisted
+R-2596526976,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-7666080567,uncertain,알루미늄 함량 제외 문구는 있으나 '그러한 추가 관세'가 9903.03.01인지 식별할 수 없음,human_assisted
+R-3763504322,not_relevant,de minimis 역사로 징수 중단 시점이 없음,human_assisted
+R-2574709420,not_relevant,염료 9902 임시 세율 행으로 관계없음,human_assisted
+R-9129436278,relevant,note 2(v) 한국산 물품 heading 9903.01.54 +25% 행이 있어 c1을 뒷받침하나 (xiii) 세부 번호는 없음,human_assisted
+R-8659964005,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-1540492416,relevant,IFR 요약이 국제우편망 가액 800달러 이하 수입품의 de minimis 면제 무기한 유예를 시행한다고 해 c2를 직접 뒷받침하나 시행일은 없음,human_assisted
+R-6325078653,not_relevant,10% 국가 목록과 EU·대만 규칙으로 한국 규칙이 없음,human_assisted
+R-8571573994,relevant,포고문 11012가 122조에 따라 150일간 10% 종가 과징금을 부과했다고 해 c1을 부분적으로 뒷받침하나 대상은 잘림,human_assisted
+R-2926751036,not_relevant,포고문 11012가 122조로 추가 관세를 부과했다는 언급뿐이고 10% 세율과 모든 수입 물품 대상이 없으며 나머지는 세수 추정임,human_assisted
+R-8457665844,not_relevant,철강 파생품 9903.81.89·.90 +25% 행으로 국가 목록이 아님,human_assisted
+R-6506464158,not_relevant,3304.99.50 포함 목록이나 맥락상 (u) 9903.81.98 목록으로 9903.81.91 (n) 목록이 아님,human_assisted
+R-9692437536,relevant,"122조 근거, 모든 수입 물품 10% 종가세율, 부속서 I·II 예외를 직접 제시해 c1을 뒷받침하나 포고문 번호는 없음",human_assisted
+R-6730868244,not_relevant,행정명령 14324 우편물 IEEPA 실효세율 종량세로 징수 중단 시점이 없음,human_assisted
+R-7494585723,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-4281952349,relevant,한미 합의상 15% 미만 한국 물품은 행정명령 14257 추가 세율과 합해 15%라고 해 c1을 직접 뒷받침함,human_assisted
+R-9164009734,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-7256991447,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-7744919399,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-4439906347,relevant,포고문 11012가 122조에 따라 최대 150일간 10% 종가 과징금을 부과했다고 해 세율을 뒷받침하나 대상이 일부 수입품으로만 적힘,human_assisted
+R-2464442714,not_relevant,행정명령 14389의 배경 설명으로 IEEPA 관세 종료 서술어 전에 청크가 끊김,human_assisted
+R-2705801756,not_relevant,9903.82.09 +25% 행으로 국가 목록이 아님,human_assisted
+R-7196679398,not_relevant,9903.81.91 철강 함량 25% 행으로 국가 목록이 아님,human_assisted
+R-1734243264,not_relevant,전자 신고에 따른 징수 비용 감소 설명으로 징수 중단 시점이 없음,human_assisted
+R-4767666307,relevant,column 1 15% 이상 한국 물품은 행정명령 14257 추가 세율 0%라고 해 c2를 직접 뒷받침하나 c1은 앞부분이 잘림,human_assisted
+R-2886238504,not_relevant,10% 국가 목록과 EU·대만 규칙으로 한국 규칙이 없음,human_assisted
+R-7623821277,not_relevant,note 8 송풍기·공기압축기 목록으로 122조 과징금과 관계없음,human_assisted
+R-0951645765,relevant,"한국 부속서 예외와 MFN 12.5% 미만 합 12.5%, 이상이면 0 규칙이 있어 c2·c3를 직접 뒷받침하고 c1은 일부 뒷받침함",human_assisted
+R-2156864623,not_relevant,행정명령 14257 운송 중 물품 예외와 부속서 II 제외 품목으로 유예 연장이 없음,human_assisted
+R-3040505259,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-1384715816,not_relevant,우편 화물 세수 추정(IEEPA 제외 실효세율)으로 징수 중단 시점이 없음,human_assisted
+R-6605205097,not_relevant,"포고문 배경(122조 권한, 관료 의견)으로 세율과 대상이 없음",human_assisted
+R-1503327472,relevant,"청크는 임시 최종 규칙의 나머지 부분이 2026년 7월 24일 시행된다는 점을 뒷받침한다. 동시에 de minimis 유예 자체는 2026년 6월 24일 효력이 발생했다고 명시하므로, 현재 c1의 단일 시행일 표현은 전체 효력 구조를 완전히 나타내지 못한다. c1은 부분 지원으로만 취급한다.",human_assisted
+R-3469162040,not_relevant,철강 함량 kg 보고와 정보 제공 의무만 있고 맥락이 없어 (n) 연결이 없음,human_assisted
+R-3206210526,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-3712231137,relevant,heading 9903.85.08 관세가 알루미늄 함량 신고가액에만 적용된다고 해 함량 가액 요소를 부분적으로 뒷받침하나 50%는 없음,human_assisted
+R-5119302848,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-3558932050,relevant,heading 9903.85.08 관세가 알루미늄 함량 신고가액에만 적용된다고 해 함량 가액 요소를 부분적으로 뒷받침하나 50%는 없음,human_assisted
+R-1645933201,not_relevant,행정명령 14389 배경으로 종료 서술어 전에 끊김,human_assisted
+R-4310563430,not_relevant,한미 공지의 한국산 예외 대상 headings 나열로 3304.99.50·(n) 목록이 없음,human_assisted
+R-8803782442,not_relevant,9903.81.91 철강 함량 25% 행으로 국가 목록이 아님,human_assisted
+R-6901788971,not_relevant,9903.85.08 알루미늄 함량 25% 행으로 국가 목록이 아님,human_assisted
+R-7558045385,not_relevant,행정명령 14257 운송 중 물품 예외와 부속서 II 제외 품목으로 유예 연장이 없음,human_assisted
+R-0402225137,relevant,CSMS가 2026년 2월 24일 오전 12:00 이후 통관 물품에 IEEPA 관세가 효력이 없고 징수되지 않는다고 해 c1의 종료·징수 중단과 c2 시점을 뒷받침함,human_assisted
+R-3236037946,not_relevant,우편 화물 세율이 포고문 11012 세율과 같다는 언급과 세수 표로 10%·대상이 없음,human_assisted
+R-2347494536,relevant,행정명령 14389 본문에 IEEPA 추가 종가 관세는 더 이상 효력이 없고 가능한 한 빨리 징수되지 않는다고 해 c1을 완전히 뒷받침하나 징수 종료 일시는 없음,human_assisted
+R-2570882548,not_relevant,3304.99.50 포함 목록이나 맥락상 (u) 9903.81.98 목록으로 9903.81.91 (n) 목록이 아님,human_assisted
+R-3330877814,not_relevant,철강 파생품 9903.81.89·.90 +25% 행으로 국가 목록이 아님,human_assisted
+R-3104048728,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-0967655660,not_relevant,한미 공지 시행일·연락처·행정명령 14346 배경으로 행정명령 14266 유예 연장이 없음,human_assisted
+R-6225612017,not_relevant,행정명령 14389 머리말·제목만 있고 종료 본문 전에 끊김,human_assisted
+R-3986910633,relevant,heading 9903.85.08 관세가 알루미늄 함량 신고가액에만 적용된다고 해 함량 가액 요소를 부분적으로 뒷받침하나 50%는 없음,human_assisted
+R-8895961238,relevant,목록에 3304.99.50이 있고 추출 맥락이 subdivision (n)·heading 9903.81.91을 보여 c1·c2를 뒷받침함,human_assisted
+R-1531981169,not_relevant,국제수지 적자 배경과 예외 이유만 있어 세율과 대상이 없음,human_assisted
+R-9934769857,relevant,122조에 근거해 2026년 2월 24일부터 150일간 수입 물품에 10% 종가 과징금을 부과한다고 하고 맥락이 포고문 11012를 보여 c1을 뒷받침함,human_assisted
+R-6454321322,not_relevant,행정명령 14266의 원래 90일 유예(4월 10일 시행)로 8월 1일 연장이 아님,human_assisted
+R-7388511162,relevant,맥락이 '이 명령'을 de minimis 유예 행정명령 14324로 식별하고 본문이 2025년 8월 29일 동부일광절약시간 오전 12:01 이후 통관·반출 물품 시행을 명시해 c1을 완전히 뒷받침함,human_assisted
+R-5467168178,relevant,9903.85.08 행에 '해당 소호 관세 + 알루미늄 함량 가액에 대한 50%'가 있어 c1을 직접 뒷받침함,human_assisted
+R-2117122447,not_relevant,우편 de minimis 유예 효과의 귀속에 관한 내용으로 상호관세 유예와 관계없음,human_assisted
+R-6114121034,relevant,15% 이상 한국 물품은 행정명령 14257 추가 세율 0%라고 해 c2를 직접 뒷받침함,human_assisted
+R-7494985955,not_relevant,과징금이 122조 목적에 부합한다는 판단뿐으로 세율과 대상이 없음,human_assisted
+R-1790794819,relevant,이 임시 최종 규칙이 국제우편망 가액 800달러 이하 물품의 de minimis 유예를 시행한다고 해 c2를 뒷받침하나 시행일은 없음,human_assisted
+R-0576884068,not_relevant,철강 파생품 9903.81.89·.90 행으로 국가 목록이 아님,human_assisted
+R-8418819201,relevant,본문에 '(n) heading 9903.81.91 세율은 다음 소호에 적용'이 있어 c2를 뒷받침하나 3304.99.50은 없음,human_assisted
+R-8706145408,not_relevant,de minimis 역사로 징수 중단 시점이 없음,human_assisted
+R-0209561292,not_relevant,9903.81.91 철강 함량 25% 행으로 국가 목록이 아님,human_assisted
+R-4052885536,not_relevant,de minimis 역사로 징수 중단 시점이 없음,human_assisted
+R-9424359797,not_relevant,우편물 IEEPA 실효세율별 품목당 종량세로 징수 중단 시점이 없음,human_assisted
+R-3181927025,not_relevant,실효 IEEPA 관세율 정의 각주로 징수 중단 시점이 없음,human_assisted
+R-1701993980,not_relevant,행정명령 14266의 원래 90일 유예(4월 10일 시행)로 8월 1일 연장이 아님,human_assisted
+R-5907854147,relevant,note 2(v) 개정 (xxiii)(a)에 한국산 15% 미만 합계 15% 규칙이 있어 c1을 부분적으로 뒷받침하나 근거는 heading 9903.02.80으로 적힘,human_assisted
+R-3424851459,not_relevant,note 43 heading 9903.08.24 물품군 15% 규칙으로 행정명령 14257 한국 규칙이 아님,human_assisted
+R-3771055722,relevant,한국산 제품에 MFN 차감 12.5% 관세를 부과하고 부속서 I·II Part A를 예외로 둔다고 해 c1을 뒷받침함,human_assisted
+R-4024272958,relevant,행정명령 14389가 IEEPA 추가 관세를 종료했다고 적혀 c1을 뒷받침함,human_assisted
+R-9338078543,not_relevant,영국산 알루미늄 (s) 9903.85.15 목록으로 철강 목록이 아님,human_assisted
+R-8801554465,relevant,포고문 11012가 122조에 따라 150일간 10% 종가 과징금을 부과했다고 해 세율을 뒷받침하나 대상이 일부 수입품으로만 적힘,human_assisted
+R-6709031261,relevant,맥락이 행정명령 14324(de minimis 유예)를 식별하고 본문이 2025년 8월 29일 오전 12:01 이후 통관·반출 물품 시행을 명시해 c1을 완전히 뒷받침함,human_assisted
+R-0828983407,relevant,de minimis 유예 효과가 행정명령(2025년 8월 29일~2027년 7월 1일)에 속한다고 해 c1의 날짜를 부분적으로 뒷받침하나 시각·통관 기준은 없음,human_assisted
+R-9523101816,not_relevant,화학품 9902 임시 세율 행으로 관계없음,human_assisted
+R-1751422593,relevant,맥락이 (n) heading 9903.81.91 세율 적용 문장을 보여 c2를 뒷받침하나 3304.99.50은 없음,human_assisted
+R-5342470239,not_relevant,행정명령 14388의 우편물 세율 기준(2월 20일 포고문 세율)으로 10%와 모든 수입 물품 대상이 없음,human_assisted
+R-2568324599,not_relevant,행정명령 14326 머리말로 관계없음,human_assisted
+R-0385813058,not_relevant,행정명령 14388의 우편물 세율 기준으로 10%와 모든 수입 물품 대상이 없음,human_assisted
+R-6984251228,not_relevant,행정명령 14389의 IEEPA 관세 종료 서술뿐으로 CBP 징수 중단 시점이 없음,human_assisted
+R-1172629659,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-2723201334,not_relevant,화학품 9902 임시 세율 행으로 관계없음,human_assisted
+R-2855500912,relevant,"122조 근거, 모든 수입 물품 10% 종가세율, 부속서 I·II 예외가 있고 맥락이 포고문 11012를 보여 c1을 뒷받침함",human_assisted
+R-4558168986,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-9661363851,relevant,(n) heading 9903.81.91 세율이 다음 소호에 적용된다는 도입부가 있어 c2를 뒷받침하나 3304.99.50은 없음,human_assisted
+R-6682630985,relevant,9903.85.08 관세가 알루미늄 함량 신고가액에만 적용되고 맥락이 (k) 9903.85.08을 보여 함량 가액 요소를 부분적으로 뒷받침하나 50%는 없음,human_assisted
+R-4770493319,not_relevant,de minimis 업무 부담과 징수 비용에 관한 내용으로 징수 중단 시점이 없음,human_assisted
+R-5265682645,relevant,이 IFR이 국제우편망 가액 800달러 이하 물품의 de minimis 유예를 시행한다고 해 c2를 뒷받침하나 시행일은 없음,human_assisted
+R-4525533890,not_relevant,"강제노동 금지국 10%, 그 밖의 경제권 12.5%라는 일반 결정으로 한국이 나오지 않음",human_assisted
+R-1354935341,not_relevant,heading 번호 없는 +15% 칸만 있어 한국·column 1 규칙이 없음,human_assisted
+R-9575905924,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-1899687284,not_relevant,+15% 칸만 있어 한국·column 1 규칙이 없음,human_assisted
+R-7263332959,relevant,9903.85.08 관세가 알루미늄 함량 신고가액에만 적용되고 맥락이 (k) 9903.85.08을 보여 함량 가액 요소를 부분적으로 뒷받침하나 50%는 없음,human_assisted
+R-7867191102,relevant,9903.85.08 관세가 알루미늄 함량 신고가액에만 적용되고 맥락이 (k) 9903.85.08을 보여 함량 가액 요소를 부분적으로 뒷받침하나 50%는 없음,human_assisted
+R-5789538215,relevant,행정명령 14266 유예를 연장하는 것이 필요하다고 판단했다는 문장이 있어 c1을 부분적으로 뒷받침하나 기한은 잘림,human_assisted
+R-8184823737,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-2399647472,not_relevant,3304.99.50 포함 목록이나 맥락상 (u) 9903.81.98 목록으로 9903.81.91 (n) 목록이 아님,human_assisted
+R-7650076731,relevant,행정명령 14389가 IEEPA로 부과된 일부 종가 관세를 종료했다고 적혀 c1을 뒷받침함,human_assisted
+R-6425839109,not_relevant,행정명령 14326 머리말로 관계없음,human_assisted
+R-9053847621,not_relevant,+15% 칸만 있어 한국·column 1 규칙이 없음,human_assisted
+R-7670400840,not_relevant,"강제노동 금지국 10%, 그 밖의 경제권 12.5%라는 일반 결정으로 한국이 나오지 않음",human_assisted
+R-2107857696,relevant,"일본·한국·스위스 MFN 12.5% 미만 합 12.5%, 이상이면 0 규칙이 있어 c2·c3를 뒷받침함",human_assisted
+R-8630122914,relevant,de minimis 유예 효과가 행정명령(2025년 8월 29일~2027년 7월 1일)에 속한다고 해 c1의 날짜를 부분적으로 뒷받침하나 시각·통관 기준은 없음,human_assisted
+R-6693469682,uncertain,한국 25% 추가 관세는 있으나 이 국가 목록이 속한 주·subdivision과 관세 종류가 반환 단위에 없음,human_assisted
+R-5126668777,not_relevant,화학품 9902 임시 세율 행으로 관계없음,human_assisted
+R-5355442377,relevant,행정명령 14324가 2025년 8월 29일부터 시행 중이라고 해 c1의 날짜를 부분적으로 뒷받침하나 시각·통관 기준은 없음,human_assisted
+R-7004670190,uncertain,국가별 추가 관세 목록에 한국 항목이 시작되나 세율이 잘렸고 목록이 속한 주·subdivision과 관세 종류가 없음,human_assisted
+R-6863312265,relevant,15% 이상 한국 물품은 행정명령 14257 추가 세율 0%라고 해 c2를 직접 뒷받침함,human_assisted
+R-2249954697,relevant,행정명령 14266으로 시행된 유예를 2025년 8월 1일 동부일광절약시간 오전 12:01까지 연장한다는 문장이 있어 c1을 완전히 뒷받침함,human_assisted
+R-8832256690,uncertain,한국 25% 추가 관세는 있으나 이 국가 목록이 속한 주·subdivision과 관세 종류가 반환 단위에 없음,human_assisted
+R-0703717331,relevant,우편 de minimis 유예 효과가 행정명령(2025년 8월 29일~)에 속한다고 해 c1의 날짜를 부분적으로 뒷받침하나 시각·통관 기준은 없음,human_assisted
+R-1781921355,relevant,9903.85.08 관세가 알루미늄 함량 신고가액에만 적용된다고 해 함량 가액 요소를 부분적으로 뒷받침하나 50%는 없음,human_assisted
+R-9155965340,relevant,목록에 3304.99.50이 있고 추출 맥락이 subdivision (n)·heading 9903.81.91을 보여 c1·c2를 뒷받침함,human_assisted
+R-7933752189,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-8857768213,relevant,CSMS가 2026년 2월 24일 오전 12:00 이후 통관 물품에 IEEPA 관세가 효력이 없고 징수되지 않는다고 해 c1과 c2를 뒷받침함,human_assisted
+R-7407899354,not_relevant,알루미늄 (k) 9903.85.08 목록으로 철강 목록이 아님,human_assisted
+R-7890430238,relevant,9903.85.08 관세가 알루미늄 함량 신고가액에만 적용된다고 해 함량 가액 요소를 부분적으로 뒷받침하나 50%는 없음,human_assisted
+R-7688927361,uncertain,알루미늄 파생 제품 제외 항목 끝부분은 있으나 '그러한 추가 관세'가 9903.03.01인지 식별할 수 없음,human_assisted
+R-4701021726,not_relevant,우편물 IEEPA 실효세율 종량세로 징수 중단 시점이 없음,human_assisted
+R-3069413884,uncertain,'이 subdivision' 열거 소호에 9903.81.91 관세가 적용된다는 내용은 있으나 subdivision이 (n)인지 표시되지 않음,human_assisted
+R-8606346744,not_relevant,de minimis 역사로 징수 중단 시점이 없음,human_assisted
+R-2256075049,uncertain,시각·통관 기준까지 시행 문장이 있으나 '이 명령'이 de minimis 유예 명령인지 식별할 수 없음,human_assisted
+R-8560059910,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-9032209737,not_relevant,철강 함량 kg 보고와 정보 제공 의무만 있고 맥락이 없어 (n) 연결이 없음,human_assisted
+R-1602223587,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-3659419608,relevant,de minimis 면제가 적어도 2025년 8월 29일부터 유예되었다고 해 c1의 날짜를 부분적으로 뒷받침하나 시각·통관 기준은 없음,human_assisted
+R-6142741260,relevant,본문은 철강 함량 보고이나 맥락이 (n) 9903.81.91 세율 적용 문장을 보여 c2를 부분적으로 뒷받침함,human_assisted
+R-7103247438,not_relevant,제안 규칙의 세수 추정으로 징수 중단 시점이 없음,human_assisted
+R-4177053465,not_relevant,화학품 9902 임시 세율 행으로 관계없음,human_assisted
+R-3620798450,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-3974988093,relevant,맥락이 (n) heading 9903.81.91 세율 적용 문장을 보여 c2를 뒷받침하나 3304.99.50은 없음,human_assisted
+R-5503243922,not_relevant,10% 국가 목록과 EU·대만 규칙으로 한국 규칙이 없음,human_assisted
+R-6766201128,not_relevant,일본 MFN 12.5% 규칙과 요르단 항목으로 국가가 다름,human_assisted
+R-8269448493,relevant,행정명령 14324가 2025년 8월 29일부터 시행 중이라고 해 c1의 날짜를 부분적으로 뒷받침하나 시각·통관 기준은 없음,human_assisted
+R-3157371495,relevant,이 IFR이 국제우편망 물품의 de minimis 규제상 유예를 시행한다고 해 c2를 부분적으로 뒷받침하나 800달러와 시행일은 없음,human_assisted
+R-6108005599,relevant,9903.85.08 관세가 알루미늄 함량 신고가액에만 적용되고 맥락이 (k) 9903.85.08을 보여 함량 가액 요소를 부분적으로 뒷받침하나 50%는 없음,human_assisted
+R-1511439110,not_relevant,대만 10% 규칙과 태국 항목으로 국가가 다름,human_assisted
+R-4384576943,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-4408366541,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-5349130114,relevant,행정명령 14266 유예를 연장하는 것이 필요하다고 판단했다는 문장이 있어 c1을 부분적으로 뒷받침하나 기한은 잘림,human_assisted
+R-4484885688,not_relevant,note 8 송풍기 목록으로 122조 과징금과 관계없음,human_assisted
+R-2339791965,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-4164143047,not_relevant,알루미늄 (k) 9903.85.08 목록으로 철강 목록이 아님,human_assisted
+R-1819548260,not_relevant,예외가 122조 목적에 부합한다는 판단뿐으로 세율과 대상이 없음,human_assisted
+R-8333206888,relevant,맥락이 (n) heading 9903.81.91 세율 적용 문장을 보여 c2를 뒷받침하나 3304.99.50은 없음,human_assisted
+R-8793235188,not_relevant,스위스·리히텐슈타인 15% 규칙으로 국가가 다름,human_assisted
+R-7392678204,relevant,국제우편망 가액 800달러 이하 수입품의 de minimis 유예를 시행한다고 해 c2를 직접 뒷받침함. 시행일은 2026년 7월 24일이나 개정 지시 4는 6월 24일 시행이라고 명시하므로 CI-001에 따라 c1은 부분 지원으로만 취급함,human_assisted
+R-2428885908,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-2399986801,not_relevant,예외가 122조 목적에 부합한다는 판단뿐으로 세율과 대상이 없음,human_assisted
+R-6526991461,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-9920783874,uncertain,한국 25% 추가 관세는 있으나 이 국가 목록이 속한 주·subdivision과 관세 종류가 반환 단위에 없음,human_assisted
+R-9553717355,relevant,본문에 '(n) heading 9903.81.91 세율은 다음 소호에 적용'이 있어 c2를 뒷받침하나 3304.99.50은 없음,human_assisted
+R-8725604473,not_relevant,우편물 IEEPA 실효세율 산정으로 징수 중단 시점이 없음,human_assisted
+R-5487892103,relevant,행정명령 14266으로 시행된 유예를 2025년 8월 1일 동부일광절약시간 오전 12:01까지 연장한다는 문장이 있어 c1을 완전히 뒷받침함,human_assisted
+R-8865537114,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-6873674393,not_relevant,행정명령 14388 유예 지속과 우편 임시 세율 기한으로 10%와 대상이 없음,human_assisted
+R-6289119010,relevant,맥락이 heading 9903.03.01 추가 관세 미적용 목록 (v)를 보여 주고 본문 (d)에 9903.85.04·.07·.08 알루미늄 함량 신고가액이 있어 c2를 완전히 뒷받침하나 포고문 11012 이름(c1)은 없음,human_assisted
+R-7840071326,not_relevant,행정명령 14389 배경으로 종료 서술어 전에 끊김,human_assisted
+R-2358811128,relevant,9903.85.08 행에 '해당 소호 관세 + 알루미늄 함량 가액에 대한 50%'가 있어 c1을 직접 뒷받침함,human_assisted
+R-0342055832,relevant,일본·한국·스위스 MFN 12.5% 미만 분기 문장이 시작되어 c2를 부분적으로 뒷받침하나 합계 결론은 잘림,human_assisted
+R-4845684587,not_relevant,한국 자동차·부품의 포고문 10908 15% 규칙으로 행정명령 14257 규칙이 아님,human_assisted
+R-2926721583,not_relevant,스위스·리히텐슈타인 15% 규칙으로 국가가 다름,human_assisted
+R-8350237643,relevant,"122조 근거, 모든 수입 물품 10% 종가세율, 부속서 I·II 예외가 있고 맥락이 포고문 11012를 보여 c1을 뒷받침함",human_assisted
+R-8906426306,relevant,122조와 10% 종가세율을 직접 연결하므로 c1의 세율 요소를 부분적으로 뒷받침함. 다만 우편 화물에 한정되고 포고문 11012의 전체 적용 범위와 부속서 예외는 없음.,human_assisted
+R-5801708022,not_relevant,"122조 허용 상한(최대 15%, 150일)으로 포고문의 10%와 대상이 없음",human_assisted
+R-8966164632,relevant,CSMS가 2026년 2월 20일 행정명령의 IEEPA 관세 징수 종료를 안내해 c1을 뒷받침함,human_assisted
+R-4214172930,relevant,de minimis 면제가 적어도 2025년 8월 29일부터 유예되었다고 해 c1의 날짜를 부분적으로 뒷받침하나 시각·통관 기준은 없음,human_assisted
+R-6098607265,not_relevant,+15% 칸만 있어 한국·column 1 규칙이 없음,human_assisted
+R-9294753971,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-6089986973,not_relevant,행정명령 14389 머리말만 있고 종료 본문 전에 끊김,human_assisted
+R-0824105827,relevant,9903.85.08 관세가 알루미늄 함량 신고가액에만 적용된다고 해 함량 가액 요소를 부분적으로 뒷받침하나 50%는 없음,human_assisted
+R-6028515353,relevant,9903.85.08 관세가 알루미늄 함량 신고가액에만 적용된다고 해 함량 가액 요소를 부분적으로 뒷받침하나 50%는 없음,human_assisted
+R-6932162827,not_relevant,우편 화물 세수 추정으로 징수 중단 시점이 없음,human_assisted
+R-4523282806,relevant,note 2(v) 한국산 물품 heading 9903.01.54 +25% 행이 있어 c1을 뒷받침하나 (xiii) 세부 번호는 없음,human_assisted
+R-3876659123,not_relevant,알루미늄 (k) 9903.85.08 목록으로 철강 목록이 아님,human_assisted
+R-9057504996,relevant,"임시 최종 규칙 나머지 부분의 2026년 7월 24일 시행을 뒷받침하나 유예 자체는 2026년 6월 24일 효력 발생을 명시하므로 CI-001에 따라 c1은 부분 지원으로만 취급하며, 국제우편망 물품 유예로 c2도 부분 지원함",human_assisted
+R-1024233854,not_relevant,과징금이 2026년 7월 24일까지 유효해야 한다는 분리 가능 조항으로 10%와 대상이 없음,human_assisted
+R-8767607819,not_relevant,한국 자동차·부품의 포고문 10908 15% 규칙으로 행정명령 14257 규칙이 아님,human_assisted
+R-5393000080,not_relevant,EU 10% 규칙으로 국가가 다름,human_assisted
+R-0860799145,not_relevant,일본 12.5% 규칙과 요르단 항목으로 국가가 다름,human_assisted
+R-2696054666,not_relevant,우편 de minimis 유예 효과 귀속으로 상호관세 유예와 관계없음,human_assisted
+R-5909529951,relevant,한국 heading 9903.02.80 합계 15%와 15% 이상 추가 관세 없음 규칙이 있어 c1·c2를 부분적으로 뒷받침함,human_assisted
+R-8715843339,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-1052569349,relevant,맥락이 heading 9903.03.01 추가 관세 미적용 목록 (v)를 보여 주고 본문 (d)에 9903.85.04·.07·.08 알루미늄 함량 신고가액이 있어 c2를 완전히 뒷받침함,human_assisted
+R-7927290988,not_relevant,화학품 9902 임시 세율 행으로 관계없음,human_assisted
+R-2875511829,relevant,15% 이상 한국 물품은 행정명령 14257 추가 세율 0%라고 해 c2를 직접 뒷받침함,human_assisted
+R-6758665099,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-6319368687,relevant,"청크에 10% 종가세율, 포고문이 부과한 과징금, 부속서 I·II 예외가 함께 있어 c1을 부분적으로 뒷받침함. 포고문 번호와 적용 대상 주어는 잘려 있음",human_assisted
+R-5341373779,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-0662312780,not_relevant,과징금이 2026년 7월 24일까지 유효해야 한다는 분리 가능 조항으로 10%와 대상이 없음,human_assisted
+R-2727552894,not_relevant,철강 파생품 9903.81.89·.90 +25% 행으로 국가 목록이 아님,human_assisted
+R-2135269201,not_relevant,제외 대상이 9903.01.25 계열 추가 관세로 heading 9903.03.01 과징금이 아님,human_assisted
+R-2490071625,relevant,행정명령 14389 본문에 IEEPA 추가 종가 관세는 더 이상 효력이 없고 가능한 한 빨리 징수되지 않는다고 해 c1을 완전히 뒷받침함,human_assisted
+R-7915618534,not_relevant,행정명령 14324 시행과 de minimis 유예 효과 귀속으로 상호관세 유예와 관계없음,human_assisted
+R-2216597038,relevant,9903.85.08 관세가 알루미늄 함량 신고가액에만 적용된다고 해 함량 가액 요소를 부분적으로 뒷받침하나 50%는 없음,human_assisted
+R-6608934382,relevant,de minimis 면제가 2025년 8월 29일부로 유예되었다고 해 c1의 날짜를 부분적으로 뒷받침하나 시각·통관 기준은 없음,human_assisted

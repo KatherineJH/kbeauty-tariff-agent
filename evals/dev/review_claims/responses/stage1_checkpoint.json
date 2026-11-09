@@ -1,0 +1,24 @@
+{
+  "checkpoint": "stage1_complete",
+  "date": "2026-11-09",
+  "reviewer_type": "human_assisted",
+  "stage1_rows": 484,
+  "decisions": {
+    "not_relevant": 283,
+    "relevant": 178,
+    "uncertain": 23
+  },
+  "stage2_targets": 184,
+  "item_decisions_sha256": "69645dac8180d2b5aa03cc2fe78ea529c65b45b11dbf561c201dbcd00ed77d98",
+  "claim_open_issues_sha256": "2dce9df6ae96322aba33fcb816cf115db1fe1d8d87c8412071b475c14c721d05",
+  "queue_manifest_sha256": "a48da8b971850de2d522bac9fd7e7fc40002c1890b82ac57d214bd2a7d48c98d",
+  "checks": {
+    "missing": 0,
+    "duplicates": 0,
+    "unknown_ids": 0,
+    "invalid_decisions": 0,
+    "empty_reasons": 0,
+    "stage2_only_ids_in_stage1": 0
+  },
+  "note": "Claude's sealed judgements (claude_sealed/) were not opened or compared."
+}
