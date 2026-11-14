@@ -1,8 +1,8 @@
 # Claim review consistency check v1 (human_assisted final/v1 vs sealed Claude judgements)
 
-This is a **consistency check, not independent validation**. Claude wrote the sealed judgements before the review (commit 8a6eb5a) after seeing the runs and the earlier judgements, and Claude then assisted the reviewer (translations and suggested decisions) during the human_assisted review. The two sets are not independent; agreement rates and kappa below are reference diagnostics only. Neither set was changed. No retrieval metric (B1/B2) is computed here.
+This is a **consistency check, not independent validation**. Claude wrote the sealed judgements before the review (commit 72e9124) after seeing the runs and the earlier judgements, and Claude then assisted the reviewer (translations and suggested decisions) during the human_assisted review. The two sets are not independent; agreement rates and kappa below are reference diagnostics only. Neither set was changed. No retrieval metric (B1/B2) is computed here.
 
-Inputs: `final/v1/` (commit a3a482b) and `claude_sealed/` (commit 8a6eb5a). Rows are compared only where system and item id (and claim/component) are identical. Sealed file hashes were checked against `claude_sealed/manifest.json` and the final outputs against `final/v1/manifest.json` before comparison.
+Inputs: `final/v1/` (commit 937ef95) and `claude_sealed/` (commit 72e9124). Rows are compared only where system and item id (and claim/component) are identical. Sealed file hashes were checked against `claude_sealed/manifest.json` and the final outputs against `final/v1/manifest.json` before comparison.
 
 ## Item decisions (527)
 

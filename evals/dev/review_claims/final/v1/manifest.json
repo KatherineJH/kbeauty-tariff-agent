@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "date": "2026-11-09",
-  "base_commit": "60c26e3",
+  "base_commit": "a878e52",
   "reviewer_type": {
     "human_assisted": 527
   },
@@ -46,7 +46,7 @@
     "item_decisions.csv": "69645dac8180d2b5aa03cc2fe78ea529c65b45b11dbf561c201dbcd00ed77d98",
     "component_supports.csv": "228938d1ee48bd34afed52ff8ea66c35732bb4cc7b36386d519a27394d78cc1c",
     "stage1_checkpoint.json": "ca3bbf5dc80323cfd64db75595dae28496c6e21589ae5dbc6d6069556c34c4a6",
-    "stage2_checkpoint.json": "de400df2ca889baccc6d34206e61f57b103f3bc5743292c80d49ffb9343cbf81",
+    "stage2_checkpoint.json": "05c77be3169a98c9bd68a6fea44828abe608452af59e052b3a85f097861a57ec",
     "queue_manifest.json": "a48da8b971850de2d522bac9fd7e7fc40002c1890b82ac57d214bd2a7d48c98d",
     "claim_open_issues.md": "2dce9df6ae96322aba33fcb816cf115db1fe1d8d87c8412071b475c14c721d05",
     "b1_item_claim_judgments.csv": "82099ffbbc57eae10987b846de19321a37b44dd91945698521e7806f4f055153",

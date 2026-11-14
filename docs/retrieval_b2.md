@@ -2,12 +2,12 @@
 
 | Configuration | Status | Run | Code |
 |---|---|---|---|
-| `b2_heading_v1` | `invalid_structural_context`, diagnostic only | `run_004_b2_heading_v1` | commit `cbfc98b`, module sha256 `e8a58235…`, config sha256 `e013ec0e…` |
-| `b2_heading_v2` | `invalid_structural_context` (3 boundary errors found in the review of its long contexts); run_005 is `exploratory_unreviewed` diagnostic | `run_005_b2_heading_v2` | commit `5347361`, module `6fac43ca…`, config `ca5f5d91…` |
+| `b2_heading_v1` | `invalid_structural_context`, diagnostic only | `run_004_b2_heading_v1` | commit `bf1182d`, module sha256 `e8a58235…`, config sha256 `e013ec0e…` |
+| `b2_heading_v2` | `invalid_structural_context` (3 boundary errors found in the review of its long contexts); run_005 is `exploratory_unreviewed` diagnostic | `run_005_b2_heading_v2` | commit `77e5f88`, module `6fac43ca…`, config `ca5f5d91…` |
 | `b2_heading_v3` | superseded: heading lists cut at the printed line (65 contexts, 101 chunks) and product class read from exclusion sentences (22 chunks); run_006 is `exploratory_unreviewed` diagnostic | `run_006_b2_heading_v3` | see "Configuration b2_heading_v3" |
 | `b2_heading_v4` | `post-diagnostic review checkpoint`: rules changed after looking at run_005/run_006 results; not reviewed; the review items use it | `run_007_b2_heading_v4` | see "Configuration b2_heading_v4" |
 
-Only v2 was frozen by a commit before its first run (`5347361`). v3 and v4 were written after earlier runs' results
+Only v2 was frozen by a commit before its first run (`77e5f88`). v3 and v4 were written after earlier runs' results
 had been seen and are recorded as post-diagnostic changes, not as pre-run freezes.
 
 `b2_heading_v1`: after its first run a lead-in was found carried over 1,088 chunks of other subdivisions and notes
@@ -268,7 +268,7 @@ Per-query claim sets for the mismatched pairs (decision record):
 - p12: different sets. The Korean query names the tariff type (상호관세); the English one asks for the additional
   duty only.
 
-**Components and judgement structure** (follow-up to checkpoint `2a0cf84`). `evals/dev/claim_components.csv`: each
+**Components and judgement structure** (follow-up to checkpoint `c53a64b`). `evals/dev/claim_components.csv`: each
 claim has one component per evidence sentence (44 components). Five claims are composite and need two sentences:
 dq10 c1 (the proclamation imposes a surcharge + heading 9903.03.01 was added by PP 11012), dq11 c1 en and ko (the
 order's number and title + its effect), dq12_ko c2 (EO 14266 modifies reciprocal rates + it suspends the (v)(xiii)
@@ -321,7 +321,7 @@ a reused relevant item keeps its decision and reason, and its component levels a
 | of which to fill | 437 | 500 |
 | of which none from a reused not_relevant / uncertain item | 74 | 0 |
 
-**Input procedure (two stages; follow-up to `b8a9d29`, scoring unchanged).** The review sheets above stay empty;
+**Input procedure (two stages; follow-up to `b5a8650`, scoring unchanged).** The review sheets above stay empty;
 answers are recorded with `scripts/record_claim_review.py` into `evals/dev/review_claims/responses/` and combined
 by `finalize` (`src/tariffagent/retrieval/claim_review.py`) into `evals/dev/review_claims/final/`.
 - Stage 1: a decision (relevant / not_relevant / uncertain, with a reason) for the 484 new items only (B1 223, B2
@@ -336,7 +336,7 @@ by `finalize` (`src/tariffagent/retrieval/claim_review.py`) into `evals/dev/revi
   있음; partial = 관련 정보는 있지만 해당 근거 요소를 완전히 확정하기에는 부족함; none = 해당 근거 요소를 지원하지
   않음.
 
-**Operating rules (follow-up to `9844468`).**
+**Operating rules (follow-up to `747d257`).**
 - A reason is required: a stage 1 decision with an empty or blank reason is refused, and a reused judgement must
   carry its earlier reason.
 - Finalized results are never overwritten: `finalize <version>` writes `final/<version>/` and stops if it exists;
@@ -414,7 +414,7 @@ No B1/B2 conclusion is drawn from any of them.
 
 ## First run of v2: run_005_b2_heading_v2 (status: exploratory_unreviewed, diagnostic)
 
-Run after the freeze commit `5347361`; the run manifest records the same module, config and chunk hashes. B1 rows
+Run after the freeze commit `77e5f88`; the run manifest records the same module, config and chunk hashes. B1 rows
 reproduce run_003's `citation` rows exactly (B1 corpus, chunk and index hashes checked against B1's manifest).
 Strict citation qrels count only the cited file and page; they are not the reviewed comparison.
 

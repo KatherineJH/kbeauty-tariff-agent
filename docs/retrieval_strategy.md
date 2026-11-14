@@ -192,7 +192,7 @@ Knowledge Graph는 데이터 모델이고 Neo4j는 가능한 저장·조회 구�
 
 ## 8. 현재 적용 순서
 
-1. 사람 보조 qrel 검수와 `run_003`을 확정한다. **완료**(커밋 `c1426c9`).
+1. 사람 보조 qrel 검수와 `run_003`을 확정한다. **완료**(커밋 `1ab5181`).
 2. B2 heading-enriched BM25를 구현하고 B1과 비교한다. 다음 단계이며 아직 시작하지 않았다.
 3. DN1 dense retrieval을 평가한다.
 4. H1 hybrid retrieval을 평가한다.
