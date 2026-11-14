@@ -1,0 +1,35 @@
+name: CI
+
+# Full verification on Linux with no API keys: integrity, reproducibility, boundary values,
+# evidence, rule engine, and the slow negative (mutation) tests that rebuild the dbt warehouse.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+        with:
+          python-version: "3.13"
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+
+      - name: Install locked dependencies
+        run: uv sync --frozen
+
+      - name: Run full test suite
+        run: uv run pytest -q
