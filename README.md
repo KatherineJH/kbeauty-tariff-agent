@@ -37,3 +37,9 @@ uv run pytest -q -m "not slow"                # 개발용(약 1분): 무결성·
 uv run pytest -q                              # 전체 검증(CI): 위 + negative test(slow, 약 8분)
 uv run python scripts/rehydrate_hts_archive.py --check   # 과거 HTS 증거 스냅샷 오프라인 검사
 ```
+
+## 라이선스
+
+코드와 이 저장소에서 직접 작성한 문서·평가셋은 [MIT 라이선스](LICENSE)를 따른다.
+`data/`의 원천 문서(미국 관세율표 HTS, Federal Register, CBP 공지)는 미국 연방정부 저작물로 퍼블릭 도메인이다(17 U.S.C. §105).
+이용 조건 검토는 [`docs/data_sources.md`](docs/data_sources.md)에 있다.
